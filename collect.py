@@ -32,10 +32,12 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 # 설정
 # ──────────────────────────────────────────────────────────────────────────
 
-# 며칠 이내의 글만 모을지
-LOOKBACK_DAYS = 2
+# 수집 구간(시간 창): "지난 실행 이후 발행된 것"만 모은다 → 날짜별로 안 겹침.
+# 그 구간 안에서 인기/중요도 상위를 선별해 보여준다.
+DEFAULT_WINDOW_HOURS = 30   # 첫 실행(이전 기록 없음) 시 기본 창
+MAX_BACKFILL_DAYS = 7       # 실행이 며칠 밀렸어도 이 이상은 거슬러 올라가지 않음
 
-# 그날 최종 표시할 항목 수 — 종류별 쿼터 (인기/화제성 상위만 선별)
+# 그날 최종 표시할 항목 수 — 종류별 쿼터 (구간 내 인기/화제성 상위)
 QUOTA = {"youtube": 5, "hn": 6, "guide": 5, "news": 6}
 
 # Hacker News 검색어 (AI 관련 화제 글을 추천수 순으로 가져옴)
@@ -76,6 +78,40 @@ CATEGORIES = [
 ]
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+STATE_FILE = os.path.join(DATA_DIR, "_state.json")
+
+
+def read_last_run():
+    try:
+        with open(STATE_FILE, encoding="utf-8") as f:
+            return datetime.fromisoformat(json.load(f)["last_run_utc"])
+    except Exception:
+        return None
+
+
+def write_last_run(dt):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump({"last_run_utc": dt.isoformat()}, f)
+
+
+def get_window():
+    """수집 구간 (start, end) 계산. start = 지난 실행 시각(없으면 기본 창),
+    실행이 오래 밀렸으면 MAX_BACKFILL_DAYS로 제한."""
+    end = datetime.now(timezone.utc)
+    last = read_last_run()
+    start = last if last else end - timedelta(hours=DEFAULT_WINDOW_HOURS)
+    floor = end - timedelta(days=MAX_BACKFILL_DAYS)
+    if start < floor:
+        start = floor
+    return start, end
+
+
+def in_window(dt, start, end):
+    """발행 시각이 구간 안인지. 시각 정보가 없으면(드묾) 포함."""
+    if dt is None:
+        return True
+    return start <= dt <= end
 
 
 # ──────────────────────────────────────────────────────────────────────────
@@ -130,8 +166,8 @@ def entry_date(entry):
     return None
 
 
-def fetch_articles(feeds, kind, cutoff, items, seen_urls, label):
-    """뉴스/가이드 등 글 형태 피드를 공통 처리"""
+def fetch_articles(feeds, kind, start, end, items, seen_urls, label):
+    """뉴스/가이드 등 글 형태 피드를 공통 처리 (발행 시각이 구간 안인 것만)"""
     for source, url in feeds:
         print(f"[{label}] {source} ...", flush=True)
         try:
@@ -141,7 +177,7 @@ def fetch_articles(feeds, kind, cutoff, items, seen_urls, label):
             continue
         for e in feed.entries:
             dt = entry_date(e)
-            if dt and dt < cutoff:
+            if not in_window(dt, start, end):
                 continue
             link = e.get("link", "")
             if not link or link in seen_urls:
@@ -158,14 +194,15 @@ def fetch_articles(feeds, kind, cutoff, items, seen_urls, label):
             })
 
 
-def fetch_hackernews(cutoff, items, seen_urls):
+def fetch_hackernews(start, end, items, seen_urls):
     """Hacker News에서 AI 관련 화제 글을 추천수/댓글수와 함께 수집 (키 불필요)"""
-    since = int(cutoff.timestamp())
+    since = int(start.timestamp())
+    until = int(end.timestamp())
     for q in HN_QUERIES:
         print(f"[HN] '{q}' ...", flush=True)
         params = urllib.parse.urlencode({
             "query": q, "tags": "story",
-            "numericFilters": f"created_at_i>{since}",
+            "numericFilters": f"created_at_i>{since},created_at_i<{until}",
             "hitsPerPage": 30,
         })
         url = f"https://hn.algolia.com/api/v1/search?{params}"
@@ -198,21 +235,16 @@ def fetch_hackernews(cutoff, items, seen_urls):
             })
 
 
-def collect():
-    cutoff = datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)
-    # 가이드는 업데이트 빈도가 낮으니 더 넉넉한 기간으로 수집
-    guide_cutoff = datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS * 5)
+def collect(start, end):
     items = []
     seen_urls = set()
 
-    # 뉴스
-    fetch_articles(NEWS_FEEDS, "news", cutoff, items, seen_urls, "뉴스")
-    # 활용/가이드
-    fetch_articles(GUIDE_FEEDS, "guide", guide_cutoff, items, seen_urls, "가이드")
-    # Hacker News (화제성)
-    fetch_hackernews(cutoff, items, seen_urls)
+    # 뉴스 / 가이드 / HN — 모두 같은 시간 구간 기준
+    fetch_articles(NEWS_FEEDS, "news", start, end, items, seen_urls, "뉴스")
+    fetch_articles(GUIDE_FEEDS, "guide", start, end, items, seen_urls, "가이드")
+    fetch_hackernews(start, end, items, seen_urls)
 
-    # 유튜브 — 영상은 업로드 빈도가 낮고 조회수가 핵심이라 기간을 넓게(가이드와 동일)
+    # 유튜브 (같은 구간 내 발행 영상)
     for name, cid in YOUTUBE_CHANNELS:
         print(f"[영상] {name} ...", flush=True)
         try:
@@ -222,7 +254,7 @@ def collect():
             continue
         for e in feed.entries:
             dt = entry_date(e)
-            if dt and dt < guide_cutoff:
+            if not in_window(dt, start, end):
                 continue
             link = e.get("link", "")
             if not link or link in seen_urls:
@@ -505,23 +537,44 @@ def save(items, briefing=None):
         else:
             it["metric"] = ""
 
+    path = os.path.join(DATA_DIR, f"{today}.json")
+
+    # 같은 날 재실행 시 기존 파일과 병합 (URL 기준 중복 제거, 새 항목 우선)
+    existing_items, existing_briefing = [], None
+    if os.path.exists(path):
+        try:
+            with open(path, encoding="utf-8") as f:
+                prev = json.load(f)
+            existing_items = prev.get("items", [])
+            existing_briefing = prev.get("briefing")
+        except Exception:
+            pass
+    by_url = {}
+    for it in existing_items + items:   # 새 items가 같은 URL을 덮어씀
+        if it.get("url"):
+            by_url[it["url"]] = it
+    merged = sorted(by_url.values(), key=lambda x: x.get("published", ""), reverse=True)
+
+    # 브리핑: 이번 실행 결과 우선, 비어 있으면 기존 것 유지
+    if not (briefing and briefing.get("overview")):
+        briefing = existing_briefing or briefing or {"overview": "", "highlights": []}
+
     doc = {
         "date": today,
         "generated_at": datetime.now().isoformat(timespec="seconds"),
-        "count": len(items),
-        "briefing": briefing or {"overview": "", "highlights": []},
-        "items": items,
+        "count": len(merged),
+        "briefing": briefing,
+        "items": merged,
     }
-    path = os.path.join(DATA_DIR, f"{today}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, indent=2)
-    print(f"[저장] {path}")
+    print(f"[저장] {path} (총 {len(merged)}건)")
 
-    # manifest 갱신 (날짜 목록, 최신순)
+    # manifest 갱신 (날짜 파일만, "_"로 시작하는 상태파일/manifest 제외)
     dates = sorted(
         {os.path.splitext(os.path.basename(p))[0]
          for p in glob.glob(os.path.join(DATA_DIR, "*.json"))
-         if os.path.basename(p) != "manifest.json"},
+         if not os.path.basename(p).startswith(("_", "manifest"))},
         reverse=True,
     )
     with open(os.path.join(DATA_DIR, "manifest.json"), "w", encoding="utf-8") as f:
@@ -532,16 +585,20 @@ def save(items, briefing=None):
 def main():
     print(f"=== AI 뉴스 수집 시작 ({datetime.now():%Y-%m-%d %H:%M}) ===")
     print(f"claude: {CLAUDE or '미발견'}")
-    pool = collect()
+    start, end = get_window()
+    print(f"수집 구간(UTC): {start:%Y-%m-%d %H:%M} ~ {end:%Y-%m-%d %H:%M}")
+    pool = collect(start, end)
     print(f"수집 풀: {len(pool)}건")
     if not pool:
-        print("! 수집된 항목이 없습니다. 피드 URL/네트워크를 확인하세요.")
+        print("! 구간 내 수집된 항목이 없습니다.")
+        write_last_run(end)   # 빈 구간이어도 다음 실행이 또 거슬러 올라가지 않게
         return
     items = select(pool)
     items = fetch_fulltext(items)
     items = summarize(items)
     briefing = make_briefing(items)
     save(items, briefing)
+    write_last_run(end)       # 성공 저장 후 → 다음 실행은 이 시점 이후만
     print("=== 완료 ===")
 
 
