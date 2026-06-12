@@ -46,7 +46,7 @@ HN_QUERIES = ["AI", "LLM", "OpenAI", "Anthropic Claude", "machine learning"]
 
 # 유튜브 검색어 — 유튜브 검색 페이지를 직접 읽어(키 불필요) 구간 내 영상에서 조회수 상위를 가져옴.
 # 한국어/영어 섞어 넣으면 그만큼 폭넓게 잡힘.
-YT_SEARCH_QUERIES = ["인공지능", "AI", "LLM", "ChatGPT", "OpenAI", "AI agent"]
+YT_SEARCH_QUERIES = ["인공지능", "생성형 AI", "LLM", "ChatGPT", "OpenAI", "AI agent"]
 
 # 뉴스 RSS 소스 (원하는 만큼 추가/삭제하세요)
 # ※ 매체 직접 RSS를 권장 — Google News 같은 리다이렉트 링크는 본문 추출이 잘 안 됨
@@ -451,10 +451,40 @@ def score_news_importance(news):
     return news[:QUOTA["news"]]
 
 
+def filter_relevant_youtube(videos):
+    """검색으로 딸려온 무관한 영상(정치 코미디·단순 언급 등)을 claude로 걸러낸다.
+    실패 시 원본 그대로."""
+    if not videos or not CLAUDE:
+        return videos
+    payload = [{"id": i, "title": v["title"], "channel": v["source"]}
+               for i, v in enumerate(videos)]
+    instruction = (
+        "다음은 유튜브 검색으로 모은 영상 후보다(JSON). 각 영상이 'AI/인공지능/머신러닝/"
+        "관련 기술·산업·연구'를 실질적으로 다루는지 판단하라. "
+        "정치 코미디·예능·단순 언급·전혀 무관한 영상은 false.\n"
+        "출력은 오직 JSON 배열만: [{\"id\":0,\"ai\":true}, ...]"
+    )
+    print(f"[선별] 영상 AI 관련성 판정 ({len(videos)}건)... ", end="", flush=True)
+    try:
+        proc = subprocess.run(
+            [CLAUDE, "-p", instruction, "--output-format", "text"],
+            input=json.dumps(payload, ensure_ascii=False),
+            capture_output=True, text=True, encoding="utf-8", timeout=120,
+        )
+        objs = _parse_obj_array(proc.stdout or "")
+        keep = {o["id"] for o in objs if isinstance(o, dict) and o.get("ai")}
+        filtered = [v for i, v in enumerate(videos) if i in keep]
+        print(f"{len(filtered)}/{len(videos)} 통과")
+        return filtered or videos   # 전부 걸러지면 원본 유지(안전장치)
+    except Exception as ex:
+        print(f"실패 ({ex}) — 원본 유지")
+        return videos
+
+
 def select(pool):
     """종류별로 가장 적절한 신호로 인기/화제성 상위만 추린다."""
-    yt = sorted((x for x in pool if x["type"] == "youtube"),
-                key=lambda x: x.get("views", 0), reverse=True)[:QUOTA["youtube"]]
+    yt_pool = filter_relevant_youtube([x for x in pool if x["type"] == "youtube"])
+    yt = sorted(yt_pool, key=lambda x: x.get("views", 0), reverse=True)[:QUOTA["youtube"]]
     hn = sorted((x for x in pool if x["type"] == "hn"),
                 key=lambda x: x.get("points", 0) + 2 * x.get("comments", 0),
                 reverse=True)[:QUOTA["hn"]]
