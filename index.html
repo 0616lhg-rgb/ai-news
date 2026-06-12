@@ -29,16 +29,9 @@
   select,input,button{font-family:inherit}
   select,input{background:var(--surface-2);color:var(--text);
     border:1px solid var(--border);border-radius:10px;padding:9px 12px;font-size:14px;outline:none}
-  input{width:180px}
+  input{width:200px}
   input::placeholder{color:var(--muted)}
   select:focus,input:focus{border-color:var(--accent)}
-
-  /* 레이아웃 토글 */
-  .seg{display:flex;border:1px solid var(--border);border-radius:10px;overflow:hidden}
-  .seg button{background:var(--surface-2);color:var(--muted);border:0;
-    padding:9px 13px;font-size:13px;cursor:pointer;border-right:1px solid var(--border)}
-  .seg button:last-child{border-right:0}
-  .seg button.on{background:var(--accent-soft);color:#fff}
   .libbtn{background:var(--surface-2);border:1px solid var(--border);border-radius:10px;
     padding:9px 14px;font-size:14px;color:var(--text);cursor:pointer;display:flex;align-items:center;gap:7px}
   .libbtn:hover{border-color:var(--accent)}
@@ -79,34 +72,8 @@
   .metric{font-size:12px;color:var(--accent);font-weight:600}
   .a-src{color:var(--muted);font-size:12px}
 
-  /* 본문(공통) */
-  .embed{position:relative;aspect-ratio:16/9;margin:16px 0;border-radius:12px;overflow:hidden;background:#000}
-  .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-  .a-title{font-size:22px;line-height:1.35;margin:10px 0}
-  .a-detail{font-size:16px;line-height:1.85;color:#dfe3ea;white-space:pre-wrap;margin-bottom:20px}
-  .sec-title{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.04em;margin-bottom:10px}
-  .points{list-style:none;margin-bottom:20px;display:flex;flex-direction:column;gap:9px}
-  .points li{position:relative;padding-left:22px;font-size:15px;line-height:1.6;color:#dfe3ea}
-  .points li::before{content:"▹";position:absolute;left:0;color:var(--accent)}
-  .takeaway{background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:8px;
-    padding:14px 16px;font-size:15px;line-height:1.7;margin-bottom:22px}
-  .takeaway b{color:var(--accent);display:block;margin-bottom:4px;font-size:13px}
-  .a-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-  .src-link,.scrap-toggle{display:inline-flex;align-items:center;gap:7px;cursor:pointer;
-    background:var(--surface-2);border:1px solid var(--border);border-radius:10px;
-    padding:10px 16px;font-size:14px;color:var(--text);font-weight:600}
-  .src-link:hover{border-color:var(--accent);color:var(--accent)}
-  .scrap-toggle:hover{border-color:var(--star);color:var(--star)}
-  .scrap-toggle.on{border-color:var(--star);color:var(--star);background:rgba(255,200,80,.12)}
-  .empty{margin:80px auto;text-align:center;color:var(--muted)}
-  .empty code{background:var(--surface-2);padding:2px 8px;border-radius:6px;color:var(--accent)}
-
-  /* ── 레이아웃 A: 연속 피드 ── */
-  .feed{max-width:760px;margin:0 auto;padding-bottom:60px}
-  .article{padding:26px 0;border-bottom:1px solid var(--border)}
-
-  /* ── 레이아웃 B: 그리드(카드) ── */
-  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));padding-bottom:60px}
+  /* 카드 그리드 */
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));padding:18px 0 60px}
   .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;
     display:flex;flex-direction:column;transition:.18s;cursor:pointer;position:relative}
   .card:hover{transform:translateY(-3px);border-color:#3a4151;box-shadow:0 8px 28px rgba(0,0,0,.4)}
@@ -124,10 +91,12 @@
     font-size:16px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
   .scrap-btn:hover{color:var(--star);border-color:var(--star)}
   .scrap-btn.on{color:var(--star);border-color:var(--star);background:rgba(255,200,80,.14)}
+  .empty{margin:80px auto;text-align:center;color:var(--muted)}
+  .empty code{background:var(--surface-2);padding:2px 8px;border-radius:6px;color:var(--accent)}
 
-  /* 그리드용 리더 오버레이 (이전/다음) */
+  /* 리더 오버레이 (이전/다음) */
   .overlay{position:fixed;inset:0;z-index:50;display:none;background:rgba(0,0,0,.6);
-    backdrop-filter:blur(4px);padding:0;overflow-y:auto}
+    backdrop-filter:blur(4px);overflow-y:auto}
   .overlay.open{display:block}
   .reader{max-width:780px;margin:0 auto;min-height:100%;background:var(--surface);
     border-left:1px solid var(--border);border-right:1px solid var(--border);padding:0 38px 50px}
@@ -141,22 +110,25 @@
   .reader-nav .pos{color:var(--muted);font-size:13px}
   .reader-nav .x{margin-left:auto}
 
-  /* ── 레이아웃 C: 2단 ── */
-  .split{display:flex;gap:0;border:1px solid var(--border);border-radius:14px;overflow:hidden;
-    height:calc(100vh - 220px);min-height:480px;margin-bottom:40px}
-  .split-list{width:320px;flex-shrink:0;overflow-y:auto;border-right:1px solid var(--border);background:var(--surface)}
-  .split-row{padding:14px 16px;border-bottom:1px solid var(--border);cursor:pointer}
-  .split-row:hover{background:var(--surface-2)}
-  .split-row.active{background:var(--accent-soft)}
-  .split-row .r-title{font-size:14px;font-weight:600;line-height:1.4;margin-top:5px;
-    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-  .split-row .r-meta{color:var(--muted);font-size:11px;margin-top:5px}
-  .split-detail{flex:1;overflow-y:auto;padding:30px 36px}
-  @media(max-width:760px){
-    .split{flex-direction:column;height:auto}
-    .split-list{width:100%;max-height:240px}
-    input{width:130px}
-  }
+  .embed{position:relative;aspect-ratio:16/9;margin:16px 0;border-radius:12px;overflow:hidden;background:#000}
+  .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .a-title{font-size:23px;line-height:1.35;margin:10px 0}
+  .a-detail{font-size:16px;line-height:1.85;color:#dfe3ea;white-space:pre-wrap;margin-bottom:22px}
+  .sec-title{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.04em;margin-bottom:10px}
+  .points{list-style:none;margin-bottom:22px;display:flex;flex-direction:column;gap:9px}
+  .points li{position:relative;padding-left:22px;font-size:15px;line-height:1.6;color:#dfe3ea}
+  .points li::before{content:"▹";position:absolute;left:0;color:var(--accent)}
+  .takeaway{background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:8px;
+    padding:14px 16px;font-size:15px;line-height:1.7;margin-bottom:24px}
+  .takeaway b{color:var(--accent);display:block;margin-bottom:4px;font-size:13px}
+  .a-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .src-link,.scrap-toggle{display:inline-flex;align-items:center;gap:7px;cursor:pointer;
+    background:var(--surface-2);border:1px solid var(--border);border-radius:10px;
+    padding:10px 16px;font-size:14px;color:var(--text);font-weight:600}
+  .src-link:hover{border-color:var(--accent);color:var(--accent)}
+  .scrap-toggle:hover{border-color:var(--star);color:var(--star)}
+  .scrap-toggle.on{border-color:var(--star);color:var(--star);background:rgba(255,200,80,.12)}
+  @media(max-width:760px){ input{width:140px} }
 </style>
 </head>
 <body>
@@ -164,11 +136,6 @@
   <div class="head-inner">
     <div class="brand"><span class="dot"></span>AI 뉴스 데일리 <small id="genTime"></small></div>
     <div class="spacer"></div>
-    <div class="seg" id="seg">
-      <button data-l="feed">📜 피드</button>
-      <button data-l="split">🗂 2단</button>
-      <button data-l="grid">🃏 카드</button>
-    </div>
     <button id="libBtn" class="libbtn">🔖 보관함 <span class="cnt" id="libCnt">0</span></button>
     <select id="dateSel"></select>
     <input id="search" type="search" placeholder="검색...">
@@ -185,9 +152,7 @@
 
 <script>
 const CATS = ["전체","AI 활용/팁","도구 업데이트","LLM/언어모델","이미지/비디오","연구/논문","산업/투자","정책/규제","기타"];
-let allItems = [], activeCat = "전체", query = "", inLibrary = false;
-let layout = localStorage.getItem("ai-news-layout") || "feed";
-let readerIndex = 0, splitIndex = 0;
+let allItems = [], activeCat = "전체", query = "", inLibrary = false, readerIndex = 0;
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -215,7 +180,7 @@ function updateLibCount(){
   $("#libBtn").classList.toggle("active", inLibrary);
 }
 
-/* ── 현재 보여줄 항목 목록 ── */
+/* ── 현재 보여줄 항목 ── */
 function filtered(){
   const q = query.trim().toLowerCase();
   let src = inLibrary ? Object.values(scraps) : allItems;
@@ -228,7 +193,7 @@ function filtered(){
   return list;
 }
 
-/* ── 본문(공통) HTML ── */
+/* ── 본문(리더) HTML ── */
 function articleHTML(it){
   const embed = it.type==="youtube" && it.videoId
     ? `<div class="embed"><iframe src="https://www.youtube.com/embed/${esc(it.videoId)}" allowfullscreen loading="lazy"></iframe></div>` : "";
@@ -253,28 +218,17 @@ function articleHTML(it){
     </div>`;
 }
 
-/* ── 렌더 ── */
+/* ── 카드 그리드 렌더 ── */
 function render(){
   const items = filtered();
   $("#metaLine").textContent = (inLibrary?"🔖 보관함 · ":"") + `${items.length}건`;
-  document.querySelectorAll("#seg button").forEach(b=>b.classList.toggle("on", b.dataset.l===layout));
   const c = $("#content");
   if(!items.length){
     c.innerHTML = inLibrary
-      ? `<div class="empty">아직 스크랩한 항목이 없어요.<br>☆ 버튼으로 보관해보세요.</div>`
+      ? `<div class="empty">아직 스크랩한 항목이 없어요.<br>카드의 ☆ 버튼으로 보관해보세요.</div>`
       : `<div class="empty">표시할 항목이 없습니다.</div>`;
     return;
   }
-  if(layout==="feed") renderFeed(items, c);
-  else if(layout==="split") renderSplit(items, c);
-  else renderGrid(items, c);
-}
-
-function renderFeed(items, c){
-  c.innerHTML = `<div class="feed">${items.map(it=>`<article class="article">${articleHTML(it)}</article>`).join("")}</div>`;
-}
-
-function renderGrid(items, c){
   c.innerHTML = `<div class="grid">${items.map((it,i)=>{
     const thumb = it.thumbnail ? `<img class="thumb" src="${esc(it.thumbnail)}" loading="lazy" alt="">` : "";
     const on = isScrapped(it);
@@ -300,31 +254,8 @@ function renderGrid(items, c){
   });
 }
 
-function renderSplit(items, c){
-  if(splitIndex>=items.length) splitIndex = 0;
-  const rows = items.map((it,i)=>`
-    <div class="split-row ${i===splitIndex?"active":""}" data-i="${i}">
-      <div class="badges"><span class="badge ${esc(it.type)}">${TYPE[it.type]||"📰"}</span>
-        ${it.metric?`<span class="metric">${esc(it.metric)}</span>`:""}</div>
-      <div class="r-title">${esc(it.title||"")}</div>
-      <div class="r-meta">${esc(it.source||"")} · ${fmtDate(it.published)}</div>
-    </div>`).join("");
-  c.innerHTML = `<div class="split">
-    <div class="split-list">${rows}</div>
-    <div class="split-detail" id="splitDetail">${articleHTML(items[splitIndex])}</div>
-  </div>`;
-  c.querySelectorAll(".split-row").forEach(r=>{
-    r.addEventListener("click", ()=>{ splitIndex=+r.dataset.i; render(); });
-  });
-}
-
-/* ── 그리드용 리더 (이전/다음) ── */
-function openReader(i){
-  readerIndex = i;
-  drawReader();
-  $("#overlay").classList.add("open");
-  document.body.style.overflow = "hidden";
-}
+/* ── 리더 (이전/다음) ── */
+function openReader(i){ readerIndex=i; drawReader(); $("#overlay").classList.add("open"); document.body.style.overflow="hidden"; }
 function drawReader(){
   const items = filtered();
   if(!items.length){ closeReader(); return; }
@@ -361,7 +292,7 @@ function renderBriefing(b){
 function renderFilters(){
   $("#filters").innerHTML = CATS.map(c=>`<div class="chip ${c===activeCat?"active":""}" data-c="${esc(c)}">${esc(c)}</div>`).join("");
   $("#filters").querySelectorAll(".chip").forEach(el=>{
-    el.onclick = ()=>{ activeCat=el.dataset.c; splitIndex=0; renderFilters(); render(); };
+    el.onclick = ()=>{ activeCat=el.dataset.c; renderFilters(); render(); };
   });
 }
 
@@ -373,34 +304,22 @@ async function loadDate(date){
     renderBriefing(doc.briefing);
     $("#genTime").textContent = `· ${doc.date} 기준`;
   }catch(e){ allItems=[]; renderBriefing(null); $("#genTime").textContent=""; }
-  splitIndex = 0;
   render();
 }
 
 async function init(){
   renderFilters(); updateLibCount();
-  // 레이아웃 토글
-  $("#seg").querySelectorAll("button").forEach(b=>{
-    b.onclick = ()=>{ layout=b.dataset.l; localStorage.setItem("ai-news-layout",layout); render(); };
-  });
-  $("#libBtn").onclick = ()=>{ inLibrary=!inLibrary; splitIndex=0; updateLibCount(); render(); };
-  $("#search").addEventListener("input", e=>{ query=e.target.value; splitIndex=0; render(); });
-  // 스크랩 버튼 (위임)
+  $("#libBtn").onclick = ()=>{ inLibrary=!inLibrary; updateLibCount(); render(); };
+  $("#search").addEventListener("input", e=>{ query=e.target.value; render(); });
   document.addEventListener("click", e=>{
     const b = e.target.closest(".scrap-btn,.scrap-toggle");
     if(b){ e.stopPropagation(); toggleScrapByUrl(b.dataset.url); if($("#overlay").classList.contains("open")) drawReader(); }
   });
-  // 키보드: 리더/2단 네비
   document.addEventListener("keydown", e=>{
-    if($("#overlay").classList.contains("open")){
-      if(e.key==="Escape") closeReader();
-      else if(e.key==="ArrowLeft"){ readerIndex--; drawReader(); }
-      else if(e.key==="ArrowRight"){ readerIndex++; drawReader(); }
-    }else if(layout==="split"){
-      const n = filtered().length;
-      if(e.key==="ArrowDown"||e.key==="ArrowRight"){ if(splitIndex<n-1){splitIndex++; render();} }
-      else if(e.key==="ArrowUp"||e.key==="ArrowLeft"){ if(splitIndex>0){splitIndex--; render();} }
-    }
+    if(!$("#overlay").classList.contains("open")) return;
+    if(e.key==="Escape") closeReader();
+    else if(e.key==="ArrowLeft"){ readerIndex--; drawReader(); }
+    else if(e.key==="ArrowRight"){ readerIndex++; drawReader(); }
   });
 
   try{
