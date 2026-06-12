@@ -13,6 +13,7 @@ AI 뉴스 데일리 - 수집 스크립트 (Phase 1 MVP)
 import sys
 import os
 import io
+import re
 import json
 import glob
 import time
@@ -42,6 +43,10 @@ QUOTA = {"youtube": 5, "hn": 6, "guide": 5, "news": 6}
 
 # Hacker News 검색어 (AI 관련 화제 글을 추천수 순으로 가져옴)
 HN_QUERIES = ["AI", "LLM", "OpenAI", "Anthropic Claude", "machine learning"]
+
+# 유튜브 검색어 — 유튜브 검색 페이지를 직접 읽어(키 불필요) 구간 내 영상에서 조회수 상위를 가져옴.
+# 한국어/영어 섞어 넣으면 그만큼 폭넓게 잡힘.
+YT_SEARCH_QUERIES = ["인공지능", "AI", "LLM", "ChatGPT", "OpenAI", "AI agent"]
 
 # 뉴스 RSS 소스 (원하는 만큼 추가/삭제하세요)
 # ※ 매체 직접 RSS를 권장 — Google News 같은 리다이렉트 링크는 본문 추출이 잘 안 됨
@@ -235,18 +240,55 @@ def fetch_hackernews(start, end, items, seen_urls):
             })
 
 
-def collect(start, end):
-    items = []
-    seen_urls = set()
+def _parse_views(text):
+    """'조회수 1.2만회' / '1.2M views' / '30,377' → 정수."""
+    if not text:
+        return 0
+    t = text.lower().replace("조회수", "").replace("views", "").replace("view", "").replace("회", "").strip()
+    m = re.search(r"([\d,.]+)\s*([만억천kmb]?)", t)
+    if not m:
+        return 0
+    try:
+        num = float(m.group(1).replace(",", ""))
+    except ValueError:
+        return 0
+    mult = {"천": 1e3, "만": 1e4, "억": 1e8, "k": 1e3, "m": 1e6, "b": 1e9}.get(m.group(2), 1)
+    return int(num * mult)
 
-    # 뉴스 / 가이드 / HN — 모두 같은 시간 구간 기준
-    fetch_articles(NEWS_FEEDS, "news", start, end, items, seen_urls, "뉴스")
-    fetch_articles(GUIDE_FEEDS, "guide", start, end, items, seen_urls, "가이드")
-    fetch_hackernews(start, end, items, seen_urls)
 
-    # 유튜브 (같은 구간 내 발행 영상)
+def _parse_age(text, now):
+    """'19시간 전' / '2 days ago' → 대략의 발행 datetime(utc). 못 읽으면 None."""
+    if not text:
+        return None
+    t = text.lower()
+    m = re.search(r"(\d+)", t)
+    if not m:
+        return None
+    n = int(m.group(1))
+    # 'X일' 과 'X주일'/'X시간' 혼동 방지를 위해 더 구체적인 단위부터 검사
+    if any(u in t for u in ("초", "second")):
+        d = timedelta(seconds=n)
+    elif any(u in t for u in ("분", "minute")):
+        d = timedelta(minutes=n)
+    elif any(u in t for u in ("시간", "hour")):
+        d = timedelta(hours=n)
+    elif any(u in t for u in ("주", "week")):
+        d = timedelta(weeks=n)
+    elif any(u in t for u in ("개월", "달", "month")):
+        d = timedelta(days=30 * n)
+    elif any(u in t for u in ("년", "year")):
+        d = timedelta(days=365 * n)
+    elif any(u in t for u in ("일", "day")):
+        d = timedelta(days=n)
+    else:
+        return None
+    return now - d
+
+
+def fetch_youtube_channels(start, end, items, seen_urls):
+    """[키 불필요 폴백] 지정 채널 RSS에서 구간 내 발행 영상 수집 (조회수 포함)."""
     for name, cid in YOUTUBE_CHANNELS:
-        print(f"[영상] {name} ...", flush=True)
+        print(f"[영상-채널] {name} ...", flush=True)
         try:
             feed = feedparser.parse(YT_FEED.format(cid))
         except Exception as e:
@@ -261,11 +303,9 @@ def collect(start, end):
                 continue
             seen_urls.add(link)
             vid = e.get("yt_videoid", "")
-            thumb = ""
-            if getattr(e, "media_thumbnail", None):
-                thumb = e.media_thumbnail[0].get("url", "")
-            elif vid:
-                thumb = f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
+            thumb = (e.media_thumbnail[0].get("url", "")
+                     if getattr(e, "media_thumbnail", None)
+                     else (f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg" if vid else ""))
             views = 0
             stats = getattr(e, "media_statistics", None)
             if stats:
@@ -274,16 +314,97 @@ def collect(start, end):
                 except (TypeError, ValueError):
                     views = 0
             items.append({
-                "type": "youtube",
-                "title": clean(e.get("title", ""), 200),
-                "raw_desc": clean(e.get("summary", ""), 400),
-                "url": link,
-                "source": name,
-                "published": dt.isoformat() if dt else "",
-                "thumbnail": thumb,
-                "videoId": vid,
-                "views": views,
+                "type": "youtube", "title": clean(e.get("title", ""), 200),
+                "raw_desc": clean(e.get("summary", ""), 400), "url": link,
+                "source": name, "published": dt.isoformat() if dt else "",
+                "thumbnail": thumb, "videoId": vid, "views": views,
             })
+
+
+def _walk_video_renderers(obj, out):
+    """ytInitialData 트리에서 videoRenderer들을 재귀로 수집."""
+    if isinstance(obj, dict):
+        if "videoRenderer" in obj:
+            out.append(obj["videoRenderer"])
+        for v in obj.values():
+            _walk_video_renderers(v, out)
+    elif isinstance(obj, list):
+        for x in obj:
+            _walk_video_renderers(x, out)
+
+
+def fetch_youtube_search(start, end, items, seen_urls):
+    """[키 불필요] 유튜브 검색 페이지를 직접 읽어 구간 내 영상을 모으고 조회수로 평가.
+    실패하면 채널 RSS 방식으로 폴백."""
+    now = datetime.now(timezone.utc)
+    cand = {}        # videoId -> item dict
+    ok_queries = 0
+    for q in YT_SEARCH_QUERIES:
+        print(f"[영상-검색] '{q}' ...", flush=True)
+        # sp=CAI%3D : 업로드일 순 정렬
+        url = ("https://www.youtube.com/results?search_query="
+               + urllib.parse.quote(q) + "&sp=CAI%3D")
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                "Accept-Language": "ko,en"})
+            page = urllib.request.urlopen(req, timeout=20).read().decode("utf-8", "replace")
+            m = (re.search(r"ytInitialData\s*=\s*(\{.*?\});</script>", page, re.DOTALL)
+                 or re.search(r"var ytInitialData = (\{.*?\});", page, re.DOTALL))
+            data = json.loads(m.group(1))
+            ok_queries += 1
+        except Exception as ex:
+            print(f"  ! 실패: {ex}")
+            continue
+        renderers = []
+        _walk_video_renderers(data, renderers)
+        for v in renderers:
+            vid = v.get("videoId")
+            if not vid or vid in cand:
+                continue
+            age = v.get("publishedTimeText", {}).get("simpleText", "")
+            pub = _parse_age(age, now)
+            if not in_window(pub, start, end):
+                continue
+            title = "".join(r.get("text", "") for r in v.get("title", {}).get("runs", []))
+            views = _parse_views(v.get("viewCountText", {}).get("simpleText", ""))
+            channel = "".join(r.get("text", "") for r in v.get("ownerText", {}).get("runs", []))
+            snippets = v.get("detailedMetadataSnippets") or []
+            desc = ""
+            if snippets:
+                desc = "".join(r.get("text", "")
+                               for r in snippets[0].get("snippetText", {}).get("runs", []))
+            cand[vid] = {
+                "type": "youtube", "title": clean(title, 200), "raw_desc": clean(desc, 400),
+                "url": f"https://www.youtube.com/watch?v={vid}",
+                "source": clean(channel, 60) or "YouTube",
+                "published": pub.isoformat() if pub else "",
+                "thumbnail": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
+                "videoId": vid, "views": views,
+            }
+
+    if not cand:
+        print("[영상] 검색 결과 없음 → 채널 RSS 방식으로 폴백")
+        fetch_youtube_channels(start, end, items, seen_urls)
+        return
+    for it in cand.values():
+        if it["url"] in seen_urls:
+            continue
+        seen_urls.add(it["url"])
+        items.append(it)
+    print(f"[영상-검색] 검색 {ok_queries}/{len(YT_SEARCH_QUERIES)}회 → 구간 내 영상 {len(cand)}개")
+
+
+def collect(start, end):
+    items = []
+    seen_urls = set()
+
+    # 뉴스 / 가이드 / HN — 모두 같은 시간 구간 기준
+    fetch_articles(NEWS_FEEDS, "news", start, end, items, seen_urls, "뉴스")
+    fetch_articles(GUIDE_FEEDS, "guide", start, end, items, seen_urls, "가이드")
+    fetch_hackernews(start, end, items, seen_urls)
+    # 유튜브 — 키 있으면 검색어 방식, 없으면 채널 RSS 폴백
+    fetch_youtube_search(start, end, items, seen_urls)
 
     # 수집 단계에서는 거르지 않고 전체 풀을 반환 (선별은 select()에서)
     items.sort(key=lambda x: x["published"], reverse=True)
