@@ -672,6 +672,23 @@ def make_briefing(items):
 # 저장
 # ──────────────────────────────────────────────────────────────────────────
 
+def load_seen_urls(today):
+    """오늘 이전의 날짜 파일들에 이미 실린 URL 집합 (누적 중복 제거용)."""
+    seen = set()
+    for p in glob.glob(os.path.join(DATA_DIR, "*.json")):
+        name = os.path.splitext(os.path.basename(p))[0]
+        if name.startswith("_") or name in ("manifest", today):
+            continue
+        try:
+            with open(p, encoding="utf-8") as f:
+                for it in json.load(f).get("items", []):
+                    if it.get("url"):
+                        seen.add(it["url"])
+        except Exception:
+            pass
+    return seen
+
+
 def save(items, briefing=None):
     os.makedirs(DATA_DIR, exist_ok=True)
     today = datetime.now().strftime("%Y-%m-%d")
@@ -740,9 +757,15 @@ def main():
     print(f"수집 구간(UTC): {start:%Y-%m-%d %H:%M} ~ {end:%Y-%m-%d %H:%M}")
     pool = collect(start, end)
     print(f"수집 풀: {len(pool)}건")
+    # 지난 날짜에 이미 나온 항목 제외 (영상 등 중복 방지)
+    today = datetime.now().strftime("%Y-%m-%d")
+    seen = load_seen_urls(today)
+    before = len(pool)
+    pool = [x for x in pool if x.get("url") not in seen]
+    print(f"누적 중복 제외: {before} → {len(pool)}건 (이전 날짜에 나온 {before - len(pool)}건 제거)")
     if not pool:
-        print("! 구간 내 수집된 항목이 없습니다.")
-        write_last_run(end)   # 빈 구간이어도 다음 실행이 또 거슬러 올라가지 않게
+        print("! 새로 추가할 항목이 없습니다.")
+        write_last_run(end)
         return
     items = select(pool)
     items = fetch_fulltext(items)
