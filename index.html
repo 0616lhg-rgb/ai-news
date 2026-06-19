@@ -113,7 +113,9 @@
   .embed{position:relative;aspect-ratio:16/9;margin:16px 0;border-radius:12px;overflow:hidden;background:#000}
   .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   .a-title{font-size:23px;line-height:1.35;margin:10px 0}
-  .a-detail{font-size:16px;line-height:1.85;color:#dfe3ea;white-space:pre-wrap;margin-bottom:22px}
+  .a-detail{margin-bottom:22px}
+  .a-detail p{font-size:16px;line-height:1.9;color:#dfe3ea;margin:0 0 15px}
+  .a-detail p:last-child{margin-bottom:0}
   .sec-title{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.04em;margin-bottom:10px}
   .points{list-style:none;margin-bottom:22px;display:flex;flex-direction:column;gap:9px}
   .points li{position:relative;padding-left:22px;font-size:15px;line-height:1.6;color:#dfe3ea}
@@ -157,6 +159,17 @@ let allItems = [], activeCat = "전체", query = "", inLibrary = false, readerIn
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const TYPE = {youtube:"▶ 영상", guide:"💡 가이드", hn:"🔥 HN", news:"📰 뉴스"};
+
+// 본문을 문단으로: 배열이면 그대로, 문자열이면 ~3문장씩 묶어 문단 생성
+function detailParas(it){
+  if(Array.isArray(it.detail)) return it.detail.filter(p=>p&&String(p).trim());
+  const t = String(it.detail||it.summary||"").trim();
+  if(!t) return [];
+  const sents = t.split(/(?<=[.!?。])\s+/).filter(s=>s.trim());
+  const paras = [];
+  for(let i=0;i<sents.length;i+=3) paras.push(sents.slice(i,i+3).join(" "));
+  return paras;
+}
 
 function fmtDate(iso){
   if(!iso) return "";
@@ -210,7 +223,7 @@ function articleHTML(it){
     </div>
     <h2 class="a-title">${esc(it.title_ko||it.title||"")}</h2>
     ${embed}
-    <div class="a-detail">${esc(it.detail||it.summary||"")}</div>
+    <div class="a-detail">${detailParas(it).map(p=>`<p>${esc(p)}</p>`).join("")}</div>
     ${points}${takeaway}
     <div class="a-actions">
       <button class="scrap-toggle ${on?"on":""}" data-url="${esc(it.url)}">${on?"★ 보관됨":"☆ 보관"}</button>
