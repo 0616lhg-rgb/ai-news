@@ -320,7 +320,7 @@ function renderFilters(){
 /* ── 데이터 로드 ── */
 async function loadDate(date){
   try{
-    const doc = await (await fetch(`data/${date}.json`)).json();
+    const doc = await (await fetch(`data/${date}.json?t=${Date.now()}`, {cache:"no-store"})).json();
     allItems = doc.items || [];
     renderBriefing(doc.briefing);
     $("#genTime").textContent = `· ${doc.date} 기준`;
@@ -344,7 +344,7 @@ async function init(){
   });
 
   try{
-    const man = await (await fetch("data/manifest.json")).json();
+    const man = await (await fetch(`data/manifest.json?t=${Date.now()}`, {cache:"no-store"})).json();
     const dates = man.dates || [];
     if(!dates.length){ showSetup(); return; }
     const sel = $("#dateSel");
