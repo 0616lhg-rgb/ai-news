@@ -186,7 +186,7 @@ function filtered(){
   let src = inLibrary ? Object.values(scraps) : allItems;
   let list = src.filter(it=>{
     if(activeCat!=="전체" && it.category!==activeCat) return false;
-    if(q && !((it.title||"")+(it.summary||"")+(it.detail||"")).toLowerCase().includes(q)) return false;
+    if(q && !((it.title_ko||"")+(it.title||"")+(it.summary||"")+(it.detail||"")).toLowerCase().includes(q)) return false;
     return true;
   });
   if(inLibrary) list = list.sort((a,b)=>(b.scrappedAt||"").localeCompare(a.scrappedAt||""));
@@ -208,7 +208,7 @@ function articleHTML(it){
       <span class="badge cat">${esc(it.category||"기타")}</span>
       <span class="a-src">${esc(it.source||"")} · ${fmtDate(it.published)}${metric}</span>
     </div>
-    <h2 class="a-title">${esc(it.title||"")}</h2>
+    <h2 class="a-title">${esc(it.title_ko||it.title||"")}</h2>
     ${embed}
     <div class="a-detail">${esc(it.detail||it.summary||"")}</div>
     ${points}${takeaway}
@@ -241,7 +241,7 @@ function render(){
           <span class="badge ${esc(it.type)}">${TYPE[it.type]||"📰 뉴스"}</span>
           <span class="badge cat">${esc(it.category||"기타")}</span>
         </div>
-        <div class="title">${esc(it.title||"")}</div>
+        <div class="title">${esc(it.title_ko||it.title||"")}</div>
         <div class="summary">${esc(it.summary||"")}</div>
         <div class="card-foot"><span>${fmtDate(it.published)} ${metric}</span><span class="more">자세히 읽기 →</span></div>
       </div></div>`;

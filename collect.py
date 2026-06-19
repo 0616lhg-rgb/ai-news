@@ -532,6 +532,7 @@ def fetch_fulltext(items):
 
 def _fallback(items):
     for it in items:
+        it["title_ko"] = it.get("title", "")
         it["summary"] = it.get("raw_desc", "")
         it["detail"] = it.get("body") or it.get("raw_desc", "")
         it["points"] = []
@@ -567,7 +568,9 @@ DIGEST_INSTRUCTION = (
     "너는 AI 분야 전문 에디터다. stdin의 JSON 배열은 각 항목의 원문 본문(content)을 담고 있다. "
     "각 항목을 읽고, 독자가 원문에 가지 않아도 내용을 '완전히 파악'할 수 있는 한국어 다이제스트를 만들어라.\n"
     "type은 news(뉴스)/youtube(영상)/guide(활용·도구)/hn(해커뉴스 화제글).\n"
-    "각 항목마다 아래 5개 필드를 만들어라:\n"
+    "각 항목마다 아래 6개 필드를 만들어라:\n"
+    "(0) title_ko = 제목을 자연스러운 한국어로. 한국어 제목이면 그대로 두고, "
+    "영어 등 외국어면 의미가 잘 통하게 한국어로 번역(고유명사·제품명은 그대로 둬도 됨).\n"
     "(1) summary = 한 줄 핵심 (카드 미리보기용, 1~2문장)\n"
     "(2) detail = 본문 내용을 충실히 풀어쓴 4~7문장의 상세 설명. "
     "원문을 그대로 베끼지 말고 네 말로 재작성하되 핵심 사실·수치·맥락을 빠짐없이 담아라. "
@@ -578,13 +581,14 @@ DIGEST_INSTRUCTION = (
     "(릴리스·기능 업데이트는 '도구 업데이트', 활용법·프롬프트/에이전트 엔지니어링은 'AI 활용/팁')\n"
     "각 문자열 안에서는 큰따옴표 대신 작은따옴표를 쓰고, 줄바꿈을 넣지 마라.\n"
     "출력은 오직 유효한 JSON 배열만. 마크다운/설명/코드펜스 금지.\n"
-    '형식: [{"id":0,"summary":"...","detail":"...","points":["..."],"takeaway":"...","category":"..."}]'
+    '형식: [{"id":0,"title_ko":"...","summary":"...","detail":"...","points":["..."],"takeaway":"...","category":"..."}]'
 )
 
 CHUNK_SIZE = 8  # 한 번에 요약할 항목 수 (작게 쪼개 안정성↑)
 
 
 def _apply_digest(it, r):
+    it["title_ko"] = (r.get("title_ko") if r else "") or it.get("title", "")
     it["summary"] = (r.get("summary") if r else "") or it.get("raw_desc", "")
     it["detail"] = (r.get("detail") if r else "") or it.get("body") or it.get("raw_desc", "")
     pts = (r.get("points") if r else None) or []

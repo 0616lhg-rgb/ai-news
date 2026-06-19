@@ -40,7 +40,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "미국 정부, AI 기업 '외국인 직원'의 첨단 모델 접근 금지 검토…\"중국 기술 유출 우려\""
     },
     {
       "type": "news",
@@ -54,7 +55,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "구글 클라우드, 국내에 '보안 운영 플랫폼' 공식 출시"
     },
     {
       "type": "hn",
@@ -70,7 +72,8 @@
       "detail": "Maven Central Publishing Limits⚓︎ What's Changing?⚓︎ Maven Central is introducing publishing usage visibility and limits for high-volume publishing activity. These changes are focused on publishing patterns that operate at commercial or infrastructure scale: unusually large artifacts, high file counts, very high release frequency, or repeated high-volume publishing across an organization's namespaces. Maven Central is critical infrastructure for the Java ecosystem: a shared place where open source projects publish release-ready components and millions of developers reliably consume them. That role is not changing. Maven Central remains free for ordinary community open source publishing within the free limits. But publishing demand is no longer evenly distributed. Maven Central now supports both ordinary open source releases and high-scale publishing patterns from commercial platforms, automated pipelines, SDKs, generated clients, agents, integrations, and other software delivery systems. Those patterns create a different kind of demand on shared infrastructure. Publishing size, file count, and release frequency are useful signals for distinguishing these use cases. They are not perfect measures of intent, and they are not meant to punish legitimate open source activity. They help distinguish community-scale publishing from commercial-scale or infrastructure-driven use, so Maven Central can remain free for most publishers while giving higher-volume organizations a clear paid path through Maven Central Publisher Pro. Publishing usage is now available in Maven Central through the Usage Center. Hard enforcement is scheduled to begin on August 11, 2026. Starting then, publishers that exceed the free limits will have publishing activity capped until usage resets, usage is reduced, an exemption is approved, or a paid option is in place. Why is Sonatype Making This Change?⚓︎ This change is part of a broader industry effort to keep public package infrastructure reliable, secure, and open for the long term. Across ecosystems, registries are facing the same pressures: rising automation, CI/CD, security scanning, machine-driven software supply chains, and commercial platforms using public registries as production infrastructure. For more context on this broader effort, see: - Open Infrastructure Is Not Free: A Joint Statement on Sustainable Stewardship - Open Infrastructure Is Not Free, Part II: The Hidden Cost of Running Package Registries - Open Is Not Costless: Reclaiming Sustainable Infrastructure - Maven Central and the Tragedy of the Commons - Beyond IPs: Addressing Organizational Overconsumption in Maven Central - Open Publishing, Commercial Scale Maven Central is part of that same shift. It serves millions of developers and over 1.5 trillion downloads annually, but the operational demand is not distributed evenly. A relatively small group of very high-volume users and publishers creates a disproportionate share of the load through commercial-scale co",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 2"
+      "metric": "▲ [] · 💬 2",
+      "title_ko": "메이븐 센트럴, 마침내 배포 한도 도입"
     },
     {
       "type": "news",
@@ -84,7 +87,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "미 상무부, 앤트로픽에 '외국인 차단' 위반 시 민·형사 처벌 경고"
     },
     {
       "type": "youtube",
@@ -100,7 +104,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 278"
+      "metric": "조회 278",
+      "title_ko": "AI 사용비용(LLM 토큰) 꺾였다 \"그래도 바이오보다 소부장\"…FOMC 매파에 대비하라ㅣ송재경 디멘젼투자자문 대표"
     },
     {
       "type": "hn",
@@ -116,7 +121,8 @@
       "detail": "The founder's playbook: Building an AI-native startup We share how founders are using AI at every stage of the startup journey, with practical exercises, frameworks, and prompts for using Claude. We share how founders are using AI at every stage of the startup journey, with practical exercises, frameworks, and prompts for using Claude. AI is reshaping how startups are being built. Founders who've never written a line of code before are shipping production applications, reaching revenue before scaling headcount, and building tools to automate their most tedious workflows. The founder's role is shifting from individual contributor to orchestrator, allowing them to focus on the work only they can do. We put together a practical playbook for building an AI-native startup. It remaps the four core stages of the startup lifecycle—Idea, MVP, Launch, and Scale—for what's possible in 2026, with the goals, exit criteria, common failure modes, and AI-powered exercises that work at each one. In this playbook, we share: These best practices were written for founders deciding how to architect their company around AI from day one and for the early operators helping them get there. Check it out, here. Get started with Claude today. Get the developer newsletter Product updates, how-tos, community spotlights, and more. Delivered monthly to your inbox.",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 20"
+      "metric": "▲ [] · 💬 20",
+      "title_ko": "창업자를 위한 플레이북: AI 네이티브 스타트업 만들기"
     },
     {
       "type": "youtube",
@@ -132,7 +138,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 17.1만"
+      "metric": "조회 17.1만",
+      "title_ko": "[이슈] 전 세계 'AI 등불' 꺼버린 미국 \"우리만 쓴다\"/'미토스' 기습 족쇄…'사색' 한국 \"큰일났다\"/2026년 6월 16일(화)/KBS"
     },
     {
       "type": "news",
@@ -146,7 +153,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "STT GDC, 효성중공업과 국내 첫 데이터센터 개관"
     },
     {
       "type": "news",
@@ -160,7 +168,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "소프트스퀘어드, 업스테이지 '솔라'에 FDE 결합해 기업 AX 시장 진출"
     },
     {
       "type": "news",
@@ -174,7 +183,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "한국딥러닝, 1.2B 모델로 글로벌 '문서 파싱' 부문 1위…\"구글·오픈AI 제쳤다\""
     },
     {
       "type": "hn",
@@ -190,7 +200,8 @@
       "detail": "",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 1"
+      "metric": "▲ [] · 💬 1",
+      "title_ko": "해커뉴스, AI 코딩 에이전트를 평가하다"
     },
     {
       "type": "hn",
@@ -206,7 +217,8 @@
       "detail": "Instructions to use zai-org/GLM-5.2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. - Libraries - Transformers How to use zai-org/GLM-5.2 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline(\"text-generation\", model=\"zai-org/GLM-5.2\") messages = [ {\"role\": \"user\", \"content\": \"Who are you?\"}, ] pipe(messages)# Load model directly from transformers import AutoTokenizer, AutoModelForMultimodalLM tokenizer = AutoTokenizer.from_pretrained(\"zai-org/GLM-5.2\") model = AutoModelForMultimodalLM.from_pretrained(\"zai-org/GLM-5.2\") messages = [ {\"role\": \"user\", \"content\": \"Who are you?\"}, ] inputs = tokenizer.apply_chat_template( messages, add_generation_prompt=True, tokenize=True, return_dict=True, return_tensors=\"pt\", ).to(model.device) outputs = model.generate(**inputs, max_new_tokens=40) print(tokenizer.decode(outputs[0][inputs[\"input_ids\"].shape[-1]:])) - Inference - HuggingChat - Notebooks - Google Colab - Kaggle - Local Apps Settings - vLLM How to use zai-org/GLM-5.2 with vLLM: Install from pip and serve model# Install vLLM from pip: pip install vllm # Start the vLLM server: vllm serve \"zai-org/GLM-5.2\" # Call the server using curl (OpenAI-compatible API): curl -X POST \"http://localhost:8000/v1/chat/completions\" \\ -H \"Content-Type: application/json\" \\ --data '{ \"model\": \"zai-org/GLM-5.2\", \"messages\": [ { \"role\": \"user\", \"content\": \"What is the capital of France?\" } ] }'Use Dockerdocker model run hf.co/zai-org/GLM-5.2 - SGLang How to use zai-org/GLM-5.2 with SGLang: Install from pip and serve model# Install SGLang from pip: pip install sglang # Start the SGLang server: python3 -m sglang.launch_server \\ --model-path \"zai-org/GLM-5.2\" \\ --host 0.0.0.0 \\ --port 30000 # Call the server using curl (OpenAI-compatible API): curl -X POST \"http://localhost:30000/v1/chat/completions\" \\ -H \"Content-Type: application/json\" \\ --data '{ \"model\": \"zai-org/GLM-5.2\", \"messages\": [ { \"role\": \"user\", \"content\": \"What is the capital of France?\" } ] }'Use Docker imagesdocker run --gpus all \\ --shm-size 32g \\ -p 30000:30000 \\ -v ~/.cache/huggingface:/root/.cache/huggingface \\ --env \"HF_TOKEN=<secret>\" \\ --ipc=host \\ lmsysorg/sglang:latest \\ python3 -m sglang.launch_server \\ --model-path \"zai-org/GLM-5.2\" \\ --host 0.0.0.0 \\ --port 30000 # Call the server using curl (OpenAI-compatible API): curl -X POST \"http://localhost:30000/v1/chat/completions\" \\ -H \"Content-Type: application/json\" \\ --data '{ \"model\": \"zai-org/GLM-5.2\", \"messages\": [ { \"role\": \"user\", \"content\": \"What is the capital of France?\" } ] }' - Docker Model Runner How to use zai-org/GLM-5.2 with Docker Model Runner: docker model run hf.co/zai-org/GLM-5.2 GLM-5.2 👋 Join our WeChat or Discord community. 📖 Check out the GLM-5.2 blog and GLM-5 Technical report. 📍 Use GLM-5.2 API services on Z.ai API Platform. 🔜 Try GLM-5.2 here. Introduction We're introducing GLM-5.2, our latest flagship model for long-horizon ta",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 1"
+      "metric": "▲ [] · 💬 1",
+      "title_ko": "GLM-5.2"
     },
     {
       "type": "hn",
@@ -222,7 +234,8 @@
       "detail": "AI Brand Kits Instantly generate font pairs and color palettes. Preview live, customize, and export a rich DESIGN.md for any AI coding agent. Generate Brand Kit Randomize fonts and colors, customize, then export DESIGN.md for AI agents. Color Palette Click swatches or use color pickers to customize. Background #0f172a Text #f8fafc Surface #1e293b Primary #3b82f6 Primary Text #ffffff Accent #06b6d4 Accent Text #0f172a Muted #334155 Border #334155 AI Prompt Copy this prompt into Cursor, Claude Code, v0, or Lovable. Live Preview See your brand kit in action. Professional modern tech Design with confidence. Ship with style. A complete brand system with typography, colors, and tokens ready for any AI coding agent. Typography Space Grotesk + DM Sans Colors Space Grotesk + DM Sans Tokens Space Grotesk + DM Sans Export Download or export for free. Save to My Kits for your private dashboard ($9 lifetime). Everything you need to define a brand system AI Brand Kits isn't just a color picker. It's a complete workflow from inspiration to implementation — typography, tokens, previews, exports, and a community gallery. Generate in seconds Randomize curated font pairs and color palettes like Coolors and Fontpair — then fine-tune every token until it feels right. Live brand preview See typography, buttons, cards, and surfaces update in real time as you edit. No guessing how your kit will look in a real UI. DESIGN.md export Download a rich markdown file with CSS variables, Tailwind config, spacing scales, and JSON tokens — ready for any AI coding agent. Full kit bundle Export a zip with DESIGN.md, tokens.json, and css-variables.css. Drop it into Cursor, Claude Code, v0, or Lovable and build on-brand immediately. AI-ready prompts Auto-generated prompts tell agents exactly which fonts, colors, and tokens to use — so generated UIs stay consistent with your brand. Community gallery Browse, upvote, and export kits shared by others. Every download saves to the gallery so the community grows organically. One DESIGN.md, consistent output everywhere AI agents hallucinate colors and fonts unless you give them a strict design system. Our DESIGN.md includes semantic tokens, usage rules, Tailwind snippets, and machine-parseable JSON — so Cursor, Claude Code, v0, and Lovable produce interfaces that actually match your brand. How it works Three steps from blank canvas to a production-ready design system your team and AI agents can follow. Generate or customize Hit Randomize or pick font pairs and palettes. Adjust name, vibe, fonts, and all nine color tokens. Preview & playground Use the live preview on this page or open the full-screen playground to stress-test every UI element. Export & build Download DESIGN.md or the full zip. Paste the prompt into your agent and ship on-brand interfaces fast. Test every component before you ship Open the playground to see your kit applied across typography scales, buttons, form fields, cards, navigation, dashboards, and data tables — all on a",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 2"
+      "metric": "▲ [] · 💬 2",
+      "title_ko": "AI 티 나는 랜딩 페이지 그만 만들어라"
     },
     {
       "type": "hn",
@@ -238,7 +251,8 @@
       "detail": "The failure modes are structural, not incidental. Similarity search accumulates noise faster than any model can filter it. Here is exactly what breaks, and how we designed around each failure. Every memory system for LLM agents looks adequate in demos and early sessions. The corpus is small, the frontier model is capable, and the model compensates for imprecise retrieval by reasoning through noise. This works until it does not. The field has converged on benchmarks that operate at tens to low hundreds of beliefs. At that scale, a system that returns its entire store achieves recall of 1.0 and scores competitively on answer-quality metrics, because a capable model can locate the correct answer in a noisy context window. The precision problem is invisible at the scale where everything is tested, and fully visible at the scale where everything breaks. Serious persistent memory use reaches thousands of beliefs. Full-corpus retrieval becomes architecturally impossible. The precision problem can no longer be offloaded to inference, and the failure that was invisible in evaluation surfaces immediately in production. The generative model was never a neutral downstream consumer. It was load-bearing infrastructure compensating for retrieval imprecision. That load-bearing role cannot scale with the store. In any belief store where the user works within a technical domain, all beliefs about that domain occupy a shared semantic region. A query about Redis is semantically close to the Redis belief you want, and equally close to beliefs about MongoDB, TypeScript, Kubernetes, Fastify, and GitHub Actions. Cosine scores across these range from 0.65 to 0.83: genuine semantic relatedness that is measuring the wrong thing. The predictable response is to reach for a more capable embedding model. We tested three, spanning a 20x range in scale: a 768-dimension model, a 1024-dimension model, and an 8-billion parameter model producing 4096-dimension embeddings. Mean retrieval precision was 0.09 across all three. The qwen3 result is the clearest demonstration that this is not a capability problem. At over 1,100ms mean per query, it produced identical precision to the smallest model. A more powerful embedder distributes scores differently across the corpus but cannot eliminate genuine semantic proximity within a domain-specific corpus. The fix is not a better ruler. It is a different measurement instrument entirely. One of the more counterintuitive findings from our evaluation is that faithfully extracted beliefs can still fail at retrieval. The extraction pipeline and the retrieval pipeline are architecturally decoupled, and precision failures occur in the retrieval layer regardless of what the extraction layer did. Consider a concrete case from PrecisionMemBench. A relation-type belief linking an auth service to a Redis dependency was ingested through Mem0's extraction pipeline. The stored memory preserved every operationally significant fact: the service name, the depend",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 1"
+      "metric": "▲ [] · 💬 1",
+      "title_ko": "AI 메모리 시스템은 규모가 커지면 어떻게 무너지는가"
     },
     {
       "type": "youtube",
@@ -254,7 +268,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 3,027"
+      "metric": "조회 3,027",
+      "title_ko": "오늘의 뉴스: 엔비디아 주식, 앤트로픽, 스페이스X, 오픈AI - NVDA 업데이트"
     },
     {
       "type": "hn",
@@ -270,7 +285,8 @@
       "detail": "Sam Altman (@sama)'s OpenAI lost $38.53 billion attributable to the company in 2025, according to audited financial documents viewed by Ed Zitron and independently verified by the Financial Times, a set of figures that an Ars Technica story pushed into broader circulation Tuesday. The documents themselves are not public. But the reported figures are specific enough to cut through the abstraction that has defined the AI financing cycle: OpenAI generated $13.07 billion in revenue in 2025, incurred $34 billion in total costs and expenses, and posted a $20.92 billion loss from operations, according to Zitron's account of the statements. The same documents put the net loss attributable to OpenAI at $38.53 billion after a larger $60.35 billion net loss was reduced by losses attributed to noncontrolling interests. For Altman, the former Y Combinator president who became OpenAI's CEO in 2019, the leak lands at the precise moment his company is trying to convert the largest private AI funding story into a public-markets story. OpenAI said on June 8 that it had confidentially submitted a draft S-1 to the SEC, adding that it expected the filing to leak and had not decided when to go public. That timing matters because OpenAI has spent the first half of 2026 selling investors a scale argument: that compute, distribution, capital, and consumer habit can compound faster than the cost base. In March, OpenAI said it had closed $122 billion in committed capital at an $852 billion post-money valuation, with the round anchored by Amazon, Nvidia, SoftBank, and Microsoft. In the same announcement, OpenAI said it was generating $2 billion in revenue per month, had more than 900 million weekly active ChatGPT users, and had more than 50 million subscribers. The leaked financials do not refute the revenue growth claim. They make the other side of the equation visible. The operating loss is the cleanest number The headline net loss figure includes a major accounting item tied to OpenAI's restructuring. Zitron reported that 2025 included a $41.55 billion loss related to changes in the fair value of convertible interests and warrant liability. That item is central to interpreting the $38.53 billion attributable loss, because it means part of the year's deficit reflects the mechanics of OpenAI's capital structure rather than only the day-to-day economics of selling AI products. The harder number for the business is the $20.92 billion loss from operations. That figure compares with an $8.78 billion operating loss in 2024, when OpenAI reported $3.7 billion of revenue and $12.48 billion of total costs and expenses, according to the same documents described by Zitron. In plain terms: revenue rose roughly 3.5x from 2024 to 2025, but operating losses still expanded by about 2.4x. OpenAI's spending mix shows why. The reported 2025 figures include $7.5 billion in cost of revenue, $19.18 billion in research and development, $5.73 billion in sales and marketing, and $1.57 billion in g",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 4"
+      "metric": "▲ [] · 💬 4",
+      "title_ko": "유출된 오픈AI 재무자료, 385억 달러 손실과 막대한 컴퓨팅 비용 지출 드러나"
     },
     {
       "type": "hn",
@@ -286,7 +302,8 @@
       "detail": "## Summary The StepSecurity Threat Intelligence Team has identified that multiple mastra npm packages have been compromised. https://www.stepsecurity.io/blog/mastra-npm-packages-compromised-using-easy-day-js --- StepSecurity Threat Intelligence Team.",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 1"
+      "metric": "▲ [] · 💬 1",
+      "title_ko": "다수의 mastra NPM 패키지 침해 사고 발생"
     },
     {
       "type": "hn",
@@ -302,7 +319,8 @@
       "detail": "Given their inflated value, they could easily float this idea and the stock is gonna go bonkers!! It might turn out a good exit for OpenAI too.",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 2"
+      "metric": "▲ [] · 💬 2",
+      "title_ko": "해커뉴스에 묻다: 스페이스X가 오픈AI를 인수할 가능성은?"
     },
     {
       "type": "news",
@@ -316,7 +334,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "AI안전연구소-오픈AI, 'AI 안전 협력 강화' MOU 체결"
     },
     {
       "type": "hn",
@@ -332,7 +351,8 @@
       "detail": "France’s domestic intelligence service is to ditch AI data tools from the US tech company Palantir in favour of a domestic provider in an effort to avoid “strategic dependency”, the prime minister, Sébastien Lecornu, has said. “We must use our own AI models; we cannot accept new strategic dependencies in the digital sphere,” Lecornu posted on social media. “We cannot rely on tools developed by foreign powers. France must have its own tools.” There is increasing concern among European governments at their reliance on US-controlled technologies. Washington decided last week to restrict foreign nationals’ access to Anthropic’s latest AI model. Lecornu’s office said the French DGSI intelligence agency would replace Palantir’s tools with those from the French firm ChapsVision, although since the US company’s long-term contract was renewed in 2025, the process is likely to take several years. France must “build real autonomy” and “not depend on the goodwill of certain partners, who are capable of turning off the access tap” for artificial intelligence, the prime minister said. ChapsVision, which was founded in 2019 and made €200m (£173m) in revenue in 2025 against Palantir’s $4.5bn (£3.3bn), said it would become the “technological foundation” for “many public agencies for their critical data processing needs”. ChapsVision’s technology, which collects, prepares and analyses data, has reportedly also been selected by Germany’s BfV internal security service. Palantir said it would “continue to support the French government wherever its solutions are needed”. Co-founded by the rightwing billionaire Peter Thiel, an ally of Donald Trump, Palantir has worked with the US government to supply software to ICE, which is carrying out an immigration crackdown, and to identify targets in the US-Israel war on Iran. Campaign groups have long warned that the US company’s products pose risks relating to surveillance, infringements on individual freedoms and data protection. Palantir insists it simply provides powerful data-processing services. Germany’s military has said it will no longer use the company’s products, while Britain is reviewing the National Health Service’s £330m data contract with Palantir after political and parliamentary pressure. The mayor of London, Sadiq Khan, has also blocked a proposed £50m Palantir contract with the capital’s Metropolitan police on value-for-money and procurement grounds. Palantir has threatened legal proceedings in response. Lecornu said on Tuesday that France planned to invest €655m in artificial intelligence and set up a shared chatbot for all state services. It will also create a public health chatbot for the state-owned health insurance agency Ameli. The money would fund “infrastructure, computing capacity, research, companies and industrial sectors”, he said. France had begun rolling out a government AI tool offering a chatbot to 1 million of its 2.6 million civil servants. Built on models from the French startup Mistral AI",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 0"
+      "metric": "▲ [] · 💬 0",
+      "title_ko": "프랑스, 팔란티어 AI 데이터 도구 버리고 자국 공급사로 전환"
     },
     {
       "type": "news",
@@ -346,7 +366,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "AI 인프라 플랫폼 텐, 과기부 '글로벌 ICT 미래 유니콘' 선정"
     },
     {
       "type": "hn",
@@ -362,7 +383,8 @@
       "detail": "The Trump administration is trying to help Elon Musk’s xAI Corp. beat a Clean Air Act lawsuit filed by the National Association for the Advancement of Colored People (NAACP). The US said the NAACP lawsuit threatens an xAI data center that powers Grok systems needed by the military. The NAACP sued xAI and subsidiary MZX Tech in April, alleging that they violated the Clean Air Act by operating 27 gas turbines without an air permit in Southaven, Mississippi. The number of unpermitted turbines rose to 57 by mid-May and there were plans to install two more, the NAACP said in a June 12 filing. “Defendants’ Colossus Gas Plant powers xAI’s nearby Colossus 2 data center, which in turn powers the chatbot ‘Grok,’” the lawsuit said. The gas turbines have fueled both health concerns and noise complaints. US Department of Justice lawyers urged a federal judge to dismiss the case in a filing yesterday. The Mississippi Department of Environmental Quality determined that the turbines don’t require permits, the US filing said. The lawsuit “threaten[s] artificial-intelligence innovation, plus the energy needed to power it,” the US filing said. “The NAACP’s attempt to cut off the power that supports Grok also threatens national security because… Grok provides critical support for the Department of War’s military operations.” The US court filing said xAI’s Grok Gov Model aided targeted strikes in Iran during Operation Epic Fury. Grok was used with Maven Smart System to help US forces “deploy over 2,000 munitions to 2,000 distinct targets within 96 hours during Operation Epic Fury, a testament to the greatly increased operational efficiency made possible by the Grok Gov Model,” according to a declaration by Cameron Stanley, chief digital and artificial intelligence officer for the Department of War. The Grok Gov Model has unique features not found in any other AI model, he wrote. US helping xAI break the law, group says The US is arguing “that xAI should be allowed to break the law solely because the Trump administration says so,” said the Southern Environmental Law Center (SELC), which represents the NAACP in the case.",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 0"
+      "metric": "▲ [] · 💬 0",
+      "title_ko": "트럼프 행정부, xAI 가스터빈 관련 대기청정법 소송 차단 시도"
     },
     {
       "type": "youtube",
@@ -378,7 +400,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 4,919"
+      "metric": "조회 4,919",
+      "title_ko": "클로드를 압도하다! 7B 오픈소스 소형 모델 성공률 15배 폭증, AI 에이전트 역작 StraTA"
     },
     {
       "type": "hn",
@@ -394,7 +417,8 @@
       "detail": "Good morning. On Fortune’s radar today: - OpenAI’s financials have leaked. We have the details. - In Smalltown USA, new AI data centers pit neighbor against neighbor. - The new Fortune Southeast Asia 500 is here. - Markets: Global rally. - U.S.-Iran peace deal may include $300 billion for Tehran. - The jet fuel crisis never existed, sources say. ONE BIG THING OpenAI’s financials leaked, revealing $21 billion in losses OpenAI’s financial statements show steepening losses at the company, according to copies obtained by blogger Ed Zitron and the Financial Times. (OpenAI has filed with the SEC for an IPO expected later this year, so the numbers give us a taste of what the S-1 might say). Here’s what the numbers look like: OpenAI 2025 financials versus 2024 - Revenue: $13.07 billion up from $3.7 billion - Cost of Revenue: $7.5 billion up from $2.65 billion - Research and Development: $19.18 billion up from $7.81 billion - Sales and Marketing: $5.73 billion up from $1.11 billion - General and Administrative: $1.57 billion up from $907 million - Total Costs and Expenses: $34 billion up from $12.48 billion - Loss from Operations: $20.92 billion up from $8.78 billion Notably, the company’s losses far outstrip its sales. On the bright side, losses as a percentage of sales are in decline. In 2024, the company spent $2.37 to generate every $1 in revenue. In 2025, that ratio declined to $1.60 in expenses for every dollar it took in. Is there a path to profitability? Maybe. OpenAI’s two biggest expenses are R&D and marketing. Budget cuts there, coupled with an ability to raise prices or win new sources of revenue, could see the company move into the black over time. Cutting R&D would be the most difficult part of that, given that AI companies can only hold onto their customers by generating the best-performing models. In small-town Texas, AI data center development pits neighbor against neighbor Last summer, Infrakey purchased a 520-acre plot of unincorporated land in Texas for a proposed $10-billion AI data center. Ross, with a population of just 200 and no taxing authority, sits next to the site. Lacy Lakeview—seven miles south but with a legal claim on the land—is moving to annex the site to collect $50 million a year in taxes. This has created growing tensions between the neighboring communities over who gets the benefits, who absorbs the consequences, and who ultimately gets a say. Read more: - When AI Comes to Town: The Data Center Boom - Sharon Goldman - Two mayors, one $10 billion AI data center, and a growing divide in small-town Texas - Sharon Goldman - Data center hate is snowballing, and construction setbacks in the first three months of 2026 have already exceeded last year’s, report finds - Sasha Rogelberg - A ChatGPT prompt almost killed Ryan Serhant’s $50 million NYC penthouse deal. Here’s how he saved it - Sydney Lake THE MARKETS Futures take a breather after global rally in stocks - S&P 500 futures were flat this morning. The index rose 1.65% ",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 4"
+      "metric": "▲ [] · 💬 4",
+      "title_ko": "오픈AI 재무자료 유출…매출 130억 달러에 손실 210억 달러"
     },
     {
       "type": "news",
@@ -414,7 +438,8 @@
       ],
       "takeaway": "AI 경쟁의 초점이 '누가 최고 모델을 만드나'에서 'AI를 쓰는 기업이 내부 학습 자산을 쌓느냐'로 이동하고 있으며, 이를 일찍 구축한 기업과 그렇지 않은 기업의 격차가 벌어질 것이라는 경고다.",
       "category": "산업/투자",
-      "metric": ""
+      "metric": "",
+      "title_ko": "[6월16일] 나델라가 경고한 'AI 공동화'…\"AI는 소수 모델이 아닌 모든 기업의 문제\""
     },
     {
       "type": "youtube",
@@ -436,7 +461,8 @@
       ],
       "takeaway": "오픈AI가 기록적 매출을 내더라도 지출과 손실이 더 빠르게 커지고 있어, AI 선두 기업의 재무 지속 가능성에 대한 회의론이 다시 부각되고 있다.",
       "category": "산업/투자",
-      "metric": "조회 6,691"
+      "metric": "조회 6,691",
+      "title_ko": "단독: 2025년 오픈AI 340억 달러 지출, 손실 8배 증가 | Better Offline"
     },
     {
       "type": "hn",
@@ -458,7 +484,8 @@
       "detail": "글은 이미 사회적 문제인 더닝-크루거 효과를 AI가 더 키울 수 있다고 주장한다. 이른바 'AI slop(저질 자동 생성물)'과 'midwit glazing(어중간한 주장을 그럴듯하게 띄워주는)' 현상처럼, AI가 다른 사용자들의 혼란스러운 주장을 적절한 프롬프트만 주어지면 그대로 재생산할 수 있다는 점을 한계로 지목한다. 특히 거짓 입력 비율이 높은 전문·기술 분야에서는 AI가 오히려 더 엉뚱한 답을 내놓을 수 있다고 경고한다. 결국 검증되지 않은 통념이 AI를 통해 권위 있는 답처럼 포장되면, 사용자의 근거 없는 자신감이 더 강화될 위험이 있다는 것이다. 작성자는 AGI가 이를 바로잡거나 좁은 영역의 AI가 '어중간한 칭찬 루프'를 피하도록 똑똑해지기를 바란다고 덧붙였다.",
       "takeaway": "AI는 그럴듯하지만 틀린 통념을 권위 있게 포장해 사용자의 과신을 키울 수 있어, 특히 전문 영역에서 출력 검증이 중요하다는 점을 환기한다.",
       "category": "기타",
-      "metric": "▲ ['AI가 더닝-크루거 효과를 증폭해 우민화를 가속할 수 있다는 우려', \"'AI slop'과 'midwit glazing'으로 혼란스러운 주장이 재생산됨\", '거짓 정보가 많은 전문 기술 주제에서 특히 오류가 커질 수 있음', '사용자의 근거 없는 자신감을 AI가 강화할 위험', 'AGI나 똑똑한 좁은 AI가 이 루프를 끊어주길 기대'] · 💬 16"
+      "metric": "▲ ['AI가 더닝-크루거 효과를 증폭해 우민화를 가속할 수 있다는 우려', \"'AI slop'과 'midwit glazing'으로 혼란스러운 주장이 재생산됨\", '거짓 정보가 많은 전문 기술 주제에서 특히 오류가 커질 수 있음', '사용자의 근거 없는 자신감을 AI가 강화할 위험', 'AGI나 똑똑한 좁은 AI가 이 루프를 끊어주길 기대'] · 💬 16",
+      "title_ko": "AI는 더닝-크루거 효과를 증폭시킬 수 있다"
     },
     {
       "type": "hn",
@@ -480,7 +507,8 @@
       "detail": "TorkBot이라는 에이전트를 문어에 비유해, 중앙 디스패처가 여러 반자율 '다리(appendage)'를 지휘하고 각 다리가 다시 중앙에 보고하는 구조를 설명한다. 구성 요소로는 오래 유지되는 static lane(예: Curator, 구글 워크스페이스 lane), 특정 목적에 맞춰 인스턴스화되는 lane template, 그리고 협업자가 아니라 향후 샌드박스의 시작점일 뿐인 sandbox snapshot이 구분된다. 이 설계는 세 가지 상충 압력에서 나왔는데, ①턴의 복잡도를 제한하고 I/O를 피해 빠르게 응답하는 '응답성', ②위임을 통해 복잡한 작업도 수행하고 실시간으로 관찰·조정하는 '능력', ③단일 LLM 대화를 계속 큐레이션해 인격과 단기기억을 유지하는 '연속성'이다. 저자는 스레드·채널·플랫폼 경계를 모두 허물고 모든 표면의 활동을 하나의 foreground 대화로 통합하는 다소 논쟁적인 베팅을 했다고 밝힌다. 지금 모델에는 그 인지 부하가 버겁지만 곧 가능해질 것이며, 이렇게 emergent(창발적) 지능에 베팅한 시스템이 직관성과 강력함에서 앞설 것이라고 주장한다.",
       "takeaway": "에이전트가 빠른 응답·복잡한 작업·일관된 인격을 동시에 달성하려면 위임과 단일 대화 통합을 어떻게 결합할지가 관건이며, 이 설계는 향후 모델 성능 향상을 전제로 한 방향성을 제시한다.",
       "category": "AI 활용/팁",
-      "metric": "▲ ['중앙 뇌가 반자율 하위 에이전트(다리)를 지휘하는 문어형 구조', 'static lane·lane template·sandbox snapshot으로 역할 구분', '응답성·능력·연속성이라는 세 압력에서 설계가 도출됨', '모든 표면 활동을 단일 foreground 대화로 통합하는 베팅', '현재는 버겁지만 모델 발전에 따른 창발적 지능에 베팅'] · 💬 3"
+      "metric": "▲ ['중앙 뇌가 반자율 하위 에이전트(다리)를 지휘하는 문어형 구조', 'static lane·lane template·sandbox snapshot으로 역할 구분', '응답성·능력·연속성이라는 세 압력에서 설계가 도출됨', '모든 표면 활동을 단일 foreground 대화로 통합하는 베팅', '현재는 버겁지만 모델 발전에 따른 창발적 지능에 베팅'] · 💬 3",
+      "title_ko": "AI 에이전트를 위한 '문어' 아키텍처"
     },
     {
       "type": "hn",
@@ -502,7 +530,8 @@
       "detail": "글은 2026년 1분기 성인 논픽션 판매가 전년 동기 대비 9% 감소했고, 그중 자기계발 부문이 26.3%로 가장 가파르게 떨어졌다는 Publishers Weekly 통계로 시작한다(16개 하위 카테고리 중 공예·종교 2개만 성장). 저자는 '4시간 시리즈', '타이탄의 도구들' 등 모두 NYT·WSJ 1위에 올랐던 자신의 5권 포트폴리오를 표본으로 삼는다. ChatGPT가 출시된 2022년 11월 이후 인쇄본 판매는 2023년 -5%, 2024년 -13%, 2025년 -46%, 그리고 올해 -57%로 바닥이 꺼졌고, 추세가 이어지면 2026년 판매량은 2022년 대비 약 80% 줄어들 전망이다. 인쇄·전자책·오디오를 합친 전 포맷 기준으로도 2025년 하반기는 상반기보다 약 45% 감소했다. 저자는 아마존 재고 변화나 팬데믹 이후 소비 변화 같은 반론을 인정하면서도, 이 거의 수직 낙하를 설명하는 것은 결국 LLM이라고 결론짓는다.",
       "takeaway": "사람들이 책 대신 LLM에서 즉답을 얻으면서 실용·자기계발서 시장이 빠르게 붕괴하고 있으며, 이는 콘텐츠 산업이 직면한 구조적 파괴의 실증 사례로 읽힌다.",
       "category": "산업/투자",
-      "metric": "▲ ['2026년 1분기 성인 논픽션 -9%, 자기계발은 -26.3%로 최대 낙폭', 'ChatGPT 출시 후 저자 책 판매: 2023 -5%, 2024 -13%, 2025 -46%, 2026 -57%', '2026년엔 2022년 대비 약 80% 감소 전망', '전 포맷 기준 2025년 하반기 판매 상반기比 약 45% 감소', '아마존·팬데믹 등 반론을 인정하면서도 원인을 LLM으로 지목'] · 💬 124"
+      "metric": "▲ ['2026년 1분기 성인 논픽션 -9%, 자기계발은 -26.3%로 최대 낙폭', 'ChatGPT 출시 후 저자 책 판매: 2023 -5%, 2024 -13%, 2025 -46%, 2026 -57%', '2026년엔 2022년 대비 약 80% 감소 전망', '전 포맷 기준 2025년 하반기 판매 상반기比 약 45% 감소', '아마존·팬데믹 등 반론을 인정하면서도 원인을 LLM으로 지목'] · 💬 124",
+      "title_ko": "AI는 이미 자기계발 서적을 죽였는가?"
     },
     {
       "type": "hn",
@@ -524,7 +553,8 @@
       "detail": "Memento는 받은편지함에 쌓인 10만~50만 통의 이메일을 단순한 시간순 목록이 아니라 검색·큐레이션이 가능한 개인 위키로 전환하는 자체 호스팅 도구다. 작성자는 이메일 아카이브가 인생에서 일어난 중요한 일, 진행한 프로젝트, 연결된 사람들을 보여주는 좋은 프록시이지만 시간순 보기로는 그 디테일이 가려져 있다고 본다. Memento는 정보 구조를 4개의 상위 차원으로 잡는데, 본문에서는 그중 연락처를 CRM처럼 보여주는 People과 인생 이벤트 단위의 Projects가 소개된다(나머지 차원은 본문이 잘려 명시되지 않음). 에이전트형 검색을 표방해 단순 키워드 검색을 넘어 의미 기반 탐색을 지향한다. 자체 호스팅 방식이라 민감한 개인 이메일 데이터를 외부에 넘기지 않고도 활용할 수 있다는 점이 특징이다.",
       "takeaway": "흩어진 개인 이메일을 검색 가능한 지식베이스로 바꿔 개인 데이터의 활용도를 높이려는 시도로, 프라이버시를 지키는 자체 호스팅 LLM 도구의 한 사례다.",
       "category": "도구 업데이트",
-      "metric": "▲ ['이메일 아카이브(10만~50만통)를 개인 위키로 전환', 'People(연락처 CRM)·Projects(인생 이벤트) 등 차원으로 구조화', '에이전트형·의미 기반 검색 지향', '자체 호스팅으로 프라이버시 보호', '시간순 목록에 묻힌 정보를 검색·큐레이션 가능하게 함'] · 💬 6"
+      "metric": "▲ ['이메일 아카이브(10만~50만통)를 개인 위키로 전환', 'People(연락처 CRM)·Projects(인생 이벤트) 등 차원으로 구조화', '에이전트형·의미 기반 검색 지향', '자체 호스팅으로 프라이버시 보호', '시간순 목록에 묻힌 정보를 검색·큐레이션 가능하게 함'] · 💬 6",
+      "title_ko": "Show HN: Memento – 이메일 위에서 작동하는 자체 호스팅 에이전트 검색 및 LLM 위키"
     },
     {
       "type": "youtube",
@@ -546,7 +576,8 @@
       ],
       "takeaway": "AI 선두 기업의 자금 소모가 워낙 커서 공적 자금 의존 가능성까지 거론되는 단계라는 시각으로, AI 산업의 재무 지속 가능성 논쟁이 정치·정책 영역으로 번지고 있음을 보여준다.",
       "category": "산업/투자",
-      "metric": "조회 2.5만"
+      "metric": "조회 2.5만",
+      "title_ko": "오픈AI, 정부 구제금융을 노린 술책 계속하다"
     },
     {
       "type": "hn",
@@ -568,7 +599,8 @@
       "detail": "필자는 최근 한 달간 만난 적 없는 소프트웨어 엔지니어 3명에게서 편지를 받았는데, 표현은 달라도 본질은 같은 질문이었다. '언젠가 코드 리뷰까지 전부 AI에 넘어가는가', '우리 일이 결국 AI를 만들어 스스로를 대체시키는 것인가', 'AI 보조 코딩으로 생산성은 올랐지만 내 성장은 어떻게 되는가'라는 물음이다. 필자는 코드 리뷰의 인간 개입이 사라지는 시점을 '올해 말에서 늦어도 내후년'으로 본다고 답한다. 그는 이것이 표면상 엔지니어링·커리어 문제처럼 보이지만 근본적으로는 '실행이 기계에 완전히 넘어간 뒤 인간은 어디에 서는가'라는 실존적 질문이라고 정리한다. 약 200년 전 영국의 방적기(스피닝 제니)가 손방적공의 생계를 몇 달 만에 무너뜨렸고, 기계를 부순 러다이트들은 기술 자체가 아니라 하루아침에 무가치해진 '자신의 위치'를 부수려 했다고 해석한다. 메이퇀이 30~50% 감원을 발표하던 날 필자는 친구에게 '제니에 대체되는 방적공이 아니라 제니를 잘 쓰는 운영자가 되자'고 했지만, 지금은 그 말이 절반만 옳았다고 정정한다. 더 빠른 기계가 등장하면서 숙련된 제니 운영자조차 기계와 함께 박물관으로 보내졌기 때문이다.",
       "takeaway": "AI에 실행을 내준 시대의 핵심 질문은 '도구를 잘 쓰는 법'이 아니라 '인간에게 끝까지 남는 가치가 무엇인가'라는 점을 일깨운다.",
       "category": "기타",
-      "metric": "▲ [\"서로 다른 엔지니어 3명이 'AI가 코드 리뷰·실행까지 다 가져가는가'라는 같은 질문을 던졌다\", '필자는 코드 리뷰의 인간 개입 소멸 시점을 올해 말~내후년으로 전망한다', '러다이트는 기술이 아니라 무가치해진 자기 위치를 부수려 한 것이라는 재해석', \"과거 '기계를 잘 쓰는 운영자가 되자'던 조언을 절반만 맞았다고 정정한다\", '더 빠른 기계가 나오면 숙련 운영자조차 결국 대체된다는 경고'] · 💬 98"
+      "metric": "▲ [\"서로 다른 엔지니어 3명이 'AI가 코드 리뷰·실행까지 다 가져가는가'라는 같은 질문을 던졌다\", '필자는 코드 리뷰의 인간 개입 소멸 시점을 올해 말~내후년으로 전망한다', '러다이트는 기술이 아니라 무가치해진 자기 위치를 부수려 한 것이라는 재해석', \"과거 '기계를 잘 쓰는 운영자가 되자'던 조언을 절반만 맞았다고 정정한다\", '더 빠른 기계가 나오면 숙련 운영자조차 결국 대체된다는 경고'] · 💬 98",
+      "title_ko": "AI가 모든 것을 앗아간 뒤"
     },
     {
       "type": "youtube",
@@ -589,7 +621,8 @@
       ],
       "takeaway": "OpenAI의 재무 건전성과 지속가능성에 대한 시장의 의구심을 보여주지만, 검증을 위해서는 원 출처 확인이 필요한 사안이다.",
       "category": "산업/투자",
-      "metric": "조회 8.8만"
+      "metric": "조회 8.8만",
+      "title_ko": "오픈AI의 2025년 재무자료 유출"
     },
     {
       "type": "youtube",
@@ -610,7 +643,8 @@
       ],
       "takeaway": "범용 LLM 성능 경쟁이 평준화될수록, 차별화의 축이 모델 자체보다 '자사 고객 데이터와의 결합'으로 옮겨가고 있음을 보여준다.",
       "category": "도구 업데이트",
-      "metric": "조회 15.5만"
+      "metric": "조회 15.5만",
+      "title_ko": "허브스팟: ChatGPT·클로드·코파일럿·제미나이를 위한 하나의 플랫폼"
     },
     {
       "type": "news",
@@ -630,7 +664,8 @@
       ],
       "takeaway": "규제·안보 갈등이 통상 악재이지만, AI 모델의 경우 '위험할 만큼 강력하다'는 평판이 기업 신뢰와 채택을 키우는 역설을 보여준다.",
       "category": "산업/투자",
-      "metric": ""
+      "metric": "",
+      "title_ko": "앤트로픽과 트럼프 행정부의 최근 갈등, 오히려 도움 될 수도…판매 데이터가 시사"
     },
     {
       "type": "youtube",
@@ -652,7 +687,8 @@
       ],
       "takeaway": "AI를 신뢰할수록 '듣기 좋은 답'을 사실로 오인할 위험이 커지며, 인간 피드백 정렬 방식 자체의 한계를 재점검해야 함을 시사한다.",
       "category": "기타",
-      "metric": "조회 5,052"
+      "metric": "조회 5,052",
+      "title_ko": "[이슈] \"돈 줄 테니 QR코드 줘\" 인공지능 '폭주'/인간 피드백의 함정…AI 근황 '대충격'/2026년 6월 16일(화)/KBS"
     },
     {
       "type": "guide",
@@ -672,7 +708,8 @@
       ],
       "takeaway": "기능 추가보다 안정성·회귀 수정에 집중한 릴리스로, 특히 WSL2와 원격 세션 사용자의 일상 작업 신뢰도를 높여준다.",
       "category": "도구 업데이트",
-      "metric": ""
+      "metric": "",
+      "title_ko": "v2.1.179"
     },
     {
       "type": "news",
@@ -692,7 +729,8 @@
       ],
       "takeaway": "성능 지표 대신 초대형 컨텍스트·저가·오픈소스로 승부하는 전략으로, 코딩 에이전트 시장에서 앤트로픽·오픈AI에 대한 가격·개방성 압박을 키운다.",
       "category": "LLM/언어모델",
-      "metric": ""
+      "metric": "",
+      "title_ko": "지푸AI, 100만 토큰 컨텍스트 창 'GLM-5.2' 출시…벤치마크는 미공개"
     },
     {
       "type": "news",
@@ -712,7 +750,8 @@
       ],
       "takeaway": "평균 4년 만에 버려지는 스마트폰의 유휴 연산력을 재활용해 전자폐기물과 데이터센터 탄소 배출을 동시에 줄이는 지속가능 컴퓨팅의 가능성을 보여준다.",
       "category": "연구/논문",
-      "metric": ""
+      "metric": "",
+      "title_ko": "\"버려지는 폰으로 서버 구축\"…구글·UCSD, '폰 클러스터 컴퓨팅' 개발"
     },
     {
       "type": "news",
@@ -732,7 +771,8 @@
       ],
       "takeaway": "학습 시장에 이어 더 경쟁적이라던 추론 시장까지 엔비디아가 장악하면서, '추론이 곧 돈'인 AI 수익화 국면에서도 당분간 독점적 지위가 이어질 가능성이 크다.",
       "category": "산업/투자",
-      "metric": ""
+      "metric": "",
+      "title_ko": "엔비디아, AI '추론' 시장서도 점유율 확대…1년 간 66%→74% 성장"
     },
     {
       "type": "news",
@@ -752,7 +792,8 @@
       ],
       "takeaway": "거래가 성사되면 퀄컴이 엔비디아가 지배하는 데이터센터 AI 칩 시장에 본격 진입하는 발판이 되며, 빅테크들의 AI 반도체 확보 경쟁이 더욱 가열될 전망이다.",
       "category": "산업/투자",
-      "metric": ""
+      "metric": "",
+      "title_ko": "퀄컴, 짐 켈러의 텐스토렌트 인수 추진…모바일 넘어 데이터센터로 확장"
     },
     {
       "type": "youtube",
@@ -768,7 +809,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 12.8만"
+      "metric": "조회 12.8만",
+      "title_ko": "ChatGPT"
     }
   ]
 }

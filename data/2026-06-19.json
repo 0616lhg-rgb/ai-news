@@ -40,7 +40,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "[6월18일] 반도체 다음은 AI 모델...G7서 떠오른 '접근권 외교'"
     },
     {
       "type": "youtube",
@@ -56,7 +57,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 2.0만"
+      "metric": "조회 2.0만",
+      "title_ko": "첫 진짜 LLM 돌파구가 왔다... SubQ (연산량 1000배 절감)"
     },
     {
       "type": "news",
@@ -70,7 +72,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "AI 추론 스타트업 베이스텐, 직전 초대형 투자 몇 달 만에 15억 달러 추가 조달 추진"
     },
     {
       "type": "news",
@@ -84,7 +87,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "오픈AI, IPO를 앞두고 거물급 인재 영입에 나서다"
     },
     {
       "type": "news",
@@ -98,7 +102,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "엔비디아, '자율 연구' 에이전트 로봇 공개...GPU 조립까지 독학"
     },
     {
       "type": "news",
@@ -112,7 +117,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "아마존, 자체 AI 칩 판매로 엔비디아에 정면 도전 노린다"
     },
     {
       "type": "guide",
@@ -126,7 +132,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "모자이크릭스: 당신의 리서치 에이전트는 비밀을 지킬 수 있을까?"
     },
     {
       "type": "news",
@@ -140,7 +147,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "\"우리가 표적인가\"… 정부의 모델 차단 명령에 앤트로픽 직원들 당혹"
     },
     {
       "type": "youtube",
@@ -156,7 +164,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 4.6만"
+      "metric": "조회 4.6만",
+      "title_ko": "\"오빠라고??ㅋㅋㅋ\" 배그에 인공지능 여사친이 업데이트 되었습니다"
     },
     {
       "type": "guide",
@@ -170,7 +179,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "아웃풋맥싱의 교수 — 앤지니 미다, AMP"
     },
     {
       "type": "hn",
@@ -186,7 +196,8 @@
       "detail": "I’m excited to share that I’ll be joining OpenAI and look forward to working with the exceptional team there. It was a difficult decision to move on. I’m incredibly proud of the amazing team at Google and everything we’ve built together. It has been an honor and a pleasure to work with all of you.",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 224"
+      "metric": "▲ [] · 💬 224",
+      "title_ko": "노암 셰이저, 오픈AI에 합류하다"
     },
     {
       "type": "youtube",
@@ -202,7 +213,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 25.2만"
+      "metric": "조회 25.2만",
+      "title_ko": "오픈AI 재무 자료 유출 — 충격적인 적자 규모"
     },
     {
       "type": "youtube",
@@ -218,7 +230,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 5.1만"
+      "metric": "조회 5.1만",
+      "title_ko": "구글 전 CEO의 자신감…LG 기술 장착한 'AI 로봇' 성능 보니 [지금이뉴스] / YTN"
     },
     {
       "type": "youtube",
@@ -234,7 +247,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": "조회 3.9만"
+      "metric": "조회 3.9만",
+      "title_ko": "트럼프, G7 오찬서 오픈AI 샘 올트먼·앤트로픽 다리오 아모데이·구글 데미스 허사비스와 회동"
     },
     {
       "type": "guide",
@@ -248,7 +262,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "[AINews] 미드저니 메디컬: 체중계에 올라서듯 장기를 스캔하다"
     },
     {
       "type": "hn",
@@ -264,7 +279,8 @@
       "detail": "The Competitive Moat That AI Can't Replicate The Restaurant That Refused to Take Bookings Online Let me tell you a story about a restaurant owner who became obsessed with human connection. He didn’t want people booking online. He wanted them to call. He wanted the ritual of a human voice, the small exchange about an anniversary or a first date, the warmth of being recognised. His team thought he was losing his mind. Online bookings were standard. Everyone did it. Why make customers work harder? One of the managers finally asked him a pointed question: Have you ever actually made a reservation with us? He hadn’t. So he did. He called the restaurant. He was put on hold for thirty minutes. When someone finally answered, they were apologetic but firm — the restaurant was fully booked. No warmth. No conversation. Just a long wait and a closed door. In trying to humanise the process, he’d made it worse. Here’s where most stories would end with “so they moved everything online and fired the reservation staff.” That’s not what happened. They did move to online booking, but they kept the entire reservation team and repurposed them. These people now spent their days learning about the customers coming in that night. Who was celebrating a birthday? Who was on a first date? What had a regular not finished on their plate six months ago? The team became mini-concierges. Every guest walked in to find someone who knew them — not in a creepy, surveillance-state way, but in the way a good friend remembers what you’re going through. The technology handled the transactional layer so the humans could focus on the relational layer. I’m telling you this story because it captures something I think most organisations have forgotten in the rush to automate everything: the work of connection isn’t overhead. It’s the point. And as AI swallows the transactional layer of every industry at once, that relational layer is about to become the only point of difference left. Trust Is Built One Marble at a Time Brené Brown tells a story about her daughter Ellen that I realate to. Ellen came home from third grade devastated. She’d shared something vulnerable with a friend at recess, and by the time class started again, half the school knew. She told her mum, through tears, that she would never trust anyone again. Brown’s first instinct, honestly, was to agree. Tell no one anything, ever. But she caught herself and offered a different idea — the marble jar. There’s a jar in Ellen’s classroom where good choices add marbles and bad ones remove them. When the jar fills up, the class celebrates. Trust, Brown told her, works the same way. You share the hard things with people who have filled up your marble jar over time. Marble by marble. Small moment by small moment. Ellen immediately named two friends whose jars were full. What stopped Brown cold was what counted as marbles. One friend had scooted over at the lunch table to make “half a heinie seat” when Ellen had nowhere to sit. Another",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 122"
+      "metric": "▲ [] · 💬 122",
+      "title_ko": "AI가 복제할 수 없는 경쟁 해자(垓字)"
     },
     {
       "type": "hn",
@@ -280,7 +296,8 @@
       "detail": "Despite the fact that AI increasingly dominates our economy (it’s a hot IPO summer and we’re all just along for the ride), most Americans are not particularly optimistic about the technology’s long-term impact on the country, a new study from Pew Research reveals. In fact, although a whole lot of Americans increasingly use AI in their daily lives, most of them have neutral to negative views about it, the research reveals. Only 16% of Americans think that AI’s impact on society during the next 20 years will be positive, Pew says, while around 40% say that it will have a negative impact. A vast majority of people (67%) don’t believe that the U.S. government will do anything to meaningfully regulate AI. A similarly skeptical cohort (59%) don’t trust companies to develop it safely. Young people — that is, those people under 30 — are the ones with the most negative feelings about AI. Pew says that only 14% of this cohort believe the tech will have a positive impact on society. On top of all this, a vast majority of Americans — nearly two-thirds — also think that AI’s development is occurring too quickly. Despite all of the skepticism, a whole lot of Americans also report using AI in their daily lives on an increasingly regular basis. About a quarter of Americans say they use AI chatbots on a daily basis. Those who do are typically using the chatbots for research purposes or for work, Pew says. A vast majority of people using AI are using ChatGPT. Pew writes that 44% of U.S. adults now say they use OpenAI’s chatbot, a figure that’s more than doubled since 2023. The next most popular chatbot is Gemini (24%), followed by Copilot (17%) and Meta AI (14%), with Grok (8%), Claude (6%), and Character.ai (3%) lagging behind. There is a bit of a gender divide. While chatbot use is growing for both men and women, men still use AI more and are more enthusiastic about it, while women are more skeptical, Pew says. Men are more likely to say they use AI chatbots in their daily lives (27% versus 20% for women) and while equal shares of men and women report using ChatGPT, men more commonly report usage of other brands, such as Copilot and Grok. The report also highlights how AI is changing the ways Americans consume information. Six in 10 survey respondents told Pew that they routinely read AI-generated internet summaries (indeed, on Google, they’re pretty much unavoidable). A much smaller number report using AI to get information on fitness and dieting. There are also still a whole lot of people — about half of the country — that say they do not use AI in their daily lives. The people who do not use AI tend to be older, while those under 50 are more likely to say that they use it. Nearly 75% of Americans aged 65 or older say that they never use AI chatbots. Those people who don’t use chatbots say they don’t because they’re not interested in them, and add that they have no intention of using them in the future.",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 484"
+      "metric": "▲ [] · 💬 484",
+      "title_ko": "미국인 16%만이 AI가 사회에 긍정적 영향을 줄 것이라 생각"
     },
     {
       "type": "hn",
@@ -296,7 +313,8 @@
       "detail": "You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert 👉 adam.new/cadam. Generate a CAD model in seconds, right in your browser. No install required. ✨ Features 🤖 AI-Powered Generation - Transform natural language and images into 3D models 🎛️ Parametric Controls - Interactive sliders for instant dimension adjustments 📦 Multiple Export Formats - Export as .STL, .SCAD, or .DXF files 🌐 Browser-Based - Runs entirely in your browser using WebAssembly 📚 Library Support - Includes BOSL, BOSL2, and MCAD libraries 🎯 Key Capabilities 📺 Screenshots 🧪 Benchmarks A showcase of what CADAM builds from a single plain-language description — from full multi-part machines down to clean parametric parts. Each model below started from the prompt shown and came out as fully parametric OpenSCAD, ready to export as .STL, .SCAD, or .DXF. The source and a short write-up for each live in benchmarks/; the orbiting previews are rendered with benchmarks/render.sh. Complex machines & assemblies Parametric fundamentals 🚀 Quick Start # Clone the repository git clone https://github.com/Adam-CAD/CADAM.git cd CADAM # Install dependencies npm install # Start Supabase npx supabase start npx supabase functions serve --no-verify-jwt # Start the development server npm run dev ANTHROPIC_API_KEY=\"<Test Anthropic API Key>\" OPENROUTER_API_KEY=\"<Test OpenRouter API Key>\" OPENAI_API_KEY=\"<Test OpenAI API Key>\" GOOGLE_API_KEY=\"<Test Google API Key>\" FAL_KEY=\"<Test FAL API Key>\" SUPABASE_SERVICE_ROLE_KEY=\"<Test Service Role Key>\" BILLING_SERVICE_URL=\"<Test Billing Service URL>\" BILLING_SERVICE_KEY=\"<Test Billing Service Key>\" ENVIRONMENT=\"local\" ADAM_URL=\"<Adam URL or dev URL>\" # Checkout and portal redirect target WEBHOOK_BASE_URL=\"<Public TanStack App URL>\" # Your app URL for /cadam/api callbacks NGROK_URL=\"<NGROK URL>\" # Optional local Supabase Storage tunnel for provider-readable signed URLs 🌐 Setting Up ngrok for Local Development CADAM uses public URLs for provider callbacks and local signed storage URLs: Install ngrok if you haven't already: npm install -g ngrok # or brew install ngrok Start an ngrok tunnel pointing to your TanStack Start dev server: This distribution is licensed under the GNU General Public License v3.0 (GPLv3). See LICENSE. Components and attributions: Portions of this project are derived from openscad-web-gui (GPLv3). This distribution includes unmodified binaries from OpenSCAD WASM under GPL v2 or later; distributed here under GPLv3 as part of the combined work. See src/vendor/openscad-wasm/SOURCE-OFFER.txt. 🌟 Star History Live chart by RepoStars — click for the interactive version. ⭐ If you find CADAM useful, please consider giving it a star! Made with 💙 for the 3D printing and CAD community About CADAM is the open source text-to-CAD web application",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 97"
+      "metric": "▲ [] · 💬 97",
+      "title_ko": "Launch HN: Adam (YC W25) – 오픈소스 AI CAD"
     },
     {
       "type": "guide",
@@ -310,7 +328,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "LoRA를 넘어서: 가장 인기 있는 파인튜닝 기법을 이길 수 있을까?"
     },
     {
       "type": "guide",
@@ -324,7 +343,8 @@
       "points": [],
       "takeaway": "",
       "category": "기타",
-      "metric": ""
+      "metric": "",
+      "title_ko": "충분히 에이전트답나? 자체 도구로 오픈 모델 벤치마킹하기"
     },
     {
       "type": "hn",
@@ -340,7 +360,8 @@
       "detail": "AI demands more engineering discipline. Not less If you lived through the shift from handcrafted server pets to immutable infrastructure, you should sense something oddly familiar about what's happening now. A few days back I wrote a piece called “AI enthusiasts are in a race against time, AI skeptics are in a race against entropy.” I have notes on a whole pile of AI-related topics that I’d like to cover in depth: AI mandates, communication norms, code review, AI art, and more. Unfortunately, I got too many interesting responses to my last piece, and now I have to address those before I can move on to other topics. 😉 There were two types of interesting responses: the first on the technical merits, the second on ethical grounds. I will respond to each of these separately. Let’s take the technical side first, because it’s easier. Somehow, a subset of readers came away believing I was telling everyone to ditch code review and push their shittiest code straight into production without reading it, right now, tout suite.1 That is not what I am doing. That is not what I think you should do. But I did not pick that example at random, and I will tell you why. In 2025, the question was whether AI could ever generate “good” code It’s easy to forget, but for most of 2025, the idea that AI-generated code was slop and might always be slop was not only a reasonable position to hold, it was the default, mainstream position.2 That question was answered decisively last November. Ever since Opus 4.5 came out, AI has been able to generate code that is approximately as good as that of the median software engineer, at least for common patterns, and much faster and more cheaply. I came out of a book hole and realized this in January, and over the first few months of 2026, it seemed like everyone around me was having a similar realization. But many saw it coming much sooner. The popular narrative holds that Opus 4.5 was what changed. But Opus 4.5 was more like the tipping point. Agentic harnesses (the code that wraps the LLM in a loop with tools) became a real thing in mid 2025, with precursors building back to late 2024. Tool use, function calling, MCPs…all of this wave was building over the course of 2025, and crested into real general purpose usability at the end of the year. That’s what the enthusiasts were trying to tell us last year. Not only “this is coming”, but “this is coming faster than you think.” As it turns out, they were right. It was reasonable to be skeptical the first time As you may know, I come from the reliability side of the house. The compliment I will pay to myself and my people is that we do not struggle to adapt to new realities. As soon as a problem is real and in front of us, we adjust smoothly, even eagerly, thanks to an unwholesome zest for lapping up disgusting technical messes (and the campfire tales we get to tell later). The un-compliment I will pay myself and my people is that we sometimes struggle to accept that progress is real, that",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 205"
+      "metric": "▲ [] · 💬 205",
+      "title_ko": "AI는 더 많은 엔지니어링 규율을 요구한다, 덜이 아니라"
     },
     {
       "type": "hn",
@@ -356,7 +377,8 @@
       "detail": "Key findings 74% consumers say the internet feels less human than 10 years ago 40 min average time before consumers experience “bot fatigue” 61% consumers can’t name a brand using AI well in its messaging 16.6 average weekly hours enterprise teams spend improving AI visibility Brands have been chasing AI visibility for two years. You’ve spent time and budget on it, yet your audience can’t name a single company they think is doing it well. The brands building for the next phase treat their website as the place where AI gets clean data and humans get something worth their time. A less human web costs you readers. Your audience can sense when a machine is talking to them. Most are checking out before they’ve decided whether they care. Bot fatigue sets in when the internet stops feeling honest. The small moments that used to make the web worth visiting are disappearing. The AI web consumers say the internet feels less human than it did 10 years ago 40 min the average time to “bot fatigue,” when interactions start to feel synthetic Can your content infrastructure measure this shift and respond to it? We’ll cover how enterprise teams restructure content for AI discovery without losing what feels human in our upcoming webinar. What is AI brand visibility? AI brand visibility is how often a brand appears in answers generated by AI engines like ChatGPT, Perplexity, Claude, and Gemini. It’s a different problem from search engine visibility, which measures rankings on result pages. A brand can rank at the top of Google and not appear inside ChatGPT at all. As of 2026, no single dashboard tracks AI brand visibility across every engine, and the category has no established leader. Nobody has won AI brand visibility yet. Every answer in our consumer survey pointed the same way: Nobody has done it well yet. Brands have spent the past year funding AI strategy, but consumers can’t point to a single company they think is getting it right. The category has no incumbent, and no template to copy. The brand that builds that recognition first gets to define the standard. Brand visibility of consumers can’t name a brand that uses AI well in its messaging 16% say no brand is using AI well at all 60% say AI in a brand’s messaging is a turnoff, not a feature Build for both audiences at once. AI needs to find the content and a person needs a reason to stay once they arrive. The second part is harder, and most enterprises are still guessing at it. The brands worth watching are betting that “staying” comes from giving people something to do: interactive content, dynamic experiences, the small moments a flat AI summary can’t deliver. The website is the only place where both jobs run together. AI gets structured content it can cite, and the reader gets something worth their time. That’s the foundation you get on WordPress VIP. The guide for building that dual-purpose site is in Future-Proof Your Brand for the AI-Native Web, a framework for preparing your web platform. How enterp",
       "takeaway": "",
       "category": "기타",
-      "metric": "▲ [] · 💬 573"
+      "metric": "▲ [] · 💬 573",
+      "title_ko": "미국 소비자 60%, 브랜드 메시지 속 'AI'라는 표현에 거부감 느낀다"
     }
   ]
 }
