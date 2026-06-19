@@ -634,6 +634,68 @@ def summarize(items):
 
 
 # ──────────────────────────────────────────────────────────────────────────
+# 한국어 보정 (요약 후에도 영어로 남은 항목 재번역)
+# ──────────────────────────────────────────────────────────────────────────
+
+def _hangul(s):
+    return sum(1 for ch in s if 0xAC00 <= ord(ch) <= 0xD7A3)
+
+
+def _is_english(s):
+    return bool(s) and len(s) >= 20 and _hangul(s) < len(s) * 0.05
+
+
+KO_FIX_INSTRUCTION = (
+    "다음 JSON 배열은 영어로 남은 AI 콘텐츠 항목들이다. 각 항목을 자연스러운 한국어로 번역/재작성하라. "
+    "title_ko(한국어 제목), summary(1~2문장), detail(4~7문장), points(불릿 문자열 배열), "
+    "takeaway(1~2문장)를 모두 한국어로 만들고, 사실·수치·맥락은 보존하라. "
+    "고유명사·제품명은 그대로 둬도 된다. 출력은 오직 JSON 배열만: "
+    '[{"id":0,"title_ko":"...","summary":"...","detail":"...","points":["..."],"takeaway":"..."}]'
+)
+
+
+def ensure_korean(items):
+    """다이제스트 후에도 영어로 남은 항목(추출/요약 폴백 등)을 한국어로 보정.
+    영어 항목이 없으면 claude를 호출하지 않는다."""
+    if not CLAUDE:
+        return items
+    need = [it for it in items
+            if _is_english(it.get("detail", "")) or _is_english(it.get("summary", ""))
+            or _is_english(it.get("title_ko", ""))]
+    if not need:
+        return items
+    print(f"[한국어 보정] 영어로 남은 {len(need)}건 재번역...")
+    for c in range(0, len(need), CHUNK_SIZE):
+        chunk = need[c:c + CHUNK_SIZE]
+        payload = [{"id": i, "title": it.get("title", ""), "title_ko": it.get("title_ko", ""),
+                    "summary": it.get("summary", ""), "detail": it.get("detail", ""),
+                    "points": it.get("points", []), "takeaway": it.get("takeaway", "")}
+                   for i, it in enumerate(chunk)]
+        try:
+            proc = subprocess.run(
+                [CLAUDE, "-p", KO_FIX_INSTRUCTION, "--output-format", "text"],
+                input=json.dumps(payload, ensure_ascii=False),
+                capture_output=True, text=True, encoding="utf-8", timeout=300,
+            )
+            by = {o["id"]: o for o in _parse_obj_array(proc.stdout or "")
+                  if isinstance(o, dict) and "id" in o}
+            for local, it in enumerate(chunk):
+                r = by.get(local)
+                if not r:
+                    continue
+                it["title_ko"] = r.get("title_ko") or it.get("title_ko", "")
+                it["summary"] = r.get("summary") or it.get("summary", "")
+                it["detail"] = r.get("detail") or it.get("detail", "")
+                pts = r.get("points")
+                if isinstance(pts, list) and pts:
+                    it["points"] = [str(x) for x in pts]
+                it["takeaway"] = r.get("takeaway") or it.get("takeaway", "")
+        except Exception as e:
+            print(f"  보정 실패: {e}")
+    return items
+
+
+# ──────────────────────────────────────────────────────────────────────────
 # 데일리 브리핑 (오늘의 핵심)
 # ──────────────────────────────────────────────────────────────────────────
 
@@ -774,6 +836,7 @@ def main():
     items = select(pool)
     items = fetch_fulltext(items)
     items = summarize(items)
+    items = ensure_korean(items)   # 영어로 남은 항목 한국어 보정
     briefing = make_briefing(items)
     save(items, briefing)
     write_last_run(end)       # 성공 저장 후 → 다음 실행은 이 시점 이후만
