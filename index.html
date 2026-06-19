@@ -160,14 +160,22 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const TYPE = {youtube:"▶ 영상", guide:"💡 가이드", hn:"🔥 HN", news:"📰 뉴스"};
 
-// 본문을 문단으로: 배열이면 그대로, 문자열이면 ~3문장씩 묶어 문단 생성
+// 본문을 문단으로: 배열이면 그대로, 문자열이면 구분기호(■ 등)·문장 기준으로 나눔
 function detailParas(it){
   if(Array.isArray(it.detail)) return it.detail.filter(p=>p&&String(p).trim());
-  const t = String(it.detail||it.summary||"").trim();
+  let t = String(it.detail||it.summary||"").trim();
   if(!t) return [];
-  const sents = t.split(/(?<=[.!?。])\s+/).filter(s=>s.trim());
+  // 출처 서명/이메일 꼬리 제거 (예: "AI타임스 news@aitimes.com")
+  t = t.replace(/\s*[\w.+-]+@[\w.-]+\.[a-z]{2,}\s*$/i, "").trim();
+  // ■ ▶ • ※ ● 같은 구분기호와 "이어 N일 주요 뉴스" 전환부 앞에서 줄 나눔
+  t = t.replace(/\s*([■▶•※●])\s*/g, "\n$1 ").replace(/\s+(이어\s)/g, "\n$1");
+  const blocks = t.split("\n").map(b=>b.trim()).filter(Boolean);
   const paras = [];
-  for(let i=0;i<sents.length;i+=3) paras.push(sents.slice(i,i+3).join(" "));
+  for(const b of blocks){
+    const sents = b.split(/(?<=[.!?。])\s+/).filter(s=>s.trim());
+    if(sents.length <= 3){ paras.push(b); continue; }
+    for(let i=0;i<sents.length;i+=3) paras.push(sents.slice(i,i+3).join(" "));
+  }
   return paras;
 }
 
