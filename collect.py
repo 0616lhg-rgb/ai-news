@@ -648,25 +648,37 @@ def _is_english(s):
 
 
 KO_FIX_INSTRUCTION = (
-    "다음 JSON 배열은 영어로 남은 AI 콘텐츠 항목들이다. 각 항목을 자연스러운 한국어로 번역/재작성하라. "
-    "title_ko(한국어 제목), summary(1~2문장), detail(간결하게 4~6문장, 장황 금지), "
-    "points(불릿 문자열 배열), takeaway(1~2문장)를 모두 한국어로 만들고, 사실·수치는 보존하라. "
-    "고유명사·제품명은 그대로 둬도 된다. 출력은 오직 JSON 배열만: "
+    "다음 JSON 배열은 AI 콘텐츠 항목들이다(영어로 남았거나, 요약이 안 돼 원문이 그대로 들어간 경우 포함). "
+    "각 항목을 한국어로 깔끔하게 다시 정리하라:\n"
+    "title_ko(한국어 제목), summary(1~2문장 핵심), detail(간결하게 4~6문장, 장황 금지, "
+    "여러 소식을 묶은 기사면 핵심 1~2개 흐름만), points(주요 내용 3~5개 한국어 불릿 배열), "
+    "takeaway(1~2문장 시사점). 사실·수치는 보존, 고유명사·제품명은 그대로 둬도 됨. "
+    "각 문자열 안에 줄바꿈 금지. 출력은 오직 JSON 배열만: "
     '[{"id":0,"title_ko":"...","summary":"...","detail":"...","points":["..."],"takeaway":"..."}]'
 )
 
 
+def _detail_text(it):
+    d = it.get("detail")
+    return " ".join(str(x) for x in d) if isinstance(d, list) else str(d or "")
+
+
+def _needs_fix(it):
+    """재요약이 필요한 항목: 영어로 남음 / 주요내용(points) 없음 / 본문이 비정상적으로 긺(원문 폴백)."""
+    dt = _detail_text(it)
+    return (_is_english(dt) or _is_english(it.get("summary", "")) or _is_english(it.get("title_ko", ""))
+            or not it.get("points") or len(dt) > 900)
+
+
 def ensure_korean(items):
-    """다이제스트 후에도 영어로 남은 항목(추출/요약 폴백 등)을 한국어로 보정.
-    영어 항목이 없으면 claude를 호출하지 않는다."""
+    """다이제스트가 실패/폴백된 항목(영어 잔존·주요내용 없음·원문 그대로)을 한국어로 재요약 보정.
+    대상이 없으면 claude를 호출하지 않는다."""
     if not CLAUDE:
         return items
-    need = [it for it in items
-            if _is_english(it.get("detail", "")) or _is_english(it.get("summary", ""))
-            or _is_english(it.get("title_ko", ""))]
+    need = [it for it in items if _needs_fix(it)]
     if not need:
         return items
-    print(f"[한국어 보정] 영어로 남은 {len(need)}건 재번역...")
+    print(f"[품질 보정] 재요약 필요 {len(need)}건 처리...")
     for c in range(0, len(need), CHUNK_SIZE):
         chunk = need[c:c + CHUNK_SIZE]
         payload = [{"id": i, "title": it.get("title", ""), "title_ko": it.get("title_ko", ""),
