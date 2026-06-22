@@ -129,12 +129,16 @@ def in_window(dt, start, end):
 # ──────────────────────────────────────────────────────────────────────────
 
 def find_claude():
-    # 1) PATH에 있으면 그걸 사용
+    home = os.path.expanduser("~")
+    # 1) 독립 설치본 우선 (IDE 자동 업데이트와 분리돼 안정적)
+    standalone = os.path.join(home, ".local", "bin", "claude.exe")
+    if os.path.exists(standalone):
+        return standalone
+    # 2) PATH
     found = shutil.which("claude")
     if found:
         return found
-    # 2) Antigravity IDE 번들 바이너리 (버전 무관 glob)
-    home = os.path.expanduser("~")
+    # 3) Antigravity IDE 번들 바이너리 (폴백, 버전 무관 glob)
     pattern = os.path.join(
         home, ".antigravity-ide", "extensions",
         "anthropic.claude-code-*", "resources", "native-binary", "claude.exe",
