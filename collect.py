@@ -35,7 +35,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 
 # 수집 구간(시간 창): "지난 실행 이후 발행된 것"만 모은다 → 날짜별로 안 겹침.
 # 그 구간 안에서 인기/중요도 상위를 선별해 보여준다.
-DEFAULT_WINDOW_HOURS = 30   # 첫 실행(이전 기록 없음) 시 기본 창
+DEFAULT_WINDOW_HOURS = 30   # 항상 최소 이만큼은 거슬러 수집 (하루치 확보, 중복은 별도 제거)
 MAX_BACKFILL_DAYS = 7       # 실행이 며칠 밀렸어도 이 이상은 거슬러 올라가지 않음
 
 # 그날 최종 표시할 항목 수 — 종류별 쿼터 (구간 내 인기/화제성 상위)
@@ -106,6 +106,11 @@ def get_window():
     end = datetime.now(timezone.utc)
     last = read_last_run()
     start = last if last else end - timedelta(hours=DEFAULT_WINDOW_HOURS)
+    # 항상 최소 DEFAULT_WINDOW_HOURS만큼은 거슬러 본다 — 실행이 연달아 돌아도
+    # 구간이 너무 짧아져 수집량이 급감하지 않도록 (중복은 누적 중복제거가 막아줌)
+    min_start = end - timedelta(hours=DEFAULT_WINDOW_HOURS)
+    if start > min_start:
+        start = min_start
     floor = end - timedelta(days=MAX_BACKFILL_DAYS)
     if start < floor:
         start = floor
