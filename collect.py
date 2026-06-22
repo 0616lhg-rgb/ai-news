@@ -141,6 +141,27 @@ def find_claude():
 CLAUDE = find_claude()
 
 
+def _run_claude(instruction, stdin_text, timeout=300, retries=3, delay=20):
+    """claude -p 호출. 빈 응답/크래시(일시적) 시 잠시 후 자동 재시도.
+    성공 시 stdout(문자열), 끝까지 실패하면 ''."""
+    for attempt in range(1, retries + 1):
+        try:
+            proc = subprocess.run(
+                [CLAUDE, "-p", instruction, "--output-format", "text"],
+                input=stdin_text, capture_output=True, text=True,
+                encoding="utf-8", timeout=timeout,
+            )
+            out = (proc.stdout or "").strip()
+            if out:
+                return out
+        except Exception:
+            pass
+        if attempt < retries:
+            print(f"    (claude 빈 응답 — {delay}초 후 재시도 {attempt + 1}/{retries})", flush=True)
+            time.sleep(delay)
+    return ""
+
+
 # ──────────────────────────────────────────────────────────────────────────
 # 수집
 # ──────────────────────────────────────────────────────────────────────────
@@ -434,12 +455,7 @@ def score_news_importance(news):
     )
     print(f"[선별] 뉴스 중요도 평가 ({len(news)}건)... ", end="", flush=True)
     try:
-        proc = subprocess.run(
-            [CLAUDE, "-p", instruction, "--output-format", "text"],
-            input=json.dumps(payload, ensure_ascii=False),
-            capture_output=True, text=True, encoding="utf-8", timeout=180,
-        )
-        out = (proc.stdout or "").strip()
+        out = _run_claude(instruction, json.dumps(payload, ensure_ascii=False), timeout=180)
         s, e = out.find("["), out.rfind("]")
         scores = {r["id"]: r.get("score", 0) for r in json.loads(out[s:e + 1])}
         for i, it in enumerate(news):
@@ -466,12 +482,7 @@ def filter_relevant_youtube(videos):
     )
     print(f"[선별] 영상 AI 관련성 판정 ({len(videos)}건)... ", end="", flush=True)
     try:
-        proc = subprocess.run(
-            [CLAUDE, "-p", instruction, "--output-format", "text"],
-            input=json.dumps(payload, ensure_ascii=False),
-            capture_output=True, text=True, encoding="utf-8", timeout=120,
-        )
-        objs = _parse_obj_array(proc.stdout or "")
+        objs = _parse_obj_array(_run_claude(instruction, json.dumps(payload, ensure_ascii=False), timeout=120))
         keep = {o["id"] for o in objs if isinstance(o, dict) and o.get("ai")}
         filtered = [v for i, v in enumerate(videos) if i in keep]
         print(f"{len(filtered)}/{len(videos)} 통과")
@@ -614,12 +625,7 @@ def summarize(items):
                    for j, it in enumerate(chunk)]
         print(f"  묶음 {ci}/{len(chunks)} ({len(chunk)}건)... ", end="", flush=True)
         try:
-            proc = subprocess.run(
-                [CLAUDE, "-p", DIGEST_INSTRUCTION, "--output-format", "text"],
-                input=json.dumps(payload, ensure_ascii=False),
-                capture_output=True, text=True, encoding="utf-8", timeout=300,
-            )
-            objs = _parse_obj_array(proc.stdout or "")
+            objs = _parse_obj_array(_run_claude(DIGEST_INSTRUCTION, json.dumps(payload, ensure_ascii=False), timeout=300))
             by_id = {o["id"]: o for o in objs if isinstance(o, dict) and "id" in o}
             hit = 0
             for j, it in enumerate(chunk):
@@ -686,12 +692,8 @@ def ensure_korean(items):
                     "points": it.get("points", []), "takeaway": it.get("takeaway", "")}
                    for i, it in enumerate(chunk)]
         try:
-            proc = subprocess.run(
-                [CLAUDE, "-p", KO_FIX_INSTRUCTION, "--output-format", "text"],
-                input=json.dumps(payload, ensure_ascii=False),
-                capture_output=True, text=True, encoding="utf-8", timeout=300,
-            )
-            by = {o["id"]: o for o in _parse_obj_array(proc.stdout or "")
+            by = {o["id"]: o for o in _parse_obj_array(
+                      _run_claude(KO_FIX_INSTRUCTION, json.dumps(payload, ensure_ascii=False), timeout=300))
                   if isinstance(o, dict) and "id" in o}
             for local, it in enumerate(chunk):
                 r = by.get(local)
@@ -732,12 +734,7 @@ def make_briefing(items):
     )
     print("[브리핑] claude 호출... ", end="", flush=True)
     try:
-        proc = subprocess.run(
-            [CLAUDE, "-p", instruction, "--output-format", "text"],
-            input=json.dumps(payload, ensure_ascii=False),
-            capture_output=True, text=True, encoding="utf-8", timeout=180,
-        )
-        out = (proc.stdout or "").strip()
+        out = _run_claude(instruction, json.dumps(payload, ensure_ascii=False), timeout=180)
         s, e = out.find("{"), out.rfind("}")
         data = json.loads(out[s:e + 1])
         print("완료")
