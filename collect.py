@@ -477,24 +477,26 @@ def filter_relevant_youtube(videos):
     실패 시 원본 그대로."""
     if not videos or not CLAUDE:
         return videos
-    payload = [{"id": i, "title": v["title"], "channel": v["source"]}
+    payload = [{"id": i, "title": v.get("title_ko") or v["title"], "channel": v["source"]}
                for i, v in enumerate(videos)]
     instruction = (
-        "다음은 유튜브 검색으로 모은 영상 후보다(JSON). 각 영상이 'AI/인공지능/머신러닝/"
-        "관련 기술·산업·연구'를 실질적으로 다루는지 판단하라. "
-        "정치 코미디·예능·단순 언급·전혀 무관한 영상은 false.\n"
+        "다음은 유튜브 검색으로 모은 영상 후보(JSON)다. 각 영상이 'AI·인공지능·머신러닝·LLM·"
+        "관련 기술/연구/산업/제품/활용'을 실질적으로 다루는지 ai(true/false)로 판정하라.\n"
+        "false 처리: 정치·시사 뉴스쇼나 시사 유튜브(예: 뉴스공장 류), 게임·예능·연예·브이로그, "
+        "제목에 AI만 스쳐 언급될 뿐 주제가 아닌 영상.\n"
+        "true 처리: AI 모델·연구·기술·산업 동향·실전 활용을 실제 주제로 다루는 영상.\n"
         "출력은 오직 JSON 배열만: [{\"id\":0,\"ai\":true}, ...]"
     )
     print(f"[선별] 영상 AI 관련성 판정 ({len(videos)}건)... ", end="", flush=True)
-    try:
-        objs = _parse_obj_array(_run_claude(instruction, json.dumps(payload, ensure_ascii=False), timeout=120))
-        keep = {o["id"] for o in objs if isinstance(o, dict) and o.get("ai")}
-        filtered = [v for i, v in enumerate(videos) if i in keep]
-        print(f"{len(filtered)}/{len(videos)} 통과")
-        return filtered or videos   # 전부 걸러지면 원본 유지(안전장치)
-    except Exception as ex:
-        print(f"실패 ({ex}) — 원본 유지")
-        return videos
+    objs = _parse_obj_array(_run_claude(instruction, json.dumps(payload, ensure_ascii=False), timeout=120))
+    if not objs:
+        # claude 호출 자체가 실패(빈 응답) — 판단 불가. 잡음 유입 방지 위해 영상 보류.
+        print("판정 실패 — 영상 보류")
+        return []
+    keep = {o["id"] for o in objs if isinstance(o, dict) and o.get("ai")}
+    filtered = [v for i, v in enumerate(videos) if i in keep]
+    print(f"{len(filtered)}/{len(videos)} 통과")
+    return filtered   # 판정 결과를 신뢰 (전부 false면 0개가 정상)
 
 
 def select(pool):

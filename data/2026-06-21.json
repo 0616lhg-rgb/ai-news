@@ -1,7 +1,7 @@
 {
   "date": "2026-06-21",
   "generated_at": "2026-06-21T23:12:01",
-  "count": 34,
+  "count": 32,
   "briefing": {
     "overview": "",
     "highlights": []
@@ -690,48 +690,6 @@
       "takeaway": "챗GPT의 광고 도입이 국내까지 확대되면서, 대화 내용의 광고 활용 가능성을 둘러싼 개인정보 보호 논의가 본격화되고 있다.",
       "category": "기타",
       "metric": "조회 4,134"
-    },
-    {
-      "type": "youtube",
-      "title": "SpaceX IPO Sparks Anticipation for OpenAI and Anthropic",
-      "url": "https://www.youtube.com/watch?v=472FRodG5RY",
-      "source": "Bloomberg Television",
-      "published": "2026-06-20T14:00:29.298181+00:00",
-      "thumbnail": "https://i.ytimg.com/vi/472FRodG5RY/hqdefault.jpg",
-      "videoId": "472FRodG5RY",
-      "views": 1885,
-      "title_ko": "스페이스X 상장 성공, OpenAI·앤트로픽 IPO 기대감 자극",
-      "summary": "스페이스X가 상장 첫 주를 공모가 대비 37% 오른 채 마감하며, AI 대형 기업들의 기업공개(IPO) 전망에 대한 투자자들의 강한 관심을 보여줬다.",
-      "detail": "스페이스X는 상장 첫 주 거래를 공모가 대비 37% 상승한 가격에 마감했다. 이번 IPO로 유입된 대규모 자금은 비상장 거대 기술기업에 대한 투자 수요가 여전히 강하다는 점을 보여주며, OpenAI와 앤트로픽 같은 AI 선두 기업들의 향후 기업공개에 대한 시장의 기대감을 키우고 있다.",
-      "points": [
-        "스페이스X 상장 첫 주, 공모가 대비 37% 상승 마감",
-        "대형 비상장 기술기업에 대한 투자 수요가 견고함을 시사",
-        "OpenAI·앤트로픽 등 AI 선두 기업 IPO 기대감 자극"
-      ],
-      "takeaway": "스페이스X의 성공적 데뷔는 AI 대표주자들의 상장 가능성에 대한 시장의 관심에 불을 지피고 있다.",
-      "category": "기타",
-      "metric": "조회 1,885"
-    },
-    {
-      "type": "youtube",
-      "title": "SpaceX IPO Sparks Anticipation for OpenAI and Anthropic Public Offerings",
-      "url": "https://www.youtube.com/watch?v=NLLLofZVNQs",
-      "source": "Bloomberg Podcasts",
-      "published": "2026-06-20T14:00:29.298181+00:00",
-      "thumbnail": "https://i.ytimg.com/vi/NLLLofZVNQs/hqdefault.jpg",
-      "videoId": "NLLLofZVNQs",
-      "views": 766,
-      "title_ko": "스페이스X 상장 성공, OpenAI·앤트로픽 기업공개 기대감 자극",
-      "summary": "스페이스X가 상장 첫 주를 공모가 대비 37% 오른 채 마감하며, OpenAI·앤트로픽 등 AI 기업들의 기업공개 전망에 대한 투자자들의 강한 관심을 드러냈다.",
-      "detail": "스페이스X는 상장 첫 주 거래를 공모가 대비 37% 상승한 가격에 마감했다. 이번 IPO로 유입된 막대한 자금은 비상장 거대 기술기업에 대한 투자 열기가 식지 않았음을 보여주며, OpenAI와 앤트로픽 같은 AI 선두 기업들의 향후 기업공개에 대한 기대를 한층 끌어올리고 있다.",
-      "points": [
-        "스페이스X 상장 첫 주, 공모가 대비 37% 상승 마감",
-        "비상장 거대 기술기업에 대한 투자 열기 지속",
-        "OpenAI·앤트로픽의 기업공개 가능성에 대한 관심 고조"
-      ],
-      "takeaway": "스페이스X의 호실적 데뷔가 차세대 AI 기업들의 상장 기대감을 자극하고 있다. (※ id 0과 동일 사안의 중복 기사로 보임)",
-      "category": "기타",
-      "metric": "조회 766"
     },
     {
       "type": "hn",
