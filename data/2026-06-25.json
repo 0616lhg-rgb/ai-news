@@ -1,0 +1,498 @@
+{
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T08:06:13",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘 AI 흐름의 중심은 '자체 칩'과 '오픈 vs 폐쇄' 논쟁이다. 오픈AI가 브로드컴과 만든 첫 추론 전용 칩 '할라피뇨'를 공개하며 엔비디아·구글 의존을 줄이려는 수직계열화를 본격화했고, 동시에 칸에서 광고 사업까지 내놓으며 IPO를 향한 수익 다각화에 나섰다. 한편 얀 르쿤과 데이터브릭스는 오픈소스·오픈 생태계를 AI 주권의 길로 내세웠고, AI가 엔지니어 일자리를 줄일 거란 전망과 달리 엔지니어링이 가장 회복력 있는 직군이라는 데이터도 나왔다.",
+    "highlights": [
+      {
+        "title": "오픈AI 자체 추론 칩 '할라피뇨' 공개",
+        "line": "브로드컴과 9개월 만에 테이프아웃하며 엔비디아·구글 TPU급 성능을 주장, AI 하드웨어 수직계열화 경쟁이 새 국면에 들어섰다."
+      },
+      {
+        "title": "오픈AI, 칸에서 챗GPT 광고 사업 공개",
+        "line": "IPO를 앞두고 광고와 코딩 에이전트 코덱스를 앞세워 구글의 핵심 수익 영역에 직접 도전장을 냈다."
+      },
+      {
+        "title": "르쿤·데이터브릭스, '오픈'을 AI 주권의 길로",
+        "line": "폐쇄형 AI는 비싸고 통제가 집중된다며 오픈소스·오픈 생태계가 글로벌 AI 주권과 다양성의 유일한 해법이라는 주장이 힘을 받고 있다."
+      },
+      {
+        "title": "\"AI가 엔지니어 일자리를 죽인다\"는 통념의 반전",
+        "line": "SignalFire 데이터는 코딩 도구 확산에도 엔지니어링이 2025년 가장 회복력 있는 직군이며 채용 비중이 오히려 늘었음을 보여준다."
+      },
+      {
+        "title": "테슬라 FSD 사망 사고로 美 연방 조사 착수",
+        "line": "자율주행 차량이 주택으로 돌진해 사망 사고가 발생, NHTSA 특별조사로 자율주행 책임 공방과 규제 논의가 재점화됐다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "news",
+      "title": "오픈AI, 자체 개발 '추론 칩' 공개… \"9개월 만에 테이프아웃\"",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212074",
+      "source": "AI타임스",
+      "published": "2026-06-24T21:59:31+00:00",
+      "thumbnail": "",
+      "title_ko": "오픈AI, 자체 개발 '추론 칩' 공개… 9개월 만에 테이프아웃",
+      "summary": "오픈AI가 브로드컴과 손잡고 추론 전용 맞춤형 칩 '할라피뇨'를 공개했다. 개발 착수 9개월 만의 테이프아웃으로, 엔비디아 블랙웰·구글 TPU급 성능을 주장한다.",
+      "detail": "오픈AI가 브로드컴과 공동 개발한 첫 자체 칩 '할라피뇨(Jalapeño)'를 공개했다. 훈련용 가속기를 재활용한 것이 아니라 처음부터 추론(Inference) 전용으로 설계해 데이터 이동 비용·컴퓨팅과 메모리 불균형·네트워크 효율 같은 병목을 겨냥했고, 약 840mm²의 거대한 컴퓨팅 칩렛에 HBM 6개를 결합했다. 통상 1년 반~2년 걸리는 ASIC 설계를 자체 AI 모델 활용과 브로드컴 IP 재사용으로 9개월 만에 엔지니어링 샘플 단계에 도달했고, 이미 GPT-5.3-코덱스-스파크 등을 구동 중이다. 브로드컴 CEO는 엔비디아 블랙웰·구글 TPU에 대등한 성능이라 주장했고, 도입 시 범용 GPU 대비 약 50% 인프라 비용 절감이 기대된다. 2026년 말부터 MS 등과 기가와트급 데이터센터에 배치할 계획이다. 다만 구체적 벤치마크와 메모리 사양이 미공개라 실제 성능 검증은 남아 있다.",
+      "points": [
+        "추론 전용으로 처음부터 설계한 오픈AI의 첫 자체 ASIC '할라피뇨'",
+        "컴퓨팅 칩렛 약 840mm²에 HBM 6개 결합, EUV 단일 노광 한계에 근접한 대형 구조",
+        "자체 AI 활용·브로드컴 IP 재사용으로 9개월 만에 엔지니어링 샘플 도달",
+        "블랙웰·TPU급 성능 주장, 범용 GPU 대비 약 50% 비용 절감 기대",
+        "2026년 말 MS 등과 기가와트급 데이터센터 배치 예정, 구체 벤치마크는 미공개"
+      ],
+      "takeaway": "오픈AI가 엔비디아 공급 의존을 줄이고 비용을 크게 낮추면서 하드웨어·소프트웨어를 모두 통제하는 '풀스택' 진영에 합류했음을 보여주는 신호다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Big AI labs are hiring philosophers",
+      "url": "https://www.economist.com/science-and-technology/2026/06/24/why-big-ai-labs-are-hiring-so-many-philosophers",
+      "source": "Hacker News",
+      "published": "2026-06-24T16:40:13+00:00",
+      "thumbnail": "",
+      "points": [
+        "대형 AI 연구소들이 철학 전공자를 고용하는 추세",
+        "AI 정렬·윤리·의식 등 난해한 문제에 철학적 접근이 필요해짐",
+        "본문 원문은 제공되지 않아 세부 사실 확인은 제한적"
+      ],
+      "comments": 87,
+      "hn_url": "https://news.ycombinator.com/item?id=48662452",
+      "title_ko": "대형 AI 연구소들이 철학자를 채용하고 있다",
+      "summary": "주요 AI 연구소들이 철학 전공자를 고용하고 있다는 화제글이다.",
+      "detail": "본문 내용이 제공되지 않아(아카이브 링크만 존재) 상세 요약은 어렵다. 제목으로 미루어 프런티어 AI 연구소들이 모델의 가치 정렬·윤리·의식 등 난해한 문제를 다루기 위해 철학 전공자를 채용하고 있다는 흐름을 다룬 글로 보인다. AI 정렬(alignment)과 안전 문제가 기술적 영역을 넘어 철학적 판단을 요구하는 단계에 이르렀다는 맥락에서 주목받는 주제다.",
+      "takeaway": "AI 개발이 순수 기술 문제를 넘어 가치와 윤리 판단의 영역으로 확장되고 있음을 시사한다.",
+      "category": "기타",
+      "metric": "▲ ['대형 AI 연구소들이 철학 전공자를 고용하는 추세', 'AI 정렬·윤리·의식 등 난해한 문제에 철학적 접근이 필요해짐', '본문 원문은 제공되지 않아 세부 사실 확인은 제한적'] · 💬 87"
+    },
+    {
+      "type": "hn",
+      "title": "For Most of the World, Open-Source AI Is the Only Way Forward",
+      "url": "https://techstrong.ai/articles/for-most-of-the-world-open-source-ai-is-the-only-way-forward/",
+      "source": "Hacker News",
+      "published": "2026-06-24T14:50:22+00:00",
+      "thumbnail": "",
+      "points": [
+        "르쿤: 폐쇄형 AI는 비싸고 통제가 소수에 집중돼 의존하기 어렵다",
+        "AI는 디지털 상호작용을 매개하는 인프라가 되며 독점은 다양성·민주주의에 위험",
+        "대부분 국가는 자체 모델을 못 만들지만 공유 오픈 플랫폼엔 기여 가능",
+        "데이터 공유 없이 파라미터 벡터만 교환하는 연합형 글로벌 모델 비전",
+        "메타 퇴사 후 AI Alliance·Project Tapestry로 비전 구체화"
+      ],
+      "comments": 128,
+      "hn_url": "https://news.ycombinator.com/item?id=48660839",
+      "title_ko": "대부분의 세계에 오픈소스 AI는 유일한 길이다",
+      "summary": "얀 르쿤이 UN 연설에서 폐쇄형 AI는 너무 비싸고 통제가 집중돼 있으며, 오픈소스 AI만이 글로벌 AI 주권과 문화 다양성의 유일한 길이라고 주장했다.",
+      "detail": "AI '대부' 중 한 명인 얀 르쿤이 UN 오픈소스 위크 기조연설에서 폐쇄형 AI가 대부분의 국가·기업에는 너무 비싸고 통제가 소수에 집중돼 있다고 비판했다. 그는 AI가 곧 디지털 세계와의 모든 상호작용을 매개하는 인프라가 될 것이며, 이를 미국 서부와 중국의 소수 기업이 독점하면 문화·언어 다양성과 민주주의·인권에 위험하다고 경고했다. 대부분의 국가가 프런티어급 모델을 자체 구축할 수 없지만, 공유 오픈 플랫폼이 있다면 협력으로 폐쇄형을 능가할 수 있다고 봤다. 그는 각국이 데이터를 직접 공유하지 않고 파라미터 벡터만 교환해 글로벌 모델 학습에 기여하는 '연합형' 주권 비전을 제시했다. 메타를 떠난 뒤 AI Alliance와 'Project Tapestry' 등을 통해 이 비전을 구체화하고 있다.",
+      "takeaway": "AI 주권과 문화 다양성을 명분으로 오픈소스 AI를 정치적 의제로 끌어올린 발언으로, 글로벌 사우스 국가들의 호응을 얻고 있다.",
+      "category": "정책/규제",
+      "metric": "▲ ['르쿤: 폐쇄형 AI는 비싸고 통제가 소수에 집중돼 의존하기 어렵다', 'AI는 디지털 상호작용을 매개하는 인프라가 되며 독점은 다양성·민주주의에 위험', '대부분 국가는 자체 모델을 못 만들지만 공유 오픈 플랫폼엔 기여 가능', '데이터 공유 없이 파라미터 벡터만 교환하는 연합형 글로벌 모델 비전', '메타 퇴사 후 AI Alliance·Project Tapestry로 비전 구체화'] · 💬 128"
+    },
+    {
+      "type": "hn",
+      "title": "RubyLLM: A Ruby framework for all major AI providers",
+      "url": "https://rubyllm.com/",
+      "source": "Hacker News",
+      "published": "2026-06-24T14:41:41+00:00",
+      "thumbnail": "",
+      "points": [
+        "GPT·Claude·로컬 Ollama를 같은 인터페이스로 호출",
+        "이미지·동영상·음성·PDF 등 멀티모달 파일 분석 및 스트리밍 지원",
+        "이미지 생성·임베딩·전사·콘텐츠 모더레이션 내장",
+        "Tool/Agent/Schema로 도구 호출·에이전트·구조화 출력 구현",
+        "의존성 3개뿐, Rails 통합과 800개 이상 모델 레지스트리"
+      ],
+      "comments": 50,
+      "hn_url": "https://news.ycombinator.com/item?id=48660711",
+      "title_ko": "RubyLLM: 모든 주요 AI 제공사를 위한 루비 프레임워크",
+      "summary": "GPT·Claude·Ollama 등 모든 주요 AI 제공사를 하나의 일관된 인터페이스로 다루는 루비 프레임워크다.",
+      "detail": "RubyLLM은 제공사마다 제각각인 API·응답 형식을 하나의 통일된 루비 인터페이스로 묶어주는 프레임워크다. RubyLLM.chat으로 질문하고, 이미지·동영상·음성·PDF 등 거의 모든 파일을 with: 옵션으로 분석할 수 있으며, 스트리밍 응답도 블록으로 처리한다. paint(이미지 생성)·embed(임베딩)·transcribe(음성 전사)·moderate(콘텐츠 안전) 등 기능을 제공하고, Tool로 루비 메서드를 AI가 호출하게 하거나 Agent로 재사용 가능한 어시스턴트를 정의할 수 있다. Schema로 구조화된 JSON 출력도 보장하며, Rails의 ActiveRecord 통합(acts_as_chat)과 파이버 기반 비동기를 지원한다. 의존성은 Faraday·Zeitwerk·Marcel 세 개뿐이고 800개 이상 모델 레지스트리를 갖췄다.",
+      "takeaway": "루비 생태계에서 여러 AI 제공사를 통합해 챗봇·에이전트·RAG를 빠르게 구축할 수 있게 해주는 도구다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['GPT·Claude·로컬 Ollama를 같은 인터페이스로 호출', '이미지·동영상·음성·PDF 등 멀티모달 파일 분석 및 스트리밍 지원', '이미지 생성·임베딩·전사·콘텐츠 모더레이션 내장', 'Tool/Agent/Schema로 도구 호출·에이전트·구조화 출력 구현', '의존성 3개뿐, Rails 통합과 800개 이상 모델 레지스트리'] · 💬 50"
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.191",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.191",
+      "source": "Claude Code 릴리스",
+      "published": "2026-06-24T12:58:12+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.191 릴리스",
+      "summary": "/clear 이전 시점으로 되돌리는 /rewind 지원이 추가되고, 백그라운드 에이전트 중지·MCP 안정성 등 다수 버그가 수정된 업데이트다.",
+      "detail": "이번 버전은 /clear 실행 전 대화로 복귀하는 /rewind 기능을 새로 지원한다. 중지한 백그라운드 에이전트가 되살아나던 문제를 고쳐 작업 패널에서의 중지가 영구 적용되며, 스트리밍 중 스크롤이 맨 아래로 튀던 문제, 쉼표로 구분한 매처(예: 'Bash,PowerShell')가 동작하지 않던 훅 문제 등이 수정됐다. MCP 안정성도 개선돼 기능 탐색과 OAuth 토큰 요청이 일시적 네트워크 오류 시 재시도하고, 헤드리스 환경은 브라우저 팝업을 건너뛴다. 성능 면에서는 텍스트 갱신을 100ms로 묶어 스트리밍 중 CPU 사용량을 약 37% 줄였고 장시간 세션의 메모리 증가도 완화했다.",
+      "points": [
+        "/clear 이전 시점으로 되돌리는 /rewind 지원 추가",
+        "중지한 백그라운드 에이전트가 부활하던 문제 수정(중지 영구화)",
+        "쉼표 구분 매처 훅이 동작하지 않던 문제 등 다수 버그 수정",
+        "MCP 기능 탐색·OAuth가 일시 네트워크 오류 시 재시도하도록 개선",
+        "스트리밍 CPU 사용량 약 37% 감소, 장시간 세션 메모리 증가 완화"
+      ],
+      "takeaway": "되돌리기 복원과 안정성·성능 개선이 묶인 유지보수성 업데이트로, 백그라운드 에이전트와 MCP를 쓰는 사용자에게 특히 유용하다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "AI was supposed to kill engineering jobs, but new data suggests they’re the most resilient",
+      "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
+      "source": "TechCrunch AI",
+      "published": "2026-06-24T12:56:41+00:00",
+      "thumbnail": "",
+      "title_ko": "AI가 엔지니어 일자리를 없앨 거라더니, 새 데이터는 가장 탄탄하다고 말한다",
+      "summary": "AI 코딩 도구 확산에도 SignalFire 데이터는 엔지니어링이 2025년 가장 회복력 있는 직군이며 채용 비중이 오히려 늘었다고 보여준다.",
+      "detail": "AI가 일자리를 대체한다는 통념과 달리, 벤처사 SignalFire의 채용 데이터 분석은 엔지니어링이 2025년 가장 탄탄한 직군이었다고 말한다. 추적이 어려운 해고 대신 채용 데이터를 본 결과, 대형 테크의 전체 채용은 2019년 대비 25% 줄었지만 엔지니어 채용 감소는 11%에 그쳤다. '테크 메이저' 12개사에서 엔지니어는 신규 채용의 55%로 2019년 46%보다 늘었고, 초기 스타트업은 2019년보다 7% 더 많이 채용했다. AI가 정말 엔지니어를 대체한다면 엔지니어 채용이 가장 먼저 줄어야 하는데 오히려 다른 직군보다 빠르게 늘고 있다는 것이다. 앤스로픽 경제 책임자도 Claude를 핵심 업무에 쓰는 직군과 그렇지 않은 직군 사이에 유의미한 실업률 차이가 없다고 밝혔고, 젠슨 황도 AI가 엔지니어를 대체한다는 주장을 일축했다.",
+      "points": [
+        "SignalFire: 엔지니어링이 2025년 가장 회복력 있는 직군",
+        "전체 채용 25% 감소 vs 엔지니어 채용 11% 감소에 그침",
+        "테크 메이저 신규 채용 중 엔지니어 비중 46%(2019)→55%(2025)",
+        "초기 스타트업은 2019년 대비 엔지니어 7% 더 채용",
+        "앤스로픽·엔비디아 임원도 AI의 엔지니어 대체 효과에 회의적"
+      ],
+      "takeaway": "AI를 이유로 든 해고 서사와 달리, 실제 채용 데이터는 엔지니어 수요가 여전히 견고함을 보여줘 'AI가 코더를 대체한다'는 주장에 의문을 제기한다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Reid Hoffman says SpaceX 'not an AI company', xAI 'complete train wreck'",
+      "url": "https://fortune.com/2026/06/24/reid-hoffman-spacex-musk-openai-anthropic-gen-z-mistake/",
+      "source": "Hacker News",
+      "published": "2026-06-24T12:23:59+00:00",
+      "thumbnail": "",
+      "points": [
+        "스페이스X는 '프리미엄 CoreWeave'일 뿐 AI 기업이 아니다(호프먼)",
+        "스페이스X의 커서 인수는 AI 역량 부재의 증거라는 해석",
+        "xAI는 공동창업자 11명 전원 이탈, 세 번째 재시작 중인 '난파선'",
+        "Grok 모델은 앤스로픽·오픈AI 대비 벤치마크에서 뒤처짐",
+        "미 정부의 앤스로픽 Fable·Mythos 강제 철수를 원칙 없는 대응이라 비판"
+      ],
+      "comments": 256,
+      "hn_url": "https://news.ycombinator.com/item?id=48658647",
+      "title_ko": "리드 호프먼: 스페이스X는 'AI 기업 아니다', xAI는 '완전한 난파선'",
+      "summary": "리드 호프먼이 스페이스X의 AI 전략을 '돈으로 산 존재감', xAI를 '완전한 난파선'이라 혹평하고, 정부의 앤스로픽 모델 강제 철수도 우려했다.",
+      "detail": "실리콘밸리의 거물 리드 호프먼이 팟캐스트에서 스페이스X와 xAI의 AI 역량을 강하게 비판했다. 그는 스페이스X가 IPO 직후 AI 코딩 도구 커서를 인수한 것을 AI 역량의 증거가 아니라 부재의 증거로 보며 '시가총액으로 존재감을 사려는 것', '프리미엄 가격의 CoreWeave일 뿐'이라 평했다. xAI는 일론 머스크 본인 표현대로 '완전한 난파선'이며 원년 공동창업자 11명이 모두 떠나 세 번째 재시작 중이고, 주력 Grok 모델은 경쟁사에 뒤처진다고 지적했다. 또 미국 정부가 6월 11일 수출 통제 명령으로 앤스로픽의 Fable·Mythos 모델을 시장에서 강제 철수시킨 조치에 대해, 원칙도 예측 가능성도 없는 대응이라며 알람에 가까운 우려를 표했다.",
+      "takeaway": "AI 역량을 인수로 메우려는 빅테크 전략의 한계와, 정부의 자의적 AI 규제 리스크를 동시에 짚은 발언이다.",
+      "category": "산업/투자",
+      "metric": "▲ [\"스페이스X는 '프리미엄 CoreWeave'일 뿐 AI 기업이 아니다(호프먼)\", '스페이스X의 커서 인수는 AI 역량 부재의 증거라는 해석', \"xAI는 공동창업자 11명 전원 이탈, 세 번째 재시작 중인 '난파선'\", 'Grok 모델은 앤스로픽·오픈AI 대비 벤치마크에서 뒤처짐', '미 정부의 앤스로픽 Fable·Mythos 강제 철수를 원칙 없는 대응이라 비판'] · 💬 256"
+    },
+    {
+      "type": "hn",
+      "title": "Europeans should learn to love the air-conditioner",
+      "url": "https://www.economist.com/europe/2026/06/18/europeans-should-learn-to-love-the-air-conditioner",
+      "source": "Hacker News",
+      "published": "2026-06-24T12:07:05+00:00",
+      "thumbnail": "",
+      "points": [
+        "유럽의 에어컨 도입 확대 필요성을 다룬 글로 추정",
+        "본문 원문이 제공되지 않아 세부 내용 확인 불가",
+        "AI와 직접적 관련성은 낮은 일반 화제글"
+      ],
+      "comments": 114,
+      "hn_url": "https://news.ycombinator.com/item?id=48658484",
+      "title_ko": "유럽인들은 에어컨을 사랑하는 법을 배워야 한다",
+      "summary": "유럽이 에어컨 도입에 더 적극적이어야 한다는 화제글이나 본문은 제공되지 않았다.",
+      "detail": "본문 내용이 제공되지 않아 상세 요약이 불가능하다. 제목으로 보아 폭염이 잦아지는 유럽에서 전통적으로 꺼려온 에어컨 보급을 늘려야 한다는 주장의 글로 추정된다. AI와는 직접 관련이 없는 일반 화제글로 보인다.",
+      "takeaway": "기후 변화에 따른 유럽의 냉방 인프라 논쟁을 다룬 글로 보이나, 본문 부재로 시사점 판단은 제한적이다.",
+      "category": "기타",
+      "metric": "▲ ['유럽의 에어컨 도입 확대 필요성을 다룬 글로 추정', '본문 원문이 제공되지 않아 세부 내용 확인 불가', 'AI와 직접적 관련성은 낮은 일반 화제글'] · 💬 114"
+    },
+    {
+      "type": "hn",
+      "title": "How to burst the AI bubble: Strike at its roots",
+      "url": "https://arstechnica.com/gadgets/2026/06/how-to-burst-the-ai-bubble-strike-at-its-roots/",
+      "source": "Hacker News",
+      "published": "2026-06-24T09:57:10+00:00",
+      "thumbnail": "",
+      "points": [
+        "닥터로우의 신간은 AI 과대광고와 실제 현실을 구분하려는 시도",
+        "'역켄타우로스'=기계의 부속품으로 전락한 인간을 지칭하는 개념",
+        "아마존 배송기사가 대표적 사례로 제시됨",
+        "AI를 인간 보조용으로 쓰는 것과 인력 대체·책임 전가용으로 쓰는 것은 다르다고 강조"
+      ],
+      "comments": 47,
+      "hn_url": "https://news.ycombinator.com/item?id=48657518",
+      "title_ko": "AI 거품을 터뜨리는 법: 뿌리를 공격하라",
+      "summary": "코리 닥터로우가 신간에서 AI가 인간을 기계의 부속품으로 전락시키는 '역(逆)켄타우로스' 현상을 비판한다.",
+      "detail": "기술 저널리스트이자 SF 작가인 코리 닥터로우가 '인쉬티피케이션'에 이은 신간 'The Reverse Centaur's Guide to Life After AI'를 냈다. 그는 기술로 능력이 증강된 인간을 '켄타우로스', 반대로 무심한 기계의 말랑한 부속품 역할을 하는 인간을 '역켄타우로스'로 정의한다. 예로 AI 카메라에 둘러싸여 배송 밴의 주변기기처럼 일하는 아마존 배송기사를 든다. 닥터로우는 AI 산업이 이런 역켄타우로스를 양산하는 방향으로 가고 있다고 비판한다. 방사선과 의사를 보조하는 AI는 긍정적이지만, 의사 10명 중 9명을 해고하고 AI 진단의 검수와 책임만 남은 1명에게 떠넘기는 식은 전혀 다른 문제라는 것이다.",
+      "takeaway": "AI 도입이 인간을 보조하느냐 종속시키느냐가 핵심이며, 노동의 질과 책임 구조 측면에서 AI 활용 방식을 비판적으로 봐야 한다는 시사점을 준다.",
+      "category": "기타",
+      "metric": "▲ ['닥터로우의 신간은 AI 과대광고와 실제 현실을 구분하려는 시도', \"'역켄타우로스'=기계의 부속품으로 전락한 인간을 지칭하는 개념\", '아마존 배송기사가 대표적 사례로 제시됨', 'AI를 인간 보조용으로 쓰는 것과 인력 대체·책임 전가용으로 쓰는 것은 다르다고 강조'] · 💬 47"
+    },
+    {
+      "type": "guide",
+      "title": "Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+      "url": "https://www.latent.space/p/databricks",
+      "source": "Latent Space",
+      "published": "2026-06-24T09:53:16+00:00",
+      "thumbnail": "",
+      "title_ko": "프런티어 생태계는 왜 개방돼야 하는가 — 데이터브릭스 마테이 자하리아, 레이놀드 신",
+      "summary": "데이터브릭스 공동창업자들이 에이전트 시대를 맞아 회사를 데이터·AI 운영체제로 확장하는 전략과 오픈 전략을 설명한다.",
+      "detail": "데이터브릭스 공동창업자 마테이 자하리아와 레이놀드 신이 데이터+AI 서밋에서 회사의 차세대 비전을 공유했다. 핵심은 코딩 에이전트를 결합·제어·공유하는 오픈소스 메타 하네스 'Omnigent'로, Claude Code·Codex·Cursor 등 여러 에이전트를 공통 API 위에서 다룬다. 이들은 코딩 에이전트와 기업용 에이전트가 이식성·협업·세션 기록·보안·지출 통제라는 같은 문제에 부딪힌다고 본다. 데이터베이스 측면에선 CDC의 취약성을 비판하며, 모든 쿼리 엔진을 합치는 대신 스토리지 계층만 통합하는 LTAP 접근을 제시한다. 프런티어 모델 성능이 상품화되면 진짜 경쟁력은 기업 고유의 데이터·접근 통제·운영 상태 같은 맥락이 되며, 데이터브릭스는 여기에 최적 위치라는 주장이다.",
+      "points": [
+        "Omnigent: 여러 코딩 에이전트를 통합 제어·공유하는 오픈소스 메타 하네스",
+        "코딩 에이전트와 기업 에이전트는 이식성·보안·지출 통제 등 동일 문제에 직면",
+        "CDC의 취약성을 비판하며 스토리지 통합 기반의 LTAP 데이터베이스 전략 제시",
+        "모델 성능이 상품화되면 기업 고유 데이터·맥락이 진짜 경쟁우위가 됨"
+      ],
+      "takeaway": "AI 에이전트가 실제 업무를 수행하는 시대에는 모델 자체보다 기업 데이터와 그것을 적시에 노출하는 인프라가 차별화 요소가 된다는 점을 시사한다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Quoting Tom MacWright",
+      "url": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-24T09:13:51+00:00",
+      "thumbnail": "",
+      "title_ko": "인용: 톰 맥라이트 — LLM이 만든 '익명의' 지원서",
+      "summary": "LLM으로 도배된 이력서·포트폴리오·깃허브는 지원자에 대해 아무것도 말해주지 않는다는 비판.",
+      "detail": "사이먼 윌리슨이 톰 맥라이트의 글 'Accidental anonymity'를 인용했다. 맥라이트는 최근 LLM이 공동 작성한 지원서가, LLM이 생성한 포트폴리오 사이트로, 다시 LLM이 만든 깃허브 프로젝트와 커밋 메시지로 줄줄이 이어지는 사례를 본다고 말한다. 문제는 이런 지원서가 지원자에 대해 아무것도 알려주지 않는다는 점이다. 완벽하게 다듬어진 생성형 이력서는 일반적이고 비인격적이어서, 그 사람이 어떤 도구를 쓰는지 외에는 진짜 자기 것을 드러내지 않는다는 것이다.",
+      "points": [
+        "LLM 생성물이 이력서→포트폴리오→깃허브로 연쇄된 지원서가 늘고 있음",
+        "생성형 이력서는 완벽하지만 일반적이고 비인격적",
+        "지원자가 진짜 무엇을 했는지, 어떤 사람인지 알 수 없음",
+        "함께 소개된 윌리슨 최근 글: 브라우저용 Moebius 인페인팅 모델 이식, sqlite-utils 4.0rc1 등"
+      ],
+      "takeaway": "AI로 모든 것을 생성하면 효율적일 수 있지만 개인의 진정성과 차별성이 사라져 오히려 평가에서 불리해질 수 있음을 일깨운다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Agility Robotics plans to go public via SPAC in a $2.5B deal",
+      "url": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/",
+      "source": "TechCrunch AI",
+      "published": "2026-06-24T07:48:43+00:00",
+      "thumbnail": "",
+      "title_ko": "애질리티 로보틱스, SPAC로 25억 달러 규모 상장 추진",
+      "summary": "휴머노이드 로봇 스타트업 애질리티 로보틱스가 SPAC 합병으로 약 25억 달러 가치로 상장한다.",
+      "detail": "오리건주립대에서 2015년 분사한 휴머노이드 로봇 스타트업 애질리티 로보틱스가 SPAC 처칠캐피털 XI와 합병해 약 25억 달러 가치로 상장한다. 이 거래로 기관투자자 출자 약 2억 달러를 포함해 6억 2천만 달러 이상의 자금을 조달할 전망이다. 대표 제품인 이족보행 로봇 '디짓(Digit)'은 셰플러·GXO·도요타·메르카도리브레 등 9개 고객 현장에서 운용 중이며, 아마존·엔비디아·소프트뱅크 비전펀드2 등이 투자했다. 회사는 조달 자금으로 차세대 디짓 v5 생산 능력을 늘리고 기존 주문을 이행할 계획이다. 신모델은 이미 3억 달러 이상의 다년 주문과 30곳 이상의 잠재 고객 파이프라인을 확보했으며, 합병 법인은 'AGLT' 티커로 거래될 예정이다.",
+      "points": [
+        "SPAC 처칠캐피털 XI와 합병, 기업가치 약 25억 달러",
+        "조달액 6억 2천만 달러 이상(기관 출자 약 2억 달러 포함)",
+        "이족보행 로봇 '디짓'을 9개 고객 현장에서 운용 중",
+        "차세대 디짓 v5에 3억 달러+ 다년 주문, 30곳+ 잠재 고객 확보",
+        "티커 AGLT로 상장 예정"
+      ],
+      "takeaway": "휴머노이드 로봇이 실제 산업 현장에 상업 배치되며 자본시장에 진입하는 단계로, 노동력 부족 대응과 물류 자동화 수요를 보여주는 신호다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "테슬라 FSD, 텍사스서 70대 사망 사고로 미 연방 조사 착수",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212063",
+      "source": "AI타임스",
+      "published": "2026-06-24T07:12:37+00:00",
+      "thumbnail": "",
+      "title_ko": "테슬라 FSD, 텍사스서 70대 사망 사고로 미 연방 조사 착수",
+      "summary": "FSD 사용 차량이 주택으로 돌진해 76세 여성이 사망, NHTSA가 특별 조사에 나서고 책임 공방이 벌어지고 있다.",
+      "detail": "테슬라 모델 3이 텍사스주 케이티의 주택으로 돌진해 76세 여성 마사 아빌라가 사망했고, NHTSA가 FSD 사용 여부를 조사하는 특별 사고 조사에 착수했다. 운전자는 사고 당시 FSD를 사용 중이었다고 진술했으나, 머스크와 테슬라 AI 책임자 아쇼크 엘루스와미는 운전자가 가속 페달을 100%까지 밟아 자율주행을 직접 무력화했고 충돌 시 시속 117km까지 가속됐다고 반박했다. 다만 양측 주장은 아직 독립적으로 검증되지 않았다. NHTSA는 2016년 이후 테슬라 오토파일럿·FSD 관련 중대 사고 30건 이상을 조사해왔고, 테슬라는 올해 1월 오토파일럿 명칭을 폐기하고 FSD 체계로 전환했다. 독립 집계 사이트 테슬라데스는 2013~2025년 관련 사망자가 최소 65명이라고 본다.",
+      "points": [
+        "FSD 사용 의심 모델 3이 주택 돌진, 76세 여성 사망",
+        "NHTSA 특별 사고 조사 착수",
+        "테슬라 측: 운전자가 가속 페달을 100% 밟아 자율주행 무력화, 117km/h까지 가속 주장",
+        "NHTSA는 2016년 이후 테슬라 ADAS 관련 30건+ 중대사고 조사",
+        "테슬라데스 집계: 오토파일럿·FSD 관련 사망 최소 65명(2013~2025)"
+      ],
+      "takeaway": "'완전자율주행'이라는 이름과 달리 운전자 책임이 요구되는 FSD의 안전성과 명칭 논란이 다시 불거지며, 자율주행 보조 시스템의 책임 소재가 규제 쟁점으로 부상하고 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "오픈AI, IPO 앞두고 광고 시장 조준…칸에서 챗GPT 광고 비즈니스 공개",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212058",
+      "source": "AI타임스",
+      "published": "2026-06-24T07:10:51+00:00",
+      "thumbnail": "",
+      "title_ko": "오픈AI, IPO 앞두고 칸에서 챗GPT 광고 비즈니스 공개",
+      "summary": "오픈AI가 칸 라이언즈에 첫 참가해 챗GPT 광고 사업과 코딩 에이전트 코덱스를 내세우며 구글에 도전장을 냈다.",
+      "detail": "오픈AI가 세계 최대 광고 행사 칸 라이언즈에 처음 참가해 챗GPT 광고 플랫폼을 본격 소개하며 검색 광고를 지배하는 구글에 도전했다. 메타 출신 데이브 두건이 광고 사업을 총괄하며, IPO를 앞두고 급증하는 인프라·운영 비용(작년 340억 달러 지출)을 감당할 새 수익원 확보가 목적이다. 광고는 2월 출시 후 7개 시장에서 무료·월 8달러 'Go' 이용자에게 '스폰서드' 표시와 함께 답변 하단에 노출되며, 답변 내용엔 영향을 주지 않는다고 강조한다. 챗GPT 질의의 약 20%가 구매 의도를 담고 있어 여행·유통·헬스뷰티·금융이 성과가 좋고, 과금은 노출형에서 CPC·전환형으로 확대 중이다. 오픈AI는 투자자에게 2030년까지 광고 사업을 1000억 달러 규모로 키우겠다는 전망을 제시한 것으로 알려졌다.",
+      "points": [
+        "오픈AI, 칸 라이언즈 첫 참가로 광고 시장 본격 공략",
+        "현재 7개 시장에서 무료·Go(월 8달러) 이용자에게 '스폰서드' 광고 노출",
+        "챗GPT 질의 약 20%가 상업적 구매 의도 포함",
+        "과금 방식이 노출형에서 CPC·전환형 성과형으로 확대",
+        "2030년까지 광고 사업 1000억 달러 목표 전망(비공식)"
+      ],
+      "takeaway": "IPO와 1조 달러 기업가치를 노리는 오픈AI가 구독을 넘어 광고를 핵심 수익원으로 키우며 구글의 검색 광고 아성에 정면 도전하고 있음을 보여준다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+      "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
+      "source": "Hugging Face Blog",
+      "published": "2026-06-24T07:00:13+00:00",
+      "thumbnail": "",
+      "title_ko": "NVIDIA NeMo AutoModel로 트랜스포머 파인튜닝 가속하기",
+      "summary": "NeMo AutoModel은 import 한 줄만 바꿔 MoE 모델 파인튜닝 처리량을 3.4~3.7배 높이고 GPU 메모리를 약 30% 줄인다.",
+      "detail": "NVIDIA NeMo AutoModel은 Transformers v5 위에 전문가 병렬화(EP)·DeepEP 융합 all-to-all 디스패치·TransformerEngine 커널을 더한 오픈 라이브러리다. AutoModelForCausalLM을 상속하므로 HF와 API가 호환돼, import 한 줄만 바꾸면 다른 코드 변경 없이 MoE 모델 파인튜닝 처리량이 native Transformers v5 대비 3.4~3.7배 높아지고 GPU 메모리는 29~32% 줄어든다. 핵심은 v5에 없는 DeepEP로, 통신과 전문가 연산을 겹쳐 처리한다. Qwen3·Nemotron·GPT-OSS·DeepSeek V3 같은 인기 MoE에는 직접 튜닝한 커널을 제공하고, 그 외엔 Liger 커널 패칭 등을 적용한 vanilla HF로 폴백한다. save_pretrained()는 표준 HF 체크포인트를 그대로 출력해 vLLM·SGLang에서 로드할 수 있다.",
+      "points": [
+        "import 한 줄 변경만으로 적용, HF Transformers와 API 완전 호환",
+        "MoE 파인튜닝 처리량 3.4~3.7배 향상, GPU 메모리 29~32% 절감",
+        "핵심 기술: 전문가 병렬화(EP), DeepEP 융합 디스패치, TransformerEngine 커널",
+        "550B부터 Qwen3-30B-A3B 등 다양한 규모에서 검증",
+        "표준 HF 체크포인트 출력로 vLLM·SGLang 호환 유지"
+      ],
+      "takeaway": "코드 변경 거의 없이 대규모 MoE 모델 파인튜닝 비용과 속도를 크게 개선해, 오픈소스 생태계에서 대형 모델 커스터마이징의 진입 장벽을 낮춘다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.190",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.190",
+      "source": "Claude Code 릴리스",
+      "published": "2026-06-24T06:53:56+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.190",
+      "summary": "버그 수정과 안정성 개선에 초점을 맞춘 Claude Code 유지보수 업데이트다.",
+      "detail": "Claude Code v2.1.190이 출시됐다. 별도의 신규 기능 안내 없이 버그 수정과 신뢰성·안정성 개선이 적용된 유지보수성 릴리스다. 공개된 세부 변경 내역은 제한적이다. 기능 추가보다는 기존 동작의 안정화에 중점을 둔 업데이트로 보인다.",
+      "points": [
+        "버그 수정 적용",
+        "신뢰성·안정성 개선",
+        "주요 신규 기능 언급 없음",
+        "공개된 세부 변경 내역은 제한적"
+      ],
+      "takeaway": "기능 추가보다 안정성에 초점을 둔 유지보수 업데이트로, 사용 중이라면 최신 버전으로 업데이트하는 것이 권장된다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "OpenAI unveils its first custom chip, built by Broadcom",
+      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "source": "TechCrunch AI",
+      "published": "2026-06-24T05:54:46+00:00",
+      "thumbnail": "",
+      "title_ko": "OpenAI, 브로드컴과 만든 첫 자체 칩 '할라페뇨' 공개",
+      "summary": "OpenAI가 브로드컴과 함께 설계한 첫 자체 추론 전용 칩 '할라페뇨'를 공개했다.",
+      "detail": "OpenAI가 추론(inference) 전용으로 설계한 첫 맞춤형 프로세서 '할라페뇨(Jalapeño)'를 브로드컴과 협력해 공개했다. 자사 AI 모델이 칩 개발을 도왔으며, 아직 테스트 단계지만 초기 결과에서 기존 최첨단 대안보다 와트당 성능이 크게 앞선다고 밝혔다. 이는 엔비디아 GPU 의존도를 낮추려는 행보로, 구글·아마존이 만든 AI 가속기와 같은 맥락이다. 사전학습 같은 고부하 작업은 여전히 엔비디아에 의존하겠지만, 실시간 코딩 모델 구동 시 낮은 운영 비용을 강조했다. OpenAI는 모델·제품을 넘어 칩 아키텍처·메모리·네트워킹 등 하부 인프라까지 직접 설계해 전 계층을 같은 목표로 최적화한다고 설명했다.",
+      "points": [
+        "브로드컴과 공동 설계한 첫 자체 추론 전용 칩 '할라페뇨' 공개",
+        "초기 결과에서 와트당 성능이 기존 최첨단 대비 크게 우수",
+        "엔비디아 GPU 의존도를 줄이려는 전략(구글·아마존과 유사)",
+        "실시간 코딩 모델 구동 시 낮은 운영 비용을 강조",
+        "사전학습 등 고부하 작업은 여전히 엔비디아 하드웨어에 의존"
+      ],
+      "takeaway": "추론 비용을 조금만 낮춰도 AI 사업의 수익성에 큰 영향을 주므로, 칩까지 직접 만드는 수직 통합은 향후 AI 경제성의 핵심 변수가 된다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "\"우리 모두 AI에 취약할 수밖에 없어요\"",
+      "url": "https://www.youtube.com/watch?v=EaQHzh_OAjc",
+      "source": "엠빅뉴스",
+      "published": "2026-06-24T05:00:15.668398+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/EaQHzh_OAjc/hqdefault.jpg",
+      "videoId": "EaQHzh_OAjc",
+      "views": 176167,
+      "title_ko": "'우리 모두 AI에 취약할 수밖에 없어요'",
+      "summary": "MBC PD수첩이 일상에 파고든 AI 챗봇의 문제점을 다룬 영상이다.",
+      "detail": "지난 23일 방송된 MBC PD수첩이 우리 일상을 차지한 AI 챗봇의 문제점을 조명한 내용을 엠빅뉴스가 소개했다. AI 챗봇이 '친구'처럼 사용되는 현실 속에서 누구나 AI에 취약해질 수 있다는 점을 다룬다. 다만 제공된 본문 정보가 매우 짧아 구체적 사례나 논점은 확인되지 않는다.",
+      "points": [
+        "MBC PD수첩의 AI 챗봇 문제점 관련 방송 소개",
+        "AI를 '친구'처럼 의존하는 세태를 다룸",
+        "누구나 AI에 취약해질 수 있다는 점을 강조"
+      ],
+      "takeaway": "AI 챗봇에 대한 정서적·심리적 의존이 사회적 위험 요소로 부각되고 있음을 보여준다.",
+      "category": "기타",
+      "metric": "조회 17.6만"
+    },
+    {
+      "type": "youtube",
+      "title": "ChatGPT vs Gemini vs Claude Make FC 26 From Scratch",
+      "url": "https://www.youtube.com/watch?v=UUAajF3eMIk",
+      "source": "tef",
+      "published": "2026-06-24T03:00:15.668398+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/UUAajF3eMIk/hqdefault.jpg",
+      "videoId": "UUAajF3eMIk",
+      "views": 25461,
+      "title_ko": "ChatGPT vs Gemini vs Claude, 맨바닥에서 FC 26 만들기 대결",
+      "summary": "세 AI에게 'FC 26' 클론 게임을 만들게 해 결과를 비교하는 영상이다.",
+      "detail": "ChatGPT, Gemini, Claude에게 동일하게 축구 게임 'FC 26'의 클론을 처음부터 만들도록 시켜 어느 쪽이 가장 잘 구현하는지 비교하는 실험 영상이다. 각 모델의 코드 생성·게임 구현 능력을 나란히 견주는 형식이다. 제공된 본문이 짧아 구체적 승패나 결과는 확인되지 않는다.",
+      "points": [
+        "ChatGPT·Gemini·Claude에게 FC 26 클론 게임 제작을 지시",
+        "세 모델의 코드 생성·게임 구현 능력을 직접 비교",
+        "처음부터(from scratch) 만드는 형식의 대결 영상"
+      ],
+      "takeaway": "주요 LLM의 실제 코딩·구현 역량을 동일 과제로 비교해 모델 선택에 참고할 수 있다.",
+      "category": "LLM/언어모델",
+      "metric": "조회 2.5만"
+    },
+    {
+      "type": "youtube",
+      "title": "OpenAI's New GPT Cyber Beats Mythos 5",
+      "url": "https://www.youtube.com/watch?v=RNCaZhLlspk",
+      "source": "AI Revolution",
+      "published": "2026-06-24T00:00:15.668398+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/RNCaZhLlspk/hqdefault.jpg",
+      "videoId": "RNCaZhLlspk",
+      "views": 35119,
+      "title_ko": "OpenAI의 새 'GPT Cyber'가 Mythos 5를 능가하다",
+      "summary": "OpenAI의 신규 보안 특화 모델 GPT Cyber가 Mythos 5를 앞섰다고 소개하는 영상이다.",
+      "detail": "OpenAI의 새 모델 'GPT Cyber'가 사이버보안 벤치마크에서 Mythos 5를 능가했다는 소식을 다룬 영상이다. Daybreak, Codex Security, Patch 등 보안 관련 기능·도구가 함께 언급되며, 단일 벤치마크 그 이상의 의미가 있다고 강조한다. 다만 본문 정보가 짧아 구체적 수치나 검증 가능한 세부 내용은 확인되지 않는다.",
+      "points": [
+        "OpenAI의 신규 보안 특화 모델 'GPT Cyber' 소개",
+        "사이버보안 성능에서 Mythos 5를 능가했다고 주장",
+        "Daybreak·Codex Security·Patch 등 보안 도구가 함께 언급됨"
+      ],
+      "takeaway": "AI 모델 간 경쟁이 사이버보안 영역으로 확장되고 있음을 보여주는 사례다.",
+      "category": "LLM/언어모델",
+      "metric": "조회 3.5만"
+    },
+    {
+      "type": "youtube",
+      "title": "[자막뉴스] \"몇 달 내 초강력 AI 등장\"..'차원이 다르다' 파괴력 경악 (2026.06.23/MBC뉴스)",
+      "url": "https://www.youtube.com/watch?v=LPZoDdvzOS8",
+      "source": "MBCNEWS",
+      "published": "2026-06-23T23:00:15.668398+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/LPZoDdvzOS8/hqdefault.jpg",
+      "videoId": "LPZoDdvzOS8",
+      "views": 41134,
+      "title_ko": "[자막뉴스] '몇 달 내 초강력 AI 등장'…차원이 다른 파괴력 (2026.06.23 MBC뉴스)",
+      "summary": "몇 달 내 등장할 초강력 AI와 그 사이버보안 파괴력을 다룬 MBC 뉴스 영상이다.",
+      "detail": "수개월 내에 '차원이 다른' 초강력 AI가 등장할 것이라는 전망을 다룬 MBC 뉴스 자막 영상이다. 앤트로픽(Anthropic), 미토스(Mythos), 페이블(Fable) 등 최신 모델과 파이브아이즈·사이버보안 이슈가 해시태그로 함께 언급된다. AI의 사이버보안 분야 파괴력에 대한 경계를 주제로 한다. 본문 정보가 짧아 구체적 발언 주체나 근거는 확인되지 않는다.",
+      "points": [
+        "수개월 내 초강력 AI 등장 전망을 다룸",
+        "앤트로픽·미토스·페이블 등 최신 모델 언급",
+        "파이브아이즈·사이버보안 맥락에서 AI 위협을 조명"
+      ],
+      "takeaway": "차세대 AI의 급격한 성능 향상이 사이버보안 등 국가안보 차원의 우려로 이어지고 있음을 보여준다.",
+      "category": "기타",
+      "metric": "조회 4.1만"
+    },
+    {
+      "type": "youtube",
+      "title": "When millions of AI agents meet",
+      "url": "https://www.youtube.com/watch?v=V04bm-3d6EQ",
+      "source": "Google DeepMind",
+      "published": "2026-06-23T23:00:15.668398+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/V04bm-3d6EQ/hqdefault.jpg",
+      "videoId": "V04bm-3d6EQ",
+      "views": 36066,
+      "title_ko": "수백만 개의 AI 에이전트가 만날 때",
+      "summary": "구글 딥마인드가 AI 에이전트와 그들의 대규모 상호작용을 다룬 영상이다.",
+      "detail": "구글 딥마인드가 현재 가장 뜨거운 화두인 'AI 에이전트'를 주제로 만든 영상이다. 단순히 응답만 하는 기존 언어모델과 달리, 스스로 행동하는 에이전트들이 수백만 개 규모로 서로 만나고 상호작용할 때 어떤 일이 벌어지는지를 다룬다. 본문 정보가 짧아 구체적 연구 내용이나 결론은 확인되지 않는다.",
+      "points": [
+        "AI 에이전트를 핵심 주제로 다룬 구글 딥마인드 영상",
+        "단순 응답형 언어모델과 행동형 에이전트의 차이를 강조",
+        "수백만 개 에이전트 간 대규모 상호작용 시나리오를 조명"
+      ],
+      "takeaway": "개별 에이전트를 넘어 다수 에이전트가 상호작용하는 환경이 AI의 다음 단계 화두로 떠오르고 있음을 시사한다.",
+      "category": "연구/논문",
+      "metric": "조회 3.6만"
+    }
+  ]
+}
