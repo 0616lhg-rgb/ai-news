@@ -777,9 +777,9 @@ def load_seen_urls(today):
     return seen
 
 
-def save(items, briefing=None):
+def save(items, briefing=None, date=None):
     os.makedirs(DATA_DIR, exist_ok=True)
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = date or datetime.now().strftime("%Y-%m-%d")
 
     for it in items:
         it.pop("raw_desc", None)
