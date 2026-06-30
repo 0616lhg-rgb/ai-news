@@ -1,0 +1,505 @@
+{
+  "date": "2026-07-01",
+  "generated_at": "2026-07-01T08:06:27",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘 AI 분야는 'Claude Sonnet 5' 출시를 중심으로 한 모델 경쟁과, 메모리 가격 급등('램마겟돈')을 배경으로 한 대규모 반도체·데이터센터 투자가 동시에 흐름을 주도했다. 앤트로픽은 Sonnet 5와 'Claude Science'로 에이전트·과학 연구 양면에서 영토를 넓혔고, 삼성·SK하이닉스는 호남·서남권에 800조원대 투자를 발표하며 AI 인프라 거점화에 나섰다. 한편 효율성·IPO 연기 등 산업의 지속가능성을 묻는 신호도 함께 부각됐다.",
+    "highlights": [
+      {
+        "title": "Claude Sonnet 5 출시",
+        "line": "Opus 4.8에 근접한 에이전트 성능을 더 낮은 가격에 제공하며 Claude Code 기본 모델로도 채택돼 오늘 최대 이슈다."
+      },
+      {
+        "title": "800조 반도체·AI 인프라 투자",
+        "line": "삼성(호남 425조)과 SK하이닉스(서남권 400조)가 AI 메모리·데이터센터 거점 조성에 동시 베팅하며 국내 산업 지형을 재편한다."
+      },
+      {
+        "title": "램마겟돈, 진짜 피해자는 중소기업·소비자",
+        "line": "AI 수요발 메모리 가격 급등의 충격이 대기업이 아닌 중소기업과 일반 소비자에게 전가된다는 분석이 시장의 그늘을 드러낸다."
+      },
+      {
+        "title": "Claude Science 출시",
+        "line": "앤트로픽이 AI 신약·생명과학 연구판 플래그십을 내놓으며 딥마인드에 정면 도전, AI의 과학 적용을 본격화한다."
+      },
+      {
+        "title": "OpenAI IPO 연기·효율성 논쟁",
+        "line": "OpenAI의 IPO 보류와 '왜 더 적은 토큰으로 높은 점수를 내나'라는 효율성 분석이 겹치며 AI 산업의 수익성·지속성 물음을 던진다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "news",
+      "title": "‘램마겟돈’? 흔들리는 메모리 시장의 진정한 피해자는….",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212284",
+      "source": "AI타임스",
+      "published": "2026-06-30T21:55:00+00:00",
+      "thumbnail": "",
+      "title_ko": "'램마겟돈'? 흔들리는 메모리 시장의 진짜 피해자는…",
+      "summary": "AI 수요로 촉발된 메모리(램) 가격 급등 사태의 진짜 피해자는 대기업이 아니라 중소기업과 일반 소비자라는 분석.",
+      "detail": "AI 데이터센터향 메모리 수요 폭증으로 램 가격이 치솟는 이른바 '램마겟돈' 상황이 시장을 흔들고 있다. 기사는 이 충격을 가장 크게 받는 쪽이 가격 협상력이 약한 중소기업과 최종 소비자라고 지적한다. 레노버, 고프로 등 완제품 제조사도 부품 가격 상승 압박을 받고 있다. 업계에서는 '예전 가격은 다시 오지 않을 것'이라는 전망이 나온다. (본문 일부만 제공되어 세부 수치는 제한적이다.)",
+      "points": [
+        "AI 수요로 램 등 메모리 가격이 급등하는 '램마겟돈' 발생",
+        "가장 큰 타격은 협상력 약한 중소기업과 소비자",
+        "레노버·고프로 등 완제품 업체도 원가 상승 압박",
+        "'예전 가격은 다시 없을 것'이라는 비관적 전망"
+      ],
+      "takeaway": "AI 인프라 투자 경쟁이 메모리 공급을 빨아들이면서, 그 비용 부담이 결국 중소기업과 소비자에게 전가되고 있음을 보여준다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Claude Sonnet 5",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "source": "Hacker News",
+      "published": "2026-06-30T17:59:52+00:00",
+      "thumbnail": "",
+      "points": [
+        "역대 가장 에이전트 지향적인 Sonnet 모델",
+        "성능은 Opus 4.8에 근접, 가격은 더 저렴",
+        "추론·도구 사용·코딩·지식 작업 전반 개선",
+        "effort(노력) 수준 조정으로 비용·성능 균형 조절 가능",
+        "도입가 입력 $2·출력 $10(100만 토큰), 이후 $3·$15"
+      ],
+      "comments": 435,
+      "hn_url": "https://news.ycombinator.com/item?id=48736605",
+      "title_ko": "Claude Sonnet 5 공개",
+      "summary": "앤트로픽이 역대 가장 에이전트 성능이 뛰어난 Sonnet 모델 'Sonnet 5'를 출시했다. Opus 4.8에 근접한 성능을 더 낮은 가격에 제공한다.",
+      "detail": "Sonnet 5는 계획 수립, 브라우저·터미널 등 도구 사용, 자율 실행 능력에서 크게 향상되어 몇 달 전만 해도 더 크고 비싼 모델이 필요했던 작업을 수행한다. 전작 Sonnet 4.6 대비 추론·도구 사용·코딩·지식 작업에서 개선됐고, 성능은 Opus 4.8에 근접하면서 비용 효율은 더 높다. 안전성 평가에서 바람직하지 않은 행동 비율이 낮아졌고 사이버보안 작업 수행 능력은 Opus보다 크게 제한됐다. 모든 요금제에서 사용 가능하며 Free·Pro의 기본 모델이다. API 가격은 8월 31일까지 입력 100만 토큰당 2달러, 출력 10달러의 도입가로 제공된 뒤 이후 3달러/15달러로 책정된다.",
+      "takeaway": "고가 Opus급 에이전트 성능이 저렴한 Sonnet 가격대로 내려오면서, 자율 코딩·도구 활용 워크플로의 비용 장벽이 크게 낮아졌다.",
+      "category": "LLM/언어모델",
+      "metric": "▲ ['역대 가장 에이전트 지향적인 Sonnet 모델', '성능은 Opus 4.8에 근접, 가격은 더 저렴', '추론·도구 사용·코딩·지식 작업 전반 개선', 'effort(노력) 수준 조정으로 비용·성능 균형 조절 가능', '도입가 입력 $2·출력 $10(100만 토큰), 이후 $3·$15'] · 💬 435"
+    },
+    {
+      "type": "hn",
+      "title": "EU commissioners shut down air conditioning for employees, leave theirs on",
+      "url": "https://www.politico.eu/article/eu-commission-heatwave-hq-forced-shut-down-air-conditioning-europe/",
+      "source": "Hacker News",
+      "published": "2026-06-30T16:19:51+00:00",
+      "thumbnail": "",
+      "points": [
+        "폭염으로 EU 집행위 본부 1~7층 냉방 강제 중단",
+        "직원들은 정오 문자로 통보받음",
+        "위원장과 집행위원 사무실은 8층 이상 상층부",
+        "상층 냉방은 유지돼 형평성 논란"
+      ],
+      "comments": 129,
+      "hn_url": "https://news.ycombinator.com/item?id=48734940",
+      "title_ko": "폭염 속 EU 집행위, 직원 에어컨은 끄고 자신들 것은 켜둬",
+      "summary": "폭염으로 EU 집행위 본부 건물의 냉방이 1~7층에서 강제 중단됐는데, 고위직 사무실이 있는 상층부는 가동돼 논란.",
+      "detail": "금요일 폭염으로 EU 집행위가 입주한 브뤼셀 베를레몽 빌딩의 냉방 시스템이 강제 중단됐다. 직원들은 정오에 '1~7층 냉방을 종일 강제 중단한다'는 문자를 받았다. 13층 건물에는 우르줄라 폰데어라이엔 집행위원장과 26명의 집행위원, 약 3,000명의 직원이 근무한다. 위원장은 13층, 대부분의 집행위원 사무실은 8층 이상에 있어 상층부 냉방은 유지됐다는 점이 형평성 논란을 낳았다.",
+      "takeaway": "AI와 직접 관련은 없으나, 기후 위기 속 조직 내 형평성·리더십 문제를 상징적으로 보여준 사례다.",
+      "category": "기타",
+      "metric": "▲ ['폭염으로 EU 집행위 본부 1~7층 냉방 강제 중단', '직원들은 정오 문자로 통보받음', '위원장과 집행위원 사무실은 8층 이상 상층부', '상층 냉방은 유지돼 형평성 논란'] · 💬 129"
+    },
+    {
+      "type": "hn",
+      "title": "Scammers Sell Seeds for Exotic AI-Generated Flowers That Don't Exist",
+      "url": "https://www.404media.co/scammers-sell-seeds-for-exotic-ai-generated-flowers-that-dont-exist/",
+      "source": "Hacker News",
+      "published": "2026-06-30T15:45:32+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 생성 이미지로 실재하지 않는 식물 씨앗 판매",
+        "eBay·아마존·Etsy 등 대형몰에서 확산, 단속 역부족",
+        "'테디베어 해바라기' 등 실존 품종도 과장 이미지로 판매",
+        "장미·무지개 씨앗이 흔한 사기 품목",
+        "수천 건 판매되며 미배송·오배송 피해 속출"
+      ],
+      "comments": 31,
+      "hn_url": "https://news.ycombinator.com/item?id=48734389",
+      "title_ko": "존재하지 않는 'AI 생성 이색 꽃' 씨앗을 파는 사기꾼들",
+      "summary": "새·나비·고양이 모양으로 핀다는 화려한 AI 생성 이미지로, 실재하지 않는 식물의 씨앗을 파는 사기가 대형 쇼핑몰에 확산 중.",
+      "detail": "사기꾼들이 무지갯빛 잎이나 동물 형상으로 핀다는 AI 생성 이미지를 내세워 존재하지 않는 식물의 씨앗을 판매하고 있다. 가짜 씨앗 사기 자체는 오래됐지만, AI 이미지 생성이 쉬워지면서 eBay·아마존·Etsy 등 대형 플랫폼에서 급격히 늘었고 플랫폼은 단속을 따라가지 못한다. '테디베어 해바라기' 같은 실재 품종도 거대한 보라색 꽃 등으로 과장돼 팔리며, 장미·무지개 씨앗이 흔한 사기 품목이다. 명백히 가짜로 보이는데도 수천 건씩 판매되며, 받지 못했거나 다른 씨앗을 받았다는 피해 후기가 잇따른다.",
+      "takeaway": "생성형 AI 이미지의 손쉬운 제작이 기존 사기를 대규모로 증폭시켜, 온라인 마켓의 신뢰와 소비자 보호 문제를 키우고 있다.",
+      "category": "기타",
+      "metric": "▲ ['AI 생성 이미지로 실재하지 않는 식물 씨앗 판매', 'eBay·아마존·Etsy 등 대형몰에서 확산, 단속 역부족', \"'테디베어 해바라기' 등 실존 품종도 과장 이미지로 판매\", '장미·무지개 씨앗이 흔한 사기 품목', '수천 건 판매되며 미배송·오배송 피해 속출'] · 💬 31"
+    },
+    {
+      "type": "hn",
+      "title": "Words Are a Byproduct of Consciousness. For LLMs, It's Backwards",
+      "url": "https://ranpara.net/posts/words-are-a-byproduct-of-consciousness/",
+      "source": "Hacker News",
+      "published": "2026-06-30T14:16:57+00:00",
+      "thumbnail": "",
+      "points": [
+        "인간: 아이디어·의식이 먼저, 단어는 나중의 '껍질'",
+        "LLM: 이전 단어 기반 다음 단어 예측이 전부, 그 아래 아이디어 없음",
+        "언어→문자→인쇄→컴퓨터→인터넷→트랜스포머로 이어진 변곡점 서사",
+        "단어와 의식의 선후 관계가 인간과 LLM에서 정반대",
+        "이 차이가 AI의 향방을 설명한다는 주장"
+      ],
+      "comments": 183,
+      "hn_url": "https://news.ycombinator.com/item?id=48733062",
+      "title_ko": "인간에게 말은 의식의 부산물, LLM에겐 그 반대다",
+      "summary": "인간은 생각(의식)이 먼저고 단어가 나중인데, LLM은 단어 예측이 전부라는 근본 차이가 현재 AI의 방향을 설명한다는 에세이.",
+      "detail": "필자는 인간이 말할 때 아이디어·의식이 먼저 존재하고 단어는 그것을 감싸는 '껍질'일 뿐이라고 본다. 반면 LLM은 이전 단어들을 바탕으로 다음 단어를 예측하는 것이 전부이며, 그 아래에 깔린 아이디어가 없다고 주장한다. 글은 언어·문자·인쇄술·컴퓨터·인터넷·2017년 트랜스포머에 이르는 역사를 짚으며 매 변곡점이 인류를 전진시켰다고 설명한다. 인간에게는 단어가 의식의 부산물이지만 LLM에게는 단어가 원천이라는 이 역전이, AI가 향하는 방향의 핵심을 설명한다는 것이 글의 논지다.",
+      "takeaway": "LLM의 '단어 우선' 구조와 인간의 '의식 우선' 사고를 대비시켜, 현 AI의 본질과 한계를 사유하게 하는 관점이다.",
+      "category": "기타",
+      "metric": "▲ [\"인간: 아이디어·의식이 먼저, 단어는 나중의 '껍질'\", 'LLM: 이전 단어 기반 다음 단어 예측이 전부, 그 아래 아이디어 없음', '언어→문자→인쇄→컴퓨터→인터넷→트랜스포머로 이어진 변곡점 서사', '단어와 의식의 선후 관계가 인간과 LLM에서 정반대', '이 차이가 AI의 향방을 설명한다는 주장'] · 💬 183"
+    },
+    {
+      "type": "hn",
+      "title": "Beware, Claude Code deletes 30 day old transcripts. Anthropic won't fix it",
+      "url": "https://github.com/anthropics/claude-code/issues/62476",
+      "source": "Hacker News",
+      "published": "2026-06-30T13:58:21+00:00",
+      "thumbnail": "",
+      "points": [
+        "cleanupPeriodDays 기본값 30일, 오래된 transcript 자동 삭제",
+        "첫 실행 고지·삭제 경고·/config 노출 모두 없음",
+        "코드·git은 남지만 설계·디버깅 등 추론 맥락 소실",
+        "요청: 비파괴 기본값·옵트인·소프트 삭제·설정 노출",
+        "임시방편: settings.json에 cleanupPeriodDays 3650 설정"
+      ],
+      "comments": 37,
+      "hn_url": "https://news.ycombinator.com/item?id=48732846",
+      "title_ko": "주의: Claude Code가 30일 지난 대화 기록을 삭제, 앤트로픽은 수정 거부",
+      "summary": "Claude Code가 기본 설정상 30일 넘은 대화 transcript를 경고 없이 삭제한다는 버그 리포트. 사용자는 수개월치 기록을 잃었다.",
+      "detail": "GitHub 이슈에 따르면 Claude Code의 cleanupPeriodDays 기본값이 30일로 설정돼, 시작 시 30일 넘은 ~/.claude/projects의 .jsonl 대화 파일을 조용히 삭제한다. 첫 실행 시 고지도, 삭제 전 경고도 없고 /config에도 노출되지 않는다. 신고자는 3~4월 한 프로젝트에서 14개 세션·1,315개 프롬프트 기록을 잃었으며, 코드와 git 이력은 남지만 설계 토론·디버깅 맥락 같은 '추론의 흔적'은 사라졌다고 지적한다. 요청 사항은 기본값을 비파괴적으로 변경, 첫 실행 고지·옵트인, 휴지통식 소프트 삭제, /config 노출 등이다. 임시 해결책으로 settings.json에 'cleanupPeriodDays': 3650 추가를 권한다.",
+      "takeaway": "AI 코딩 도구에서 '대화 맥락' 자체가 핵심 산출물인 만큼, 조용한 자동 삭제의 데이터 보존 정책은 사용자에게 실질적 위험이 된다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['cleanupPeriodDays 기본값 30일, 오래된 transcript 자동 삭제', '첫 실행 고지·삭제 경고·/config 노출 모두 없음', '코드·git은 남지만 설계·디버깅 등 추론 맥락 소실', '요청: 비파괴 기본값·옵트인·소프트 삭제·설정 노출', '임시방편: settings.json에 cleanupPeriodDays 3650 설정'] · 💬 37"
+    },
+    {
+      "type": "guide",
+      "title": "Nano Banana 2 Lite",
+      "url": "https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-30T13:15:35+00:00",
+      "thumbnail": "",
+      "title_ko": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+      "summary": "구글이 가장 빠르고 저렴한 Gemini 이미지 모델 'Nano Banana 2 Lite'를 공개했다. 속도와 대규모 생성에 최적화된 모델이다.",
+      "detail": "API명 gemini-3.1-flash-lite-image로 제공되며, 속도와 확장성에 초점을 맞춘 Gemini 계열의 경량 이미지 모델이다. 사이먼 윌리슨은 AI Studio에서 '햄 라디오를 든 너구리를 찾아라'라는 월리 찾기 스타일 프롬프트로 테스트했다. 지난 4월 다른 Nano Banana 모델로 같은 시도를 했을 때보다 결과가 더 낫다고 평가했다. 다만 이미지 속 'Forest Festival' 글자를 두 가지로 잘못 표기하는 텍스트 오류가 남았다.",
+      "points": [
+        "Gemini 3.1 Flash Lite Image가 곧 Nano Banana 2 Lite",
+        "가장 빠르고 저렴한 Gemini 이미지 모델, 속도·확장 최적화",
+        "'월리 찾기' 스타일 프롬프트 테스트에서 호평",
+        "이전 Nano Banana 모델 대비 결과 개선",
+        "이미지 내 텍스트(철자) 정확도는 여전히 약점"
+      ],
+      "takeaway": "저비용·고속 이미지 모델로 대규모 생성 작업의 비용과 속도 효율을 높였지만, 이미지 안 텍스트의 정확도는 여전한 한계로 남아 있다.",
+      "category": "이미지/비디오",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Claude Science is Anthropic’s newest flagship product",
+      "url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "source": "MIT Tech Review",
+      "published": "2026-06-30T12:50:04+00:00",
+      "thumbnail": "",
+      "title_ko": "앤트로픽의 새 주력 제품 'Claude Science'",
+      "summary": "앤트로픽이 Claude Code의 과학 연구판 격인 'Claude Science'를 출시, AI 신약·생명과학 연구에 본격 베팅하며 딥마인드에 도전한다.",
+      "detail": "앤트로픽이 Claude Code가 소프트웨어 개발을 지원하듯 과학 연구를 지원하는 신제품 Claude Science를 발표했다. 간결한 고수준 지시만으로 자율적으로 의미 있는 작업을 수행하며, 계산생물학·신약 개발 연구에 유용한 도구에 접근한다. 모든 유료 구독자에게 제공되며, 앤트로픽 스스로도 이를 활용해 희귀·소외 질환 신약을 연구하겠다고 밝혔다. 회사는 이 제품을 Claude Code·Claude Cowork와 동급의 주력으로 격상해 과학 응용을 중시함을 드러냈다. 그간 AlphaFold로 과학 AI를 이끈 딥마인드가 코딩 분야에서 뒤처진 가운데, PhD 출신 CEO와 다수의 과학자 사용자층, 그리고 존 점퍼의 합류로 앤트로픽이 그 자리를 노린다.",
+      "points": [
+        "Claude Science 출시: 과학 연구용 자율 에이전트 제품",
+        "계산생물학·신약 개발 등 연구 도구에 접근",
+        "모든 유료 구독자 이용 가능, 앤트로픽도 희귀질환 신약 연구에 활용",
+        "Claude Code·Cowork와 동급 주력 제품으로 격상",
+        "AlphaFold의 존 점퍼가 딥마인드에서 앤트로픽으로 이적"
+      ],
+      "takeaway": "코딩에 이어 과학 연구로 AI 에이전트의 영토를 넓히며, 그간 과학 AI를 주도한 딥마인드와의 경쟁 구도가 본격화됨을 보여준다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "What's new in Claude Sonnet 5",
+      "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-30T12:23:02+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Sonnet 5의 새로워진 점",
+      "summary": "Anthropic의 Sonnet 5는 Opus 4.8에 근접한 성능을 더 낮은 가격에 제공하지만, 새 토크나이저로 실질 단가는 약 30% 올랐다.",
+      "detail": "개발자 문서 기준 Sonnet 5는 temperature·top_p·top_k 샘플링 파라미터를 더 이상 지원하지 않고, 100만 토큰 컨텍스트와 12.8만 토큰 출력을 지원한다. Adaptive thinking이 기본 활성화되며 명시적으로 끄려면 disabled를 지정해야 한다. 가격은 Sonnet 4.6과 동일한 100만 토큰당 입력 $3/출력 $15(8월 31일까지 $2/$10 할인)지만, 새 토크나이저가 같은 텍스트에서 약 30% 더 많은 토큰을 생성한다. 결과적으로 영어 약 1.4배, 스페인어 1.33배, 파이썬 코드 1.28배로 실질 단가가 오르며 중국어 간체는 거의 동일하다. 시스템 카드상 Sonnet 5는 사이버 작업 능력이 Mythos 5보다 크게 낮아 Opus 4.7/4.8 수준의 안전장치로 출시될 수 있었다.",
+      "points": [
+        "샘플링 파라미터(temperature·top_p·top_k) 지원 중단",
+        "100만 토큰 컨텍스트, 12.8만 토큰 최대 출력, adaptive thinking 기본 on",
+        "표면 가격은 Sonnet 4.6과 동일하나 8월 31일까지 $2/$10 할인",
+        "새 토크나이저로 동일 텍스트가 약 30% 더 많은 토큰 생성 → 실질 단가 상승",
+        "언어별 체감 단가 차이: 영어 1.4배, 코드 1.28배, 중국어 간체는 거의 동일"
+      ],
+      "takeaway": "명시된 가격만 보면 변화가 없어 보이지만 토크나이저 변경으로 실제 비용이 30% 가까이 오를 수 있어, 마이그레이션 시 토큰 단가를 반드시 재계산해야 한다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "OpenAI Hits Pause On Its IPO",
+      "url": "https://www.youtube.com/watch?v=Lat201tjVzg",
+      "source": "Prof G Markets",
+      "published": "2026-06-30T12:00:21.411829+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/Lat201tjVzg/hqdefault.jpg",
+      "videoId": "Lat201tjVzg",
+      "views": 59627,
+      "title_ko": "OpenAI, IPO 일시 중단",
+      "summary": "OpenAI가 IPO를 연기했다는 보도를 두고 그 배경을 분석하는 영상이다.",
+      "detail": "Prof G Markets의 Ed Elson이 Alex Heath와 함께 OpenAI가 기업공개(IPO)를 늦추는 것으로 알려진 이유를 짚는다. 이어 Jemima Kelly가 합류해 관련 논의를 이어간다. 본문 정보가 짧아 구체적 수치나 결론은 제시되지 않으며, IPO 연기 배경과 시장 영향이 주된 화제다.",
+      "points": [
+        "OpenAI가 IPO를 연기했다는 보도",
+        "연기 배경을 패널이 분석하는 토론 영상",
+        "Alex Heath, Jemima Kelly 등 게스트 참여"
+      ],
+      "takeaway": "AI 대장주 격인 OpenAI의 상장 시점은 시장 전반의 AI 투자 심리를 가늠하는 지표라 연기 자체가 주목받는다.",
+      "category": "산업/투자",
+      "metric": "조회 6.0만"
+    },
+    {
+      "type": "guide",
+      "title": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
+      "url": "https://huggingface.co/blog/ibm-research/scarfbench",
+      "source": "Hugging Face Blog",
+      "published": "2026-06-30T09:32:50+00:00",
+      "thumbnail": "",
+      "title_ko": "ScarfBench: 엔터프라이즈 자바 프레임워크 마이그레이션을 위한 AI 에이전트 벤치마크",
+      "summary": "Hugging Face가 Spring·Jakarta EE·Quarkus 간 자바 프레임워크 이전 작업으로 AI 코딩 에이전트를 평가하는 오픈 벤치마크 ScarfBench를 공개했다.",
+      "detail": "기존 벤치마크가 생성 코드를 참조 구현과 비교하는 데 그쳤다면, ScarfBench는 이전된 애플리케이션이 실제로 빌드·배포되고 동작(behavior)을 보존하는지를 검증한다. 프레임워크 이전은 어노테이션 교체를 넘어 의존성 주입·영속성 설정·쿼리·프레임워크 디스크립터 전반을 바꿔야 하므로 단순 코드 번역과 본질적으로 다르다. 최신 코딩 에이전트들을 평가한 결과, 전통 벤치마크에서의 강세에도 프레임워크 이전은 여전히 어렵고 특히 전체 애플리케이션 단위 이전이 까다로웠다. 컴파일 성공률 > 배포 성공률 > 동작 검증 성공률 순으로 떨어져, 빌드 성공만으로는 이전 품질을 과대평가하게 된다. 대상 프레임워크별로도 난이도가 갈리며 Jakarta EE가 특히 어려웠다.",
+      "points": [
+        "Spring·Jakarta EE·Quarkus 간 상호 이전을 평가하는 오픈 벤치마크",
+        "코드 비교가 아니라 실제 빌드·배포·동작 보존 여부로 채점",
+        "프런티어 에이전트도 프레임워크 이전, 특히 전체 앱 이전에서 고전",
+        "컴파일>배포>동작 순으로 성공률이 감소 → 빌드 성공만으로는 품질 과대평가",
+        "대상이 Jakarta EE일 때 난이도가 가장 높음"
+      ],
+      "takeaway": "AI 기반 레거시 현대화 기대가 크지만, 실행·동작 검증 기준으로 보면 현재 에이전트의 실제 이전 신뢰도는 아직 낮다는 점을 정량적으로 보여준다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip",
+      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+      "source": "TechCrunch AI",
+      "published": "2026-06-30T09:13:02+00:00",
+      "thumbnail": "",
+      "title_ko": "엔비디아 경쟁사 Etched, 50억 달러 가치·10억 달러 수주 달성",
+      "summary": "AI 추론 전용 칩 스타트업 Etched가 TSMC 양산 성공 후 10억 달러 수주를 확보하고 50억 달러 기업가치로 평가받았다.",
+      "detail": "2022년 설립된 Etched는 올해 TSMC가 칩 양산에 성공한 뒤, 칩·맞춤 랙·소프트웨어를 묶은 '프런티어 추론 클러스터' 시스템으로 이미 10억 달러 규모 계약을 수주했다고 밝혔다. 추론(inference)은 현재 AI 서비스의 최대 비용·병목 지점이라 이를 더 빠르고 저렴하게 해결하려는 칩에 투자자들이 몰린다. 회사는 누적 8억 달러를 조달했으며, 그중 12월에 마감한 5억 달러 라운드는 Stripes가 주도해 포스트머니 50억 달러 가치를 인정받았다. 투자자에는 Jane Street, Two Sigma, Ribbit Capital과 Karpathy·Hinton·Fei-Fei Li 등 AI 거물, Thiel·Druckenmiller 같은 억만장자가 포함됐다. 하버드를 중퇴한 공동창업자들은 2023년만 해도 자금난에 시달렸으나, 지금은 Cerebras IPO, Groq 6.5억 달러 조달 등 추론 칩 호황 속에 있다.",
+      "points": [
+        "TSMC 양산 성공 후 풀시스템 기준 10억 달러 수주 확보",
+        "12월 5억 달러 라운드로 포스트머니 50억 달러 가치, 누적 8억 달러 조달",
+        "추론 속도·비용·전력효율 개선을 내세운 '프런티어 추론 클러스터' 판매",
+        "Karpathy·Hinton·Fei-Fei Li 등 AI 거물과 Thiel·Druckenmiller 투자 참여",
+        "Cerebras 상장, Groq 6.5억 달러 조달 등 추론 칩 투자 열풍의 일부"
+      ],
+      "takeaway": "추론이 AI 서비스의 최대 비용 중심이 되면서 범용 GPU 대신 추론 특화 칩에 자본이 빠르게 유입되고 있음을 보여준다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents",
+      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "source": "TechCrunch AI",
+      "published": "2026-06-30T09:00:00+00:00",
+      "thumbnail": "",
+      "title_ko": "Anthropic, 더 저렴하게 에이전트를 돌리는 Claude Sonnet 5 출시",
+      "summary": "Anthropic이 Opus 4.8에 근접한 에이전트 성능을 훨씬 낮은 비용에 제공하는 중형 모델 Sonnet 5를 내놨다.",
+      "detail": "Sonnet 5는 브라우저·터미널 같은 도구 사용과 자율 실행 능력이 강화돼, 몇 달 전만 해도 더 크고 비싼 모델이 필요했던 작업을 수행한다. 화요일부터 무료·Pro 플랜의 기본 모델이 되며, 가격은 8월 31일까지 100만 토큰당 입력 $2/출력 $10(이후 $3/$15)로 Opus 4.8과 GPT-5.5, Gemini 3.1 Pro보다 저렴하다(단 Gemini 3.5 Flash보다는 비쌈). 에이전트 코딩 벤치마크에서 63.2%로 Sonnet 4.6(58.1%)을 앞서고 Opus 4.8(69.2%)에 근접하며, 지식 업무 벤치마크에서는 Opus 4.8을 소폭 능가하기도 했다. 테스터들은 이전 모델이 중도 포기하던 복잡한 작업을 끝까지 마치고, 요청 없이도 자기 출력을 검증한다고 평가했다. 이는 OpenAI GPT-5.6 Sol, Google Gemini 3.5 Flash처럼 에이전트 역량이 모든 가격대의 기본 기대치가 됐음을 보여준다.",
+      "points": [
+        "무료·Pro 플랜 기본 모델로 채택, 모든 구독에서 사용 가능",
+        "8월 31일까지 $2/$10, 이후 $3/$15 — Opus 4.8·GPT-5.5보다 저렴",
+        "에이전트 코딩 63.2%로 Sonnet 4.6 능가, Opus 4.8에 근접",
+        "지식 업무 벤치마크에선 Opus 4.8을 소폭 상회",
+        "복잡한 작업을 끝까지 수행하고 자기 출력을 스스로 검증"
+      ],
+      "takeaway": "에이전트 능력이 더 이상 차별화 요소가 아니라 기본 기대치가 되면서, 경쟁의 축이 '얼마나 잘'에서 '얼마나 싸고 안정적으로'로 옮겨가고 있다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.197",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.197",
+      "source": "Claude Code 릴리스",
+      "published": "2026-06-30T08:56:37+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.197",
+      "summary": "Claude Code가 v2.1.197부터 Claude Sonnet 5를 기본 모델로 채택했다.",
+      "detail": "이번 릴리스로 Sonnet 5가 Claude Code의 기본 모델이 되었으며, 100만 토큰 네이티브 컨텍스트 윈도우를 지원한다. 8월 31일까지는 100만 토큰당 입력 $2, 출력 $10의 프로모션 가격이 적용된다. v2.1.197로 업데이트하면 바로 사용할 수 있다.",
+      "points": [
+        "Sonnet 5가 Claude Code의 기본 모델로 설정",
+        "네이티브 100만 토큰 컨텍스트 윈도우 지원",
+        "8월 31일까지 입력 $2 / 출력 $10 프로모션 가격",
+        "v2.1.197로 업데이트 시 즉시 적용"
+      ],
+      "takeaway": "사용자는 업데이트만으로 더 긴 컨텍스트와 할인 가격으로 Sonnet 5를 곧바로 활용할 수 있다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "The AI Compass",
+      "url": "https://simonwillison.net/2026/Jun/30/the-ai-compass/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-30T08:39:23+00:00",
+      "thumbnail": "",
+      "title_ko": "The AI Compass — AI 성향 진단 퀴즈",
+      "summary": "AI와 AI 윤리에 관한 29개 문항에 답하면 30개 아키타입 중 자신에게 맞는 유형을 알려주는 정치 성향 테스트 풍의 웹 퀴즈다.",
+      "detail": "bambamramfan이 만든 'AI Compass'는 정치 성향 테스트(political compass) 형식으로, AI와 AI 윤리에 관한 29개 질문에 답하면 30개 아키타입 중 하나로 분류해 준다. Simon Willison은 처음 해보고 'The Garage Tinkerer(차고의 땜장이)' 유형으로 나왔다고 소개했다. 기술적으로는 빌드 단계 없이 script type=text/babel 트릭을 활용한 단일 페이지 React 앱으로 구현됐다.",
+      "points": [
+        "AI·AI 윤리 관련 29개 문항으로 성향 진단",
+        "30개 아키타입 중 하나로 분류",
+        "빌드 없이 babel 인라인 스크립트를 쓴 단일 페이지 React 앱",
+        "Simon Willison은 'The Garage Tinkerer'로 분류됨"
+      ],
+      "takeaway": "AI에 대한 다양한 관점을 가볍게 자기 진단해 보는 도구로, 별도 빌드 없는 단순 React 구현 예시로도 참고할 만하다.",
+      "category": "기타",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "삼성, 호남에 425조 투자… 반도체·AI 데이터센터 거점 조성",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212289",
+      "source": "AI타임스",
+      "published": "2026-06-30T08:15:00+00:00",
+      "thumbnail": "",
+      "title_ko": "삼성, 호남에 425조 투자… 반도체·AI 데이터센터 거점 조성",
+      "summary": "삼성이 호남 지역에 총 425조원을 투자해 광주 반도체 클러스터와 해남 AI 데이터센터 등 첨단산업 거점을 조성한다고 발표했다.",
+      "detail": "삼성은 6월 30일 광주 국민보고회에서 호남에 최첨단 반도체 클러스터·AI 데이터센터·미래 에너지 육성을 위해 총 425조원을 투자한다고 밝혔다. 핵심은 삼성전자가 약 400조원을 투입해 광주에 신규 반도체 Fab 2개를 건설, 수도권에 이은 차기 반도체 거점으로 키우는 계획이다. 또 해남 솔라시도에는 삼성SDS가 210MW급 AI 데이터센터를 2026년 하반기 착공해 2028년 첫 가동을 목표로 구축하며, 금융·국방·공공 AX 지원과 로봇·피지컬AI 학습 거점 역할을 맡는다. 이 밖에 삼성물산은 원전·신재생·그린수소 등 무탄소 에너지에, 삼성전자는 광주 디지털 트윈 혁신 공장과 고창 물류센터에 투자한다.",
+      "points": [
+        "호남 지역에 총 425조원 투자 계획 발표",
+        "삼성전자가 약 400조원으로 광주에 신규 반도체 Fab 2개 건설",
+        "삼성SDS, 해남 솔라시도에 210MW급 AI 데이터센터 구축(2026년 하반기 착공, 2028년 가동)",
+        "삼성물산은 원전·신재생·그린수소 등 무탄소 에너지에 투자",
+        "AI 데이터센터는 금융·국방·공공 AX 및 로봇·피지컬AI 학습 거점 역할"
+      ],
+      "takeaway": "AI 수요 급증에 대응해 국내 반도체 생산능력과 AI 인프라를 수도권 밖으로 대규모 확장하는 신호로, 한국 AI·반도체 공급망의 지역 다변화를 보여준다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "Why is OpenAI so much more efficient?",
+      "url": "https://www.youtube.com/watch?v=ypO0q_8zhWw",
+      "source": "Theo - t3․gg",
+      "published": "2026-06-30T08:00:21.411829+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/ypO0q_8zhWw/hqdefault.jpg",
+      "videoId": "ypO0q_8zhWw",
+      "views": 65292,
+      "title_ko": "OpenAI는 왜 이렇게 토큰 효율이 높을까?",
+      "summary": "OpenAI 모델이 코딩 벤치마크에서 더 높은 점수를 내면서도 다른 모델보다 훨씬 적은 토큰을 쓰는 이유를 분석한 영상.",
+      "detail": "Theo(t3.gg)가 OpenAI 모델의 토큰 효율성을 다룬 영상이다. OpenAI 모델은 코딩 벤치마크에서 상위권 점수를 기록하면서도 경쟁 모델 대비 토큰 사용량이 현저히 적다는 점을 지적한다. 동일한 작업을 더 짧은 추론·출력으로 처리하기 때문에 같은 성능을 내고도 비용과 지연이 줄어든다는 것이 핵심이다. 이런 효율성은 모델 학습·추론 방식의 차이에서 비롯된 것으로 추정한다. 실무에서 모델을 고를 때 단순 점수뿐 아니라 토큰당 성능(비용 효율)도 중요한 비교 지표가 된다는 메시지를 담고 있다.",
+      "points": [
+        "OpenAI 모델은 코딩 벤치마크 점수가 높으면서 토큰 사용량은 적음",
+        "같은 작업을 더 짧은 추론·출력으로 처리해 비용·지연 절감",
+        "토큰 효율은 학습·추론 방식의 차이에서 비롯된 것으로 분석",
+        "모델 선택 시 점수뿐 아니라 토큰당 성능을 봐야 함"
+      ],
+      "takeaway": "AI 모델 비교에서 절대 성능만큼이나 '토큰 효율'이 실제 비용을 좌우하는 핵심 변수임을 보여준다.",
+      "category": "LLM/언어모델",
+      "metric": "조회 6.5만"
+    },
+    {
+      "type": "hn",
+      "title": "Why Won't Europe Build AI Data Centers in Iceland?",
+      "url": "https://mrkt30.com/why-wont-europe-build-ai-data-centers-in-iceland/",
+      "source": "Hacker News",
+      "published": "2026-06-30T01:30:40+00:00",
+      "thumbnail": "",
+      "points": [
+        "EU '기술 주권 패키지'로 데이터센터 3배·미국 클라우드 의존 축소 추진",
+        "미국 빅3가 유럽 클라우드의 약 70% 차지",
+        "AI 기가팩토리 5곳 중 2028년 전 자금 가능한 곳은 2곳뿐",
+        "소프트뱅크 750억 유로는 프랑스로, 미·중과의 투자 격차도 큼",
+        "아이슬란드는 100% 재생에너지·무료 냉각의 이론상 최적지"
+      ],
+      "comments": 34,
+      "hn_url": "https://news.ycombinator.com/item?id=48727538",
+      "title_ko": "유럽은 왜 아이슬란드에 AI 데이터센터를 짓지 않을까?",
+      "summary": "EU가 데이터센터 3배 확장과 '기술 주권'을 외치지만, 정작 100% 재생에너지·무료 냉각이 가능한 아이슬란드를 외면하는 모순을 짚은 글.",
+      "detail": "6월 3일 EU는 데이터센터를 3배로 늘리고 미국 클라우드 의존을 줄이겠다는 '기술 주권 패키지'를 공개했다. 칩스법 2.0, 클라우드·AI 개발법, 오픈소스 전략, '디지털 주권'의 첫 법적 정의 등이 포함되며, 미국 빅3(아마존·MS·구글)가 약 70%를 점한 클라우드 의존을 낮추는 게 목표다. 하지만 5~7년 내 데이터센터 용량 3배라는 목표에 비해 전력과 부지 확보 계획이 부실하다. 핵심 사업인 AI 기가팩토리 5곳은 입찰이 5월에서 7월로 밀렸고 2028년 전까지는 2곳만 자금 조달이 가능하며, 정작 큰돈인 소프트뱅크의 750억 유로는 저탄소 전력·저렴한 부지를 갖춘 프랑스로 향했다. 글은 100% 지열·수력에 자연 냉각까지 갖춘 아이슬란드가 종이 위에선 최적지인데도 활용되지 않는 점을 지적한다.",
+      "takeaway": "AI 인프라 경쟁의 진짜 병목은 야심 찬 목표가 아니라 값싼 청정 전력과 부지·냉각 확보임을 보여준다.",
+      "category": "산업/투자",
+      "metric": "▲ [\"EU '기술 주권 패키지'로 데이터센터 3배·미국 클라우드 의존 축소 추진\", '미국 빅3가 유럽 클라우드의 약 70% 차지', 'AI 기가팩토리 5곳 중 2028년 전 자금 가능한 곳은 2곳뿐', '소프트뱅크 750억 유로는 프랑스로, 미·중과의 투자 격차도 큼', '아이슬란드는 100% 재생에너지·무료 냉각의 이론상 최적지'] · 💬 34"
+    },
+    {
+      "type": "news",
+      "title": "SK하이닉스, 서남권에 400조원 투자…반도체·AI 데이터센터 거점 구축",
+      "url": "https://zdnet.co.kr/view/?no=20260630171621",
+      "source": "ZDNet Korea",
+      "published": "2026-06-29T23:23:15+00:00",
+      "thumbnail": "",
+      "title_ko": "SK하이닉스, 서남권에 400조원 투자…반도체·AI 데이터센터 거점 구축",
+      "summary": "SK하이닉스가 글로벌 AI 메모리 수요에 대응해 서남권에 400조원을 투자, 새 생산 거점과 AI 데이터센터를 조성한다.",
+      "detail": "곽노정 SK하이닉스 사장이 6월 30일 광주 국민보고회에서 서남권 400조원 투자 계획을 발표했다. AI가 학습을 넘어 실제 서비스 확산 단계로 가면서 메모리 수요가 급증하고, 메모리가 AI 성능을 좌우하는 핵심 인프라가 됐다는 진단이다. 추진 중인 용인 클러스터만으로는 글로벌 수요를 못 채워, 대규모 부지·전력·용수가 가능한 서남권을 추가 생산 거점으로 삼는다. SK그룹은 전국에 총 15GW 규모 AI 데이터센터를 단계적으로 구축하고, 이 중 1GW를 서남권에 조성한다. 메모리 제조부터 AI 서비스 구동까지 연계해 시너지를 낸다는 구상이다.",
+      "points": [
+        "SK하이닉스, 서남권에 400조원 투자해 새 생산 거점 구축",
+        "용인 클러스터만으로 글로벌 AI 메모리 수요 충족 어렵다는 판단",
+        "SK그룹, 전국에 총 15GW AI 데이터센터 단계적 구축",
+        "서남권에 1GW 데이터센터 조성, 메모리~AI 서비스 연계",
+        "대규모 부지·안정적 전력·용수 확보가 서남권 선정 배경"
+      ],
+      "takeaway": "AI 메모리 수요 폭증에 대응해 한국이 반도체 제조와 AI 데이터센터를 한데 묶는 초대형 인프라 투자에 나섰음을 보여준다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "\"왜 호남권인가?\" 피지컬 AI 교과서에 실릴 명품 PT..대통령도 '끄덕'",
+      "url": "https://www.youtube.com/watch?v=-yETW2O5ArI",
+      "source": "엠키타카 MKTK",
+      "published": "2026-06-29T23:00:21.411829+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/-yETW2O5ArI/hqdefault.jpg",
+      "videoId": "-yETW2O5ArI",
+      "views": 130167,
+      "title_ko": "'왜 호남권인가?' 피지컬 AI 거점 발표 PT, 대통령도 수긍",
+      "summary": "호남권을 반도체·피지컬 AI 거점으로 삼는 정부·기업 발표를 다룬 정치·산업 라이브 영상.",
+      "detail": "호남권(서남권)을 반도체·피지컬 AI 산업 거점으로 육성하는 정부와 기업의 발표를 다룬 라이브성 영상이다. 이재명 대통령, 이재용·최태원 회장, 삼성전자·SK 등이 참여한 서남권 첨단산업 발전 비전 행사와 맞물려, 호남권이 거점으로 선정된 이유를 설명하는 프레젠테이션을 부각한다. SK하이닉스의 서남권 400조원 투자 등 대규모 반도체·AI 투자 흐름과 같은 맥락의 콘텐츠다. 구체적 본문 정보는 적고 행사·인물 중심의 정치 채널 영상이다.",
+      "points": [
+        "호남권을 반도체·피지컬 AI 거점으로 육성하는 발표 다룸",
+        "대통령·삼성·SK 등이 참여한 서남권 발전 비전 행사 맥락",
+        "호남권 선정 이유를 설명하는 PT가 화제",
+        "대규모 반도체·AI 투자 흐름과 연계된 정치 채널 콘텐츠"
+      ],
+      "takeaway": "호남권 반도체·AI 거점화가 정치권의 주요 의제로 떠올랐음을 보여주는 영상이다.",
+      "category": "산업/투자",
+      "metric": "조회 13.0만"
+    },
+    {
+      "type": "youtube",
+      "title": "US Government Blocks GPT-5.6, Alibaba's AI Theft, and Why OpenAI Is Stalling Their IPO | #267",
+      "url": "https://www.youtube.com/watch?v=-H7J_-zr7pA",
+      "source": "Peter H. Diamandis",
+      "published": "2026-06-29T23:00:21.411829+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/-H7J_-zr7pA/hqdefault.jpg",
+      "videoId": "-H7J_-zr7pA",
+      "views": 97224,
+      "title_ko": "美 정부 GPT-5.6 차단, 알리바바의 AI 도용, OpenAI IPO 지연 이유 #267",
+      "summary": "미국 정부가 프런티어 AI를 규제 장벽 뒤로 밀어넣고, 중국이 오픈웨이트로 추격하며, OpenAI가 IPO를 미루는 흐름을 다룬 팟캐스트.",
+      "detail": "Peter Diamandis의 팟캐스트로, 미국 정부가 GPT-5.6 같은 최첨단(프런티어) AI를 통제·게이트 뒤에 두려는 움직임을 핵심으로 다룬다. 동시에 중국은 오픈웨이트 모델 공개를 가속하며 격차를 좁히고 있고, 알리바바의 'AI 도용' 논란도 거론된다. 또한 OpenAI가 기업공개(IPO)를 미루는 배경과 그 전략적 의미를 분석한다. 미국의 규제 강화와 중국의 개방 전략이 대비되는 글로벌 AI 패권 구도를 짚는 에피소드다.",
+      "points": [
+        "미국 정부가 GPT-5.6 등 프런티어 AI를 규제 장벽 뒤로 통제",
+        "중국은 오픈웨이트 모델 공개로 추격 가속",
+        "알리바바의 AI 도용 논란 거론",
+        "OpenAI의 IPO 지연 배경과 전략적 의미 분석"
+      ],
+      "takeaway": "미국의 폐쇄·규제 강화와 중국의 개방 전략이 충돌하며 AI 패권 경쟁 구도가 재편되고 있음을 시사한다.",
+      "category": "정책/규제",
+      "metric": "조회 9.7만"
+    },
+    {
+      "type": "youtube",
+      "title": "NOTICIAS IA: ChatGPT Sol sorprende a todo el mundo",
+      "url": "https://www.youtube.com/watch?v=p9UstbK7FOA",
+      "source": "Inteligencia Artificial",
+      "published": "2026-06-29T23:00:21.411829+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/p9UstbK7FOA/hqdefault.jpg",
+      "videoId": "p9UstbK7FOA",
+      "views": 58029,
+      "title_ko": "AI 뉴스: ChatGPT 'Sol'이 모두를 놀라게 하다",
+      "summary": "ChatGPT의 새 기능·모델 'Sol'과 유럽 AI 콘텐츠 규제 등을 다룬 스페인어 AI 뉴스 요약 영상.",
+      "detail": "스페인어 AI 뉴스 채널의 소식 모음 영상으로, ChatGPT의 새 기능 또는 버전으로 보이는 'Sol'이 큰 화제가 됐다는 점을 전면에 내세운다. 함께 유럽의 AI 콘텐츠 규제 동향도 요약해 다룬다. 본문 정보가 제한적이라 세부 내용보다 'Sol' 공개와 유럽 규제라는 두 흐름이 중심이다. 여러 소식을 묶은 브리핑형 영상이다.",
+      "points": [
+        "ChatGPT의 새 기능/버전 'Sol'이 화제로 부각",
+        "유럽 AI 콘텐츠 규제 동향 요약 포함",
+        "여러 소식을 묶은 스페인어 브리핑형 영상"
+      ],
+      "takeaway": "ChatGPT의 새 기능 공개와 유럽 규제 강화가 동시에 주목받는 흐름을 보여준다.",
+      "category": "기타",
+      "metric": "조회 5.8만"
+    }
+  ]
+}
