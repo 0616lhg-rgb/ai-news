@@ -41,12 +41,16 @@ MAX_BACKFILL_DAYS = 7       # 실행이 며칠 밀렸어도 이 이상은 거슬
 # 그날 최종 표시할 항목 수 — 종류별 쿼터 (구간 내 인기/화제성 상위)
 QUOTA = {"youtube": 5, "hn": 6, "guide": 5, "news": 6}
 
-# Hacker News 검색어 (AI 관련 화제 글을 추천수 순으로 가져옴)
-HN_QUERIES = ["AI", "LLM", "OpenAI", "Anthropic Claude", "machine learning"]
+# Hacker News 검색어 — 일반 AI + 도구/활용 성향 검색어 보강
+HN_QUERIES = ["AI", "LLM", "OpenAI", "Anthropic Claude",
+              "AI tools", "prompt engineering", "AI agent"]
 
-# 유튜브 검색어 — 유튜브 검색 페이지를 직접 읽어(키 불필요) 구간 내 영상에서 조회수 상위를 가져옴.
-# 한국어/영어 섞어 넣으면 그만큼 폭넓게 잡힘.
-YT_SEARCH_QUERIES = ["인공지능", "생성형 AI", "LLM", "ChatGPT", "OpenAI", "AI agent"]
+# 유튜브 검색어 — 도구·활용법 성향을 앞세우고 일반 AI도 일부 유지 (키 불필요, 검색 페이지 파싱)
+YT_SEARCH_QUERIES = ["AI 툴", "AI 활용법", "ChatGPT 활용법", "Claude 사용법",
+                     "AI 자동화", "프롬프트 엔지니어링", "AI tool tutorial",
+                     "생성형 AI", "인공지능"]
+# 영상 선별 시 '기타(주식·뉴스·하이프 등)'로 채울 수 있는 최대 개수 (나머지는 도구·활용법 우선)
+YT_OTHER_MAX = 2
 
 # 뉴스 RSS 소스 (원하는 만큼 추가/삭제하세요)
 # ※ 매체 직접 RSS를 권장 — Google News 같은 리다이렉트 링크는 본문 추출이 잘 안 됨
@@ -65,6 +69,10 @@ GUIDE_FEEDS = [
     ("Simon Willison",     "https://simonwillison.net/atom/everything/"),
     ("Latent Space",       "https://www.latent.space/feed"),
     ("Hugging Face Blog",  "https://huggingface.co/blog/feed.xml"),
+    # 도구·활용 +알파
+    ("r/LocalLLaMA",       "https://www.reddit.com/r/LocalLLaMA/.rss"),
+    ("Ollama 릴리스",       "https://github.com/ollama/ollama/releases.atom"),
+    ("Open WebUI 릴리스",   "https://github.com/open-webui/open-webui/releases.atom"),
 ]
 
 # 유튜브 채널 RSS — 채널 ID만 넣으면 됩니다
@@ -476,37 +484,60 @@ def score_news_importance(news):
     return news[:QUOTA["news"]]
 
 
-def filter_relevant_youtube(videos):
-    """검색으로 딸려온 무관한 영상(정치 코미디·단순 언급 등)을 claude로 걸러낸다.
-    실패 시 원본 그대로."""
-    if not videos or not CLAUDE:
-        return videos
+def _classify_youtube(videos):
+    """영상을 목적별로 분류: tool(도구 소개·업데이트)/howto(활용법·튜토리얼)/other(주식·뉴스·하이프 등).
+    반환: {index: 'tool'|'howto'|'other'} 또는 실패 시 None."""
+    if not CLAUDE:
+        return {i: "tool" for i in range(len(videos))}  # 판단 불가 시 통과 취급
     payload = [{"id": i, "title": v.get("title_ko") or v["title"], "channel": v["source"]}
                for i, v in enumerate(videos)]
     instruction = (
-        "다음은 유튜브 검색으로 모은 영상 후보(JSON)다. 각 영상이 'AI·인공지능·머신러닝·LLM·"
-        "관련 기술/연구/산업/제품/활용'을 실질적으로 다루는지 ai(true/false)로 판정하라.\n"
-        "false 처리: 정치·시사 뉴스쇼나 시사 유튜브(예: 뉴스공장 류), 게임·예능·연예·브이로그, "
-        "제목에 AI만 스쳐 언급될 뿐 주제가 아닌 영상.\n"
-        "true 처리: AI 모델·연구·기술·산업 동향·실전 활용을 실제 주제로 다루는 영상.\n"
-        "출력은 오직 JSON 배열만: [{\"id\":0,\"ai\":true}, ...]"
+        "다음 유튜브 영상들을 목적별로 분류하라. 각 영상 cls를 다음 중 하나로:\n"
+        "'tool'  = 새 AI 도구·서비스·기능·모델의 소개/리뷰/업데이트\n"
+        "'howto' = AI·도구 사용법·튜토리얼·프롬프트·워크플로우·활용 팁\n"
+        "'other' = 그 외 전부 (주식·시황·투자, 일반 뉴스/시사, 오피니언·전망·하이프, "
+        "게임·예능·연예·브이로그 등)\n"
+        "출력은 오직 JSON 배열만: [{\"id\":0,\"cls\":\"tool\"}, ...]"
     )
-    print(f"[선별] 영상 AI 관련성 판정 ({len(videos)}건)... ", end="", flush=True)
+    print(f"[선별] 영상 목적 분류 ({len(videos)}건)... ", end="", flush=True)
     objs = _parse_obj_array(_run_claude(instruction, json.dumps(payload, ensure_ascii=False), timeout=120))
     if not objs:
-        # claude 호출 자체가 실패(빈 응답) — 판단 불가. 잡음 유입 방지 위해 영상 보류.
-        print("판정 실패 — 영상 보류")
+        print("분류 실패 — 영상 보류")
+        return None
+    m = {}
+    for o in objs:
+        if isinstance(o, dict) and "id" in o:
+            c = o.get("cls")
+            m[o["id"]] = c if c in ("tool", "howto", "other") else "other"
+    th = sum(1 for c in m.values() if c in ("tool", "howto"))
+    print(f"도구·활용 {th} · 기타 {len(m) - th}")
+    return m
+
+
+def select_youtube(videos):
+    """도구·활용법 우선으로 뽑고, 기타(뉴스·주식 등)는 최대 YT_OTHER_MAX개만."""
+    if not videos:
         return []
-    keep = {o["id"] for o in objs if isinstance(o, dict) and o.get("ai")}
-    filtered = [v for i, v in enumerate(videos) if i in keep]
-    print(f"{len(filtered)}/{len(videos)} 통과")
-    return filtered   # 판정 결과를 신뢰 (전부 false면 0개가 정상)
+    m = _classify_youtube(videos)
+    if m is None:
+        return []   # 분류 실패 시 잡음 유입 방지 위해 영상 없음
+    cls = lambda i: m.get(i, "other")
+    tool = sorted([v for i, v in enumerate(videos) if cls(i) in ("tool", "howto")],
+                  key=lambda x: x.get("views", 0), reverse=True)
+    other = sorted([v for i, v in enumerate(videos) if cls(i) == "other"],
+                   key=lambda x: x.get("views", 0), reverse=True)
+    q = QUOTA["youtube"]
+    reserve = min(1, len(other))                 # 큰 뉴스 1개 자리 확보(있으면)
+    chosen = tool[:q - reserve] + other[:reserve]
+    if len(chosen) < q:                          # 도구·활용이 부족하면 기타로 보충(최대 YT_OTHER_MAX)
+        used = min(reserve, len(other))
+        chosen += other[used:used + min(YT_OTHER_MAX - used, q - len(chosen))]
+    return chosen[:q]
 
 
 def select(pool):
     """종류별로 가장 적절한 신호로 인기/화제성 상위만 추린다."""
-    yt_pool = filter_relevant_youtube([x for x in pool if x["type"] == "youtube"])
-    yt = sorted(yt_pool, key=lambda x: x.get("views", 0), reverse=True)[:QUOTA["youtube"]]
+    yt = select_youtube([x for x in pool if x["type"] == "youtube"])
     hn = sorted((x for x in pool if x["type"] == "hn"),
                 key=lambda x: x.get("points", 0) + 2 * x.get("comments", 0),
                 reverse=True)[:QUOTA["hn"]]
