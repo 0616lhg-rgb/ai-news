@@ -1,0 +1,505 @@
+{
+  "date": "2026-07-10",
+  "generated_at": "2026-07-10T08:12:55",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘은 오픈AI의 GPT-5.6 패밀리(Sol·Terra·Luna) 출시가 최대 이슈로, 앤트로픽과의 정면 대결 구도가 본격화됐다. 동시에 Anthropic은 Claude 내부 '개념 공간' 발견이라는 해석가능성 연구 성과를 내놓으며 기술 신뢰 경쟁도 가열됐고, 클로드 코드 백도어 논란·NYT 저작권 소송·알트먼의 규제 입장 선회까지 정책·윤리 전선도 복잡해졌다.",
+    "highlights": [
+      {
+        "title": "GPT-5.6 패밀리 출시",
+        "line": "오픈AI가 Sol·Terra·Luna 3종 모델과 업무용 에이전트 'ChatGPT Work'를 동시 공개하며 장기 에이전트 벤치마크에서 Claude Fable 5를 앞섰다고 선언, AI 모델 패권 경쟁이 새 국면에 진입했다."
+      },
+      {
+        "title": "Anthropic, Claude 내부 'J-공간' 발견",
+        "line": "Anthropic이 Claude Opus 4.6 안에서 모델이 실제로 처리 중인 개념들을 담은 숨겨진 공간을 발견했으며, 모델의 발화와 내부 상태가 불일치할 수 있다는 점이 AI 해석가능성 연구의 새 과제를 던졌다."
+      },
+      {
+        "title": "클로드 코드 백도어 논란",
+        "line": "중국 정부가 Claude Code 특정 버전의 무단 정보 수집을 경고했고 Anthropic이 중국 이용자 식별 실험이었음을 인정해, AI 툴의 지정학적 신뢰 문제가 수면 위로 떠올랐다."
+      },
+      {
+        "title": "알트먼, 정부 규제에 협력 시사",
+        "line": "샘 알트먼이 GPT-5.6 출시 과정에서 트럼프 행정부와 협력했다고 밝히며 기존 반규제 노선에서 물러선 것은 AI 산업 전반의 정치적 포지셔닝 변화를 예고한다."
+      },
+      {
+        "title": "AI 에이전트가 1억 달러 유치",
+        "line": "스타트업 Lyzr가 자체 에이전트 'SivaClaw'에 전체 투자 유치 과정을 맡겨 창업자 로드쇼 없이 1억 달러 조달에 성공, AI 에이전트의 실전 비즈니스 활용이 현실화됐음을 상징적으로 보여줬다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "news",
+      "title": "\"우리가 안전성 증명해야\"…알트먼, '정부 규제 반대'서 한발 물러섰다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212605",
+      "source": "AI타임스",
+      "published": "2026-07-09T21:52:10+00:00",
+      "thumbnail": "",
+      "title_ko": "\"안전성 증명해야\"...알트먼, 정부 규제 수용으로 입장 선회",
+      "summary": "샘 알트먼 오픈AI CEO가 GPT-5.6 출시 과정에서 트럼프 행정부와 긴밀히 협력했다고 밝히며, 기존의 정부 규제 반대 입장에서 한발 물러섰다.",
+      "detail": "알트먼은 CNBC 인터뷰에서 GPT-5.6 출시를 위해 상무장관·재무장관·국가사이버보안 국장 등 트럼프 행정부 고위 관리들과 사전 승인 절차를 진행했다고 밝혔다. 이전에는 '정부 통제 방식이 장기 표준이 돼서는 안 된다'는 강경 입장이었지만, 이번에는 '안전성에 확신이 없으면 세상이 빠르게 불편해질 것'이라며 수위를 낮췄다. 미국 정부는 오픈AI·앤트로픽·구글과 함께 AI 모델 출시 가이드라인을 이번 주 발표할 예정이며, 알트먼의 발언은 최종 협의 완료를 시사한다. 오픈AI는 트럼프 행정부와 정부 지분 인수 예비 협상도 진행 중인 것으로 알려졌으나, 알트먼은 FT 보도 내용에 오류가 많다고 반박했다.",
+      "points": [
+        "GPT-5.6 출시, 상무·재무장관 등 트럼프 행정부 고위직과 사전 협의 절차 거쳐 진행",
+        "알트먼, 규제 전면 반대에서 '안전성 입증 필요' 인정으로 입장 선회",
+        "미국 정부, 주요 AI 기업 대상 모델 출시 가이드라인 이번 주 발표 예정",
+        "오픈AI, 정부 지분 인수 예비 협상 진행 중...FT 보도 내용 일부 부인",
+        "GPT-5.6 Sol, 에이전트 코딩 작업에서 토큰 효율 54% 향상 강조"
+      ],
+      "takeaway": "AI 규제 논의가 기업-정부 협력 모델로 수렴되고 있으며, 오픈AI가 정부와의 관계를 전략적으로 관리하는 새 단계에 진입했다는 신호다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "GPT-5.6",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "source": "Hacker News",
+      "published": "2026-07-09T17:04:14+00:00",
+      "thumbnail": "",
+      "points": [
+        "Sol, Agents' Last Exam에서 Fable 5를 13.1점 차로 앞서며 최고 성능 주장",
+        "코딩 벤치마크 80점으로 Fable 5 대비 2.8점 우위, 비용은 약 1/3 수준",
+        "Terra·Luna는 Fable 5 대비 약 1/16 비용으로 동등 이상 성능",
+        "새 'ultra' 설정: 복수 에이전트 병렬 운영으로 복잡 작업 가속",
+        "출시 전 레드팀·자동화 테스트 결합한 역대 최대 규모 안전성 평가 진행"
+      ],
+      "comments": 685,
+      "hn_url": "https://news.ycombinator.com/item?id=48849066",
+      "title_ko": "GPT-5.6 공개: Sol·Terra·Luna 3종 패밀리 정식 출시",
+      "summary": "오픈AI가 GPT-5.6 패밀리를 정식 출시하며 코딩·지식 업무·사이버보안에서 Fable 5를 능가하는 성능과 높은 비용 효율성을 주장했다.",
+      "detail": "GPT-5.6은 최고 성능의 Sol, 범용 Terra, 비용 효율 특화 Luna 세 가지로 구성된다. Sol은 55개 분야 장기 전문 업무를 평가하는 Agents' Last Exam에서 53.6점으로 Fable 5를 13.1점 앞섰고, Artificial Analysis Coding Agent Index에서도 80점으로 2.8점 우위를 보였다. 비용은 Fable 5 대비 약 3분의 1 수준이며 처리 속도도 절반 이하다. Terra와 Luna는 Fable 5보다 약 16분의 1 비용으로 동등 이상의 성능을 낸다고 주장한다. 새 'ultra' 설정은 복수 에이전트가 병렬 처리로 복잡한 작업을 빠르게 완료할 수 있게 한다.",
+      "takeaway": "GPT-5.6은 성능과 비용 효율 두 축에서 Fable 5를 직접 겨냥하며, AI 모델 가격·성능 경쟁이 새 국면에 접어들었음을 보여준다.",
+      "category": "LLM/언어모델",
+      "metric": "▲ [\"Sol, Agents' Last Exam에서 Fable 5를 13.1점 차로 앞서며 최고 성능 주장\", '코딩 벤치마크 80점으로 Fable 5 대비 2.8점 우위, 비용은 약 1/3 수준', 'Terra·Luna는 Fable 5 대비 약 1/16 비용으로 동등 이상 성능', \"새 'ultra' 설정: 복수 에이전트 병렬 운영으로 복잡 작업 가속\", '출시 전 레드팀·자동화 테스트 결합한 역대 최대 규모 안전성 평가 진행'] · 💬 685"
+    },
+    {
+      "type": "hn",
+      "title": "ChatGPT Work",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "source": "Hacker News",
+      "published": "2026-07-09T17:03:53+00:00",
+      "thumbnail": "",
+      "points": [
+        "Slack·Teams 등 연동해 시트·슬라이드·웹앱 등 완성 산출물 자동 생성",
+        "예약 작업으로 사용자 부재 중에도 프로젝트 자율 진행",
+        "Codex 기반, 주간 활성 사용자 500만 명·비개발자 이용도 100만 명 이상",
+        "오픈AI 재무팀: 월말 결산 프로세스를 며칠→수 시간으로 단축 실증",
+        "GPT-5.6 기반 멀티스텝 추론으로 템플릿·참조 파일 활용 능력 강화"
+      ],
+      "comments": 147,
+      "hn_url": "https://news.ycombinator.com/item?id=48849059",
+      "title_ko": "ChatGPT Work 출시: 앱·파일 전반을 다루는 장시간 업무 에이전트",
+      "summary": "오픈AI가 문서·스프레드시트·슬라이드 등 실제 업무 산출물을 자율적으로 완성하는 에이전트 'ChatGPT Work'를 GPT-5.6 기반으로 출시했다.",
+      "detail": "ChatGPT Work는 Slack·Teams 등 다양한 앱과 파일을 넘나들며 복잡한 프로젝트를 수 시간에 걸쳐 독립 처리하는 에이전트다. Codex 기술을 내장해 코딩을 넘어 일반 업무로 영역을 확장했으며, 예약 작업(Scheduled Tasks) 기능으로 사용자가 자리를 비운 사이에도 작업을 이어간다. 오픈AI 내부에서는 재무팀이 월말 결산을 며칠에서 몇 시간으로 단축했고, 영업팀은 24시간 안에 고객 맞춤 PoC를 완성한 사례를 소개했다. 웹·모바일·데스크탑 전 플랫폼에서 이용 가능하다.",
+      "takeaway": "AI가 단순 질의응답을 넘어 실제 업무 워크플로 전반을 자율 수행하는 단계로 진화하며, 기업용 AI 에이전트 시장 경쟁이 본격화될 전망이다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['Slack·Teams 등 연동해 시트·슬라이드·웹앱 등 완성 산출물 자동 생성', '예약 작업으로 사용자 부재 중에도 프로젝트 자율 진행', 'Codex 기반, 주간 활성 사용자 500만 명·비개발자 이용도 100만 명 이상', '오픈AI 재무팀: 월말 결산 프로세스를 며칠→수 시간으로 단축 실증', 'GPT-5.6 기반 멀티스텝 추론으로 템플릿·참조 파일 활용 능력 강화'] · 💬 147"
+    },
+    {
+      "type": "hn",
+      "title": "AI content is everywhere on social media, especially LinkedIn",
+      "url": "https://www.pangram.com/blog/ai-in-your-feed",
+      "source": "Hacker News",
+      "published": "2026-07-09T15:50:09+00:00",
+      "thumbnail": "",
+      "points": [
+        "소셜미디어 평균 AI 콘텐츠 비율 13.8%, 장문(250단어+)은 25.72%",
+        "LinkedIn 장문 게시물 40%+ AI 생성, 전체 AI 콘텐츠의 62%가 LinkedIn에 집중",
+        "X는 완전 AI 생성+혼합 합산 시 아티클의 거의 절반이 비인간 생성",
+        "Substack만 유일하게 장문 게시물 AI 비율이 오히려 낮은 역패턴 확인",
+        "실명·직업 연동 플랫폼인 LinkedIn에서 오히려 AI 활용이 더 활발한 역설"
+      ],
+      "comments": 137,
+      "hn_url": "https://news.ycombinator.com/item?id=48847940",
+      "title_ko": "SNS AI 콘텐츠 실태: LinkedIn 장문 게시물 40% 이상이 AI 생성",
+      "summary": "Pangram의 크롬 확장 데이터 분석 결과, 소셜미디어 콘텐츠 평균 13.8%가 AI 생성이며 LinkedIn 장문 게시물은 40%를 넘어섰다.",
+      "detail": "Pangram이 크롬 확장 프로그램의 익명 통계 데이터를 분석한 결과, 플랫폼 전반 AI 생성 콘텐츠 비율은 평균 13.8%였다. 250단어 이상 장문의 경우 25.72%가 완전 AI 생성으로 분류됐다. LinkedIn은 가장 심각한 플랫폼으로, 장문 게시물의 40% 이상이 AI 생성이었고 전체 플래그된 AI 콘텐츠의 62%를 차지했다. X(트위터)는 완전 AI 생성(23.9%)과 혼합(22.9%)을 합치면 아티클의 거의 절반에 달했다. 반면 Substack은 긴 게시물일수록 AI 비율이 낮아지는 예외적 역패턴을 보였다.",
+      "takeaway": "직업적 신뢰도를 중시하는 LinkedIn에서 AI 콘텐츠 비율이 가장 높다는 역설은, AI 생성 글쓰기가 이미 전문직 커뮤니케이션의 사실상 표준으로 자리잡고 있음을 보여준다.",
+      "category": "기타",
+      "metric": "▲ ['소셜미디어 평균 AI 콘텐츠 비율 13.8%, 장문(250단어+)은 25.72%', 'LinkedIn 장문 게시물 40%+ AI 생성, 전체 AI 콘텐츠의 62%가 LinkedIn에 집중', 'X는 완전 AI 생성+혼합 합산 시 아티클의 거의 절반이 비인간 생성', 'Substack만 유일하게 장문 게시물 AI 비율이 오히려 낮은 역패턴 확인', '실명·직업 연동 플랫폼인 LinkedIn에서 오히려 AI 활용이 더 활발한 역설'] · 💬 137"
+    },
+    {
+      "type": "guide",
+      "title": "Koboldcpp v1.117 released",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1us5p0b/koboldcpp_v1117_released/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-07-09T13:46:19+00:00",
+      "thumbnail": "",
+      "title_ko": "KoboldCpp v1.117 업데이트 출시",
+      "summary": "로컬 LLM 실행 도구 KoboldCpp의 v1.117 버전이 출시됐다.",
+      "detail": "r/LocalLLaMA에 KoboldCpp v1.117 버전 출시가 공유됐다. KoboldCpp는 GGUF 포맷 모델을 CPU·GPU 환경에서 로컬로 실행할 수 있는 오픈소스 추론 도구로, 로컬 LLM 커뮤니티에서 널리 사용된다. 이번 버전의 구체적인 변경 사항은 공식 릴리스 노트 확인이 필요하다.",
+      "points": [
+        "KoboldCpp v1.117 신규 버전 출시",
+        "GGUF 모델 CPU·GPU 로컬 실행 지원 오픈소스 추론 엔진",
+        "상세 변경 로그는 공식 GitHub 릴리스 노트 참고 필요"
+      ],
+      "takeaway": "KoboldCpp는 로컬 AI 실행 생태계의 핵심 도구로, 지속적인 업데이트가 로컬 LLM 커뮤니티의 꾸준한 수요를 반영한다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1us5m0g/glm52_744b_moe_on_a_25gbram_consumer_machine/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-07-09T13:43:02+00:00",
+      "thumbnail": "",
+      "title_ko": "GLM-5.2 744B MoE 모델, 소비자용 25GB RAM 기기에서 구동 성공",
+      "summary": "744B 파라미터 규모의 MoE 모델 GLM-5.2를 일반 소비자용 25GB RAM 환경에서 실행하는 데 성공한 사례가 공유됐다.",
+      "detail": "r/LocalLLaMA에 Zhipu AI의 GLM-5.2 744B MoE 모델을 소비자용 25GB RAM 기기에서 구동한 사례가 올라왔다. MoE(Mixture of Experts) 아키텍처는 전체 파라미터 중 일부만 활성화하는 구조라 추론 시 실제 연산량이 전체 파라미터 대비 훨씬 적어 저사양 환경에서도 초대형 모델 실행이 가능하다. 구체적인 구동 방법과 속도 등 상세 정보는 원문 링크를 통해 확인할 수 있다.",
+      "points": [
+        "GLM-5.2 744B MoE 모델을 소비자용 25GB RAM 환경에서 실행 성공",
+        "MoE 구조 덕분에 활성화 파라미터가 전체보다 훨씬 적어 저사양 구동 가능",
+        "초대형 모델의 로컬 실행 가능 범위가 소비자 하드웨어까지 확장된 사례"
+      ],
+      "takeaway": "MoE 아키텍처가 수백B 규모 모델을 소비자 하드웨어에서 실행 가능하게 만드는 핵심 열쇠로 부상하고 있음을 보여준다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "OpenAI launches its new family of models with GPT-5.6",
+      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+      "source": "TechCrunch AI",
+      "published": "2026-07-09T13:24:24+00:00",
+      "thumbnail": "",
+      "title_ko": "오픈AI, GPT-5.6 패밀리 출시...앤트로픽 Fable 5 직접 겨냥",
+      "summary": "오픈AI가 Sol·Terra·Luna 3종의 GPT-5.6 모델군과 업무용 에이전트 'ChatGPT Work'를 동시 출시하며 앤트로픽과의 정면 대결을 선언했다.",
+      "detail": "주력 모델 Sol은 AI 코딩 작업에서 토큰 효율 54% 향상을 달성했으며, 코딩 벤치마크에서 Fable 5보다 2.8점 높고 비용은 3분의 1 수준이라고 오픈AI는 주장한다. 특히 사이버보안 역량이 핵심으로, 트럼프 행정부가 초기 출시를 제한할 만큼 강력한 능력을 갖췄다고 평가된다. 가격은 Sol $5/$30, Terra $2.5/$15, Luna $1/$6(입력/출력, 백만 토큰 기준)로, SpaceXAI·Meta의 최근 출시에 뒤이어 경쟁이 치열해진 시장에서 비용 경쟁력을 전면에 내세웠다. ChatGPT Work도 함께 출시해 기업 일상 업무 자동화 시장을 동시에 공략한다.",
+      "points": [
+        "Sol·Terra·Luna 3종 출시, ChatGPT·Codex·API 전반 제공",
+        "코딩 벤치마크 Fable 5 대비 Sol 2.8점 우위, 비용 1/3 수준",
+        "강력한 사이버보안 역량...트럼프 행정부가 초기 출시 제한한 배경",
+        "Sol 가격: 입력 $5·출력 $30 per 백만 토큰",
+        "ChatGPT Work 동시 출시로 기업 업무 자동화 시장 이중 공략"
+      ],
+      "takeaway": "오픈AI가 가격·성능 양면에서 앤트로픽을 직접 압박하며, 기업 AI 시장 주도권 경쟁이 새 국면에 접어들었다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "An AI agent startup just let its agent run its $100 million fundraise",
+      "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
+      "source": "TechCrunch AI",
+      "published": "2026-07-09T13:08:58+00:00",
+      "thumbnail": "",
+      "title_ko": "AI 스타트업 Lyzr, 자사 AI 에이전트로 1억 달러 시리즈 B 유치",
+      "summary": "기업용 AI 에이전트 솔루션 스타트업 Lyzr가 자체 AI 에이전트 'SivaClaw'를 투자 유치 전 과정에 투입해 창업자 로드쇼 없이 1억 달러를 성공적으로 유치했다.",
+      "detail": "Lyzr의 AI 에이전트 SivaClaw는 투자자 130명 이상의 질문에 응답하고, 투자 메모를 작성하며, 발표 자료에서 투자자가 어느 슬라이드에 오래 머무는지까지 추적하며 펀딩 프로세스 전반을 자율 운영했다. 창업자가 실리콘밸리 커피 미팅 등 전통적인 로드쇼를 전혀 하지 않고도 미국·중동·금융권에서 4억 달러의 투자 관심을 이끌어냈다. 최종 시리즈 B는 1억 달러 조달, 기업 가치 약 5억 달러로 마감됐다. 이 사례는 제품의 실제 작동을 증명하는 살아있는 데모 역할을 했다는 점에서 더욱 주목받는다.",
+      "points": [
+        "AI 에이전트 SivaClaw가 투자자 130명+ 응대·메모 작성·슬라이드 주목도 추적 자동화",
+        "창업자 직접 로드쇼 없이 4억 달러 투자 관심 확보",
+        "시리즈 B 1억 달러, 기업 가치 약 5억 달러로 마감",
+        "펀딩 과정 자체가 '제품이 실제로 작동한다'는 최고의 증명",
+        "AI 투자 열기 속 스타트업 펀딩 방식의 근본적 변화를 상징"
+      ],
+      "takeaway": "AI 에이전트가 기업의 핵심 비즈니스 프로세스인 투자 유치까지 대행할 수 있음을 실증한 사례로, 에이전트 시장의 성숙도와 투자자들의 뜨거운 열기를 동시에 보여준다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "MiMo v2.5 is underrated. Feels like the tokens are pouring out of the screen in OpenCode.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1us4gim/mimo_v25_is_underrated_feels_like_the_tokens_are/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-07-09T12:59:23+00:00",
+      "thumbnail": "",
+      "title_ko": "MiMo v2.5는 과소평가된 로컬 LLM — OpenCode에서 토큰이 쏟아지는 속도",
+      "summary": "30B~400B 사이 로컬 모델 공백을 채우는 최강자로 MiMo v2.5가 클라우드 API보다 빠른 추론 속도를 보여준다.",
+      "detail": "로컬 추론 서버를 구축하며 DeepSeek v4 Flash를 배포하려 했으나 속도 문제로 대안을 찾던 중 MiMo v2.5를 발견했다. 192GB 4090 VRAM 환경에서 Bartowski IQ4_XS, Unsloth UD-Q4_K_S 등 여러 양자화 버전을 테스트한 결과, 실제 클라우드 제공업체보다 빠른 속도를 기록했다. 30B~400B 사이의 능력 있는 모델이 극히 드문 현재 상황에서 이 모델은 그 공백을 압도적으로 채운다. 이 모델만을 위해 대형 서버를 별도로 구축할 가치가 충분하다고 평가한다.",
+      "points": [
+        "30B~400B 사이 로컬 모델 공백을 현존 최고 수준으로 채움",
+        "192GB 4090 VRAM에서 클라우드 제공업체보다 빠른 추론 속도 달성",
+        "DeepSeek v4 Flash 속도 지연 문제의 현실적 대안으로 부상",
+        "IQ4_XS, UD-Q4_K_S 등 다양한 양자화 포맷 모두 테스트 완료"
+      ],
+      "takeaway": "고사양 로컬 추론 인프라를 구축할 의향이 있다면 MiMo v2.5가 현재 미드레인지 로컬 모델의 사실상 최선택이다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "If You Already Pay for an LLM Service, Running Local Embeddings and Rerankers Feels More Useful Than Running Local LLMs",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1us3li5/if_you_already_pay_for_an_llm_service_running/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-07-09T12:26:10+00:00",
+      "thumbnail": "",
+      "title_ko": "LLM 서비스를 이미 구독 중이라면, 로컬 임베딩·리랭커 실행이 로컬 LLM보다 더 실용적",
+      "summary": "클라우드 LLM을 구독 중인 사용자에게는 로컬 LLM보다 로컬 임베딩·리랭커가 비용과 프라이버시 면에서 더 실질적인 가치를 제공한다.",
+      "detail": "ChatGPT Pro를 구독하는 사용자 입장에서 Qwen 3.6 27B나 Gemma 4 31B 같은 로컬 LLM을 별도로 돌릴 실용적 이유가 점점 희박해진다. 반면 임베딩과 리랭커는 클라우드 API로 제공되지 않거나 비용이 높기 때문에, 로컬 실행 시 비용 절감과 개인정보 보호 효과가 크다. 이 글은 Tesla P40에서 llama.cpp를 운영하는 경험을 바탕으로 작성됐으며, RAG 파이프라인에서 LLM은 클라우드, 임베딩은 로컬로 분리하는 하이브리드 전략을 제안한다.",
+      "points": [
+        "클라우드 LLM 구독자에게 로컬 LLM의 실용성이 감소 추세",
+        "임베딩·리랭커는 클라우드 대비 로컬 실행 가치가 여전히 높음",
+        "Tesla P40 + llama.cpp 조합으로 실운영 가능",
+        "RAG 구성 시 LLM은 클라우드, 임베딩은 로컬 분리 전략 추천"
+      ],
+      "takeaway": "RAG 파이프라인을 운영 중이라면 로컬 자원은 임베딩·리랭커에 집중하고 생성은 클라우드에 맡기는 하이브리드 전략이 현실적으로 가장 효율적이다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Anthropic found a hidden space where Claude puzzles over concepts",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source": "MIT Tech Review",
+      "published": "2026-07-09T11:22:28+00:00",
+      "thumbnail": "",
+      "title_ko": "Anthropic, 클로드 내부에서 '생각하는 숨겨진 공간' 발견",
+      "summary": "Anthropic이 'J-렌즈' 도구로 Claude Opus 4.6 안에서 모델이 실제 처리 중인 개념들을 담은 'J-공간'을 발견했으며, 모델의 말과 실제 내부 상태가 다를 수 있음이 확인됐다.",
+      "detail": "Anthropic은 Jacobian 렌즈(J-렌즈)라는 새로운 해석 도구를 개발해 LLM 중간 레이어의 더 깊은 수준을 들여다보는 데 성공했다. 발견된 'J-공간'에는 모델이 곧 출력할 단어들과 연관된 개념들이 담겨 있으며, 이는 모델이 실제로 하는 내부 처리가 표면적으로 설명하는 것과 다를 수 있음을 보여준다. 이 기술은 기존 '로짓 렌즈'를 발전시킨 것으로, 신경망 스택의 중간 레이어에서 더 세밀한 정보를 추출한다. Anthropic은 J-공간 모니터링이 모델 이해와 제어의 새로운 수단이 될 수 있다고 주장하며, Neuronpedia와 협력해 누구나 체험 가능한 공개 데모도 함께 발표했다.",
+      "points": [
+        "J-렌즈로 LLM 내부 'J-공간' 최초 발견",
+        "모델의 실제 처리 내용과 자기 설명이 불일치할 수 있음 확인",
+        "Claude Opus 4.6 대상으로 연구 진행",
+        "Neuronpedia와 협력해 인터랙티브 공개 데모 제공",
+        "기계적 해석가능성(Mechanistic Interpretability) 분야의 새 이정표"
+      ],
+      "takeaway": "AI 모델의 '생각 과정'을 실시간으로 엿볼 수 있는 기술이 등장함으로써 AI 안전성 연구와 모델 제어 가능성이 한 단계 높아질 수 있다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-09T10:46:38+00:00",
+      "thumbnail": "",
+      "title_ko": "OpenAI, 새 GPT-5.6 패밀리 출시 — Luna, Terra, Sol 3종",
+      "summary": "OpenAI가 소형부터 대형까지 3가지 크기의 GPT-5.6을 출시하며 장기 에이전트 벤치마크에서 Claude Fable 5를 앞섰다고 주장했다.",
+      "detail": "GPT-5.6은 Luna($1/$6), Terra($2.50/$15), Sol($5/$30) 세 모델로 구성되며, 2026년 2월 16일 지식 컷오프와 100만 토큰 컨텍스트, 최대 128K 출력 토큰을 지원한다. 55개 분야 장기 전문 에이전트 작업 벤치마크 'Agents Last Exam'에서 GPT-5.6 Sol이 Fable 5를 13.1포인트 앞섰다고 발표했다. 반면 SWE-Bench Pro에서는 Fable 5가 80% vs Sol 64.6%로 우세하자, OpenAI는 해당 벤치마크의 약 30% 문제에 오류가 있다고 선제 반박했다. 새 API 기능으로 JavaScript 기반 프로그래밍 방식 도구 호출, 멀티에이전트 내장, Claude 방식의 프롬프트 캐시 브레이크포인트가 추가됐다.",
+      "points": [
+        "Luna/Terra/Sol 3종 출시, 가격 입력/출력 $1~$30/1M 토큰",
+        "에이전트 장기 작업 벤치마크에서 Fable 5 대비 우위 주장",
+        "SWE-Bench Pro는 30% 오류 있다며 OpenAI가 신뢰성 선제 문제 제기",
+        "프로그래밍 방식 도구 호출·멀티에이전트·프롬프트 캐시 브레이크포인트 API 신규 추가",
+        "컨텍스트 100만 토큰, 최대 128K 출력 토큰 지원"
+      ],
+      "takeaway": "에이전트 성능과 비용 효율이 최강자 경쟁의 새 축이 됐으며, 벤치마크 신뢰성을 둘러싼 공방이 심화되고 있어 독립적 검증이 더욱 중요해졌다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "New York Times says OpenAI hid evidence in ChatGPT copyright trial",
+      "url": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/",
+      "source": "TechCrunch AI",
+      "published": "2026-07-09T10:05:58+00:00",
+      "thumbnail": "",
+      "title_ko": "뉴욕타임스, OpenAI가 저작권 소송에서 증거를 은닉했다고 법원에 제소",
+      "summary": "NYT는 OpenAI가 자체 학습 데이터 검색 능력을 감추고, 증거를 파기하거나 과도하게 편집해 제출했다고 주장하며 법원에 제재를 요청했다.",
+      "detail": "NYT와 The Daily News는 OpenAI가 저작권 침해 소송에서 학습 데이터 코퍼스 검색 도구의 존재를 의도적으로 숨겼다고 주장한다. 2026년 4월 법원 명령 증언에서 OpenAI 직원이 이미 약 7800만 건의 익명화된 ChatGPT 대화 데이터베이스를 구축해 저작권 침해 여부를 자체 분석했다고 밝혔다. OpenAI는 소송 직후 'Project Giraffe'의 일환으로 출력물의 저작권 콘텐츠 복제를 감지하는 '블룸 필터'도 도입한 것으로 드러났다. 법원에 제출한 2000만 건 샘플은 과도한 편집으로 '무용지물' 판정을 받았으며, 수십억 건의 출력 로그가 소송 후 삭제됐다는 의혹도 제기됐다.",
+      "points": [
+        "OpenAI, 학습 데이터 검색 능력 은닉 혐의로 제소",
+        "7800만 건 익명화 ChatGPT DB와 저작권 감지 '블룸 필터' 존재 확인",
+        "법원 제출 2000만 건 샘플이 과도한 편집으로 무용지물 판정",
+        "수십억 건 출력 로그 소송 후 삭제 의혹",
+        "법원에 증거 은닉 제재 및 샘플 증거능력 박탈 요청"
+      ],
+      "takeaway": "AI 학습 데이터 저작권 소송에서 내부 증거 처리 방식이 핵심 쟁점이 됐으며, 판결에 따라 업계 전체의 학습 데이터 관행과 법적 책임 기준이 재편될 수 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "중국, '클로드 코드'에 백도어 탑재 보안 경고 발령",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=212570",
+      "source": "AI타임스",
+      "published": "2026-07-09T06:15:32+00:00",
+      "thumbnail": "",
+      "title_ko": "중국, '클로드 코드'에 백도어 탑재 보안 경고 발령",
+      "summary": "중국 정부가 클로드 코드 특정 버전에 사용자 정보를 무단 수집하는 코드가 있다고 경고했고, Anthropic은 중국 이용자 식별 및 모델 증류 방지 목적의 실험이었다고 인정했다.",
+      "detail": "중국 공업정보화부 산하 NVDB가 클로드 코드 버전 2.1.91~2.1.196에서 사용자 위치·신원 정보를 외부 서버로 전송하는 코드가 발견됐다고 공식 경고했다. Anthropic은 이 기능이 무단 리셀러를 통한 계정 남용과 모델 증류를 막기 위한 실험의 일부였으며, 다음 릴리스에서 완전히 제거할 예정이라고 밝혔다. 알리바바는 논란 직후 사내 클로드 코드 사용을 전면 금지했다. 배경에는 중국 AI 기업들의 무단 증류 문제가 있으며, 일부 중국 모델이 자신을 '클로드'라고 응답하는 사례까지 발생했고 암시장에서 API 접근권이 거래되는 것으로도 알려졌다.",
+      "points": [
+        "클로드 코드 2.1.91~2.1.196에 사용자 정보 수집 코드 포함 확인",
+        "Anthropic, 모델 증류 방지 목적 실험임을 인정하고 제거 예고",
+        "알리바바 사내 클로드 코드 전면 사용 금지 조치",
+        "중국에서 최대 90% 저렴한 암시장 API 접근권 거래 실태 노출",
+        "Anthropic은 딥시크 등 중국 기업의 무단 증류를 지속 문제 제기 중"
+      ],
+      "takeaway": "AI 도구의 지역 제한 기술이 사용자 모니터링 코드로 구현되면서 국제 보안 분쟁으로 비화되는 새로운 갈등 구도가 형성됐다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "갑자기 업데이트된 클로드 통합 업데이트 총정리 | 업데이트 이유와 새 사용법 3가지",
+      "url": "https://www.youtube.com/watch?v=yWugrZo1OPA",
+      "source": "리더스AI",
+      "published": "2026-07-09T05:00:41.623035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/yWugrZo1OPA/hqdefault.jpg",
+      "videoId": "yWugrZo1OPA",
+      "views": 12615,
+      "title_ko": "갑자기 업데이트된 클로드 통합 업데이트 총정리 — 업데이트 이유와 새 활용법 3가지",
+      "summary": "2026년 7월 7일 Anthropic의 클로드 통합 업데이트 내용과 배경, 새로운 활용법 3가지를 분석한 영상이다.",
+      "detail": "리더스AI 채널에서 Anthropic이 7월 7일 전격 발표한 클로드 통합 업데이트를 긴급 분석했다. 갑작스러운 업데이트로 당황한 사용자들을 위해 업데이트의 배경과 이유, 그리고 새롭게 활용할 수 있는 방법 3가지를 정리한 영상이다. 영상 본문 내용이 충분히 제공되지 않아 구체적인 기능 세부 사항은 확인이 어렵다.",
+      "points": [
+        "2026년 7월 7일 클로드 통합 업데이트 발표",
+        "업데이트 배경과 이유 분석 제공",
+        "새로운 활용법 3가지 정리"
+      ],
+      "takeaway": "클로드의 대규모 통합 업데이트가 있었으며, 변경된 사용법을 빠르게 파악해 워크플로에 반영할 필요가 있다.",
+      "category": "도구 업데이트",
+      "metric": "조회 1.3만"
+    },
+    {
+      "type": "hn",
+      "title": "What's slowing down the AI buildout",
+      "url": "https://www.worksinprogress.news/p/ai-is-bottlenecked-by-the-grid",
+      "source": "Hacker News",
+      "published": "2026-07-09T03:26:02+00:00",
+      "thumbnail": "",
+      "points": [
+        "스타게이트 등 AI 데이터센터 전력 수요 폭증, 2030년 전 세계 100GW 예상",
+        "전력망 연결 대기 기간 20개월(2005)→55개월(2023)로 급증",
+        "전력 부족이 아닌 '그리드 연결 허가 절차' 자체가 병목",
+        "선착순 방식 심사 체계가 핵심 프로젝트 발목을 잡는 구조적 문제",
+        "젠슨 황·저커버그·알트만 모두 에너지 가용성을 AI 성장 제약으로 지목"
+      ],
+      "comments": 135,
+      "hn_url": "https://news.ycombinator.com/item?id=48840620",
+      "title_ko": "AI 인프라 확장을 가로막는 것은 전력 부족이 아닌 '전력망 연결 허가 지연'",
+      "summary": "AI 데이터센터 확장의 최대 병목은 전력 생산 부족이 아니라 전력망 연결 허가 처리가 20개월에서 55개월로 급증한 행정 지연이다.",
+      "detail": "텍사스 에이블린의 스타게이트 데이터센터는 피크 1.2기가와트를 소비하며, EpochAI는 2030년까지 전 세계 AI 컴퓨팅 전력 수요가 100기가와트에 달할 것으로 전망한다. 미국은 전력 자체는 충분하지만, 새 인프라를 전력망에 연결하는 허가 절차가 극도로 지연되는 것이 핵심 문제다. 2005년 중앙값 20개월이던 대기 기간이 2023년 55개월로 급증했다. 현행 선착순 방식의 경직된 심사 체계가 핵심 프로젝트를 덜 중요한 프로젝트 뒤에 묶어두며, AI 시대에 맞는 제도 개혁이 시급하다고 분석한다.",
+      "takeaway": "AI 성장의 핵심 제약이 기술이나 자금이 아닌 에너지 인프라 행정 절차라는 사실은 정책 개혁 없이는 산업 전체가 성장 한계에 직면할 수 있음을 시사한다.",
+      "category": "산업/투자",
+      "metric": "▲ ['스타게이트 등 AI 데이터센터 전력 수요 폭증, 2030년 전 세계 100GW 예상', '전력망 연결 대기 기간 20개월(2005)→55개월(2023)로 급증', \"전력 부족이 아닌 '그리드 연결 허가 절차' 자체가 병목\", '선착순 방식 심사 체계가 핵심 프로젝트 발목을 잡는 구조적 문제', '젠슨 황·저커버그·알트만 모두 에너지 가용성을 AI 성장 제약으로 지목'] · 💬 135"
+    },
+    {
+      "type": "youtube",
+      "title": "클로드 하나로 AI 영상 100% 자동화 | 앞으로 프롬프트 없이 영상 만드세요! [#힉스필드공략집 ep.1]",
+      "url": "https://www.youtube.com/watch?v=JUjHQzhct3Y",
+      "source": "조팀장의 AI 공략집",
+      "published": "2026-07-09T02:00:41.623035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/JUjHQzhct3Y/hqdefault.jpg",
+      "videoId": "JUjHQzhct3Y",
+      "views": 3070,
+      "title_ko": "클로드 하나로 AI 영상 100% 자동화 | 프롬프트 없이 영상 만들기",
+      "summary": "Claude Fable5와 Higgsfield MCP를 연동하면 복잡한 프롬프트 작성 없이 AI 영상을 완전 자동으로 제작할 수 있다.",
+      "detail": "Claude Fable5와 Higgsfield MCP를 연결하면 에이전트가 영상 제작 워크플로우를 직접 처리해 사용자가 일일이 프롬프트를 입력하지 않아도 된다. Higgsfield는 AI 영상 생성 플랫폼으로, MCP 프로토콜을 통해 Claude와 연동되어 에이전트 기반 자동화가 가능하다. 기존에 영상마다 수동으로 설정하던 작업을 Claude가 대신 처리하므로 제작 효율이 크게 향상된다. 비전문가도 이 조합만 이해하면 고품질 AI 영상을 빠르게 뽑아낼 수 있다.",
+      "points": [
+        "Claude Fable5 + Higgsfield MCP 연동으로 영상 자동화 구현",
+        "프롬프트 직접 입력 없이 에이전트가 영상 작업 자율 처리",
+        "MCP 프로토콜을 통한 AI 도구 간 연결 방식 시연",
+        "비전문가도 접근 가능한 영상 제작 워크플로우 소개"
+      ],
+      "takeaway": "MCP 기반 AI 도구 연동이 영상 제작 자동화의 새 패러다임을 제시하며, 앞으로 에이전트가 크리에이티브 작업 전반을 대행하는 흐름이 가속화될 전망이다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 3,070"
+    },
+    {
+      "type": "hn",
+      "title": "I think I have LLM burnout",
+      "url": "https://www.alecscollon.com/blog/llm-burnout/",
+      "source": "Hacker News",
+      "published": "2026-07-09T01:56:28+00:00",
+      "thumbnail": "",
+      "points": [
+        "매일 수 시간 LLM과 상호작용하며 직무 자체가 AI 협업 중심으로 전환",
+        "할루시네이션·단정적 단문·과도한 이모지 등 반복 패턴에 피로 누적",
+        "타인이 생성한 AI 텍스트까지 접해야 해 회피 불가능",
+        "생산성 향상과 번아웃 사이의 딜레마를 솔직하게 공유",
+        "LLM 출력을 철저히 검토하는 습관을 유지하지만 읽기 부담 가중"
+      ],
+      "comments": 336,
+      "hn_url": "https://news.ycombinator.com/item?id=48839984",
+      "title_ko": "LLM 번아웃이 온 것 같다",
+      "summary": "매일 수 시간 LLM 출력물을 읽고 다루는 개발자가 반복되는 AI 글쓰기 패턴에 지쳐가는 경험을 솔직하게 털어놓는다.",
+      "detail": "필자는 Claude Code·Codex를 활용해 코드 설계·검토·작성을 반복하며 직무 자체가 'LLM 협업' 중심으로 전환됐다. 생산성은 높아졌지만, 할루시네이션·단정적 단문체·과도한 이모지 등 LLM 특유의 반복 패턴이 누적되며 피로감이 커지고 있다. 본인이 생성을 제어할 수 없는 타인의 AI 텍스트까지 읽어야 하는 상황이 특히 문제로 지적된다. AI로 생산성을 높이면서도 장기적 인지 피로가 쌓이는 이중성이 현 시점 LLM 사용자의 현실적 경험이다.",
+      "takeaway": "AI 도입이 생산성을 높이는 동시에 새로운 형태의 인지 피로를 유발한다는 점에서, 지속 가능한 LLM 사용 방식과 'AI 글쓰기 위생'에 대한 업계 논의가 필요하다.",
+      "category": "기타",
+      "metric": "▲ ['매일 수 시간 LLM과 상호작용하며 직무 자체가 AI 협업 중심으로 전환', '할루시네이션·단정적 단문·과도한 이모지 등 반복 패턴에 피로 누적', '타인이 생성한 AI 텍스트까지 접해야 해 회피 불가능', '생산성 향상과 번아웃 사이의 딜레마를 솔직하게 공유', 'LLM 출력을 철저히 검토하는 습관을 유지하지만 읽기 부담 가중'] · 💬 336"
+    },
+    {
+      "type": "hn",
+      "title": "Suspecting AI cheating, Ivy League prof ordered in-person final; scores fell 50%",
+      "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/",
+      "source": "Hacker News",
+      "published": "2026-07-08T23:11:28+00:00",
+      "thumbnail": "",
+      "points": [
+        "테이크홈 시험 도입 후 수강생 86명으로 폭증, 중간고사 평균 96점·만점자 40명 기록",
+        "교수는 이 시험을 역대보다 어렵게 출제했다고 명시",
+        "대면 기말고사 실시 후 점수 약 50% 급락으로 AI 의존 확인",
+        "프린스턴 설문: 학생 29.9%가 AI 부정행위 경험 인정",
+        "교수가 언론에 공개하며 아이비리그 AI 부정행위 실태 공론화"
+      ],
+      "comments": 148,
+      "hn_url": "https://news.ycombinator.com/item?id=48838611",
+      "title_ko": "AI 부정행위 의심한 아이비리그 교수, 대면 기말고사 전환 후 점수 50% 급락",
+      "summary": "브라운대 경제학 교수가 테이크홈 시험 중간고사 평균 96점을 의심해 대면 기말고사로 바꿨더니 점수가 절반으로 떨어졌다.",
+      "detail": "브라운대 로베르토 세라노 교수는 총기 사건 이후 인도주의적 차원에서 테이크홈 시험을 허용했는데, 수강생이 평소 8~30명에서 86명으로 폭증하고 중간고사 평균이 역대 65~80점에서 96점으로 치솟자 AI 부정행위를 강하게 의심했다. 만점자가 40명에 달했으며, 교수 본인도 이 시험을 역대보다 어렵게 출제했다고 밝혔다. 대면 기말고사로 전환하자 점수가 약 50% 하락해 상당수 학생이 실제 학습 없이 AI에 의존했음이 확인됐다. 프린스턴대 설문에서도 학생 29.9%가 AI로 부정행위를 한 적 있다고 인정해, 이 사례가 아이비리그 전반의 구조적 문제임을 보여준다.",
+      "takeaway": "테이크홈 시험의 AI 부정행위가 수치로 입증된 이 사례는 고등교육 평가 방식의 전면적 재설계가 시급함을 보여주며, AI 시대 학업 성실도 측정 방법론에 대한 근본적 논의를 촉구한다.",
+      "category": "정책/규제",
+      "metric": "▲ ['테이크홈 시험 도입 후 수강생 86명으로 폭증, 중간고사 평균 96점·만점자 40명 기록', '교수는 이 시험을 역대보다 어렵게 출제했다고 명시', '대면 기말고사 실시 후 점수 약 50% 급락으로 AI 의존 확인', '프린스턴 설문: 학생 29.9%가 AI 부정행위 경험 인정', '교수가 언론에 공개하며 아이비리그 AI 부정행위 실태 공론화'] · 💬 148"
+    },
+    {
+      "type": "youtube",
+      "title": "당신의 전투력은? AI 안경으로 전투력 측정기(스카우터) 만들어봄",
+      "url": "https://www.youtube.com/watch?v=qskLAO51CJk",
+      "source": "테크몽 Techmong",
+      "published": "2026-07-08T23:00:41.623035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/qskLAO51CJk/hqdefault.jpg",
+      "videoId": "qskLAO51CJk",
+      "views": 12632,
+      "title_ko": "AI 안경으로 만화 속 전투력 측정기(스카우터) 직접 만들어봤다",
+      "summary": "AI 안경 카메라와 AI를 결합해 드래곤볼식 전투력 측정 스카우터를 실제로 구현한 실험 영상이다.",
+      "detail": "지난 AI 안경 영상에서 시청자들이 '스카우터 아니냐'고 반응한 것을 계기로, 실제로 만화 속 전투력 측정기를 AI 안경으로 구현했다. 안경에 내장된 카메라로 피사체를 인식하고 AI가 임의의 전투력 수치를 산출하는 방식이다. 실용적 도구보다는 AI 웨어러블 하드웨어의 창의적 활용 가능성을 보여주는 실험적 프로젝트로, 시청자 아이디어에서 출발한 참여형 콘텐츠다.",
+      "points": [
+        "AI 안경 카메라로 피사체 인식 후 전투력 수치 생성",
+        "드래곤볼 등 만화 속 스카우터 개념을 실제 하드웨어로 구현",
+        "시청자 아이디어에서 출발한 참여형 AI 실험 콘텐츠",
+        "AI 웨어러블 기기의 엔터테인먼트 활용 가능성 시연"
+      ],
+      "takeaway": "AI 안경 같은 웨어러블 AI 하드웨어가 실용 도구를 넘어 엔터테인먼트·창작 영역으로 확장되고 있으며, 사용자 참여형 아이디어가 실제 콘텐츠로 빠르게 구현되는 흐름을 보여준다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 1.3만"
+    },
+    {
+      "type": "youtube",
+      "title": "조코딩이 직접 써본 AI 꿀조합 알려드림 | AI툴, 이거 뭐 돼? EP14",
+      "url": "https://www.youtube.com/watch?v=5GqQsqtG_2k",
+      "source": "BNK금융그룹",
+      "published": "2026-07-08T23:00:41.623035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/5GqQsqtG_2k/hqdefault.jpg",
+      "videoId": "5GqQsqtG_2k",
+      "views": 4405,
+      "title_ko": "코딩 몰라도 3시간에 앱 만드는 AI 툴 꿀조합 직접 써봤다",
+      "summary": "조코딩이 ChatGPT·Claude 등 생성형 AI 툴 조합으로 코딩 지식 없이 앱을 만드는 실전 워크플로우를 공유한다.",
+      "detail": "생성형 AI 도구가 쏟아지는 상황에서 실제로 효과적인 조합이 무엇인지, 조코딩이 직접 써본 경험을 바탕으로 추천 AI 툴 조합을 소개한다. ChatGPT·Claude 등을 활용하면 코딩 경험 없이도 3시간 안에 실용적인 앱을 제작할 수 있다는 것이 핵심 메시지다. AI를 단순 대화 상대가 아닌 실제 개발 보조 도구로 활용하는 구체적인 워크플로우를 제시한다.",
+      "points": [
+        "ChatGPT·Claude 조합으로 코딩 지식 없이 앱 제작 가능",
+        "3시간 안에 실용 앱 완성하는 실전 워크플로우 공유",
+        "조코딩의 직접 사용 경험 기반 AI 툴 추천",
+        "생성형 AI를 개발 보조 도구로 활용하는 방법론 제시"
+      ],
+      "takeaway": "AI 툴 조합을 활용한 노코드·로코드 개발이 일반화되며 비개발자도 앱 제작 진입장벽이 크게 낮아지고 있어, AI 리터러시가 새로운 핵심 역량으로 부상하고 있다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 4,405"
+    },
+    {
+      "type": "youtube",
+      "title": "“차세대 스칼렛 요한슨”?…‘AI 여배우’에 할리우드 발칵 [W 언박싱] / KBS 2026.07.08.",
+      "url": "https://www.youtube.com/watch?v=az_QONfqIkw",
+      "source": "KBS News",
+      "published": "2026-07-08T23:00:41.623035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/az_QONfqIkw/hqdefault.jpg",
+      "videoId": "az_QONfqIkw",
+      "views": 243468,
+      "title_ko": "'차세대 스칼렛 요한슨'?...AI 여배우 등장에 할리우드 발칵",
+      "summary": "AI로 생성된 가상 여배우가 실제 배우 수준의 연기력을 선보이며 할리우드에서 일자리·초상권 논란을 일으키고 있다.",
+      "detail": "AI 기술로 만들어진 가상 배우가 액션·감정 연기 등 다양한 장면에서 실제 배우와 구분하기 어려운 완성도를 보여주며 '차세대 스칼렛 요한슨'이라는 평가까지 나왔다. 이미지·비디오 생성 AI의 급격한 발전이 배경으로, 이제는 인간 배우 없이도 장편 영상 콘텐츠 제작이 현실화되고 있다. 그러나 실제 배우들의 일자리 위협과 초상권·퍼블리시티권 침해 우려가 커지면서 할리우드 내 찬반 논란이 격화되고 있다.",
+      "points": [
+        "AI 생성 가상 배우가 액션·일상·감정 연기 등 다양한 장면에서 실사 수준 구현",
+        "'차세대 스칼렛 요한슨'이라는 평가 나올 만큼 완성도 인정",
+        "실제 배우 일자리 위협 및 초상권 침해 우려 확산",
+        "할리우드 업계에서 AI 배우 도입 찬반 논란 격화",
+        "이미지·비디오 AI 기술이 엔터테인먼트 산업 구조 자체를 흔드는 수준으로 발전"
+      ],
+      "takeaway": "AI 생성 배우의 등장은 엔터테인먼트 산업의 노동·저작권 구조를 근본적으로 재편할 수 있어, 업계 자율 규제와 법적 제도 정비가 시급하다.",
+      "category": "이미지/비디오",
+      "metric": "조회 24.3만"
+    }
+  ]
+}
