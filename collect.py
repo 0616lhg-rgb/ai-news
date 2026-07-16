@@ -24,7 +24,11 @@ import urllib.request
 import urllib.parse
 from datetime import datetime, timezone, timedelta
 
+import socket
 import feedparser
+
+# 피드/네트워크 요청이 응답 없는 서버에서 무한 대기하지 않도록 전역 타임아웃(초)
+socket.setdefaulttimeout(20)
 
 # 콘솔 한글 깨짐 방지
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
