@@ -1,0 +1,505 @@
+{
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T08:11:03",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘은 중국 AI의 가격·성능 동시 장악이 미국 중소 개발사를 '딥시크 데드 존'으로 몰아넣는 구조적 위협이 가시화된 날이다. 동시에 AI 하이퍼스케일러들의 숨겨진 부채와 수요 거품에 대한 경고가 잇따르며 투자 지속 가능성에 의문이 커졌고, 안전 검증 없이 프론티어 성능에 근접한 오픈웨이트 모델 확산에 미국 정부도 자발적 감독 체계 마련에 나섰다.",
+    "highlights": [
+      {
+        "title": "딥시크 데드 존: 미국 AI의 구조적 위기",
+        "line": "중국 AI가 최저가와 최고 성능을 동시에 확보하면서 양극 어디에도 자리 잡지 못한 미국 중소 AI 개발사들이 생존 불가능한 경쟁 구도에 빠지고 있다."
+      },
+      {
+        "title": "오픈웨이트 모델, 성능은 프론티어 근접·안전성은 제로",
+        "line": "중국 GLM-5.2가 GPT-5.5·Claude Opus 4.7 수준에 도달했지만 사이버·생물학 위험 요청을 단 하나도 거부하지 않아, 성능-안전 격차가 규제 공백으로 이어질 수 있다는 우려가 부각됐다."
+      },
+      {
+        "title": "Anthropic, 신생 Volta와 6년 100억 달러 컴퓨트 계약",
+        "line": "올해 설립된 AI 클라우드 스타트업과 맺은 초대형 장기 계약은 컴퓨트 인프라 선점 경쟁이 단순 투자 수준을 넘어 공급망 잠금 전략으로 진화했음을 보여준다."
+      },
+      {
+        "title": "AI 부채 1.65조 달러 경고",
+        "line": "하이퍼스케일러들이 장부 밖에 숨긴 부채까지 합산하면 AI 투자 규모는 시장이 인식한 것보다 훨씬 크며, 수요 거품론과 맞물려 투자 지속 가능성에 본격적인 의문이 제기됐다."
+      },
+      {
+        "title": "스마트폰에서 에이전트 구동: LFM2.5-2.6B",
+        "line": "Liquid AI의 초경량 2.6B 모델이 폰에서 30 tok/s로 128K 컨텍스트와 툴 호출을 지원하며, 클라우드 없이도 에이전트 워크플로가 가능한 엣지 AI의 새 기준을 제시했다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "youtube",
+      "title": "IT뉴스 - 오픈AI Astra 10대 난제 해결, DeepSeek-V4-Flash 정식, Seedance 2.5, MiniMax H3, Gemini Robotics 2 등",
+      "url": "https://www.youtube.com/watch?v=e_j_SyBlc18",
+      "source": "조코딩 JoCoding",
+      "published": "2026-08-04T21:00:30.763921+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/e_j_SyBlc18/hqdefault.jpg",
+      "videoId": "e_j_SyBlc18",
+      "views": 13339,
+      "title_ko": "IT뉴스 - 오픈AI Astra 10대 난제 해결, DeepSeek-V4-Flash 정식, Seedance 2.5, MiniMax H3, Gemini Robotics 2 등",
+      "summary": "오픈AI Astra의 10대 난제 도전부터 DeepSeek-V4-Flash 정식 출시, 영상·오디오 신모델 공개까지 주요 AI 소식이 한꺼번에 쏟아졌다.",
+      "detail": "오픈AI의 Astra가 과학·수학 분야 인류 10대 난제 해결에 도전한다는 소식이 이번 주 가장 큰 화제였다. DeepSeek-V4-Flash가 정식 출시되며 경량 고성능 모델 경쟁이 심화됐다. 영상 생성 분야에서는 Seedance 2.5가, 언어·오디오 통합 모델로는 MiniMax H3가 각각 공개됐다. 구글은 Gemini Robotics 2를 발표해 로봇공학 AI 경쟁에도 불을 붙였다.",
+      "points": [
+        "오픈AI Astra, 인류 10대 난제 해결 시도 발표",
+        "DeepSeek-V4-Flash 정식 출시로 경량 모델 경쟁 가열",
+        "Seedance 2.5 영상 생성 모델 공개",
+        "MiniMax H3 신모델 발표",
+        "구글 Gemini Robotics 2로 로봇 AI 경쟁 본격화"
+      ],
+      "takeaway": "오픈AI·DeepSeek·구글 등 주요 기업이 동시다발적으로 신모델을 공개하며 AI 기술 경쟁이 전방위로 확산되고 있다.",
+      "category": "LLM/언어모델",
+      "metric": "조회 1.3만"
+    },
+    {
+      "type": "hn",
+      "title": "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+      "url": "https://arxiv.org/abs/2602.16763",
+      "source": "Hacker News",
+      "published": "2026-08-04T16:10:39+00:00",
+      "thumbnail": "",
+      "points": [
+        "60개 LM 벤치마크 중 절반 가까이 포화 상태 확인",
+        "벤치마크 연령이 높을수록 포화율 증가",
+        "포화 저항력은 전문가 큐레이션 여부가 결정",
+        "공개 테스트 데이터 여부는 포화에 무관",
+        "설계 단계 선택이 벤치마크 수명을 좌우"
+      ],
+      "comments": 74,
+      "hn_url": "https://news.ycombinator.com/item?id=49170915",
+      "title_ko": "AI 벤치마크가 정체될 때: 벤치마크 포화 현상에 관한 체계적 연구",
+      "summary": "60개 언어 모델 벤치마크를 분석한 결과 절반 가까이가 이미 '포화' 상태이며, 전문가 큐레이션이 수명 연장의 핵심임이 밝혀졌다.",
+      "detail": "연구진은 벤치마크 '포화'를 정의하고 60개 언어 모델 벤치마크를 14가지 속성으로 체계적으로 분석했다. 전체의 절반 가까이가 포화 상태였으며, 벤치마크가 오래될수록 포화율이 높아지는 경향이 뚜렷했다. 주목할 점은 포화 저항력이 공개 테스트 데이터 여부가 아닌 전문가 큐레이션 여부에 달려 있다는 것이다. 이는 벤치마크 초기 설계 선택이 장기 유효성을 크게 좌우함을 의미한다.",
+      "takeaway": "현행 AI 평가 체계가 빠르게 무력화되고 있어 전문가 큐레이션 기반의 새로운 평가 방법론 수립이 시급하다.",
+      "category": "연구/논문",
+      "metric": "▲ ['60개 LM 벤치마크 중 절반 가까이 포화 상태 확인', '벤치마크 연령이 높을수록 포화율 증가', '포화 저항력은 전문가 큐레이션 여부가 결정', '공개 테스트 데이터 여부는 포화에 무관', '설계 단계 선택이 벤치마크 수명을 좌우'] · 💬 74"
+    },
+    {
+      "type": "hn",
+      "title": "The AI Demand Bubble",
+      "url": "https://www.wheresyoured.at/the-ai-demand-bubble/",
+      "source": "Hacker News",
+      "published": "2026-08-04T15:51:51+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 투자·수요가 실제 가치 대비 과도하다는 시각 제기",
+        "기업 AI 지출과 실질 ROI 간 괴리 심화 우려",
+        "버블 붕괴 시 AI 생태계 전반에 파급 가능성"
+      ],
+      "comments": 114,
+      "hn_url": "https://news.ycombinator.com/item?id=49170648",
+      "title_ko": "AI 수요 버블",
+      "summary": "AI에 대한 기업·투자자의 수요가 실제 가치를 앞지르는 버블 국면에 진입했다는 논의가 주목받고 있다.",
+      "detail": "제목이 시사하듯 현재 AI 인프라와 서비스에 대한 투자·수요가 거품 단계에 이르렀다는 시각을 다룬 글이다. 기업들의 AI 지출 급증과 실질 ROI 사이의 괴리가 핵심 문제로 제기된다. 실제 사용자 수요가 기대치를 따라가지 못할 경우 구조적 조정이 불가피할 수 있다는 우려가 담겨 있다.",
+      "takeaway": "AI 붐이 지속 가능한 성장인지 일시적 버블인지를 판단하는 것이 투자자와 기업 모두에게 핵심 과제로 부상하고 있다.",
+      "category": "산업/투자",
+      "metric": "▲ ['AI 투자·수요가 실제 가치 대비 과도하다는 시각 제기', '기업 AI 지출과 실질 ROI 간 괴리 심화 우려', '버블 붕괴 시 AI 생태계 전반에 파급 가능성'] · 💬 114"
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.222",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.222",
+      "source": "Claude Code 릴리스",
+      "published": "2026-08-04T13:39:55+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.222 릴리스 노트",
+      "summary": "워크트리 보안 취약점 수정, MCP 사용량 오귀속 해결, HTTPS 프록시 연결 오류 수정 등 다수의 버그 패치와 안전성 개선이 포함됐다.",
+      "detail": "이번 릴리스의 가장 중요한 변경점은 워크트리 격리 세션이 메인 체크아웃에 파괴적인 git 명령을 실행할 수 있었던 보안 취약점 수정이다. HTTPS 프록시 환경에서 시작 시 연결 확인이 멈추던 문제도 해결됐다. MCP 서버 사용량이 실제 도구 결과를 소비한 요청만 반영하도록 수정되어 과도한 사용량 집계가 방지된다. auto 모드 안전성도 강화돼 SendMessage가 권한 분류기를 통과한 후에만 다른 에이전트 세션으로 전송된다.",
+      "points": [
+        "워크트리 격리 세션의 파괴적 git 명령 실행 보안 취약점 패치",
+        "HTTPS 프록시 환경 시작 시 연결 오류 수정",
+        "MCP 서버 사용량 오귀속 문제 해결",
+        "auto 모드 SendMessage에 권한 분류기 검사 추가",
+        "스크린 리더 및 파일 감시자 관련 크래시 수정"
+      ],
+      "takeaway": "보안 격리 강화와 프록시 환경 개선이 핵심으로, 기업 환경에서 Claude Code를 사용하는 팀이라면 즉시 업데이트가 권장된다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "GPT-OSS has turned one year old today!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfo8be/gptoss_has_turned_one_year_old_today/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-04T12:52:28+00:00",
+      "thumbnail": "",
+      "title_ko": "GPT-OSS 출시 1주년 — 여전히 최고의 로컬 모델",
+      "summary": "GPT-OSS 120B가 출시 1년이 지난 지금도 로컬 LLM 1위 자리를 지키며, 이후 출시된 경쟁 모델들을 압도하고 있다는 평가다.",
+      "detail": "GPT-OSS 20B·120B는 출시 후 1년이 지났지만 로컬 모델 중 여전히 최상위 선택지로 꼽힌다. 가장 강력한 경쟁자인 Qwen 3.5 122B는 성능은 비슷하지만 속도가 느리고 MXFP4 같은 로컬 친화적 양자화 포맷이 없어 실용성이 떨어진다. NVIDIA의 Nemotron 3 Super는 GPT-OSS 120B의 클론 수준에 그치며 더 느린 것으로 평가됐다. Mistral 4 Small 역시 뚜렷한 성능 우위를 보이지 못했다.",
+      "points": [
+        "GPT-OSS 120B, 1년 후에도 로컬 실행 1위 평가 유지",
+        "Qwen 3.5 122B는 성능 유사하나 속도·양자화 포맷 열세",
+        "Nemotron 3 Super는 GPT-OSS 클론 수준, 더 느림",
+        "Mistral 4 Small도 뚜렷한 우위 없음",
+        "MXFP4 등 로컬 친화 포맷 지원이 실용성 결정 요인"
+      ],
+      "takeaway": "후발 모델들이 쏟아지는 가운데도 GPT-OSS 120B가 로컬 실행 최적화 덕분에 실용성 1위를 유지하고 있어, 양자화 포맷 지원이 로컬 LLM 선택의 핵심 기준임이 재확인됐다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "A 2.6B model with tool calling and 128K context now runs at 30 tok/s on a phone",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfn9vc/a_26b_model_with_tool_calling_and_128k_context/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-04T12:15:16+00:00",
+      "thumbnail": "",
+      "title_ko": "2.6B 모델이 128K 컨텍스트와 도구 호출을 지원하며 스마트폰에서 초당 30토큰 달성",
+      "summary": "Liquid AI의 LFM2.5-2.6B가 스마트폰에서 30 tok/s를 기록하며 에이전트 워크플로까지 지원하는 초경량 모델로 주목받고 있다.",
+      "detail": "Liquid AI가 공개한 LFM2.5-2.6B는 27억 파라미터에 128K 컨텍스트와 도구 호출을 지원하며 멀티스텝 에이전트 워크플로에 특화된 포스트 트레이닝을 거쳤다. Q4_K_M GGUF 기준 약 1.67GB 용량으로 llama.cpp에서 즉시 실행 가능하다. 제조사 발표 기준 스마트폰 30 tok/s, Ryzen AI Max+ 395에서 113 tok/s, M5 Max에서 220 tok/s를 달성했으며 메모리 사용량은 2.5GB 미만이다. 다만 이는 자체 벤치마크이므로 독립 검증이 필요하다.",
+      "points": [
+        "2.69B 파라미터에 128K 컨텍스트·도구 호출 지원",
+        "Q4_K_M GGUF 약 1.67GB, llama.cpp 즉시 호환",
+        "스마트폰 30 tok/s, M5 Max 220 tok/s 달성(자체 측정)",
+        "멀티스텝 에이전트 워크플로 특화 포스트 트레이닝",
+        "메모리 2.5GB 미만으로 엣지 디바이스 최적화"
+      ],
+      "takeaway": "에이전트 기능을 갖춘 실용적인 초경량 모델이 스마트폰급 하드웨어에서 실시간 동작하는 시대가 열리고 있어, 온디바이스 AI 에이전트 활용 가능성이 크게 높아졌다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "AI-Generated Images Discourage Me from Reading Your Blog",
+      "url": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
+      "source": "Hacker News",
+      "published": "2026-08-04T11:30:17+00:00",
+      "thumbnail": "",
+      "points": [
+        "블로그 AI 이미지 사용 → 글 내용까지 AI 의심 연쇄 유발",
+        "개인 블로그에서 신뢰도 저하 효과가 특히 큼",
+        "MS 페인트 낙서도 AI 이미지보다 진정성 있다는 주장",
+        "해커뉴스 커뮤니티에서 광범위한 공감 형성"
+      ],
+      "comments": 429,
+      "hn_url": "https://news.ycombinator.com/item?id=49167113",
+      "title_ko": "AI 생성 이미지가 블로그 읽기를 포기하게 만든다",
+      "summary": "개인 블로그에 AI 생성 이미지가 쓰이면 글 내용의 진정성까지 의심하게 되어 읽기를 그만두게 된다는 개발자의 의견이 해커뉴스에서 광범위한 공감을 얻었다.",
+      "detail": "한 개발자는 블로그에 AI 생성 이미지가 등장하면 글 내용 역시 AI가 작성했을 것이라는 의심을 자연스럽게 품게 된다고 주장했다. 기업 블로그에서는 어느 정도 용인되지만 개인 블로그에서는 독자 신뢰를 크게 손상시킨다는 것이다. 조악한 MS 페인트 그림이라도 AI 이미지보다 인간적 진정성이 더 느껴진다고 표현했다. 이 주장은 해커뉴스 커뮤니티에서 광범위한 공감을 이끌어냈다.",
+      "takeaway": "AI 도구 남용이 개인 창작자의 진정성을 희석시키고 독자 신뢰를 손상시킨다는 경고로, 콘텐츠 제작 전략 수립 시 시사하는 바가 크다.",
+      "category": "기타",
+      "metric": "▲ ['블로그 AI 이미지 사용 → 글 내용까지 AI 의심 연쇄 유발', '개인 블로그에서 신뢰도 저하 효과가 특히 큼', 'MS 페인트 낙서도 AI 이미지보다 진정성 있다는 주장', '해커뉴스 커뮤니티에서 광범위한 공감 형성'] · 💬 429"
+    },
+    {
+      "type": "guide",
+      "title": "Local LLM 35B MoE — Real-world coding benchmarks (Qwen vs Ornith vs KAT)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vflokt/local_llm_35b_moe_realworld_coding_benchmarks/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-04T11:15:40+00:00",
+      "thumbnail": "",
+      "title_ko": "로컬 LLM 35B MoE 실전 코딩 벤치마크 — Qwen vs Ornith vs KAT 비교",
+      "summary": "수개월간 실제 개발 워크플로로 35B MoE급 모델들을 직접 평가한 결과, Qwen 3.6이 기본기는 우수하지만 멀티파일 추론에서 약점을 드러냈다.",
+      "detail": "테스터는 합성 벤치마크 대신 실제 코딩·디버깅·리팩토링·오류 복구 등 dev 워크플로로 35B A3B/MoE 클래스 모델들을 수개월간 평가했다. 기준 모델 Qwen 3.6(35B A3B)은 코드 합성과 추론 깊이가 우수했으나 엣지 케이스에서 '과신 환각'을 보이고 멀티파일 장문 추론에서 일관성이 흔들리는 패턴이 반복됐다. Ornith와 KAT 모델도 같은 기준으로 비교됐으나 원문이 잘려 세부 결과는 제한적으로 전달됐다.",
+      "points": [
+        "합성 벤치마크 대신 실제 dev 워크플로 기반 장기 평가",
+        "Qwen 3.6: 코드 합성·추론 강점, 엣지 케이스 과신 환각 취약",
+        "멀티파일 장문 추론에서 Qwen 일관성 저하 반복 확인",
+        "Ornith·KAT와의 비교 포함(원문 일부 미수록)"
+      ],
+      "takeaway": "실전 코딩 환경에서 모델 간 차이는 표준 벤치마크보다 훨씬 미묘하며, 특히 멀티파일 장문 작업에서 평가 결과가 크게 달라져 용도별 직접 검증이 필수다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Open-weight AI models are catching up to the frontier. The safety gap remains.",
+      "url": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-04T11:05:26+00:00",
+      "thumbnail": "",
+      "title_ko": "오픈웨이트 AI, 프론티어 모델 추격 중...안전성 격차는 더 벌어져",
+      "summary": "중국 오픈웨이트 모델 GLM-5.2가 GPT-5.5·Claude Opus 4.7에 근접했지만, 공격적 사이버·생물학 과제를 단 하나도 거부하지 않아 안전성 우려가 심화되고 있다.",
+      "detail": "SaferAI 평가에서 Z.ai의 GLM-5.2는 공격적 사이버 및 이중용도 생물학 과제를 전혀 거부하지 않았다. 반면 Claude Opus 4.7은 CyberGym 벤치마크에서 너무 일관되게 거부해 평가 완료 자체가 불가능했다. 오픈웨이트 모델은 누구나 자체 인프라에서 실행할 수 있어 API 수준의 안전장치가 근본적으로 무력화된다. Far.ai 연구에 따르면 Grok 4.5, Gemini 3.1 Pro 같은 폐쇄형 모델에서도 롤플레이·권위 사칭·위조 대화 이력 등을 조합한 수백 개의 범용 탈옥 기법이 발견됐다. 전문가들은 '능력의 프론티어가 곧 위험의 프론티어는 아니다'라며 안전 완화 조치 상태도 함께 평가해야 한다고 강조한다.",
+      "points": [
+        "GLM-5.2, 공격적 사이버·생물학 과제 거부율 0%",
+        "Claude Opus 4.7은 일관된 거부로 CyberGym 벤치마크 완료 불가",
+        "오픈웨이트 모델은 다운로드 후 안전장치 제거·수정이 자유로움",
+        "Far.ai, 주요 폐쇄형 모델에서 수백 개 범용 탈옥 기법 발견",
+        "전문가: 능력 격차가 좁혀질수록 안전 완화 조치 평가가 더 중요"
+      ],
+      "takeaway": "오픈웨이트 모델의 능력이 프론티어에 근접할수록 안전장치 없는 배포라는 구조적 위험이 가속화되며, 오픈소스 생태계에서 실효성 있는 안전 확보 방법론이 업계 핵심 과제로 부상하고 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Kimi K3 full model running on 16x GB10 cluster at 20+tps",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfl525/kimi_k3_full_model_running_on_16x_gb10_cluster_at/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-04T10:56:16+00:00",
+      "thumbnail": "",
+      "title_ko": "Kimi K3 전체 모델, 16개 GB10 클러스터에서 초당 20토큰 이상 구동 성공",
+      "summary": "커뮤니티 사용자가 16개 NVIDIA GB10 클러스터로 Kimi K3 전체 모델을 처음 구동하는 데 성공해 평균 20+ tps, 피크 38 tps 성능을 달성했다.",
+      "detail": "dspark 프레임워크를 활용해 16개 GB10 클러스터에서 Kimi K3 전체 모델 첫 구동에 성공했다. 평균 처리 속도 20+ tps, 피크 38 tps, 프리필 750 tps를 기록했다. 현재 추가 최적화 테스트가 진행 중이며, 완료 후 vLLM 이미지와 실행 가이드를 공개할 예정이다.",
+      "points": [
+        "16개 NVIDIA GB10 클러스터로 Kimi K3 전체 모델 첫 구동 성공",
+        "평균 20+ tps, 피크 38 tps, 프리필 750 tps 달성",
+        "dspark 프레임워크 활용",
+        "vLLM 이미지 및 실행 가이드 공개 예정"
+      ],
+      "takeaway": "대형 오픈웨이트 모델의 로컬 고성능 구동 가능성을 보여주는 사례로, 커뮤니티 주도의 인프라 최적화가 빠르게 진전되고 있다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Anthropic signs $10B deal with AI cloud startup Volta",
+      "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-04T10:48:40+00:00",
+      "thumbnail": "",
+      "title_ko": "Anthropic, AI 클라우드 스타트업 Volta와 100억 달러 컴퓨트 계약 체결",
+      "summary": "Anthropic이 올해 설립된 AI 클라우드 스타트업 Volta와 6년간 100억 달러 규모의 컴퓨트 공급 계약을 맺었다.",
+      "detail": "Bloomberg에 따르면 Volta는 노르웨이에 133메가와트 규모 데이터센터를 구축해 Anthropic에 컴퓨트를 공급한다. 암호화폐 채굴 기업 Bitdeer가 인프라 개발 파트너로 참여하며, 해당 시설은 NVIDIA 최신 AI 칩 아키텍처 Vera Rubin을 사용한다. Volta는 NVIDIA Cloud Partner 프로그램 소속이다. Anthropic은 최근 SpaceX, Amazon에 이어 컴퓨트 인프라 확장을 연속으로 추진하고 있다.",
+      "points": [
+        "6년간 100억 달러 규모 컴퓨트 공급 계약",
+        "노르웨이에 133MW 데이터센터 구축 예정",
+        "NVIDIA Vera Rubin 칩 아키텍처 도입",
+        "암호화폐 채굴사 Bitdeer가 인프라 개발 파트너",
+        "SpaceX·Amazon에 이은 Anthropic의 연속 컴퓨트 확장"
+      ],
+      "takeaway": "Anthropic이 경쟁사와의 싸움에서 컴퓨트 인프라 선제 확보에 집중하고 있으며, AI 업계의 데이터센터 수요가 암호화폐 기업 같은 비전통적 파트너십으로까지 확대되고 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "(인건비 절약) AI 직원 자동화 방법, \"이제 화면 녹화 던져주면 그대로 따라합니다.\" 클로드 코워크",
+      "url": "https://www.youtube.com/watch?v=CmhzT5v-NYY",
+      "source": "온라인 사업 전략, 온크트리",
+      "published": "2026-08-04T10:00:30.763921+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/CmhzT5v-NYY/hqdefault.jpg",
+      "videoId": "CmhzT5v-NYY",
+      "views": 2234,
+      "title_ko": "화면 녹화만 던져주면 그대로 따라하는 Claude AI 직원 자동화",
+      "summary": "화면 녹화를 Claude에게 전달하면 작업 흐름을 학습해 자동으로 재현하는 'AI 코워크' 자동화 방법을 소개하는 영상이다.",
+      "detail": "이 영상은 Claude를 활용해 반복 업무를 자동화하는 방법을 다루며, 핵심은 화면 녹화를 입력하면 AI가 해당 작업을 그대로 재현하는 '코워크' 방식이다. 별도 코딩 없이 비개발자도 AI 직원을 구성할 수 있다는 점을 강조하며 인건비 절감을 주요 활용 목적으로 소개한다.",
+      "points": [
+        "화면 녹화를 Claude에 입력하면 작업 자동 재현",
+        "코딩 없이 비개발자도 적용 가능한 AI 자동화",
+        "인건비 절감을 위한 실전 비즈니스 활용 중심 구성",
+        "Claude 기반 AI 직원 구현 방법 소개"
+      ],
+      "takeaway": "화면 녹화 기반 AI 자동화가 실용적인 인건비 절감 수단으로 주목받으면서, 비개발자도 쉽게 AI 워크플로우를 구축할 수 있는 접근법이 확산되고 있다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 2,234"
+    },
+    {
+      "type": "hn",
+      "title": "Bending Spoons makes first post-IPO acquisition with $1.3B Airtable deal",
+      "url": "https://live.euronext.com/en/financial-news/bending-spoons-makes-first-post-ipo-acquisition-13-billion-airtable-deal",
+      "source": "Hacker News",
+      "published": "2026-08-04T09:27:47+00:00",
+      "thumbnail": "",
+      "points": [
+        "인수가 12.85억 달러 전액 현금 거래",
+        "Bending Spoons의 나스닥 상장 후 첫 인수",
+        "Airtable은 노코드 스프레드시트+데이터베이스 플랫폼",
+        "올해 AOL·Eventbrite에 이은 세 번째 대형 인수",
+        "실질 지분 가치 약 22.5억 달러로 평가"
+      ],
+      "comments": 89,
+      "hn_url": "https://news.ycombinator.com/item?id=49166182",
+      "title_ko": "Bending Spoons, Airtable을 13억 달러에 인수 - 나스닥 상장 후 첫 M&A",
+      "summary": "이탈리아 테크 기업 Bending Spoons이 나스닥 상장 직후 첫 인수로 노코드 플랫폼 Airtable을 12.85억 달러에 전액 현금으로 매수했다.",
+      "detail": "Bending Spoons은 디지털 비즈니스를 인수해 구조조정하는 PE형 전략으로 알려진 이탈리아 테크 기업이다. 이번 Airtable 인수는 나스닥 상장 후 첫 M&A로, 올해 AOL·Eventbrite 인수에 이은 세 번째 대형 거래다. Airtable은 2013년 설립된 스프레드시트·데이터베이스 결합형 노코드 플랫폼으로, 현재 순현금을 감안한 실질 지분 가치는 약 22.5억 달러로 평가됐다.",
+      "takeaway": "Bending Spoons의 PE형 테크 인수 전략이 가속화되고 있으며, 노코드 툴 시장에서 AI 통합을 통한 재편 가능성이 커지고 있다.",
+      "category": "산업/투자",
+      "metric": "▲ ['인수가 12.85억 달러 전액 현금 거래', 'Bending Spoons의 나스닥 상장 후 첫 인수', 'Airtable은 노코드 스프레드시트+데이터베이스 플랫폼', '올해 AOL·Eventbrite에 이은 세 번째 대형 인수', '실질 지분 가치 약 22.5억 달러로 평가'] · 💬 89"
+    },
+    {
+      "type": "news",
+      "title": "\"가성비 넘어 최첨단 성능까지\"...중국 AI 공세에 미국 개발사 '데드 존' 몰렸다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=213523",
+      "source": "AI타임스",
+      "published": "2026-08-04T09:10:31+00:00",
+      "thumbnail": "",
+      "title_ko": "'가성비 넘어 최첨단 성능까지' - 중국 AI 공세에 미국 개발사 '데드 존' 진입",
+      "summary": "중국 AI 기업들이 최저가와 최고 성능을 동시에 확보하면서, 양쪽 모두에서 경쟁 우위가 없는 미국 AI 개발사들이 생존하기 어려운 '딥시크 데드 존'에 몰리고 있다.",
+      "detail": "Qwen3.8-Max, Kimi K3, DeepSeek V4 Flash, Seedance 2.5, GLM-5.2 등이 불과 2개월 사이에 연이어 최상위 성능을 달성했다. DeepSeek V4 Flash의 추론 비용은 0.03달러로, Anthropic Fable 5의 3.15달러 대비 100배 이상 저렴하다. '딥시크 데드 존'이라는 표현이 등장할 만큼, 성능과 가격 어느 쪽에서도 우위를 갖지 못한 모델은 시장 생존이 어려워졌다. 실무에서는 Claude Code로 설계하고 DeepSeek으로 실행하는 혼합 사용 사례가 늘고 있다. 오픈AI·Anthropic은 IPO를 목표로 하지만 저가 오픈소스 확산이 수익성에 직접적 위협이 되고 있다.",
+      "points": [
+        "중국 모델들, 2개월 새 글로벌 최상위 성능 연속 달성",
+        "DeepSeek V4 Flash 0.03달러 vs Fable 5 3.15달러(100배 차이)",
+        "'딥시크 데드 존': 성능·가격 어느 쪽도 우위 없으면 생존 불가",
+        "Claude Code+DeepSeek 혼합 사용으로 비용 절감 사례 증가",
+        "중국 오픈소스 확산이 오픈AI·Anthropic IPO 수익성에 직접 위협"
+      ],
+      "takeaway": "중국 AI의 공세가 단발성이 아닌 시스템적 역량 확보로 이어지면서 미국 AI 기업들의 가격·성능 전략과 IPO 전망에 근본적 재검토가 필요한 시점이 됐다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "\"중국 AI 금지하면 미국 기업 연간 16조원 타격…비용 절감 수단 없어져\"",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=213505",
+      "source": "AI타임스",
+      "published": "2026-08-04T08:15:09+00:00",
+      "thumbnail": "",
+      "title_ko": "'중국 AI 금지하면 미국 기업 연간 최대 16조원 추가 부담' - 경제적 충격 경고",
+      "summary": "미국이 중국산 오픈웨이트 AI 모델 사용을 금지할 경우 미국 기업들이 연간 최대 120억 달러의 추가 비용을 떠안을 수 있다는 분석이 나왔다.",
+      "detail": "조지아 공대 연구에 따르면 오픈라우터 사용자만 집계해도 중국산 모델을 미국산으로 교체 시 연간 20억 달러 추가 비용이 발생하며, 전체 경제로 확대하면 최대 120억 달러에 달한다. AI 에이전트 기업 Polsia는 중국산 모델 전환 후 월 AI 비용이 120만 달러에서 10만 달러로 줄었다고 밝혔다. NVIDIA·메타·팔란티어는 오픈웨이트 모델 규제를 반대하는 공개서한에 참여했다. 반면 미국 대기업의 직접 사용량이 제한적이라 즉각적 충격은 과장됐다는 반론도 있다. 중국산 저가 모델 확산은 LLM 추론 비용을 6~7월 사이 약 19% 낮추는 간접 효과를 냈다.",
+      "points": [
+        "중국 AI 금지 시 미국 기업 연간 최대 120억 달러 추가 부담 추정",
+        "Polsia, 중국산 모델 전환 후 월 AI 비용 120만→10만 달러 절감",
+        "NVIDIA·메타·팔란티어, 오픈웨이트 규제 반대 공개서한 참여",
+        "LLM 추론 비용, 6~7월 사이 약 19% 하락 - 중국 모델 경쟁 효과",
+        "미국 대기업 직접 사용량 제한적이라는 반론도 존재"
+      ],
+      "takeaway": "중국산 AI 모델은 이미 미국 스타트업의 핵심 비용 절감 인프라로 자리 잡았으며, 금지 정책은 정치적 의도와 별개로 미국 AI 산업 전반의 비용 구조와 가격 경쟁력에 실질적 타격을 줄 수 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Apple is getting this wrong",
+      "url": "https://openai.com/index/apple-is-getting-this-wrong/",
+      "source": "Hacker News",
+      "published": "2026-08-04T05:32:13+00:00",
+      "thumbnail": "",
+      "points": [
+        "Apple 외부 법률팀, 아시아계 성씨 혼동으로 엉뚱한 사람에게 연락",
+        "Chang Liu는 퇴사 후 Apple 직원들이 먼저 파일 위치 안내 요청",
+        "Tang Tan, 팀에 타사 기밀 사용 명시적 금지 지시해 온 인물",
+        "OpenAI, 소송 전 5개월간 연락 없다가 갑자기 제소됐다고 주장",
+        "Apple의 퇴사자 시스템 접근 관리 실패가 근본 원인이라고 반박"
+      ],
+      "comments": 280,
+      "hn_url": "https://news.ycombinator.com/item?id=49164649",
+      "title_ko": "'Apple이 잘못하고 있다' - OpenAI, 영업비밀 소송에 공개 반박",
+      "summary": "OpenAI가 Apple의 영업비밀 소송에 대해 사실 오류와 절차적 문제를 이메일 등 증거와 함께 공개적으로 반박했다.",
+      "detail": "Apple은 전 직원 Chang Liu와 Tang Tan이 기밀 정보를 유출·활용했다고 주장하며 소송을 제기했다. 그러나 OpenAI는 Apple의 외부 법률팀이 아시아계 성씨를 혼동해 엉뚱한 사람에게 연락했으며 Apple 스스로 이를 인정했다고 밝혔다. Chang Liu 관련 메시지 공개 결과, 퇴사 후 Apple 직원들이 먼저 그에게 파일 위치 안내를 요청했음이 드러났다. Tang Tan은 24년간 Apple에서 근무한 혁신 리더로, OpenAI 팀에게 타사 기밀 사용을 명시적으로 금지해왔다. OpenAI는 소송 전 5개월간 아무 연락이 없다가 갑자기 제소됐다며, 사전 협의 기회를 주지 않은 Apple의 접근 방식을 비판했다.",
+      "takeaway": "Apple-OpenAI 간 법적 분쟁이 공개 설전으로 번지면서 AI 기업과 빅테크 간 인재 이동에 따른 영업비밀 갈등이 업계 전반의 쟁점으로 부각되고 있다.",
+      "category": "기타",
+      "metric": "▲ ['Apple 외부 법률팀, 아시아계 성씨 혼동으로 엉뚱한 사람에게 연락', 'Chang Liu는 퇴사 후 Apple 직원들이 먼저 파일 위치 안내 요청', 'Tang Tan, 팀에 타사 기밀 사용 명시적 금지 지시해 온 인물', 'OpenAI, 소송 전 5개월간 연락 없다가 갑자기 제소됐다고 주장', 'Apple의 퇴사자 시스템 접근 관리 실패가 근본 원인이라고 반박'] · 💬 280"
+    },
+    {
+      "type": "youtube",
+      "title": "1년간 클로드 쓰고 만든, 'Claude 1시간 무료 강의'",
+      "url": "https://www.youtube.com/watch?v=If_U_zmXWYo",
+      "source": "찍봇",
+      "published": "2026-08-04T04:00:30.763921+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/If_U_zmXWYo/hqdefault.jpg",
+      "videoId": "If_U_zmXWYo",
+      "views": 10491,
+      "title_ko": "1년간 Claude 써보고 만든 'Claude 1시간 무료 강의'",
+      "summary": "1년간 Claude를 직접 활용하며 정리한 무료 강의로, Claude Code 기초부터 영상 제작 자동화, Obsidian 메모 연동까지 실습 중심으로 다룬다.",
+      "detail": "Claude의 7가지 핵심 도구를 요약하고 Claude Code 기초 사용법을 단계별로 안내한다. 이어서 Claude Code를 활용한 영상 제작 자동화와 Obsidian 메모 연동 방법을 실습 위주로 소개한다. 강사가 1년간 직접 사용하며 얻은 노하우를 담아 실용성이 높다. 1시간 분량 무료 강의로 Claude 입문자나 업무 자동화에 관심 있는 사용자에게 적합하다.",
+      "points": [
+        "Claude 7가지 핵심 도구 요약 제공",
+        "Claude Code 기초 사용법 단계별 안내",
+        "Claude Code로 영상 제작 자동화 실습 포함",
+        "Claude Code + Obsidian 메모 연동 방법 소개"
+      ],
+      "takeaway": "Claude를 처음 접하거나 실무에 빠르게 적용하고 싶은 사용자를 위한 실용적인 입문 강의다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 1.0만"
+    },
+    {
+      "type": "news",
+      "title": "아마존, AI·클라우드 성장 힘입어 사상 첫 '시총 3조달러' 돌파",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=213504",
+      "source": "AI타임스",
+      "published": "2026-08-04T03:24:04+00:00",
+      "thumbnail": "",
+      "title_ko": "아마존, AI·클라우드 성장에 힘입어 사상 첫 시총 3조 달러 돌파",
+      "summary": "아마존이 AWS의 폭발적 성장과 AI 투자 확대로 시총 3조 달러를 달성하며 빅테크 다섯 번째 '3조 달러 클럽'에 입성했다.",
+      "detail": "아마존 주가가 2분기 깜짝 실적 발표 후 장중 5% 이상 급등해 사상 최고가를 기록했다. AWS 매출은 422억 달러로 시장 예상을 크게 웃돌며 4년여 만의 최고 성장률을 보였다. 앤디 재시 CEO는 올해 자본지출 전망을 2200억 달러로 상향했으며 2026~2028년까지도 수요가 공급을 초과할 것이라고 전망했다. AI 인프라 투자가 실제 매출 성장으로 이어진다는 신뢰가 MS·메타·구글 등 빅테크 주가를 동반 상승시켰다.",
+      "points": [
+        "시총 3조 달러 돌파, 애플·MS·구글·엔비디아에 이어 5번째 달성",
+        "2분기 EPS 1.97달러로 예상치 1.82달러 초과",
+        "AWS 매출 422억 달러, 4년여 만 최고 성장률 기록",
+        "자본지출 전망 2200억 달러로 상향 조정",
+        "MS·메타·구글·오라클 주가도 3~6% 동반 상승"
+      ],
+      "takeaway": "AWS 실적이 AI 클라우드 투자에 대한 시장의 불안감을 해소하며, 빅테크의 AI 인프라 지출이 실질 수익으로 이어지고 있음을 확인시켜 줬다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "백악관, 주요 AI 기업 실무자 소집...‘자발적 감독 방안’ 최종 검토",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=213503",
+      "source": "AI타임스",
+      "published": "2026-08-04T03:15:48+00:00",
+      "thumbnail": "",
+      "title_ko": "백악관, 주요 AI 기업 실무진 소집…자발적 AI 감독 프레임워크 최종 논의",
+      "summary": "트럼프 행정부가 오픈AI·구글·앤트로픽·메타 실무진을 불러 프론티어 AI 모델의 사이버보안 위험을 사전 검증하는 자발적 감독 체계를 확정 논의한다.",
+      "detail": "백악관이 국가사이버국(ONCD) 주관으로 주요 AI 기업 실무진과 비공개 회의를 열고 AI 감독 프레임워크를 공유한다. 기업은 프론티어 모델 출시 최대 30일 전에 정부에 접근 권한을 자발적으로 제공해 사이버보안 위험을 검증받는 방식이다. 강제 허가제가 아닌 민관 협력을 채택했으며, 평가 기준과 임계값은 국가안보를 이유로 비공개 유지된다. 최근 오픈AI와 앤트로픽의 AI 에이전트 보안 사고가 이 논의를 가속화한 배경이다.",
+      "points": [
+        "프론티어 모델 출시 30일 전 정부 자발적 제출 절차 마련",
+        "강제 허가제 아닌 민관 자발적 협력 방식 채택",
+        "평가 기준·임계값은 국가안보 이유로 비공개 유지",
+        "오픈AI·앤트로픽의 AI 에이전트 보안 사고가 논의 촉발",
+        "앤트로픽은 군사 감시·자율무기 활용 거부로 미 정부와 갈등 지속"
+      ],
+      "takeaway": "미국이 AI 안전성을 의무 규제가 아닌 자발적 협력으로 접근하는 방향을 굳히고 있지만, 실제 AI 에이전트 보안 사고가 잇따르면서 정부 개입 수위를 둘러싼 논쟁이 커지고 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "코스피 급락 범인? 화려했던 'AI 예언자'의 추락…450억 달러 자산 '사실상 붕괴'｜지금 이 뉴스",
+      "url": "https://www.youtube.com/watch?v=9j58aCigFiM",
+      "source": "JTBC News",
+      "published": "2026-08-03T23:00:30.763921+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/9j58aCigFiM/hqdefault.jpg",
+      "videoId": "9j58aCigFiM",
+      "views": 207854,
+      "title_ko": "'AI 노스트라다무스' 헤지펀드 대표, 450억 달러 운용자산 사실상 붕괴",
+      "summary": "'AI 예언자'로 불리던 헤지펀드 대표가 450억 달러 규모 운용자산 대부분을 잃으며 급격히 추락했다.",
+      "detail": "JTBC 보도에 따르면 AI로 시장을 예측한다고 알려진 헤지펀드 대표가 450억 달러에 달하는 운용자산 대부분을 손실하며 한순간에 추락했다. 해당 인물은 'AI 노스트라다무스'라는 별명으로 주목받았으나, 자산이 사실상 붕괴하며 몰락했다. 이 사건이 코스피 급락과 연관이 있을 수 있다는 맥락도 제기됐다.",
+      "points": [
+        "'AI 노스트라다무스'로 불리던 헤지펀드 대표의 급격한 몰락",
+        "운용자산 450억 달러 대부분 손실",
+        "코스피 급락과의 연관성 제기"
+      ],
+      "takeaway": "AI 기반 투자 전략도 시장 급변 앞에서 취약할 수 있음을 보여주는 사례로, AI 투자 시스템에 대한 과신을 경계해야 한다.",
+      "category": "산업/투자",
+      "metric": "조회 20.8만"
+    },
+    {
+      "type": "youtube",
+      "title": "[감히 신진서 실력 테스트 하는 중국 인공지능] 신진서 2점 VS AI 절예 #김성룡바둑랩 #바둑",
+      "url": "https://www.youtube.com/watch?v=hk6T4vCSyec",
+      "source": "김성룡 바둑랩",
+      "published": "2026-08-03T23:00:30.763921+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/hk6T4vCSyec/hqdefault.jpg",
+      "videoId": "hk6T4vCSyec",
+      "views": 45480,
+      "title_ko": "중국 AI 바둑 '절예', 세계 최강 신진서에 2점 접바둑으로 도전",
+      "summary": "중국 인공지능 바둑 프로그램 절예가 세계 랭킹 1위 신진서에게 2점 핸디캡을 두고 대국을 펼치는 영상이다.",
+      "detail": "김성룡 바둑랩 채널에서 중국 AI 바둑 프로그램 절예가 세계 최강 기사 신진서와 2점 접바둑(신진서에게 2점 불리한 조건)으로 대국하는 모습을 소개한다. AI가 인간 최정상 기사에게 핸디캡을 두고도 도전장을 낼 만큼 수준이 높아졌음을 보여준다.",
+      "points": [
+        "중국 AI 바둑 '절예'가 신진서에게 2점 접바둑으로 도전",
+        "신진서는 현재 세계 최강 바둑기사",
+        "AI 대 인간 최정상 기사의 핸디캡 대국"
+      ],
+      "takeaway": "AI 바둑 프로그램이 인간 최강자에게 핸디캡을 두고 도전할 만큼 발전했음을 보여주는 흥미로운 사례다.",
+      "category": "기타",
+      "metric": "조회 4.5만"
+    },
+    {
+      "type": "hn",
+      "title": "AI's debt binge can't last, hidden borrowing reaches $1.65T",
+      "url": "https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/",
+      "source": "Hacker News",
+      "published": "2026-08-03T20:02:21+00:00",
+      "thumbnail": "",
+      "points": [
+        "2026년 상반기 하이퍼스케일러 채권 발행 2250억 달러, 전년 대비 974% 급증",
+        "연간 4000억 달러 발행 예상으로 사상 최대 전망",
+        "장부 외 '숨겨진 부채' 포함 시 실제 부담 훨씬 더 커",
+        "연방 재정적자 2조 달러 + Fed 국채 매입 중단으로 민간 흡수 부담 급증",
+        "S&P '레버리지 급등에 시장 참여자들 피로감 시작' 경고"
+      ],
+      "comments": 174,
+      "hn_url": "https://news.ycombinator.com/item?id=49160699",
+      "title_ko": "AI 부채 폭주 경고: 하이퍼스케일러 '숨겨진 부채' 1.65조 달러 육박",
+      "summary": "AI 하이퍼스케일러들이 2026년 상반기에만 2250억 달러 채권을 발행했으며, 장부 외 숨겨진 부채까지 더하면 AI 투자 비용은 시장이 파악한 것보다 훨씬 크다는 경고가 나왔다.",
+      "detail": "S&P Global에 따르면 아마존·MS 등 하이퍼스케일러와 엔비디아 등이 2026년 상반기에만 2250억 달러 채권을 발행했으며, 연간 기준 4000억 달러를 향해 달리고 있다. 이는 전년 대비 974% 급증한 수치다. 닛케이 분석에 따르면 미국 5대 빅테크의 장부 외 '숨겨진 부채'가 빠르게 팽창해 AI 붐의 실제 비용은 채권시장에 드러난 것보다 훨씬 크다. 미국 연방 재정적자가 올해 2조 달러에 달할 전망인 데다 Fed가 국채 매입을 중단해 민간의 부담이 사상 최고 수준으로 치솟았다. S&P는 '현금 창출 능력이 탁월하다고 알려진 기업들의 레버리지가 빠르게 오르는 것에 시장 참여자들이 피로감을 느끼기 시작했다'고 경고했다.",
+      "takeaway": "AI 인프라 투자 붐이 사상 유례없는 채권 발행과 숨겨진 부채를 동반하고 있어, 금리 상승이나 투자 심리 위축 시 시장에 상당한 충격이 올 수 있다.",
+      "category": "산업/투자",
+      "metric": "▲ ['2026년 상반기 하이퍼스케일러 채권 발행 2250억 달러, 전년 대비 974% 급증', '연간 4000억 달러 발행 예상으로 사상 최대 전망', \"장부 외 '숨겨진 부채' 포함 시 실제 부담 훨씬 더 커\", '연방 재정적자 2조 달러 + Fed 국채 매입 중단으로 민간 흡수 부담 급증', \"S&P '레버리지 급등에 시장 참여자들 피로감 시작' 경고\"] · 💬 174"
+    }
+  ]
+}
