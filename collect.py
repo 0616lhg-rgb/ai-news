@@ -45,6 +45,13 @@ MAX_BACKFILL_DAYS = 7       # 실행이 며칠 밀렸어도 이 이상은 거슬
 # 그날 최종 표시할 항목 수 — 종류별 쿼터 (구간 내 인기/화제성 상위)
 QUOTA = {"youtube": 5, "hn": 6, "guide": 5, "news": 6}
 
+# Claude Code 릴리스는 항상 우선 노출한다(피드백 반영). guide 쿼터 안에서 전용
+# 슬롯을 먼저 차지하고, 남는 자리를 다른 가이드 소스로 채운다.
+CLAUDE_CODE_SOURCE = "Claude Code 릴리스"
+CLAUDE_CODE_MAX = 2     # 같은 날 여러 버전이 나와도 최신 이만큼까지만 고정 노출
+# anthropics/claude-code CHANGELOG (버전별 상세 변경사항 — 요약 입력 보강용)
+CLAUDE_CODE_CHANGELOG_URL = "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md"
+
 # Hacker News 검색어 — 일반 AI + 도구/활용 성향 검색어 보강
 HN_QUERIES = ["AI", "LLM", "OpenAI", "Anthropic Claude",
               "AI tools", "prompt engineering", "AI agent"]
@@ -69,7 +76,7 @@ NEWS_FEEDS = [
 
 # 활용/가이드 RSS — AI를 잘 쓰는 법, 도구 업데이트, 하네스/프롬프트 엔지니어링
 GUIDE_FEEDS = [
-    ("Claude Code 릴리스", "https://github.com/anthropics/claude-code/releases.atom"),
+    (CLAUDE_CODE_SOURCE, "https://github.com/anthropics/claude-code/releases.atom"),
     ("Simon Willison",     "https://simonwillison.net/atom/everything/"),
     ("Latent Space",       "https://www.latent.space/feed"),
     ("Hugging Face Blog",  "https://huggingface.co/blog/feed.xml"),
@@ -545,7 +552,11 @@ def select(pool):
     hn = sorted((x for x in pool if x["type"] == "hn"),
                 key=lambda x: x.get("points", 0) + 2 * x.get("comments", 0),
                 reverse=True)[:QUOTA["hn"]]
-    guide = [x for x in pool if x["type"] == "guide"][:QUOTA["guide"]]  # 이미 최신순
+    # 가이드: Claude Code 릴리스를 전용 슬롯으로 먼저 확보(항상 노출), 나머지는 최신순
+    guide_pool = [x for x in pool if x["type"] == "guide"]   # 이미 최신순
+    cc = [x for x in guide_pool if x.get("source") == CLAUDE_CODE_SOURCE][:CLAUDE_CODE_MAX]
+    others = [x for x in guide_pool if x.get("source") != CLAUDE_CODE_SOURCE]
+    guide = cc + others[:max(0, QUOTA["guide"] - len(cc))]
     news = score_news_importance([x for x in pool if x["type"] == "news"])
 
     selected = yt + hn + guide + news
@@ -580,6 +591,47 @@ def fetch_fulltext(items):
             it["body"] = " ".join(body.split())[:3000]
             ok += 1
     print(f"[본문] {ok}/{len(items)}건 원문 추출 성공")
+    return items
+
+
+def _parse_changelog(md):
+    """CHANGELOG.md → {버전: 해당 섹션 텍스트}. '## x.y.z' 헤더 기준으로 분할."""
+    sections, cur, buf = {}, None, []
+    for line in md.splitlines():
+        m = re.match(r"^##\s+v?(\d+\.\d+\.\d+)", line.strip())
+        if m:
+            if cur:
+                sections[cur] = "\n".join(buf).strip()
+            cur, buf = m.group(1), []
+        elif cur is not None:
+            buf.append(line)
+    if cur:
+        sections[cur] = "\n".join(buf).strip()
+    return sections
+
+
+def enrich_claude_code(items):
+    """Claude Code 릴리스 항목에 CHANGELOG.md의 해당 버전 상세를 붙여 요약 품질을 높인다.
+    (릴리스 atom 본문이 빈약해도 버전별 변경사항을 확실히 확보)"""
+    cc = [it for it in items if it.get("source") == CLAUDE_CODE_SOURCE]
+    if not cc:
+        return items
+    try:
+        req = urllib.request.Request(CLAUDE_CODE_CHANGELOG_URL,
+                                     headers={"User-Agent": "ai-news-daily/1.0"})
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            sections = _parse_changelog(resp.read().decode("utf-8", "replace"))
+    except Exception as ex:
+        print(f"[Claude Code] CHANGELOG 가져오기 실패({ex}) — 릴리스 본문만 사용")
+        return items
+    for it in cc:
+        m = re.search(r"(\d+\.\d+\.\d+)", it.get("title", ""))
+        sec = sections.get(m.group(1)) if m else None
+        if sec:
+            head = f"Claude Code {m.group(1)} 변경사항(CHANGELOG):\n{sec}"
+            base = it.get("body") or it.get("raw_desc") or ""
+            it["body"] = (head + ("\n\n" + base if base else ""))[:3000]
+            print(f"[Claude Code] {m.group(1)} CHANGELOG {len(sec)}자 첨부")
     return items
 
 
@@ -892,6 +944,7 @@ def main():
         return
     items = select(pool)
     items = fetch_fulltext(items)
+    items = enrich_claude_code(items)   # Claude Code 릴리스에 CHANGELOG 상세 첨부
     items = summarize(items)
     items = ensure_korean(items)   # 영어로 남은 항목 한국어 보정
     briefing = make_briefing(items)
