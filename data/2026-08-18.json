@@ -1,0 +1,440 @@
+{
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T07:42:29",
+  "count": 19,
+  "briefing": {
+    "overview": "오늘은 AI 인프라·스타트업에 대한 대규모 투자가 잇달아 발표되며 자본 집중 흐름이 뚜렷했고, 동시에 AI 보안 취약점 노출과 저작권·규제 이슈가 맞물려 기술 낙관론에 긴장을 더했다. 모델 측에서는 GPT-5.6 Sol의 비전 성능 도약과 Qwen3.8 계열의 실용 최적화 팁이 주목을 받았으며, 벤치마크 수치와 실제 사용 환경 간 괴리 문제도 다시 수면 위로 올랐다.",
+    "highlights": [
+      {
+        "title": "Amazon, 희귀 도서 파기해 AI 학습 데이터 확보",
+        "line": "아마존이 절판 희귀 도서를 대량 구입·스캔 후 파기하는 정황이 추적 보도로 드러나, AI 훈련 데이터 확보를 둘러싼 저작권·윤리 논쟁에 불을 붙였다."
+      },
+      {
+        "title": "Copilot Autofix 취약점, AI 에이전트가 무인 익스플로잇",
+        "line": "GitHub Copilot이 수정하지 못한 Actions 스크립트 인젝션 취약점을 자율 AI 보안 에이전트가 인간 개입 없이 발견·공격해, AI 보안 도구의 역설적 위험을 실증했다."
+      },
+      {
+        "title": "Nvidia·Groq·Wispr·러버블, 대형 투자 릴레이",
+        "line": "엔비디아 15억 달러(SB Energy), Groq 3.5억 달러, Wispr 2.8억 달러, 러버블 4억 달러가 하루에 쏟아지며 AI 인프라와 인터페이스 계층에 자본이 빠르게 집중되고 있다."
+      },
+      {
+        "title": "GPT-5.6 Sol, 비전 성능 전작 대비 3배 향상",
+        "line": "객체 탐지 mAP@50 기준 GPT-5.5 대비 3배 이상 개선되며 OpenAI 비전 모델의 실용성 임계점을 크게 끌어올렸다."
+      },
+      {
+        "title": "Anthropic, Claude 텍스트에 투명 워터마크 적용 예고",
+        "line": "EU AI법 준수를 위해 구글 딥마인드의 SynthID-Text 방식 기반 워터마크를 Claude 출력에 도입한다고 밝혀, AI 콘텐츠 출처 추적의 실질적 첫걸음이 됐다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "hn",
+      "title": "AI;DR (AI; Didn't Read)",
+      "url": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+      "source": "Hacker News",
+      "published": "2026-08-17T19:47:15+00:00",
+      "thumbnail": "",
+      "points": [
+        "'AI;DR' = 편집 없이 보낸 AI 출력물은 읽지 않겠다는 뜻의 신조어",
+        "검토·편집 없이 AI 출력을 그대로 공유하는 행위를 무례로 간주",
+        "고객지원 등 AI 자동화가 당연한 맥락은 예외로 인정",
+        "개인 브랜드가 걸린 콘텐츠에서의 무편집 AI 글은 신뢰를 훼손",
+        "TL;DR의 후계자로 AI 시대의 콘텐츠 필터 역할을 기대"
+      ],
+      "comments": 265,
+      "hn_url": "https://news.ycombinator.com/item?id=49336573",
+      "title_ko": "AI;DR (AI가 썼으니 안 읽음)",
+      "summary": "편집 없이 AI 출력물을 그대로 보내는 행태를 무시하자는 새 약어 'AI;DR'이 제안됐다.",
+      "detail": "TL;DR처럼 'AI;DR(AI가 썼으니 안 읽음)'이라는 약어가 등장했다. 저자는 동료가 검토 없이 Claude 출력물을 그대로 Slack에 붙여넣을 때 불편함을 느끼며, 편집되지 않은 AI 글은 읽지 않겠다는 개인 정책을 선언한다. 고객지원처럼 AI 자동화가 당연한 맥락은 예외지만, 개인 뉴스레터·소셜·팀 채팅에서 무편집 AI 출력은 발신자의 무관심을 드러낸다고 주장한다. 소셜 미디어 시대의 TL;DR처럼 AI 콘텐츠 과잉 시대에 AI;DR이 새 필터로 자리잡길 기대한다.",
+      "takeaway": "AI 생성 콘텐츠가 범람하는 시대에 편집 여부가 소통의 진정성을 가르는 새로운 기준이 되고 있다.",
+      "category": "기타",
+      "metric": "▲ [\"'AI;DR' = 편집 없이 보낸 AI 출력물은 읽지 않겠다는 뜻의 신조어\", '검토·편집 없이 AI 출력을 그대로 공유하는 행위를 무례로 간주', '고객지원 등 AI 자동화가 당연한 맥락은 예외로 인정', '개인 브랜드가 걸린 콘텐츠에서의 무편집 AI 글은 신뢰를 훼손', 'TL;DR의 후계자로 AI 시대의 콘텐츠 필터 역할을 기대'] · 💬 265"
+    },
+    {
+      "type": "youtube",
+      "title": "800시간 이상 AI 자동화를 구축하고 느낀 점 6가지",
+      "url": "https://www.youtube.com/watch?v=JdV5qr5aS_g",
+      "source": "그랜트 | 마케팅 AX, AI 사업",
+      "published": "2026-08-17T15:33:02.732882+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/JdV5qr5aS_g/hqdefault.jpg",
+      "videoId": "JdV5qr5aS_g",
+      "views": 792,
+      "title_ko": "800시간 이상 AI 자동화를 구축하고 느낀 점 6가지",
+      "summary": "AI 자동화를 800시간 넘게 직접 구축한 실전 경험에서 얻은 6가지 핵심 인사이트를 공유하는 영상이다.",
+      "detail": "마케팅·AI 사업 전문가 그랜트가 수백 시간의 실무 AI 자동화 구축 경험에서 도출한 6가지 교훈을 소개한다. AI가 OS 수준으로 발전하는 흐름을 배경으로, 이론이 아닌 실전에서 부딪힌 문제와 해법을 담은 콘텐츠다. 원문 내용이 제한적으로 제공되어 세부 항목 확인이 어렵지만, 한국어 AI 자동화 실무 콘텐츠로서 현장 감각을 전달하는 데 초점을 맞추고 있다.",
+      "points": [
+        "800시간 이상의 실전 AI 자동화 구축 경험 기반 인사이트",
+        "마케팅·사업 관점에서의 AI 자동화 실무 교훈",
+        "AI의 OS화 트렌드를 배경으로 한 현장 중심 내용",
+        "이론보다 실전에서 검증된 자동화 노하우 전달"
+      ],
+      "takeaway": "수백 시간의 실전 경험에서 나온 AI 자동화 교훈은 이론서보다 현장 적용 가치가 높다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 792"
+    },
+    {
+      "type": "hn",
+      "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "source": "Hacker News",
+      "published": "2026-08-17T14:18:38+00:00",
+      "thumbnail": "",
+      "points": [
+        "Copilot Autofix가 co-author로 포함된 PR에서 스크립트 인젝션 취약점 발생",
+        "GitHub AI 코드 리뷰가 치명적 취약점을 탐지하지 못함",
+        "Wiz Red Agent가 인간 개입 없이 취약점 발견·익스플로잇까지 자율 수행",
+        "공개 이슈 제목만으로 GitHub Actions runner에서 임의 명령 실행 가능",
+        "책임공개 후 당일 패치 완료, 실제 데이터 유출 없음"
+      ],
+      "comments": 120,
+      "hn_url": "https://news.ycombinator.com/item?id=49331423",
+      "title_ko": "GitHub Copilot Autofix가 도입한 취약점으로 Snowflake 내부 Jira 침투 성공",
+      "summary": "Copilot이 놓친 GitHub Actions 스크립트 인젝션 취약점을 Wiz의 자율 AI 보안 에이전트가 인간 개입 없이 발견·익스플로잇했다.",
+      "detail": "Wiz의 AI 보안 에이전트 'Red Agent'가 Snowflake의 GitHub 저장소에서 GitHub Actions 스크립트 인젝션 취약점을 자율적으로 발견하고 내부 Jira 접근에 성공했다. 해당 취약점은 Copilot Autofix가 공동 저자로 참여한 PR #1218 병합 5일 만에 발견됐으며, Copilot의 AI 코드 리뷰는 이를 탐지하지 못했다. 이슈 제목을 셸 스크립트에 직접 삽입하는 구조로, 인증 없는 외부 사용자도 임의 명령을 실행할 수 있었다. Wiz가 2026년 6월 23일 책임공개를 하자 Snowflake는 당일 패치하고 자격증명을 교체했으며 실제 피해는 없었다.",
+      "takeaway": "AI 코딩 도구가 취약점을 도입하고 AI 공격 에이전트가 이를 자율 익스플로잇하는 새로운 보안 패러다임이 현실로 나타났다.",
+      "category": "기타",
+      "metric": "▲ ['Copilot Autofix가 co-author로 포함된 PR에서 스크립트 인젝션 취약점 발생', 'GitHub AI 코드 리뷰가 치명적 취약점을 탐지하지 못함', 'Wiz Red Agent가 인간 개입 없이 취약점 발견·익스플로잇까지 자율 수행', '공개 이슈 제목만으로 GitHub Actions runner에서 임의 명령 실행 가능', '책임공개 후 당일 패치 완료, 실제 데이터 유출 없음'] · 💬 120"
+    },
+    {
+      "type": "hn",
+      "title": "How to disable or avoid intrusive AI",
+      "url": "https://www.librarian.net/notoai/",
+      "source": "Hacker News",
+      "published": "2026-08-17T14:07:56+00:00",
+      "thumbnail": "",
+      "points": [
+        "Adobe Acrobat/Reader의 생성 AI 기능 비활성화 단계별 안내",
+        "Android Gemini 앱 제거 및 앱별 기능 끄기 방법",
+        "Apple Intelligence 전체 비활성화 및 'Learn from this App' 세부 설정",
+        "Chrome 플래그(GLIC)로 브라우저 내장 AI 제거",
+        "AI 없는 대안 브라우저(Zen, LibreWolf, Waterfox) 소개"
+      ],
+      "comments": 121,
+      "hn_url": "https://news.ycombinator.com/item?id=49331220",
+      "title_ko": "원치 않는 AI 기능을 끄거나 피하는 방법",
+      "summary": "Adobe, Android, Apple, Chrome 등 주요 플랫폼에서 AI 기능을 비활성화하는 방법을 단계별로 안내하는 실용 가이드다.",
+      "detail": "도서관 상담에서 자주 받는 질문인 '원치 않는 AI를 어떻게 끄나'를 다루는 가이드로, NoToAI.org에서도 접근 가능하다. Adobe Acrobat의 생성 AI 비활성화, Android에서 Gemini 앱 제거 또는 앱별 기능 끄기, Apple Intelligence 전체·부분 비활성화까지 각 플랫폼을 망라한다. 브라우저 차원에서는 Chrome 플래그(GLIC 검색)로 AI 기능을 제거하거나 Zen·LibreWolf 같은 AI 없는 대안 브라우저로 전환하는 방법도 소개한다.",
+      "takeaway": "AI 기능이 기본값으로 탑재되는 추세 속에서, 원치 않는 사용자를 위한 플랫폼별 실질적 탈출구를 정리했다.",
+      "category": "AI 활용/팁",
+      "metric": "▲ ['Adobe Acrobat/Reader의 생성 AI 기능 비활성화 단계별 안내', 'Android Gemini 앱 제거 및 앱별 기능 끄기 방법', \"Apple Intelligence 전체 비활성화 및 'Learn from this App' 세부 설정\", 'Chrome 플래그(GLIC)로 브라우저 내장 AI 제거', 'AI 없는 대안 브라우저(Zen, LibreWolf, Waterfox) 소개'] · 💬 121"
+    },
+    {
+      "type": "hn",
+      "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+      "url": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility/",
+      "source": "Hacker News",
+      "published": "2026-08-17T13:44:23+00:00",
+      "thumbnail": "",
+      "points": [
+        "추적 장치로 희귀 도서의 이동 경로를 추적해 Amazon 라스베이거스 창고 도착 확인",
+        "Amazon VGT3 창고에서 제본 절단 후 스캔, 원본 도서 파기",
+        "AI 학습 데이터 확보 목적의 대규모 도서 구매 운영이 처음 보도됨",
+        "창고 로고는 책을 든 공룡으로, 은유적 의미를 담고 있음"
+      ],
+      "comments": 280,
+      "hn_url": "https://news.ycombinator.com/item?id=49330742",
+      "title_ko": "희귀 도서 배송을 추적했더니 Amazon AI 학습 시설에 도착했다",
+      "summary": "404 Media 탐사 보도: Amazon이 AI 학습 데이터 확보를 위해 대량의 도서를 구매·스캔한 뒤 파기하고 있다.",
+      "detail": "404 Media는 추적 장치를 삽입한 희귀 도서를 AI 학습용으로 의심되는 경로에 올려, 최종 목적지가 라스베이거스 Amazon 창고(VGT3 팀)임을 확인했다. 창고 직원에 따르면 대량의 인쇄 도서를 받아 스캔 속도를 높이기 위해 제본을 잘라낸 뒤 원본을 파기한다. 이는 Amazon의 AI 학습 데이터 구축 방식이 처음으로 구체적으로 드러난 탐사 보도다.",
+      "takeaway": "AI 학습 데이터 수요가 희귀 도서까지 파기하는 방식으로 이어지며, 문화유산 보존과 저작권 측면에서 심각한 우려를 낳는다.",
+      "category": "산업/투자",
+      "metric": "▲ ['추적 장치로 희귀 도서의 이동 경로를 추적해 Amazon 라스베이거스 창고 도착 확인', 'Amazon VGT3 창고에서 제본 절단 후 스캔, 원본 도서 파기', 'AI 학습 데이터 확보 목적의 대규모 도서 구매 운영이 처음 보도됨', '창고 로고는 책을 든 공룡으로, 은유적 의미를 담고 있음'] · 💬 280"
+    },
+    {
+      "type": "guide",
+      "title": "we benchmark models nobody actually runs",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr643w/we_benchmark_models_nobody_actually_runs/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-17T12:53:54+00:00",
+      "thumbnail": "",
+      "title_ko": "실제로 아무도 실행하지 않는 버전으로 모델을 벤치마크한다",
+      "summary": "벤치마크는 bf16 원본 가중치 기준이지만 실제 사용자는 4비트 양자화 버전을 쓰기 때문에 공개 수치가 현실을 반영하지 못한다는 비판이다.",
+      "detail": "Qwen3.8-27B는 벤치마크에서 훨씬 큰 모델을 능가하지만, 이는 bf16 가중치 기준이다. 실제로 4090이나 24GB Mac 사용자들은 약 17GB의 4비트 양자화 버전을 쓴다. 벤치마크에서 측정된 모델과 실제로 수백만 번 다운로드된 모델은 다른 아티팩트다. 저자는 한 모델을 bf16/Q8/Q6_K/Q5_K_M/Q4_K_M/IQ4_XS 전 범위에 걸쳐 오차 범위와 함께 비교한 체계적 자료가 존재하지 않는다고 지적한다.",
+      "points": [
+        "벤치마크는 bf16 기준, 실사용자는 4비트 양자화 버전 실행",
+        "공개 벤치마크 수치와 실제 다운로드 모델 사이의 구조적 간극",
+        "양자화 수준별 성능 변화를 오차 범위와 함께 정리한 공개 자료 부재",
+        "perplexity는 안정적으로 보여도 특정 능력이 크게 저하될 수 있음"
+      ],
+      "takeaway": "실제 하드웨어 제약을 반영한 양자화 버전 기준의 벤치마크가 없으면 공개 수치는 대부분의 사용자에게 무의미한 숫자가 될 수 있다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "source": "Hacker News",
+      "published": "2026-08-17T12:09:42+00:00",
+      "thumbnail": "",
+      "points": [
+        "Sol 객체 탐지 mAP@50: GPT-5.5 13.8 → 46.2로 3배 이상 향상",
+        "Terra(44.7)·Luna(43.3)도 GPT-5.5 대비 의미 있는 개선",
+        "문서 레이아웃·조밀 장면에서 Sol이 강점 발휘",
+        "2000×2000px 이상 대형 이미지에서 안정성 저하, 리사이즈 권장",
+        "최적 성능을 위해 절대 XYXY 픽셀 좌표 형식 사용 필수"
+      ],
+      "comments": 147,
+      "hn_url": "https://news.ycombinator.com/item?id=49329575",
+      "title_ko": "GPT-5.6 Sol, OpenAI 역대 최고의 비전 모델",
+      "summary": "GPT-5.6 Sol이 객체 탐지 mAP@50 기준 GPT-5.5 대비 3배 이상 향상되며 OpenAI 비전 모델의 한계를 크게 돌파했다.",
+      "detail": "OpenAI의 GPT-5.6 라인업(Sol·Terra·Luna)은 비전 성능에서 도약을 보였다. Roboflow 벤치마크에서 Sol의 객체 탐지 mAP@50은 GPT-5.5의 13.8에서 46.2로 상승했고, Terra(44.7)·Luna(43.3)도 의미 있는 개선을 나타냈다. Sol은 문서 레이아웃과 조밀한 객체 장면에서 강점을 보이지만, 2000×2000픽셀 이상 대형 이미지에서는 추론 노력을 높이거나 이미지를 리사이즈해야 안정적이다. 좌표 형식은 절대 XYXY 픽셀 기준이 최적이며, 잘못된 형식 사용 시 약 15 mAP 포인트가 하락한다.",
+      "takeaway": "GPT-5.6 Sol은 객체 탐지·계수 등 비전 과제에서 GPT 시리즈의 고질적 약점을 크게 보완해 실무 비전 워크플로에 실용적으로 적용 가능한 수준에 도달했다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['Sol 객체 탐지 mAP@50: GPT-5.5 13.8 → 46.2로 3배 이상 향상', 'Terra(44.7)·Luna(43.3)도 GPT-5.5 대비 의미 있는 개선', '문서 레이아웃·조밀 장면에서 Sol이 강점 발휘', '2000×2000px 이상 대형 이미지에서 안정성 저하, 리사이즈 권장', '최적 성능을 위해 절대 XYXY 픽셀 좌표 형식 사용 필수'] · 💬 147"
+    },
+    {
+      "type": "guide",
+      "title": "Qwen3.8-27B Uncensored Aggressive is out with K_P quants and HauhauCS FastMTP (up to 3.02x TG)!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr4xtm/qwen3827b_uncensored_aggressive_is_out_with_k_p/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-17T12:08:17+00:00",
+      "thumbnail": "",
+      "title_ko": "Qwen3.8-27B Uncensored Aggressive 출시 — K_P 양자화 + FastMTP 최대 3.02배 속도",
+      "summary": "Qwen3.8-27B의 완전 검열 해제 버전이 K_P 양자화 전 범위와 최대 3배 토큰 생성 속도를 갖춰 출시됐다.",
+      "detail": "HauhauCS의 Qwen3.8-27B Uncensored Aggressive는 원본 모델의 추론·에이전트·이미지·비디오 능력을 그대로 유지하면서 거부 응답을 완전히 제거한 GGUF 버전이다. 465개 프롬프트에서 거부 0회를 달성했으며, K_P 양자화 전 범위·비전·네이티브 NextN·HauhauCS FastMTP를 지원해 토큰 생성 속도를 최대 3.02배까지 끌어올렸다. Hugging Face에서 다운로드 가능하다.",
+      "points": [
+        "465개 테스트 프롬프트에서 거부 0회 달성",
+        "원본 Qwen3.8-27B의 추론·에이전트·이미지·비디오 능력 완전 보존",
+        "K_P 양자화 전 범위 + Vision + 네이티브 NextN 지원",
+        "HauhauCS FastMTP로 최대 3.02배 토큰 생성 속도 향상",
+        "Hugging Face에서 GGUF 형식으로 제공"
+      ],
+      "takeaway": "검열 해제 + 고속 양자화 버전의 조합으로, 민감한 주제 연구나 콘텐츠 필터 없는 로컬 워크플로에 즉시 활용 가능한 선택지가 추가됐다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Local agentic coding Benchmark : Qwen 3.8 27B (in many weights quants / cache quants / engine / reasoning effort) vs others.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr4bs4/local_agentic_coding_benchmark_qwen_38_27b_in/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-17T11:45:23+00:00",
+      "thumbnail": "",
+      "title_ko": "로컬 에이전틱 코딩 벤치마크: Qwen 3.8 27B 다양한 설정별 성능 분석",
+      "summary": "Qwen 3.8 27B를 여러 추론 모드와 양자화 설정으로 비교한 결과, medium 모드가 효율과 성능 균형에서 가장 우수한 것으로 나타났다.",
+      "detail": "Qwen3.8 27B의 medium 추론 모드는 이전 3.6 버전보다 점수가 높으면서 요청 수는 약 절반, 토큰 생성량은 1/3 수준에 불과해 효율이 크게 개선됐다. 어려운 작업에 최적이라고 알려진 xhigh 모드는 이 벤치마크에서 medium 대비 성능 향상이 미미한 반면 토큰 소비량이 약 4배에 달했다. NINFER 버전은 medium으로 설정해도 xhigh처럼 동작하는 이상 현상도 보고됐다.",
+      "points": [
+        "medium 추론 모드가 xhigh와 유사한 점수에 토큰은 1/4 수준",
+        "Qwen 3.8 27B medium은 DeepSeek v4 Flash 3107 MXFP4와 유사한 성능",
+        "xhigh 모드는 토큰을 4배 소비하지만 성능 이득이 거의 없음",
+        "NINFER 버전이 medium 설정에서 xhigh처럼 동작하는 이상 현상 관찰"
+      ],
+      "takeaway": "로컬에서 Qwen 3.8 27B를 운용할 때 xhigh보다 medium 추론 모드가 비용 대비 성능 면에서 더 실용적이다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "아직 아무도 모르는 무료 AI 영상 생성 사이트 4개 추천",
+      "url": "https://www.youtube.com/watch?v=XXAqTnvp2XI",
+      "source": "AI 머니",
+      "published": "2026-08-17T11:33:02.732882+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/XXAqTnvp2XI/hqdefault.jpg",
+      "videoId": "XXAqTnvp2XI",
+      "views": 865,
+      "title_ko": "아직 잘 알려지지 않은 무료 AI 영상 생성 사이트 4곳 추천",
+      "summary": "유명 서비스 외에 잘 알려지지 않은 무료 AI 영상 생성 툴 4가지를 소개하는 유튜브 영상이다.",
+      "detail": "이 영상은 Sora나 Runway 같은 주류 도구가 아닌 무료로 사용할 수 있는 틈새 AI 영상 생성 사이트 4곳을 발굴해 소개한다. 시댄스 2.5 등 구체적인 툴을 단계별로 시연하며 사용법을 안내하는 구성이다. 본문 내용이 제한적으로 제공되어 전체 툴 목록 확인은 영상 시청이 필요하다.",
+      "points": [
+        "무료 AI 영상 생성 사이트 4곳 소개",
+        "잘 알려지지 않은 틈새 도구 발굴에 초점",
+        "시댄스 2.5 포함 다수 툴 시연"
+      ],
+      "takeaway": "비용 없이 AI 영상을 만들고 싶은 사용자에게 유용한 무료 툴 목록을 제공한다.",
+      "category": "도구 업데이트",
+      "metric": "조회 865"
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.234",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.234",
+      "source": "Claude Code 릴리스",
+      "published": "2026-08-17T11:20:58+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.234 업데이트 - 보안 강화 및 다수 기능 추가",
+      "summary": "Claude Code 2.1.234에서 GitLab MR 배지, 사용량 한도 자동 재개, Windows NT 경로 보안 강화 등 실용적 기능과 보안 패치가 한꺼번에 적용됐다.",
+      "detail": "이번 릴리스에서 GitLab 원격 저장소 연결 시 MR 번호와 draft/pending/green 상태를 푸터·상태바에 표시하는 배지 기능이 추가됐고, claude.ai 사용량 한도 초기화 시 세션을 자동으로 재개하는 옵션도 도입됐다. 세션별 프로젝트 디렉터리 이름을 지정할 수 있는 환경변수 'CLAUDE_CODE_PROJECT_DIR_NAME'도 새로 생겼다. 보안 면에서는 Windows NT 네임스페이스('\\??\\') 경로를 통한 NTLM 자격증명 탈취 벡터를 차단하는 경로 검증이 강화됐다. 그 외 긴 세션의 샌드박스 네트워크 접근 반복 재검사 버그, 배경 서브에이전트 권한 드롭 버그, 마크다운 렌더링 지연 등 다수 버그가 수정됐다.",
+      "points": [
+        "CLAUDE_CODE_PROJECT_DIR_NAME 환경변수로 세션별 설정 디렉터리 이름 지정 가능",
+        "GitLab MR 상태 배지를 푸터·상태바에 표시",
+        "claude.ai 사용량 한도 리셋 시 세션 자동 재개 기능 추가",
+        "Windows NT 경로를 통한 NTLM 자격증명 누출 벡터 차단",
+        "긴 세션의 샌드박스 네트워크 반복 재검사 등 다수 버그 수정"
+      ],
+      "takeaway": "보안 패치와 GitLab 통합, 자동 세션 재개 등 실용적 개선이 한꺼번에 적용된 주요 릴리스로, GitLab 사용자와 장시간 세션 사용자 모두에게 이득이다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Weirdly, no one talks about Temperature setting for the Qwen3.8 27b",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr3cma/weirdly_no_one_talks_about_temperature_setting/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-17T11:09:26+00:00",
+      "thumbnail": "",
+      "title_ko": "Qwen3.8 27B 온도(Temperature) 설정의 중요성 - 간과되고 있는 핵심 파라미터",
+      "summary": "Qwen3.8 27B의 기본 온도값 1.0 대신 0.7로 낮추면 불필요하게 긴 추론 과정을 크게 줄일 수 있다는 실용 팁이 공유됐다.",
+      "detail": "대부분의 사용자가 추론 예산 제한이나 추론 레벨 다운그레이드에 집중하는 반면, 단순히 온도를 1.0에서 0.7로 낮추는 것만으로도 작은 파일 편집 같은 간단한 작업에서 모델이 장황한 사고 과정을 거치지 않게 된다는 경험이 보고됐다. 다만 온도 조절이 모델의 전반적인 능력에 미치는 영향과 작업 유형별 최적값에 대해서는 커뮤니티에서 추가 실험 논의가 이어지고 있다.",
+      "points": [
+        "Qwen3.8 27B 기본 온도값 1.0을 0.7로 낮추는 것만으로 과도한 추론 감소",
+        "추론 예산 제한보다 더 간단한 접근법으로 주목",
+        "온도 조절이 성능에 미치는 영향은 아직 불명확",
+        "작업 유형별 최적 온도 탐색이 커뮤니티에서 논의 중"
+      ],
+      "takeaway": "추론 예산 조절보다 온도 설정이 더 간단한 튜닝 방법일 수 있으며, Qwen3.8 27B 사용자라면 온도 0.7 설정을 먼저 시도해볼 만하다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Amazon, which started off selling books, is destroying rare texts to train AI",
+      "url": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-17T07:38:44+00:00",
+      "thumbnail": "",
+      "title_ko": "아마존, 희귀 도서를 구입·파괴해 AI 학습 데이터로 활용 중",
+      "summary": "아마존이 희귀 절판 도서를 대량 구입해 척추를 자른 뒤 스캔해 AI 훈련 데이터로 사용하고 있다는 사실이 추적 조사로 밝혀졌다.",
+      "detail": "404 Media는 추적 장치를 숨긴 희귀 도서가 아마존의 라스베이거스 VGT3 시설에 도착하는 것을 확인했다. 아마존은 '제품·서비스 개선을 위해 상업적 채널을 통해 도서를 구입한다'고 공식 해명했다. 인터넷에서 수집 가능한 데이터를 사실상 소진한 빅테크 기업들에게 2022년 이전에 출판된 희귀 도서는 AI 생성 텍스트가 섞이지 않은 고품질 학습 데이터로 특히 가치가 높다. AI 생성 텍스트로 학습할 경우 출력 품질이 저하되는 '모델 붕괴(model collapse)' 위험이 있어 인간 저술 자료의 희소가치가 갈수록 커지고 있다.",
+      "points": [
+        "아마존 라스베이거스 VGT3 시설에서 희귀 도서 척추 절단 후 스캔 확인",
+        "추적 장치를 심은 도서 추적으로 실태 폭로",
+        "2022년 이전 인간 저술 텍스트는 모델 붕괴 방지에 특히 가치 높음",
+        "아마존 측은 '합법적 상업적 구입'이라고 해명",
+        "Anthropic의 불법 해적판 사용 사례와 함께 빅테크의 데이터 확보 경쟁 심화 방증"
+      ],
+      "takeaway": "AI 훈련 데이터 경쟁이 희귀 문화재 파괴로 이어지고 있어 데이터 윤리와 저작권 논의가 더욱 시급해지고 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
+      "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-17T07:15:12+00:00",
+      "thumbnail": "",
+      "title_ko": "Groq, 3억 5천만 달러 추가 유치 - AI 칩에서 네오클라우드로 전환 가속",
+      "summary": "Groq이 3.5억 달러를 추가 조달하며 자체 칩 개발 포기 후 Nvidia GPU 기반 클라우드 인프라 제공사로의 전환을 본격화했다.",
+      "detail": "이번 라운드는 Disruptive가 주도하고 Nvidia가 참여 예정이며, 기업 가치는 35억 달러로 책정됐다. 이는 지난해 9월 69억 달러에서 크게 낮아진 수치로, Nvidia가 창업자 Jonathan Ross와 핵심 인재를 200억 달러 규모 라이선스 계약으로 영입한 이후 회사 구조가 근본적으로 바뀐 결과다. Groq은 자체 LPU 칩 개발에서 벗어나 현재 북미·유럽·중동·아태 13개 데이터센터를 운영하며 600만 명 이상의 개발자에게 Nvidia 기반 인프라를 제공하고 있다. 2027년까지 설비 용량을 54MW에서 200MW 이상으로 확대할 계획이다.",
+      "points": [
+        "Disruptive 주도, Nvidia 참여 예정으로 3.5억 달러 조달",
+        "기업 가치 35억 달러 - 지난해 69억 달러 대비 절반 수준으로 하락",
+        "자체 LPU 칩 포기 후 Nvidia GPU 기반 네오클라우드로 전환",
+        "13개 데이터센터 운영, 2027년까지 200MW 이상으로 확장 목표",
+        "600만 이상 개발자·기업 고객 서비스 중"
+      ],
+      "takeaway": "Groq의 전환은 자체 AI 칩 개발의 한계와 Nvidia 생태계의 지배력을 동시에 보여주며, 네오클라우드 시장의 장기 수익성이 핵심 변수로 부상했다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Nvidia investing $1.5B in SoftBank data center developer behind OpenAI project",
+      "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-17T06:16:24+00:00",
+      "thumbnail": "",
+      "title_ko": "엔비디아, SoftBank 데이터센터 개발사에 15억 달러 투자 - OpenAI 오하이오 프로젝트 독점 공급사 확보",
+      "summary": "엔비디아가 SoftBank·OpenAI가 지분을 보유한 SB Energy에 15억 달러를 투자하며 오하이오 대형 데이터센터의 유일한 컴퓨트 공급사 지위를 확보했다.",
+      "detail": "엔비디아는 오하이오주 신시내티 인근 Ports-Pike 데이터센터에 15억 달러를 직접 투자하고, 최대 1,050억 달러의 크레딧도 제공할 예정이다. 시설 규모는 초기 4.25GW에서 최대 8GW로 확장 가능하다. 부지는 과거 핵무기 농축에 사용된 에너지부 소유지이며, 33억 달러 규모의 천연가스 발전소가 함께 건설될 예정이다. 천연가스 발전소 건설 비용은 최근 2년간 66% 급등했으며, 완공 후에는 천연가스 수출 시장과도 경쟁하게 되어 가격 상승 압력이 가중될 전망이다.",
+      "points": [
+        "엔비디아, SB Energy에 15억 달러 직접 투자 + 최대 1,050억 달러 크레딧 제공",
+        "Ports-Pike 데이터센터 4.25GW→8GW 확장, 엔비디아가 독점 공급사",
+        "부지는 과거 핵무기 우라늄 농축에 쓰인 에너지부 소유지",
+        "33억 달러 규모 천연가스 발전소 건설 예정, 최근 2년간 건설비 66% 급등",
+        "SB Energy 기존 투자자는 SoftBank와 OpenAI"
+      ],
+      "takeaway": "엔비디아가 칩 공급을 넘어 대형 AI 인프라 프로젝트의 직접 투자자로 참여하며, AI 데이터센터 생태계 전반에 대한 지배력을 더욱 강화하고 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Wispr raises $280M at $2B valuation as it looks beyond dictation",
+      "url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-17T04:10:05+00:00",
+      "thumbnail": "",
+      "title_ko": "AI 받아쓰기 앱 Wispr, 2억 8천만 달러 유치 - 미팅 노트테이커로 확장",
+      "summary": "Wispr이 시리즈 B로 2.8억 달러를 조달해 기업 가치 20억 달러를 달성하고, 받아쓰기에서 미팅 노트테이커와 새로운 인터페이스 연구소까지 영역을 확장한다.",
+      "detail": "Menlo Ventures가 주도한 이번 라운드로 Wispr의 누적 조달액은 3.61억 달러에 달한다. 회사는 최근 받아쓰기 품질 저하로 오류율 30%라는 사용자 불만에 대응해 새 모델 'Canto'를 출시, 오류율을 10% 미만으로 낮췄다. 미팅 노트테이커를 출시해 Granola·Fireflies·Read AI와 경쟁하게 됐고, 아마존 Alexa 초기 개발자가 이끄는 음성 인터페이스 전문 연구소 'Wispr Interface Labs'도 신설했다. Android 출시, 인도·영국 진출, Oasis 반지 등 하드웨어 파트너십도 확장 중이다.",
+      "points": [
+        "Menlo Ventures 주도 2.8억 달러 시리즈 B, 기업 가치 20억 달러",
+        "새 받아쓰기 모델 'Canto'로 오류율 30%→10% 미만으로 대폭 개선",
+        "미팅 노트테이커 출시로 Granola·Fireflies 등과 경쟁 진입",
+        "'Wispr Interface Labs' 신설로 새로운 HCI 방식 연구 시작",
+        "Android 출시 및 Oasis 링 등 하드웨어 파트너십 확장"
+      ],
+      "takeaway": "받아쓰기 앱에서 출발한 Wispr이 AI 생산성 플랫폼으로 빠르게 확장하며 음성 인터페이스 시장 경쟁이 본격화되고 있다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "'바이브 코딩' 러버블, 19조 가치로 텐센트 등서 5700억 투자 유치",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214021",
+      "source": "AI타임스",
+      "published": "2026-08-17T03:03:36+00:00",
+      "thumbnail": "",
+      "title_ko": "'바이브 코딩' 러버블, 19조 가치로 텐센트 등서 5700억 투자 유치",
+      "summary": "자연어로 앱을 만드는 바이브 코딩 플랫폼 러버블이 시리즈C에서 4억 달러를 조달하며 기업가치 133억 달러를 인정받았다.",
+      "detail": "스웨덴의 바이브 코딩 스타트업 러버블이 멘로벤처스·EU 스케일업 펀드 주도로 4억 달러 시리즈C를 완료했다. 텐센트가 투자에 참여해 미·중 기술 갈등 속 중국 자본의 유럽 이동 흐름을 보여준다. ARR은 연말 6억 달러에 달할 전망으로 지난해 12월 대비 3배 수준이며, 플랫폼에서 생성된 프로젝트는 6000만 건을 넘었다. 경쟁사인 레플릿은 기업가치 90억 달러를 인정받았고, 커서는 SpaceX에 600억 달러에 인수되는 등 바이브 코딩 시장 경쟁이 치열하다.",
+      "points": [
+        "기업가치 133억 달러, 지난해 12월 대비 두 배 이상 상승",
+        "텐센트 포함 멘로벤처스·EU 펀드가 4억 달러 투자 주도",
+        "ARR 연말 6억 달러 전망, 생성 프로젝트 6000만 건·월 방문 9억 회",
+        "엔비디아·아디다스 등 기업 고객 확보",
+        "레플릿·커서 등 경쟁사와 함께 바이브 코딩 시장 급성장"
+      ],
+      "takeaway": "비전문가도 자연어로 소프트웨어를 만드는 바이브 코딩 시장이 빠르게 성장하며 대규모 자본을 끌어들이고 있어, 소프트웨어 개발 패러다임 변화를 가속화할 전망이다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "On AI regulation and messaging",
+      "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
+      "source": "Hacker News",
+      "published": "2026-08-17T01:59:56+00:00",
+      "thumbnail": "",
+      "points": [
+        "'규제=권력 집중'은 과도한 단순화라고 반박",
+        "Anthropic의 규제 제안은 프론티어 기업을 더 강하게 규제하고 소규모 경쟁자를 보호하는 방향",
+        "SB 53 등은 일정 매출·학습비용 이하 기업 전면 면제",
+        "AI는 스케일링 법칙으로 인해 구조적으로 권력 집중 경향",
+        "오픈 웨이트 모델은 집중을 완화하지만 근본 해결책이 되지 못함"
+      ],
+      "comments": 485,
+      "hn_url": "https://news.ycombinator.com/item?id=49325789",
+      "title_ko": "AI 규제와 메시지에 대하여",
+      "summary": "Anthropic 측 인사가 AI 규제가 반드시 권력 집중을 초래하지 않으며, 올바르게 설계된 규제는 오히려 탈집중을 촉진할 수 있다고 주장한다.",
+      "detail": "'규제=규제 포획=권력 집중'이라는 실리콘밸리식 공식에 반론을 제기하며, 공정한 제도적 절차는 mob justice보다 개인 권리를 더 잘 보호한다는 유추로 규제의 분산화 가능성을 설명한다. Anthropic이 지지한 캘리포니아 SB 53은 일정 매출 이하 소규모 기업을 전면 면제해 도전자에게 유리한 구조를 취한다. AI는 규제와 무관하게 스케일링 법칙 탓에 구조적으로 권력 집중을 초래하며, 오픈 웨이트 모델도 컴퓨트를 가진 소수로 집중이 이동할 뿐이라고 분석한다.",
+      "takeaway": "AI 규제 논쟁에서 '규제 반대=분산 촉진'이라는 등식이 항상 성립하지 않으며, 올바르게 설계된 규제가 오히려 프론티어 기업의 독점을 견제하는 도구가 될 수 있다는 시각이다.",
+      "category": "정책/규제",
+      "metric": "▲ [\"'규제=권력 집중'은 과도한 단순화라고 반박\", 'Anthropic의 규제 제안은 프론티어 기업을 더 강하게 규제하고 소규모 경쟁자를 보호하는 방향', 'SB 53 등은 일정 매출·학습비용 이하 기업 전면 면제', 'AI는 스케일링 법칙으로 인해 구조적으로 권력 집중 경향', '오픈 웨이트 모델은 집중을 완화하지만 근본 해결책이 되지 못함'] · 💬 485"
+    },
+    {
+      "type": "news",
+      "title": "Anthropic explains how Claude’s invisible text watermarks will work",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
+      "source": "The Verge AI",
+      "published": "2026-08-17T01:57:13+00:00",
+      "thumbnail": "",
+      "title_ko": "Anthropic, Claude 텍스트 워터마킹 방식 공개",
+      "summary": "Anthropic이 EU AI법 준수를 위해 구글 딥마인드의 SynthID-Text 방식 기반 투명 워터마크를 Claude 생성 텍스트에 적용한다고 밝혔다.",
+      "detail": "EU AI법의 합성 콘텐츠 표시 의무를 이행하고자 Anthropic은 SynthID-Text 오픈소스 기술을 채택했다. 이 방식은 문장 내 의미 차이가 거의 없는 단어 선택 시 랜덤 대신 비밀 키를 활용해 패턴을 삽입한다. 독자에게는 보이지 않지만 키를 가진 검증자는 AI 생성 여부를 확인할 수 있다. Anthropic에 따르면 출력 품질이나 비용에 실질적 영향은 없으며, 이미지에는 C2PA 방식이 병행 적용된다.",
+      "points": [
+        "구글 딥마인드의 오픈소스 SynthID-Text 방식 채택",
+        "의미가 유사한 단어 선택 단계에서 비밀 키 기반 패턴 삽입",
+        "독자는 감지 불가, 키 보유자는 AI 생성 여부 확인 가능",
+        "출력 품질·비용에 실질적 영향 없다고 Anthropic 설명",
+        "EU AI법 의무 이행 목적, 이미지는 C2PA 방식 병행"
+      ],
+      "takeaway": "EU AI법이 요구하는 합성 콘텐츠 표식 의무가 현실화되면서 구글·Anthropic 등 주요 AI 기업들이 텍스트 워터마킹 기술을 본격 도입하는 시점이 다가오고 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    }
+  ]
+}
