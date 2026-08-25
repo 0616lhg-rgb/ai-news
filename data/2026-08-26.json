@@ -1,0 +1,506 @@
+{
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T08:13:40",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘 AI 뉴스의 핵심 축은 세 가지다. 첫째, OpenAI가 엔비디아 의존에서 벗어나는 하드웨어 독립 선언—자체 추론 칩 Jalapeño가 Blackwell을 전력 효율·처리량 모두에서 앞섰다. 둘째, 중국 피지컬 AI의 기록적 자본 집중과 휴머노이드 로봇의 실전 배치가 동시에 가속화되며 로봇 노동 대체가 현실 뉴스가 됐다. 셋째, 스탠퍼드 고용 데이터와 사이버 공격 증가 보고가 겹치면서 AI의 사회·안보 충격이 수치로 입증되는 단계에 진입했다.",
+    "highlights": [
+      {
+        "title": "OpenAI Jalapeño, 엔비디아 Blackwell 추월",
+        "line": "OpenAI가 Broadcom과 공동 개발한 자체 AI 추론 칩이 Hot Chips에서 첫 벤치마크를 공개하며 전력 대비 성능과 처리량 모두 엔비디아·AMD·구글 칩을 앞서, 반도체 공급망 판도를 흔들 독립 선언을 공식화했다."
+      },
+      {
+        "title": "스탠퍼드 연구: 청년 취업률 격차 19%로 확대",
+        "line": "AI 노출도 높은 직종에 종사하는 22~25세의 취업률이 비노출 동년배보다 19% 낮아졌으며 전년 13%에서 격차가 더 벌어져, AI의 노동시장 충격이 엔트리레벨에 가장 집중되고 있음이 수치로 확인됐다."
+      },
+      {
+        "title": "도고틱스, 중국 휴머노이드 역대 최대 9억 달러 조달",
+        "line": "샤오펑 로봇 자회사가 텐센트·알리바바 등을 주주로 끌어들이며 중국 피지컬 AI 단일 투자 최대 기록을 세워, 중국의 휴머노이드 경쟁이 자본력으로 전환점을 맞았다."
+      },
+      {
+        "title": "피규어 AI, 8시간 물류 자동화에 자동 배터리 맞교대",
+        "line": "휴머노이드 로봇 Figure 03이 물류 분류 작업 100% 대체와 배터리 소진 시 로봇 간 자동 교대를 시연하며, '알바 대체' 수준의 실용성을 공개 영상으로 입증했다."
+      },
+      {
+        "title": "딥시크 탑재 해킹 2배 폭증·추론엔진 취약점 경고 동시 발생",
+        "line": "중국 해킹 조직의 딥시크 활용으로 공격 빈도가 두 배 이상 늘어난 동시에, vLLM·SGLang 같은 추론 엔진 파싱 취약점을 악의적 LLM이 악용해 호스트 머신을 장악할 수 있다는 분석이 공개되며 AI 인프라 전반의 보안 위협이 동시다발로 부각됐다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "youtube",
+      "title": "[이슈] 'AI 로봇'의 '물류 알바' 인력 대체 '100%'…\"배터리 없네?\" 알아서 '맞교대' 까지 '충격'/2026년 5월 14일(목)/KBS",
+      "url": "https://www.youtube.com/watch?v=ON7nWA8zW1w",
+      "source": "KBS News",
+      "published": "2026-08-25T20:00:34.377035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/ON7nWA8zW1w/hqdefault.jpg",
+      "videoId": "ON7nWA8zW1w",
+      "views": 59741,
+      "title_ko": "AI 로봇 '피규어 03', 8시간 물류 연속 근무·자동 맞교대까지 시연",
+      "summary": "피규어 AI가 휴머노이드 로봇 피규어 03의 8시간 연속 물류 분류 작업과 배터리 부족 시 자동 맞교대 기능을 공개했다.",
+      "detail": "미국 로봇 기업 피규어 AI가 최신 휴머노이드 로봇 '피규어 03'의 물류 창고 연속 근무 영상을 공개했다. 로봇은 8시간 동안 쉬지 않고 물품 분류 작업을 수행하며, 배터리 잔량이 낮아지면 대기 중인 로봇과 스스로 교대하는 기능까지 갖췄다. 이는 별도 인력 개입 없이 로봇만으로 물류 현장을 운영할 수 있음을 보여주는 시연이다.",
+      "points": [
+        "피규어 AI의 최신 휴머노이드 '피규어 03' 공개",
+        "8시간 연속 물류 분류 작업 수행 시연",
+        "배터리 부족 시 대기 로봇과 자동 맞교대 기능 구현",
+        "물류 알바 인력 100% 대체 가능성 시사"
+      ],
+      "takeaway": "휴머노이드 로봇이 자율 교대 운영까지 갖추며 물류 현장에서 인간 노동자를 완전 대체할 수 있는 수준에 근접했음을 보여준다.",
+      "category": "도구 업데이트",
+      "metric": "조회 6.0만"
+    },
+    {
+      "type": "hn",
+      "title": "How much of HN is AI?",
+      "url": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+      "source": "Hacker News",
+      "published": "2026-08-25T15:23:41+00:00",
+      "thumbnail": "",
+      "points": [
+        "2026년 2월 기준 HN 일간 상위 5개 중 거의 매일 AI 게시물이 다수 차지",
+        "6월 기준 상위 게시물 약 60%가 AI 관련 또는 AI 생성",
+        "AI 작성 탐지 도구 Pangram으로 LLM 생성 콘텐츠 식별",
+        "암호화폐 열풍 시절보다 AI 주제 지배력 훨씬 강해",
+        "500+ 추천 게시물 중에도 AI 작성 의심 사례 존재"
+      ],
+      "comments": 277,
+      "hn_url": "https://news.ycombinator.com/item?id=49435728",
+      "title_ko": "해커뉴스의 60%는 이미 AI — 콘텐츠 점령 실태 분석",
+      "summary": "2026년 분석에 따르면 해커뉴스 일간 상위 게시물의 약 60%가 AI 관련 주제이거나 AI가 작성한 콘텐츠인 것으로 나타났다.",
+      "detail": "한 블로거가 2026년 2월과 6월 두 차례에 걸쳐 해커뉴스 일간 상위 5개 게시물을 분석했다. 2월에는 AI 관련 게시물 없이 하루를 넘긴 날이 손에 꼽을 정도였고, 6월에는 상위 게시물의 약 60%가 AI 주제이거나 AI가 생성한 것으로 집계됐다. AI 작성 탐지 도구 Pangram을 활용해 LLM 생성 콘텐츠를 식별했으며, 저자는 오히려 일부 게시물을 탐지하지 못한 '미탐'이 있었다고 봤다. 2018년 암호화폐 열풍 때보다 AI 주제의 지배력이 훨씬 강력하다는 것이 결론이다.",
+      "takeaway": "기술 커뮤니티의 담론 자체가 AI가 생산하고 소비하는 방향으로 빠르게 변화하고 있어, 정보 생태계의 질적 신뢰성에 대한 논의가 시급하다.",
+      "category": "기타",
+      "metric": "▲ ['2026년 2월 기준 HN 일간 상위 5개 중 거의 매일 AI 게시물이 다수 차지', '6월 기준 상위 게시물 약 60%가 AI 관련 또는 AI 생성', 'AI 작성 탐지 도구 Pangram으로 LLM 생성 콘텐츠 식별', '암호화폐 열풍 시절보다 AI 주제 지배력 훨씬 강해', '500+ 추천 게시물 중에도 AI 작성 의심 사례 존재'] · 💬 277"
+    },
+    {
+      "type": "youtube",
+      "title": "2026 클로드(Claude) 올인원 무료 강의｜AI 업무자동화 20분 총정리",
+      "url": "https://www.youtube.com/watch?v=58YFu8s2I8w",
+      "source": "일반인을 위한 AI 업무자동화 가이드",
+      "published": "2026-08-25T15:00:34.377035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/58YFu8s2I8w/hqdefault.jpg",
+      "videoId": "58YFu8s2I8w",
+      "views": 323,
+      "title_ko": "2026 클로드(Claude) 올인원 무료 강의 | AI 업무자동화 20분 총정리",
+      "summary": "Claude와 Claude Code를 활용한 AI 업무자동화 핵심을 20분으로 압축한 일반인 대상 무료 강의 영상이다.",
+      "detail": "이 영상은 Anthropic의 AI 모델 Claude와 개발자 도구 Claude Code를 처음 접하는 일반인을 위한 무료 입문 강의다. 기본 사용법부터 AI 에이전트 활용, 업무자동화 실전 사례까지 20분 안에 핵심을 다룬다. 클로드 코워크 등 다양한 기능도 함께 소개하며, 코딩 지식 없이도 AI를 업무에 바로 적용할 수 있도록 구성한 것으로 보인다.",
+      "points": [
+        "Claude·Claude Code 기본 사용법 소개",
+        "AI 업무자동화 핵심 20분 압축 강의",
+        "일반인 대상으로 쉬운 설명 구성",
+        "AI 에이전트·클로드 코워크 활용 사례 포함"
+      ],
+      "takeaway": "Claude를 업무에 빠르게 도입하려는 비개발자에게 실용적인 입문 참고 자료로 활용 가능하다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 323"
+    },
+    {
+      "type": "hn",
+      "title": "AI is hitting entry-level jobs hardest, Stanford study finds",
+      "url": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
+      "source": "Hacker News",
+      "published": "2026-08-25T14:48:58+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 노출 직종 22~25세 취업률, 비노출 동년배 대비 19% 낮음(전년 13%에서 확대)",
+        "나이 든 근로자는 아직 유의미한 영향 없음",
+        "Anthropic 경제 지수·ADP 급여 데이터 기반 분석",
+        "Google도 Gemini 사용 기반 유사 보고서 발표",
+        "초급 화이트칼라 직종이 AI 대체에 가장 취약"
+      ],
+      "comments": 153,
+      "hn_url": "https://news.ycombinator.com/item?id=49435147",
+      "title_ko": "AI가 신입·초급 일자리를 가장 심하게 타격 — 스탠퍼드 연구",
+      "summary": "스탠퍼드 연구에 따르면 AI 노출도 높은 직종의 22~25세 취업률이 비노출 동년배 대비 19% 낮아졌으며, 이 격차는 전년(13%)보다 더 벌어졌다.",
+      "detail": "스탠퍼드대 경제학자들이 2026년 8월 발표한 업데이트 연구에서, AI 노출도가 높은 직종의 22~25세 취업 수준이 AI 영향이 적은 동년배보다 19% 낮은 것으로 나타났다. 이 격차는 전년 13%에서 확대된 것이다. 연구팀은 ADP 급여 데이터와 Anthropic 경제 지수(Claude 실제 사용 직종 분석)를 활용해 직종별 AI 노출도를 측정했다. 반면 나이 든 근로자는 아직 큰 타격을 받지 않고 있어, AI 충격이 세대별로 비대칭적으로 나타나고 있다.",
+      "takeaway": "AI가 신입·초급 직종에 실질적 고용 충격을 주고 있으며, 청년층의 노동 시장 진입 장벽이 빠르게 높아지고 있다는 경고 신호다.",
+      "category": "산업/투자",
+      "metric": "▲ ['AI 노출 직종 22~25세 취업률, 비노출 동년배 대비 19% 낮음(전년 13%에서 확대)', '나이 든 근로자는 아직 유의미한 영향 없음', 'Anthropic 경제 지수·ADP 급여 데이터 기반 분석', 'Google도 Gemini 사용 기반 유사 보고서 발표', '초급 화이트칼라 직종이 AI 대체에 가장 취약'] · 💬 153"
+    },
+    {
+      "type": "hn",
+      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "source": "Hacker News",
+      "published": "2026-08-25T14:06:02+00:00",
+      "thumbnail": "",
+      "points": [
+        "2024년 중반 개발 시작 후 ~16개월 만에 테이프아웃 완료",
+        "전력 대비 성능에서 엔비디아 블랙웰·AMD·구글 칩 모두 능가",
+        "HBM4 메모리 채택으로 고대역폭 확보",
+        "특정 OpenAI 모델 전용이 아닌 범용 AI 추론 칩 설계",
+        "Codex 프롬프트만으로 칩에 둠(Doom) 포팅 시연"
+      ],
+      "comments": 174,
+      "hn_url": "https://news.ycombinator.com/item?id=49434378",
+      "title_ko": "OpenAI 자체 AI 칩 '할라피뇨' 공개 — 엔비디아 블랙웰 능가",
+      "summary": "OpenAI가 Broadcom과 공동 개발한 첫 번째 자체 AI 추론 칩 '할라피뇨(Jalapeño)'를 공개했으며, 전력 대비 성능 벤치마크에서 엔비디아·AMD·구글 칩을 모두 앞섰다.",
+      "detail": "OpenAI가 Hot Chips 행사에서 자체 개발 AI 추론 칩 '할라피뇨'를 발표했다. 2024년 중반 개발을 시작해 약 16개월 만에 테이프아웃을 완료한 매우 빠른 개발 사이클이다. InferenceX 벤치마크에서 전력 대비 성능(perf/W) 기준으로 엔비디아 블랙웰, AMD, 구글 칩을 모두 제쳤으며, 저지연과 고처리량 시나리오 모두에서 우위를 보였다. 특정 모델 전용이 아닌 범용 추론 칩으로 설계됐으며, HBM4 메모리를 채택해 고대역폭을 확보했다.",
+      "takeaway": "OpenAI가 하드웨어 수직계열화에 성공하며 엔비디아 의존도를 실질적으로 낮출 수 있는 대안을 제시했고, AI 칩 시장 경쟁 구도에 큰 변화가 예상된다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['2024년 중반 개발 시작 후 ~16개월 만에 테이프아웃 완료', '전력 대비 성능에서 엔비디아 블랙웰·AMD·구글 칩 모두 능가', 'HBM4 메모리 채택으로 고대역폭 확보', '특정 OpenAI 모델 전용이 아닌 범용 AI 추론 칩 설계', 'Codex 프롬프트만으로 칩에 둠(Doom) 포팅 시연'] · 💬 174"
+    },
+    {
+      "type": "guide",
+      "title": "v0.33.0",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.33.0-rc4",
+      "source": "Ollama 릴리스",
+      "published": "2026-08-25T13:40:53+00:00",
+      "thumbnail": "",
+      "title_ko": "Ollama v0.33.0 출시 — Claude Desktop 통합 강화 및 캐싱 안정성 개선",
+      "summary": "Ollama v0.33.0이 출시되어 Claude Desktop에서 로컬 모델을 직접 선택·관리할 수 있게 되고, 프리필 캐싱 안정성이 크게 향상됐다.",
+      "detail": "이번 릴리스에서 Claude Desktop과의 통합이 강화됐다. 메뉴바에서 Ollama 모델을 개별로 켜고 끌 수 있고, Claude 내부에서 로컬 모델을 직접 선택할 수 있으며, 앱 통합을 한데 관리하는 새로운 Apps 뷰가 추가됐다. 캐싱 면에서는 긴 프리필 중 취소해도 복원 지점이 유지돼 재시도 시 처음부터 재처리하지 않아도 된다. Claude Code의 '토큰 남음' 카운트다운 메시지가 KV 캐시를 깨뜨리던 문제도 해결됐다.",
+      "points": [
+        "Claude Desktop 메뉴바에서 Ollama 모델 온/오프 전환 가능",
+        "Claude 내에서 로컬 모델 직접 선택 지원",
+        "앱 통합 관리 Apps 뷰 신설",
+        "프리필 취소 후 재시도 시 복원 지점 유지 — 처음부터 재처리 불필요",
+        "Claude Code의 KV 캐시 충돌 문제(토큰 카운트다운 메시지) 해결"
+      ],
+      "takeaway": "Ollama와 Claude Desktop의 긴밀한 통합으로 로컬 LLM과 클라우드 모델을 함께 사용하는 워크플로우가 더욱 편리해졌다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Qwen 3.8 27b has ThreeJs locked down.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyewwd/qwen_38_27b_has_threejs_locked_down/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-25T13:37:04+00:00",
+      "thumbnail": "",
+      "title_ko": "Qwen 3.8 27b, ThreeJS 3D 코드 생성 능력 인상적",
+      "summary": "RTX 3090에서 실행한 Qwen 3.8 27b 모델이 ThreeJS 3D 그래픽 코드를 뛰어난 수준으로 생성해 로컬 LLM 커뮤니티의 주목을 받았다.",
+      "detail": "Reddit r/LocalLLaMA 사용자가 RTX 3090에서 Qwen 3.8 27b(Q4 Thinking High 설정)로 ThreeJS 코드를 생성한 결과물을 공유해 화제가 됐다. 게시물 자체는 짧아 기술적 세부 내용은 없으나, 소비자급 GPU 한 장으로 실행 가능한 27B 규모 모델이 복잡한 3D 웹 그래픽 라이브러리 코드를 능숙하게 처리한다는 점이 커뮤니티에서 높이 평가받았다.",
+      "points": [
+        "RTX 3090에서 Qwen 3.8 27b Q4 Thinking High 설정으로 로컬 실행",
+        "ThreeJS 3D 그래픽 코드 생성 능력 우수",
+        "소비자급 GPU 한 장으로 구동 가능한 27B 모델 성능 시연",
+        "r/LocalLLaMA 커뮤니티에서 화제"
+      ],
+      "takeaway": "소비자 GPU로 실행 가능한 중형 로컬 모델이 복잡한 3D 그래픽 라이브러리 코드까지 다루는 수준에 도달했음을 보여주는 사례다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "The state of AI in 2026: On the road to ROI",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+      "source": "Hacker News",
+      "published": "2026-08-25T13:32:52+00:00",
+      "thumbnail": "",
+      "points": [
+        "2026년 AI 산업 전반 현황 점검",
+        "기업 AI 투자 대비 실질 ROI 달성 여부 분석",
+        "과대 기대에서 실용적 성과 입증 단계로의 전환이 핵심 화두",
+        "AI 도입 선도 기업과 후발 기업 간 격차 확대 가능성"
+      ],
+      "comments": 51,
+      "hn_url": "https://news.ycombinator.com/item?id=49433759",
+      "title_ko": "2026년 AI 현황 리포트: ROI를 향한 길",
+      "summary": "2026년 AI 산업 전반의 현황과 기업의 AI 투자가 실질적인 수익(ROI)으로 이어지고 있는지를 분석한 리포트다.",
+      "detail": "원문 본문이 제공되지 않아 제목 기반으로 요약한다. 이 리포트는 2026년 현재 AI 기술 도입이 기업 현장에서 실질적인 비즈니스 성과를 내고 있는지를 점검하는 내용으로 보인다. AI 투자 붐이 이어지는 가운데 '실제 ROI 달성' 여부가 업계의 핵심 화두로 떠오르고 있으며, 과대 기대에서 실용적 성과 입증 단계로의 전환이 주요 흐름이다.",
+      "takeaway": "AI 투자가 실제 비즈니스 성과로 증명되는지를 평가하는 시점이 왔으며, ROI 입증 여부가 향후 AI 투자 흐름을 결정짓는 분기점이 될 것이다.",
+      "category": "산업/투자",
+      "metric": "▲ ['2026년 AI 산업 전반 현황 점검', '기업 AI 투자 대비 실질 ROI 달성 여부 분석', '과대 기대에서 실용적 성과 입증 단계로의 전환이 핵심 화두', 'AI 도입 선도 기업과 후발 기업 간 격차 확대 가능성'] · 💬 51"
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.246",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.246",
+      "source": "Claude Code 릴리스",
+      "published": "2026-08-25T13:31:52+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.246 업데이트",
+      "summary": "Claude Code 최신 버전이 Auto 모드 탭 신설, Bash 와일드카드 경고 추가와 함께 풀스크린·백그라운드 세션·MCP 등 다수의 버그를 수정했다.",
+      "detail": "이번 업데이트에서 Bash 허용 규칙에 와일드카드가 포함된 경우 시작 시 경고를 표시하고, /permissions 화면에 Auto 모드 탭이 새로 생겼다. 턴 종료 시각이 소요 시간 라인에 함께 표시돼 작업 시점 파악이 쉬워졌다. base64처럼 매우 긴 단일 행이 포함된 diff에서 전사 렌더링이 극심하게 느려지던 문제가 수정됐고, 풀스크린 스크롤 오작동 및 백그라운드 세션 실패 문제도 해결됐다. MCP 도구 호출이 중단됐을 때 '출력 없음'으로 잘못 보고하던 오류와 플러그인 기술 이름 이중 표시 버그도 수정됐다.",
+      "points": [
+        "Bash 와일드카드 허용 규칙 사용 시 시작 경고 추가",
+        "/permissions에 Auto 모드 탭 신설",
+        "턴 완료 시각을 소요 시간 라인에 표시",
+        "base64 등 긴 단일 행 diff의 렌더링 지연 수정",
+        "백그라운드 세션·MCP·플러그인 관련 다수 버그 수정"
+      ],
+      "takeaway": "실사용 빈도가 높은 풀스크린·백그라운드 세션·MCP 영역의 버그가 집중 수정돼 전반적인 안정성이 크게 향상됐다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Peak Portable Personal Datacenter",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyephx/peak_portable_personal_datacenter/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-25T13:28:30+00:00",
+      "thumbnail": "",
+      "title_ko": "도시락 가방에 들어가는 262K 컨텍스트 로컬 AI 구축기",
+      "summary": "Panasonic Toughbook과 T1 추론 박스를 조합해 Qwen3-30B-BF16 모델을 휴대하며 262K 토큰 법률 문서를 처리하는 사례를 공유했다.",
+      "detail": "작성자는 노트북·T1 박스·파워브릭을 도시락 가방 하나에 넣어 다니며 77GB VRAM으로 Qwen3-30B-BF16을 구동한다. 핵심 용도는 법률 문서 OCR·이미지 분석·요약이며, 높은 정밀도 요구 때문에 양자화 대신 BF16 전체 가중치를 사용한다. 175K 토큰 프리필은 약 102초(1,715 tok/sec)에 처리되나, BF16 특성상 토큰 생성 속도는 MTP 적용 후에도 45 tok/sec에 그친다. 법률 정밀도가 요구되는 작업에서는 Q8_K_XL 양자화 모델 대비 체감 품질 차이가 뚜렷하다는 것이 결론이다.",
+      "points": [
+        "Panasonic Toughbook + T1 박스 조합으로 완전 휴대형 로컬 LLM 환경 구성",
+        "77GB VRAM으로 Qwen3-30B-BF16을 262K 컨텍스트로 구동",
+        "175K 토큰 프리필 처리 약 102초(1,715 tok/sec)",
+        "생성 속도는 45 tok/sec으로 BF16의 태생적 한계 존재",
+        "법률 정밀도 작업에서 Q8_K_XL 양자화 대비 품질 우위 확인"
+      ],
+      "takeaway": "전문적 정밀도가 필요한 문서 작업에서 BF16 풀웨이트 로컬 추론이 실용적 선택지가 될 수 있음을 보여주는 실제 사례다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
+      "url": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/",
+      "source": "Hacker News",
+      "published": "2026-08-25T12:33:00+00:00",
+      "thumbnail": "",
+      "points": [
+        "8월 25일부터 Plus 구독자에게 5시간 사용 제한 복원",
+        "5시간 또는 주간 한도 초과 시 대기 또는 추가 크레딧 구매 필요",
+        "재도입 이유: 컴퓨트 부하 분산 및 사용량 소진에 따른 사용자 혼란 방지",
+        "Pro $100·$200 구독자는 당분간 5시간 제한 미적용"
+      ],
+      "comments": 117,
+      "hn_url": "https://news.ycombinator.com/item?id=49432879",
+      "title_ko": "OpenAI, ChatGPT Plus 사용자 Codex·Work 5시간 제한 재도입",
+      "summary": "OpenAI가 일시 해제했던 Plus 구독자의 Codex·ChatGPT Work 5시간 사용 제한을 8월 25일부터 복원한다.",
+      "detail": "OpenAI 엔지니어링 리드 티보 소티오는 컴퓨트 부하 분산과 사용자 혼란 방지를 이유로 Plus 구독자에게 5시간 제한을 재적용한다고 밝혔다. 한도 초과 시 다음 주기까지 대기하거나 추가 크레딧을 구매해야 한다. 지난 수 주간 OpenAI는 이용자 수 증가 같은 이정표를 기념해 제한을 임시 해제하고 주간 한도도 조기 리셋해왔다. Pro 100달러·200달러 구독자는 당분간 5시간 제한 적용 대상에서 제외된다.",
+      "takeaway": "무제한처럼 보였던 Plus 플랜이 다시 제약을 받게 되어 Codex·Work를 장시간 활용해온 Plus 사용자에게 실질적 영향이 예상된다.",
+      "category": "산업/투자",
+      "metric": "▲ ['8월 25일부터 Plus 구독자에게 5시간 사용 제한 복원', '5시간 또는 주간 한도 초과 시 대기 또는 추가 크레딧 구매 필요', '재도입 이유: 컴퓨트 부하 분산 및 사용량 소진에 따른 사용자 혼란 방지', 'Pro $100·$200 구독자는 당분간 5시간 제한 미적용'] · 💬 117"
+    },
+    {
+      "type": "news",
+      "title": "Stability AI, maker of image generator Stable Diffusion, raises $76 million in fresh funding",
+      "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-25T10:03:47+00:00",
+      "thumbnail": "",
+      "title_ko": "Stability AI, 유니버설·소니·워너 음악사 참여로 7600만 달러 시리즈 B 조달",
+      "summary": "Stable Diffusion 개발사 Stability AI가 3대 음악사와 EA 등이 참여한 7600만 달러 투자를 유치해 누적 조달액 2억3200만 달러를 기록했다.",
+      "detail": "이번 시리즈 B에는 Universal Music Group·Sony Music Group·Warner Music Group·EA·AMD Ventures·Pacific Alliance Ventures가 참여했다. 주목할 점은 음악 3사가 단순 재무 투자자가 아니라 Stability와 AI 창작 도구를 공동 개발하는 파트너라는 점이다. 투자금은 음악·영상·이미지 생성을 아우르는 크리에이티브 프로덕션 제품군 강화와 프로페셔널 서비스 확장에 사용된다. 법적으로는 영국 게티이미지 저작권 소송에서 대체로 유리한 판결을 받았으나, 미국 소송은 아직 진행 중이다.",
+      "points": [
+        "7600만 달러 시리즈 B 유치, 누적 조달 2억3200만 달러",
+        "UMG·소니뮤직·워너뮤직·EA가 전략적 투자자로 참여",
+        "투자자들과 AI 창작 도구 공동 개발 파트너십 유지",
+        "크리에이티브 프로덕션 제품군 및 프로페셔널 서비스 확장 예정",
+        "영국 게티 소송 대체로 유리, 미국 소송은 계속"
+      ],
+      "takeaway": "엔터테인먼트 대기업들이 공동 개발 파트너로 직접 투자에 나선 것은 생성 AI와 콘텐츠 산업의 협력 모델이 본격화하고 있음을 보여준다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "클로드로 쇼핑 쇼츠 자동화! 제품 링크 하나로 AI 쇼츠 완성 (+프롬프트 공개) | 클로드 & 탑뷰 MCP",
+      "url": "https://www.youtube.com/watch?v=bB2PyjK7QZE",
+      "source": "홍아린 AI",
+      "published": "2026-08-25T10:00:34.377035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/bB2PyjK7QZE/hqdefault.jpg",
+      "videoId": "bB2PyjK7QZE",
+      "views": 4168,
+      "title_ko": "클로드 & Topview MCP로 쇼핑 쇼츠 자동화하기",
+      "summary": "제품 링크 하나만 입력하면 클로드와 Topview AI MCP를 활용해 쇼핑 쇼츠 영상을 자동 완성하는 워크플로우를 소개한다.",
+      "detail": "이 영상은 클로드와 Topview AI의 MCP 연동을 통해 이커머스 상품 링크를 입력하면 쇼핑 쇼츠 영상이 자동 생성되는 과정을 다룬다. 사용한 프롬프트도 공개돼 있어 직접 따라 적용할 수 있으며, 영상 내 가입 링크를 통해 할인과 무료 크레딧을 받을 수 있다.",
+      "points": [
+        "클로드 + Topview AI MCP 연동으로 쇼핑 쇼츠 자동 생성",
+        "제품 링크 하나로 영상 완성까지 전 과정 자동화",
+        "사용 프롬프트 공개로 즉시 적용 가능"
+      ],
+      "takeaway": "MCP를 활용한 AI 영상 생성 자동화가 이커머스 쇼츠 콘텐츠 제작 비용과 시간을 크게 줄일 수 있는 실용적 선택지임을 보여준다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 4,168"
+    },
+    {
+      "type": "news",
+      "title": "구글, 제미나이 3.5 프로 건너뛰고 차세대 ‘제미나이 4’ 출시 준비하나",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214355",
+      "source": "AI타임스",
+      "published": "2026-08-25T09:00:00+00:00",
+      "thumbnail": "",
+      "title_ko": "구글, 제미나이 3.5 프로 건너뛰고 '제미나이 4' 개발에 직행",
+      "summary": "구글이 중간 모델 제미나이 3.5 프로를 사실상 출시하지 않고 차세대 플래그십 제미나이 4 개발에 집중하고 있다는 정황이 포착됐다.",
+      "detail": "데이터 분석가 베드로스 밤부키안에 따르면 구글 내부 시스템에서 제미나이 4 관련 언급이 며칠 만에 0건에서 120건 이상으로 급증했다. 구글의 약 6개월 훈련 주기를 감안하면 제미나이 4의 공식 출시는 2026년 12월경으로 예상되며, 이는 제미나이 3의 개발·출시 패턴과 유사하다. 제미나이 데스크톱 앱에는 맞춤 아바타, 앱·스킬·플러그인 탐색 화면, Gmail·구글 캘린더 위젯 통합 등 대형 UI 개편도 예고됐다. 이는 클로드·코덱스의 에이전트 작업 공간과 유사한 방향으로 MCP·외부 도구 연동 역량을 강화하려는 의도로 풀이된다.",
+      "points": [
+        "내부 시스템에서 제미나이 4 언급이 며칠 만에 0→120건+ 급증",
+        "출시 시점은 2026년 12월경 예상",
+        "데스크톱 앱에 아바타·커스텀 디스커버리 화면·Gmail 위젯 추가 예고",
+        "에이전트 작업 공간·MCP 지원 강화 방향으로 리디자인",
+        "제미나이 3.5 프로는 공식 취소 없이 사실상 건너뛰는 양상"
+      ],
+      "takeaway": "구글이 중간 단계를 생략하고 플래그십 모델에 집중하면서 연말 AI 모델 경쟁이 한층 치열해질 전망이다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "중국 해커, '딥시크' 탑재하고 사이버 공격 2배 폭증...\"가성비 좋고 장벽 낮아\"",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214344",
+      "source": "AI타임스",
+      "published": "2026-08-25T08:10:00+00:00",
+      "thumbnail": "",
+      "title_ko": "중국 해커들, 딥시크 탑재로 사이버 공격 2배 폭증",
+      "summary": "중국 정부 연계 해킹 조직들이 딥시크 등 오픈소스 AI를 공격 전 과정에 활용하면서 공격 활동이 두 배 이상 증가했다는 조사 결과가 나왔다.",
+      "detail": "대만 사이버보안 연구기관 팀T5는 중국 국가 연계 해킹 조직들이 정찰·IP 수집·익스플로잇 코드 생성·악성코드 제작 등 공격 전 과정에 AI를 활용하는 스크립트와 로그를 확보했다. 딥시크가 선호되는 이유는 높은 성능, 낮은 비용, 오픈소스 기반 커스터마이징 용이성, 서구 AI 대비 약한 안전장치다. 그림펑시(Grimfengxi) 조직은 딥시크로 익스플로잇 코드를 제작했고, 슬라임22(Slime22)는 클로드 코드를 악용해 침투한 시스템 내부를 이동했다. 챗GPT도 시그널 데이터베이스 복호화 모듈 생성에 사용된 사례가 확인됐다.",
+      "points": [
+        "중국 해커 공격 활동이 AI 도입 이후 2배 이상 증가",
+        "딥시크가 낮은 안전장치와 비용 효율성으로 주된 공격 도구로 부상",
+        "정찰·취약점 탐색·익스플로잇 코드 생성 등 공격 전 단계에 AI 활용",
+        "챗GPT·클로드 코드도 해킹에 악용된 구체적 사례 확인",
+        "해커의 모델 선택 기준은 성능보다 '비용·접근성·안전장치 수준'"
+      ],
+      "takeaway": "고도의 AI 자율성 없이도 범용 AI가 사이버 공격 생산성을 크게 높일 수 있음이 실증됐으며, 오픈소스 모델의 안전장치 강화가 시급한 과제로 부상했다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "샤오펑 로봇 자회사 도고틱스, 1.2조 유치…중국 휴머노이드 역대 최대 규모",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214341",
+      "source": "AI타임스",
+      "published": "2026-08-25T06:50:05+00:00",
+      "thumbnail": "",
+      "title_ko": "샤오펑 로봇 자회사 도고틱스, 중국 역대 최대 규모 9억 달러 투자 유치",
+      "summary": "샤오펑의 휴머노이드 로봇 자회사 도고틱스가 텐센트·알리바바 등이 참여한 9억 달러 이상 투자를 유치하며 중국 피지컬 AI 최대 단일 투자 기록을 세웠다.",
+      "detail": "IDG캐피털이 주도하고 텐센트·알리바바가 전략적 투자자로 참여한 이번 라운드로 도고틱스의 기업 가치는 63억 달러(약 8조7000억원) 이상으로 올랐다. 투자 구조는 외부 6억 달러, 샤오펑 2억 달러, 경영진 1억 달러이며 워런트·옵션 행사 시 총 14억 달러 이상으로 확대된다. 핵심 제품인 휴머노이드 로봇 '아이언(IRON)'은 연말까지 월 1000대 생산을 목표로 하며, 2027년부터 중국·해외에서 본격 판매를 시작할 예정이다. 샤오펑은 전기차에서 축적한 센서·배터리·자율주행·공급망 역량을 로봇에 접목하는 전략을 취하고 있다.",
+      "points": [
+        "9억 달러 이상 유치, 중국 피지컬 AI 비상장 기업 최대 단일 투자 기록",
+        "IDG캐피털 주도, 텐센트·알리바바 전략적 투자 참여",
+        "기업 가치 63억 달러(약 8조7000억원) 이상",
+        "휴머노이드 로봇 '아이언' 연말 월 1000대 생산 목표",
+        "2027년 중국·해외 본격 판매 예정"
+      ],
+      "takeaway": "중국 빅테크가 휴머노이드 로봇에 대규모 자본을 직접 투입하면서 피지컬 AI 분야의 중미 경쟁이 자본 조달 규모에서도 본격화하고 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "OpenAI’s Jalapeño chip is built for fast inference at scale, benchmarks show",
+      "url": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-25T05:22:04+00:00",
+      "thumbnail": "",
+      "title_ko": "OpenAI 자체 추론 칩 'Jalapeño', 첫 벤치마크 성능 공개",
+      "summary": "OpenAI가 Hot Chips 컨퍼런스에서 자체 개발 AI 추론 칩 Jalapeño의 첫 벤치마크 결과를 공개했으며, 엔비디아 Blackwell 대비 처리량과 전력 효율 모두 우위를 기록했다.",
+      "detail": "OpenAI는 SemiAnalysis의 InferenceX 벤치마크 기준으로 Jalapeño가 현존 최고 수준 추론 프로세서(엔비디아 Blackwell)를 사용자당 토큰 수·kW당 처리량 양면에서 앞선다고 밝혔다. 칩은 Broadcom과 협력 개발됐으며, 추론 과정에서 병목이 자주 발생하는 prefill 단계와 칩 간 통신 지연을 줄이는 데 초점을 맞췄다. KV 캐시 등 모델 상태를 로컬에 유지해 데이터 이동을 최소화하는 구조다. OpenAI는 이를 멀티제너레이션 풀스택 플랫폼으로 확장할 계획이며, 배포는 2026년 말 소규모 시작 후 2027년 본격 확대 예정이다.",
+      "points": [
+        "엔비디아 Blackwell 대비 사용자당 토큰·kW당 처리량 모두 우위 기록",
+        "prefill·칩 간 통신 지연 최소화를 핵심 설계 목표로 삼음",
+        "KV 캐시를 로컬에 유지해 데이터 이동 최소화하는 구조",
+        "Broadcom 협력 개발, OpenAI 자체 모델이 칩 설계에 활용됨",
+        "2026년 말 소규모 배포 시작, 2027년 본격 확산 예정"
+      ],
+      "takeaway": "OpenAI가 엔비디아 의존도를 줄이는 자체 실리콘 전략에서 첫 구체적 성과를 냈으며, 대규모 추론 비용 구조와 클라우드 AI 경쟁 지형에 큰 변화를 가져올 수 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "메타, AI 에이전트 '해치' 출시 임박...10월엔 새 모델 '워터멜론' 공개",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214319",
+      "source": "AI타임스",
+      "published": "2026-08-25T03:24:43+00:00",
+      "thumbnail": "",
+      "title_ko": "메타, AI 에이전트 '해치' 출시 임박…10월엔 새 모델 '워터멜론' 공개",
+      "summary": "메타가 수주 내 소비자용 AI 에이전트 플랫폼 '해치(Hatch)'를 출시하고, 10월에는 차세대 플래그십 모델 '워터멜론(Watermelon)'을 공개할 계획이다.",
+      "detail": "해치는 DoorDash·Etsy·Reddit·Outlook 등 외부 서비스를 직접 조작해 복잡한 작업을 수행하는 소비자용 에이전트 플랫폼으로, 8월 말~9월 초 출시가 목표다. 사용자가 피트니스 추적·여행 일정 작성 등 맞춤형 '스킬'을 대시보드에서 직접 구성할 수 있으며, 최대 월 199.99달러의 프리미엄 구독제도 검토 중이다. 왓츠앱을 통해 외부 AI 에이전트를 연결하는 생태계 플랫폼도 이번 주 일부 사용자에게 시험 공개될 예정이다. 모델 측면에서는 뮤즈 스파크 시리즈를 빠르게 업데이트하며, 10월 차세대 모델 워터멜론 공개를 추진 중이다.",
+      "points": [
+        "해치는 DoorDash·Etsy·Reddit 등 외부 서비스를 직접 조작하는 소비자용 에이전트",
+        "맞춤형 스킬 대시보드로 사용자가 에이전트 기능을 직접 구성 가능",
+        "최대 월 199.99달러 프리미엄 구독제 검토—광고 외 수익 다변화 목적",
+        "왓츠앱 기반 외부 AI 에이전트 연결 플랫폼 병행 출시 예정",
+        "10월 차세대 플래그십 모델 '워터멜론' 공개 추진"
+      ],
+      "takeaway": "메타가 OpenAI·Anthropic 중심의 AI 에이전트 시장에 본격 진입하면서 소비자용 에이전트 경쟁이 한층 치열해질 전망이다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "AI뉴스 - ox-alpha 열풍, 오픈AI RL 중지, Mythos 5 개방, Gemini 하입과 무료, 모더나 머크, 독파모, 통속의 뇌, 로봇 올림픽 등",
+      "url": "https://www.youtube.com/watch?v=i1FoKc5X4_8",
+      "source": "조코딩 JoCoding",
+      "published": "2026-08-24T23:00:34.377035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/i1FoKc5X4_8/hqdefault.jpg",
+      "videoId": "i1FoKc5X4_8",
+      "views": 29571,
+      "title_ko": "AI 뉴스 - ox-alpha 열풍, OpenAI RL 중지, Mythos 5 개방, Gemini 무료화, 로봇 올림픽 등",
+      "summary": "조코딩 채널의 AI 뉴스 라운드업으로, 한 주간 주목받은 모델 출시·정책·산업 이슈를 빠르게 훑는 영상이다.",
+      "detail": "이번 영상은 최근 커뮤니티에서 큰 화제를 모은 ox-alpha 모델의 열풍과 OpenAI의 강화학습(RL) 학습 중단 관련 논란을 주요 흐름으로 다룬다. 여기에 Gemini 무료화 확대, Mythos 5 개방, 모더나·머크 등 제약 산업의 AI 도입 사례, 로봇 올림픽 관련 소식이 추가로 포함된다. 각 토픽의 심층 분석보다는 최신 트렌드를 빠르게 훑는 방식으로 구성된 영상이다.",
+      "points": [
+        "ox-alpha 모델이 커뮤니티에서 급부상하며 화제",
+        "OpenAI의 RL 학습 중단 논란 소개",
+        "Gemini 무료화 확대 및 Mythos 5 오픈 소식",
+        "모더나·머크 등 제약 산업의 AI 도입 사례 다룸",
+        "로봇 올림픽 등 물리 AI 관련 이슈 포함"
+      ],
+      "takeaway": "한 주간 AI 업계 주요 이슈를 빠르게 조망하고 싶은 이들에게 유용한 요약 콘텐츠다.",
+      "category": "기타",
+      "metric": "조회 3.0만"
+    },
+    {
+      "type": "youtube",
+      "title": "99%가 모르고 있는 코덱스 5가지 핵심 기능ㅣ챗GPT에서 작정하고 만든 코덱스 활용법 8분 총정리",
+      "url": "https://www.youtube.com/watch?v=SkxYbqYo0UU",
+      "source": "신영선의 AI탐구",
+      "published": "2026-08-24T23:00:34.377035+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/SkxYbqYo0UU/hqdefault.jpg",
+      "videoId": "SkxYbqYo0UU",
+      "views": 6929,
+      "title_ko": "99%가 모르는 코덱스 5가지 핵심 기능 - ChatGPT 코덱스 활용법 8분 총정리",
+      "summary": "ChatGPT 코딩 에이전트 Codex에서 잘 알려지지 않은 5가지 핵심 기능을 8분 안에 실용적으로 소개하는 튜토리얼 영상이다.",
+      "detail": "이 영상은 ChatGPT에 탑재된 코딩 에이전트 Codex를 단순 코드 생성 용도 이상으로 활용하는 방법에 집중한다. 제목 기준으로 대다수 사용자가 인지하지 못하는 5가지 기능을 압축적으로 다루며, 실무 활용 관점에서 설명하는 구성이다. 영상 설명만으로 기능 목록 전체 확인은 어렵지만, Codex를 더 깊이 활용하고 싶은 입문~중급 사용자를 주요 대상으로 한다.",
+      "points": [
+        "Codex의 잘 알려지지 않은 고급 기능 5가지 집중 소개",
+        "8분 분량으로 압축된 실용 중심 튜토리얼",
+        "코딩 에이전트를 단순 코드 생성 이상으로 활용하는 방법 안내",
+        "입문~중급 사용자를 대상으로 구성"
+      ],
+      "takeaway": "Codex를 코드 생성 도구로만 쓰고 있다면 숨겨진 기능을 파악해 활용 폭을 넓힐 수 있는 영상이다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 6,929"
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.245",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.245",
+      "source": "Claude Code 릴리스",
+      "published": "2026-08-24T20:13:24+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.245 - Linux glibc 2.44 환경 시작 오류 수정",
+      "summary": "Claude Code v2.1.245가 릴리스됐으며, glibc 2.44를 탑재한 최신 Linux 배포판에서 발생하던 시작 시 충돌이 수정됐다.",
+      "detail": "이번 릴리스는 단일 버그 수정 패치다. glibc 2.44 이상을 기본 탑재한 Arch Linux, CachyOS, Fedora Rawhide 등 롤링 릴리스 계열 Linux 배포판에서 Claude Code 실행 시 발생하던 크래시를 해결했다. 기능 추가나 다른 변경 사항은 없다.",
+      "points": [
+        "glibc 2.44 탑재 Linux 배포판에서의 시작 충돌 수정",
+        "영향 받는 배포판: Arch Linux, CachyOS, Fedora Rawhide",
+        "기능 추가나 기타 변경 사항 없음, 버그 수정 단일 패치"
+      ],
+      "takeaway": "최신 Linux 환경(특히 롤링 릴리스 배포판)에서 Claude Code가 실행되지 않던 문제가 해결됐으므로 해당 사용자는 즉시 업데이트하면 된다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "LLMs could control their host machines by exploiting inference engines",
+      "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+      "source": "Hacker News",
+      "published": "2026-08-24T19:03:06+00:00",
+      "thumbnail": "",
+      "points": [
+        "악의적 LLM이 출력 토큰만으로 추론 엔진 취약점을 트리거해 호스트 코드 실행 가능",
+        "CVE-2025-9141: vLLM이 툴 호출 인자를 eval()로 처리—임의 코드 실행 허용",
+        "Gemini가 해당 PR의 심각한 취약점을 자동 경고했으나 메인테이너가 강제 병합",
+        "200개 이상 모델 아키텍처 지원에 따른 파싱 복잡성이 유사 취약점의 구조적 원인",
+        "호스트 머신은 GPU·모델 가중치·데이터센터 내부 접근권을 가진 고가치 타깃"
+      ],
+      "comments": 94,
+      "hn_url": "https://news.ycombinator.com/item?id=49424387",
+      "title_ko": "LLM이 추론 엔진 취약점을 악용해 호스트 머신을 장악할 수 있다",
+      "summary": "vLLM·SGLang 같은 AI 추론 엔진의 파싱 취약점을 악의적 LLM이 악용해 호스트 머신에서 임의 코드를 실행할 수 있다는 보안 분석이 공개됐다.",
+      "detail": "이 글은 LLM이 자신의 출력 토큰만으로 추론 엔진의 버그를 트리거해 호스트 머신을 장악하는 시나리오를 분석한다. 실제 사례로 CVE-2025-9141이 소개되는데, vLLM의 Qwen3 Coder용 XML 툴 파서가 툴 호출 인자를 eval()로 처리해 LLM 출력만으로 호스트에서 임의 코드를 실행할 수 있었다. Gemini가 해당 버그를 도입하는 PR을 자동 분석해 '심각한 보안 취약점'으로 경고했지만, 메인테이너가 강제 병합했다는 점도 주목된다. vLLM은 200개 이상의 모델 아키텍처와 수십 개의 채팅 템플릿을 파싱해야 하는 구조적 복잡성 때문에 유사 취약점이 반복될 가능성이 높다고 지적된다.",
+      "takeaway": "AI 에이전트 시대에 추론 인프라 자체가 새로운 공격 표면이 됐음을 보여주는 사례로, 추론 엔진 개발·운영자는 파서 코드의 보안 검토를 강화해야 한다.",
+      "category": "연구/논문",
+      "metric": "▲ ['악의적 LLM이 출력 토큰만으로 추론 엔진 취약점을 트리거해 호스트 코드 실행 가능', 'CVE-2025-9141: vLLM이 툴 호출 인자를 eval()로 처리—임의 코드 실행 허용', 'Gemini가 해당 PR의 심각한 취약점을 자동 경고했으나 메인테이너가 강제 병합', '200개 이상 모델 아키텍처 지원에 따른 파싱 복잡성이 유사 취약점의 구조적 원인', '호스트 머신은 GPU·모델 가중치·데이터센터 내부 접근권을 가진 고가치 타깃'] · 💬 94"
+    }
+  ]
+}
