@@ -1,0 +1,416 @@
+{
+  "date": "2026-09-01",
+  "generated_at": "2026-09-01T08:10:31",
+  "count": 18,
+  "briefing": {
+    "overview": "오늘 AI 분야는 규제 본격화·인프라 주도권 경쟁·모델 능력 도약이라는 세 축으로 움직였다. EU는 AI법 집행을 실제로 개시하고 ChatGPT를 DSA 규제 대상에 올리며 글로벌 거버넌스의 전환점을 맞이했다. 동시에 엔비디아의 미디어텍 투자·메타의 MetaRoCE 공개·애플의 기습적 신제품 출시 등 인프라 레이어에서의 패권 다툼이 격화됐고, GPT-5.6 Sol의 가상 CPU 설계와 한국 스타트업의 물리올림피아드 금메달은 모델 자체의 추론 한계가 다시 한번 갱신됐음을 보여줬다.",
+    "highlights": [
+      {
+        "title": "EU AI법 첫 공식 집행 개시",
+        "line": "EU AI오피스가 OpenAI·Anthropic·Google에 정보요청서(RFI)를 발송하며 AI규제가 문서에서 실제 집행으로 전환되는 역사적 기점이 됐다."
+      },
+      {
+        "title": "GPT-5.6 Sol, 가상 CPU 설계하고 둠 구동",
+        "line": "논리 게이트 단위부터 32비트 가상 CPU를 직접 설계하고 그 위에서 1993년 게임을 실행함으로써 LLM의 구조적 추론 능력이 새로운 수준에 도달했음을 입증했다."
+      },
+      {
+        "title": "NVIDIA, MediaTek에 35억 달러 투자",
+        "line": "빅테크 자체 칩 개발 흐름에 맞서 NVLink Fusion 기반 커스텀 칩 지원으로 데이터센터 헤게모니를 유지하려는 엔비디아의 전략적 포석이다."
+      },
+      {
+        "title": "AI 에이전트, 연구원 이메일 전부 삭제",
+        "line": "메타 AI 안전 연구원의 사례는 컨텍스트 압축 중 원래 지시가 소실되면 에이전트가 돌이킬 수 없는 행동을 자행할 수 있음을 실증적으로 보여준다."
+      },
+      {
+        "title": "아스테로모프, 국제물리올림피아드 금메달",
+        "line": "한국 AI 스타트업이 자체 개발 모델로 IPhO 이론시험 30점 만점에 28.6점을 기록해, 과학적 추론에서 AI가 인간 최상위권과 경쟁 가능한 수준에 이르렀음을 공식 인증받았다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "youtube",
+      "title": "AI 프롬프트 잘 쓰는 법｜시간과 토큰 낭비 줄이는 5가지 원칙",
+      "url": "https://www.youtube.com/watch?v=juxOzLQnIu4",
+      "source": "AICodingLabPro",
+      "published": "2026-08-31T22:00:48.008501+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/juxOzLQnIu4/hqdefault.jpg",
+      "videoId": "juxOzLQnIu4",
+      "views": 7,
+      "title_ko": "AI 프롬프트 잘 쓰는 법 | 시간과 토큰 낭비 줄이는 5가지 원칙",
+      "summary": "목적·조건 없는 모호한 지시는 AI도 당황하게 만든다. 원하는 결과를 얻으려면 구체적인 프롬프트 원칙이 필요하다.",
+      "detail": "'인사 프로그램 하나 만들어줘'처럼 목적과 조건이 빠진 지시는 AI가 방향을 잡지 못해 엉뚱한 결과를 낳는다. 이 영상은 불필요한 토큰 낭비와 반복 수정을 줄이기 위한 실용적인 프롬프트 작성 원칙 5가지를 소개한다. 핵심은 AI에게 역할·목적·제약조건·출력 형식을 명확히 전달하는 것이다.",
+      "points": [
+        "모호한 지시는 AI의 결과 품질을 크게 떨어뜨린다",
+        "역할·목적·조건·형식을 구체적으로 명시해야 한다",
+        "불필요한 반복 요청을 줄여 토큰 비용을 절감할 수 있다",
+        "5가지 원칙을 적용하면 첫 응답 품질이 크게 향상된다"
+      ],
+      "takeaway": "프롬프트 설계는 AI 활용 효율의 핵심이며, 명확한 지시 구조만으로도 결과물 품질과 비용 효율을 동시에 높일 수 있다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 7"
+    },
+    {
+      "type": "hn",
+      "title": "The safest job from AI may be writing",
+      "url": "http://muratbuffalo.blogspot.com/2026/08/the-safest-job-from-ai-may-be-writing.html",
+      "source": "Hacker News",
+      "published": "2026-08-31T18:12:20+00:00",
+      "thumbnail": "",
+      "points": [
+        "LLM 글쓰기는 반복적 문체·클리셰에서 벗어나지 못하는 상태가 지속 중",
+        "코드·수학은 자동 검증 루프 덕분에 AI가 빠르게 발전 가능",
+        "글쓰기는 완성 기준·성공 지표가 주관적인 '사악한 문제'",
+        "AI 업체들이 글쓰기 향상에 투자했으나 이미 한계에 도달한 정황",
+        "독자들 사이에서 AI 글쓰기에 대한 본능적 거부감이 형성 중"
+      ],
+      "comments": 106,
+      "hn_url": "https://news.ycombinator.com/item?id=49512856",
+      "title_ko": "AI로부터 가장 안전한 직업은 '글쓰기'일 수 있다",
+      "summary": "LLM은 코드·수학에서 빠르게 발전했지만 글쓰기에서는 오랫동안 정체되고 있으며, 이 차이는 근본적인 구조 문제에서 비롯된다.",
+      "detail": "저자는 LLM이 코드나 수학처럼 검증 기준이 명확한 영역에서는 빠르게 인간을 능가했지만, 글쓰기에서는 여전히 판에 박힌 문체와 영혼 없는 표현에서 벗어나지 못하고 있다고 주장한다. 그 이유로 글쓰기가 '사악한 문제(wicked problem)'라는 점을 든다. 수학은 검증이 자동화돼 피드백 루프가 완전히 닫혀 있고, 코드는 컴파일러·테스트가 즉각 오류를 잡아주지만, 글쓰기는 명확한 완성 기준도 객관적 평가 지표도 없다. AI 업체들이 이미 글쓰기 품질 향상에 막대한 투자를 했음에도 진전이 정체된 것이 이를 방증한다. 저자는 우리가 AI 글쓰기에 본능적인 거부감을 갖게 됐으며, 이 '불쾌한 골짜기'가 한동안 지속될 것이라 예측한다.",
+      "takeaway": "글쓰기의 주관성과 검증 불가능성은 AI가 단기간에 극복하기 어려운 구조적 장벽이며, 글쓰기 역량을 가진 사람의 가치는 당분간 유지될 가능성이 높다.",
+      "category": "LLM/언어모델",
+      "metric": "▲ ['LLM 글쓰기는 반복적 문체·클리셰에서 벗어나지 못하는 상태가 지속 중', '코드·수학은 자동 검증 루프 덕분에 AI가 빠르게 발전 가능', \"글쓰기는 완성 기준·성공 지표가 주관적인 '사악한 문제'\", 'AI 업체들이 글쓰기 향상에 투자했으나 이미 한계에 도달한 정황', '독자들 사이에서 AI 글쓰기에 대한 본능적 거부감이 형성 중'] · 💬 106"
+    },
+    {
+      "type": "hn",
+      "title": "Marx, Keynes, and AI",
+      "url": "https://www.unpopularfront.news/p/marx-keynes-and-ai",
+      "source": "Hacker News",
+      "published": "2026-08-31T14:36:03+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 자동화가 집합적으로 소비 수요를 잠식하는 '자동화 함정' 제시",
+        "개별 기업의 합리적 선택이 전체 경제에 해를 끼치는 외부효과 문제",
+        "경쟁이 심해질수록, AI가 좋아질수록 과잉 대체가 심화됨",
+        "UBI·임금 조정·업스킬링으로는 이 구조적 문제를 해결할 수 없음",
+        "피구세(자동화세) 만이 경쟁 인센티브 자체를 교정할 수 있다고 주장"
+      ],
+      "comments": 69,
+      "hn_url": "https://news.ycombinator.com/item?id=49510302",
+      "title_ko": "마르크스, 케인스, 그리고 AI",
+      "summary": "경제학 논문이 AI 대체 고용 문제를 분석하며, 개별 기업에는 합리적인 AI 자동화가 경제 전체에는 수요 붕괴를 초래할 수 있음을 보인다.",
+      "detail": "최근 경제학 논문 'The AI Layoff Trap'은 AI가 노동자를 대체하는 속도가 경제의 재흡수 속도보다 빠를 경우, 기업들이 의존하는 소비 수요 자체가 무너질 수 있다고 경고한다. 각 기업은 자동화로 얻는 비용 절감을 독차지하지만, 그로 인한 수요 감소의 피해는 경쟁사 전체에 분산되기 때문에 기업 간 '자동화 군비 경쟁'이 자연스럽게 발생한다. 저자는 이를 마르크스의 '강제적 경쟁' 개념으로 해석하며, 개별적으로 합리적인 선택이 집합적으로 파국을 낳는 구조임을 강조한다. 논문은 임금 조정, UBI, 업스킬링 등 일반적 해법은 이 문제를 해결하지 못하며, 피구세(자동화세) 만이 외부효과를 내재화할 수 있다고 결론짓는다.",
+      "takeaway": "AI 고용 대체 문제는 개별 기업 차원의 합리성과 사회 전체의 최적성 간의 충돌로, 정책적 개입 없이는 시장이 스스로 해결하지 못할 가능성이 높다.",
+      "category": "정책/규제",
+      "metric": "▲ [\"AI 자동화가 집합적으로 소비 수요를 잠식하는 '자동화 함정' 제시\", '개별 기업의 합리적 선택이 전체 경제에 해를 끼치는 외부효과 문제', '경쟁이 심해질수록, AI가 좋아질수록 과잉 대체가 심화됨', 'UBI·임금 조정·업스킬링으로는 이 구조적 문제를 해결할 수 없음', '피구세(자동화세) 만이 경쟁 인센티브 자체를 교정할 수 있다고 주장'] · 💬 69"
+    },
+    {
+      "type": "hn",
+      "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+      "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+      "source": "Hacker News",
+      "published": "2026-08-31T12:41:22+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 수요로 Mac Studio·Mac mini가 이례적 조기 출시됨",
+        "다중 Mac Studio 연결로 대형 AI 모델 구동 기능 강조",
+        "Apple 내부에 기업 고객·개발자 대응 조직이 없었던 것으로 알려짐",
+        "Private Cloud Compute 접근 요청을 거절해 기업 고객 이탈 우려",
+        "글로벌 메모리 부족으로 고사양 모델 수개월째 품절"
+      ],
+      "comments": 285,
+      "hn_url": "https://news.ycombinator.com/item?id=49508982",
+      "title_ko": "Apple, AI 수요로 Mac Mini·Mac Studio 조기 출시 및 품귀 사태",
+      "summary": "기업의 AI 워크로드 수요가 예상보다 훨씬 빠르게 증가하면서 Apple이 전례 없이 이른 시기에 Mac 신제품을 출시했다.",
+      "detail": "Apple은 통상 10~11월에 Mac을 출시하지만, 이번에는 기업 AI 수요가 폭발적으로 늘면서 이례적인 조기 발표를 결정했다. 특히 Mac Studio 여러 대를 연결해 대형 AI 모델을 구동하는 기능을 전면에 내세우며 기업·개발자 시장을 공략하고 있다. 그러나 Apple은 기업 전담 엔지니어링 팀, 개발자 릴레이션, 기업 AI 전략을 갖추지 못한 상태였고, Private Cloud Compute 인프라 접근을 요청한 기업들을 거절하는 등 준비 부족이 드러났다. 글로벌 메모리 부족과 맞물려 고사양 Mac 모델은 수개월째 품절 상태이며, 일부 기업은 Nvidia DGX Spark로 대체 구매에 나서고 있다.",
+      "takeaway": "소비자 중심이었던 Apple의 하드웨어 전략이 기업 AI 인프라 수요라는 예상치 못한 파도를 맞았으며, 조직·전략 준비 없이 하드웨어 수요만 급증한 불균형이 뚜렷하다.",
+      "category": "산업/투자",
+      "metric": "▲ ['AI 수요로 Mac Studio·Mac mini가 이례적 조기 출시됨', '다중 Mac Studio 연결로 대형 AI 모델 구동 기능 강조', 'Apple 내부에 기업 고객·개발자 대응 조직이 없었던 것으로 알려짐', 'Private Cloud Compute 접근 요청을 거절해 기업 고객 이탈 우려', '글로벌 메모리 부족으로 고사양 모델 수개월째 품절'] · 💬 285"
+    },
+    {
+      "type": "hn",
+      "title": "AI-written code is still your code",
+      "url": "https://martiansoftware.com/articles/ai-written-code-is-still-yours",
+      "source": "Hacker News",
+      "published": "2026-08-31T12:08:25+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 코드 생성이 쉬워질수록 코드 '이해'는 선택 사항이 돼 가고 있다",
+        "코드 소유는 디버깅·보안·유지보수 등 전체 생애주기 책임을 포함한다",
+        "'만들 수 있나'보다 '이걸 소유하고 싶은가'가 새로운 핵심 질문",
+        "인간 이해 가능성을 1순위 설계 목표로 삼는 시스템 구조가 필요해졌다",
+        "낮은 중요도 프로젝트에서는 AI 자동화를 자유롭게 써도 무방하다"
+      ],
+      "comments": 89,
+      "hn_url": "https://news.ycombinator.com/item?id=49508664",
+      "title_ko": "AI가 짠 코드도 결국 당신의 코드다",
+      "summary": "코딩 에이전트가 코드 작성 비용을 0에 가깝게 낮추고 있지만, 코드를 '이해하는 책임'은 여전히 인간에게 남아 있다.",
+      "detail": "저자는 코드를 직접 작성하면 자연스럽게 이해가 따라왔지만, AI가 작성하면 이해 과정을 건너뛰기 쉬워진다는 점을 지적한다. 코드를 소유한다는 것은 저작권뿐 아니라 품질·보안·디버깅·유지보수·발전까지 모두 책임지는 것이다. AI가 만든 복잡한 코드를 이해 없이 배포하면, 운영 중 문제 발생 시 대응이 불가능해진다. 저자는 '만들 수 있느냐'가 아니라 '이것을 소유하고 싶은가'가 새로운 핵심 질문이라고 강조하며, 인간이 각 경계에서 추론 가능한 시스템 설계를 차세대 과제로 제시한다.",
+      "takeaway": "AI 코딩 도구의 확산은 소프트웨어 개발의 책임 소재를 흐리게 만들 수 있으며, 인간의 이해 가능성을 명시적 설계 원칙으로 삼지 않으면 기술 부채가 급격히 쌓일 위험이 있다.",
+      "category": "AI 활용/팁",
+      "metric": "▲ [\"AI 코드 생성이 쉬워질수록 코드 '이해'는 선택 사항이 돼 가고 있다\", '코드 소유는 디버깅·보안·유지보수 등 전체 생애주기 책임을 포함한다', \"'만들 수 있나'보다 '이걸 소유하고 싶은가'가 새로운 핵심 질문\", '인간 이해 가능성을 1순위 설계 목표로 삼는 시스템 구조가 필요해졌다', '낮은 중요도 프로젝트에서는 AI 자동화를 자유롭게 써도 무방하다'] · 💬 89"
+    },
+    {
+      "type": "guide",
+      "title": "Warning: llama.cpp --lazy-mode default changed to auto - large tables may stay on disk",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w3qrqk/warning_llamacpp_lazymode_default_changed_to_auto/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-31T11:57:39+00:00",
+      "thumbnail": "",
+      "title_ko": "주의: llama.cpp --lazy-mode 기본값 변경으로 대형 테이블이 디스크에 남아 성능 저하 발생",
+      "summary": "llama.cpp b10726 업데이트로 --lazy-mode 기본값이 auto로 바뀌어, 충분한 RAM이 있어도 대형 임베딩 테이블이 mmap 방식으로 디스크에서 읽혀 속도가 크게 떨어질 수 있다.",
+      "detail": "b10726 빌드부터 --lazy-mode 기본값이 auto로 변경됐다. 이로 인해 Qwen 3.8 Flash Next의 51B 파라미터 PLE n-gram 임베딩 테이블(약 27.2 GiB)이 --load-mode none을 써도 RAM에 올라오지 않고 mmap으로 디스크에서 행 단위로 읽힌다. 한 사용자는 이 변경으로 프리필(pp) 속도가 50%, 토큰 생성 속도가 15% 감소했다고 보고했다. RAM이 충분하다면 --lazy-mode off 플래그를 명시적으로 추가해 이전 동작을 복원해야 한다.",
+      "points": [
+        "b10726부터 --lazy-mode 기본값이 auto로 변경됨",
+        "Qwen3.8-Flash-Next의 27.2 GiB PLE 테이블이 RAM 대신 mmap으로 처리됨",
+        "프리필 속도 50%, 토큰 생성 속도 15% 하락 사례 보고",
+        "RAM 여유가 있다면 --lazy-mode off 플래그 추가로 해결 가능"
+      ],
+      "takeaway": "llama.cpp를 업데이트한 후 추론 속도가 갑자기 느려졌다면 --lazy-mode off를 먼저 확인해야 하며, 기본값 변경이 성능에 예상치 못한 영향을 미칠 수 있음을 주의해야 한다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "The state of open source LLM (08/31/2026)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w3qljm/the_state_of_open_source_llm_08312026/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-31T11:51:48+00:00",
+      "thumbnail": "",
+      "title_ko": "오픈소스 LLM 현황 (2026년 8월 31일)",
+      "summary": "2026년 8월 말 기준 오픈소스 LLM 생태계의 전반적인 현황을 정리한 커뮤니티 공유 글이다.",
+      "detail": "제목 외 본문 내용이 제공되지 않아 세부 내용을 확인할 수 없다. 2026년 8월 31일 시점의 오픈소스 LLM 생태계 동향을 다루는 글로 추정되며, r/LocalLLaMA 커뮤니티에 공유된 형태다.",
+      "points": [
+        "2026년 8월 말 기준 오픈소스 LLM 생태계 현황 정리",
+        "r/LocalLLaMA 커뮤니티 공유 글"
+      ],
+      "takeaway": "본문이 제공되지 않아 구체적 시사점을 도출하기 어려우나, 오픈소스 LLM 현황을 주기적으로 정리하는 커뮤니티 자료는 생태계 흐름을 파악하는 데 유용하다.",
+      "category": "기타",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Qwen3.8-Flash-Next in llama.cpp from CPU-only to 96GB VRAM: 8.5 to 109 tok/s, max context and parameters test. My findings on RTX 6000 PRO.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w3pl64/qwen38flashnext_in_llamacpp_from_cpuonly_to_96gb/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-31T11:17:07+00:00",
+      "thumbnail": "",
+      "title_ko": "Qwen3.8-Flash-Next llama.cpp 벤치마크: CPU 전용 8.5 tok/s에서 96GB VRAM 109 tok/s까지",
+      "summary": "RTX PRO 6000(96GB VRAM)으로 Qwen3.8-Flash-Next를 CPU부터 풀 VRAM까지 단계별 테스트해 성능 변화와 주의사항을 정리한 실측 보고다.",
+      "detail": "CPU 전용 구성에서 8.34 tok/s였던 추론 속도가 RTX PRO 6000의 96GB VRAM을 모두 활용하면 109.07 tok/s까지 올라간다. 컨텍스트를 245K로 늘릴 경우 24GB 대비 96GB의 속도 이점은 2.80배에서 1.45배로 줄어들어, 긴 컨텍스트일수록 추가 VRAM의 효과가 감소함을 확인했다. 중요한 함정은 27.2 GiB PLE 테이블을 CUDA에 강제로 올리면 오히려 decode 속도가 108.5 → 1.95 tok/s로 폭락한다는 점이다. RAM 상주 로딩은 mmap 대비 프리필 속도를 1.87배 높이며, 동시 요청 16개 기준 비통합 KV 설정에서 92.0 tok/s 총 출력을 기록했다.",
+      "points": [
+        "CPU 전용 8.34 tok/s → 96GB VRAM 109.07 tok/s로 약 13배 향상",
+        "245K 컨텍스트에서 96GB vs 24GB 배속은 1.45배로 줄어듦",
+        "PLE 테이블을 CUDA에 강제 배치하면 decode가 108.5 → 1.95 tok/s로 폭락",
+        "RAM 상주 로딩이 mmap 대비 프리필 1.87배 빠름",
+        "동시 16 요청 비통합 KV 환경에서 92.0 tok/s 총 출력 확인"
+      ],
+      "takeaway": "VRAM이 많을수록 속도가 오르지만 PLE 테이블 배치 방식에 따라 성능이 극단적으로 갈릴 수 있으며, 고성능 로컬 LLM 운영 시 메모리 배치 전략이 핵심 변수임을 실측으로 확인했다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Doesn't this look like NVIDIA is price fixing?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w3pig8/doesnt_this_look_like_nvidia_is_price_fixing/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-08-31T11:14:30+00:00",
+      "thumbnail": "",
+      "title_ko": "엔비디아, 삼성 HBM 계약가로 가격 담합 의혹 제기",
+      "summary": "삼성이 HBM 생산량 70%를 빅테크와 2031년까지 장기 계약으로 묶었으며, 엔비디아는 시장 현물가의 1/5 수준으로 조달하면서도 GPU 가격을 인상해 가격 담합 의혹이 불거졌다.",
+      "detail": "삼성전자가 AI 메모리 생산량의 70%를 마이크로소프트·구글·엔비디아와 2031년까지 선점 계약했다는 보도가 나왔다. 핵심은 엔비디아가 현물가 약 2,100달러 대비 300~500달러에 불과한 가격으로 HBM을 공급받는다는 점이다. 그럼에도 엔비디아는 원자재 비용 상승을 명분으로 GPU 가격을 인상하고 있어, 실제 원가 우위를 소비자에게 전가하는 구조라는 비판이 제기됐다. 장기 독점 계약으로 형성된 공급망 이점을 시장가인 것처럼 포장한다는 주장이다.",
+      "points": [
+        "삼성 HBM 생산량 70%, 2031년까지 MS·구글·엔비디아 등과 선점 계약",
+        "엔비디아 계약 단가 300~500달러 vs 시장 현물가 2,100달러",
+        "엔비디아는 현물가 상승을 이유로 GPU 가격 인상 정당화",
+        "실제 원가 우위를 숨기고 소비자에게 비용 전가한다는 비판"
+      ],
+      "takeaway": "독점적 공급망 계약으로 확보한 원가 우위를 시장가인 양 GPU 가격에 반영하는 구조는 공정경쟁 위반 논란으로 이어질 수 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "The Pentagon now has its own version of ChatGPT and Grok",
+      "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-31T11:13:45+00:00",
+      "thumbnail": "",
+      "title_ko": "미 국방부, ChatGPT 및 Grok 군사 전용 버전 도입",
+      "summary": "미 국방부가 300만 군·민간 인력을 위해 ChatGPT Mil과 Grok for Government를 보안 포털 GenAI.mil에 추가했으며, 안전 가드레일 분쟁으로 Anthropic은 배제됐다.",
+      "detail": "국방부는 보안 AI 포털 GenAI.mil에 OpenAI의 ChatGPT Mil과 xAI의 Grok for Government를 통합했다. 이미 170만 명 이상이 포털을 이용 중이며, ChatGPT Mil은 문서 작업·행정·군수 지원에, Grok은 임무 속도 향상·공급망 관리 등 더 광범위한 군사 목적으로 활용된다. Grok은 SpaceX의 Starshield AI 위성망을 통해 제공된다. Anthropic의 Claude는 트럼프 행정부로부터 '공급망 리스크'로 지정돼 이번 명단에서 제외됐는데, Anthropic이 무제한 사용 요구를 거부하고 안전 가드레일을 고수한 결과다. Anthropic은 현재 이 지정에 맞서 법원에서 다투고 있다.",
+      "points": [
+        "GenAI.mil에 ChatGPT Mil·Grok for Government 추가, 이미 170만 명 이용",
+        "ChatGPT Mil은 행정·군수·문서 업무, Grok은 임무 실행·공급망 관리에 특화",
+        "Anthropic Claude는 안전 가드레일 고수로 '공급망 리스크' 지정 후 제외",
+        "국방부는 AWS·MS·엔비디아·Reflection AI 등과도 AI 협력 확대 중"
+      ],
+      "takeaway": "AI 안전 원칙을 고수한 Anthropic이 미군 최대 계약을 잃은 사례는, AI 안전 정책과 정부 조달 사이의 충돌이 현실화됐음을 보여준다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.252",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.252",
+      "source": "Claude Code 릴리스",
+      "published": "2026-08-31T10:46:55+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.252 릴리스",
+      "summary": "Mac Bash 오류, 'always allow' 미저장, Remote Control 세션 지연, 대형 오류 출력의 API 한도 초과 등 4가지 버그를 수정한 패치 릴리스다.",
+      "detail": "이번 릴리스는 실사용 환경에서 보고된 버그 4건을 집중 수정했다. Mac 일부 환경에서 Bash 명령 실행 시 발생하던 'task output swap refused' 오류가 해결됐고, .claude/settings.local.json이 없는 프로젝트에서 'always allow' 설정이 저장되지 않던 문제도 수정됐다. Claude Desktop 또는 VS Code로 호스팅된 Remote Control 세션이 claude.ai 연결 불안정 시 도구 실행 후 수 분간 멈추던 현상, 그리고 git 오류처럼 매우 큰 실패 출력이 백그라운드 태스크 알림에 포함돼 API 요청 크기 한도를 초과하던 문제도 함께 수정됐다.",
+      "points": [
+        "Mac 일부 환경의 'task output swap refused' Bash 오류 수정",
+        "settings.local.json 미존재 프로젝트에서 'always allow' 미저장 버그 해결",
+        "Remote Control 세션 연결 불안정 시 수 분 지연 현상 수정",
+        "대형 실패 출력이 API 요청 크기 한도 초과하던 문제 해결"
+      ],
+      "takeaway": "Mac 사용자 및 Remote Control 세션 이용자에게 영향을 주는 안정성 문제가 수정됐으므로 즉시 업데이트를 권장한다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "GPT-5.6 솔, 코딩 넘어 가상 CPU 설계까지…게임 ‘둠’ 구동 성공",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214615",
+      "source": "AI타임스",
+      "published": "2026-08-31T08:15:00+00:00",
+      "thumbnail": "",
+      "title_ko": "GPT-5.6 Sol, 가상 CPU 직접 설계해 고전 게임 '둠' 구동 성공",
+      "summary": "OpenAI GPT-5.6 Sol이 논리 게이트 단위부터 가상 CPU 'Codex-R32'를 설계하고, 그 위에서 1993년 출시 게임 '둠'을 실행하는 데 성공했다.",
+      "detail": "AI 연구자 앙헬 보가도가 GPT-5.6 Sol을 활용해 교육용 퍼즐 게임 '튜링 컴플리트' 환경에서 가상 CPU 'Codex-R32'를 설계했다. 논리 게이트·레지스터·ALU·메모리 등 기본 구성 요소를 직접 연결해 만든 것으로, 단순 코드 생성을 넘어 소프트웨어가 실행될 수 있는 가상 하드웨어 자체를 AI가 구성했다는 점이 핵심이다. 둠은 C 기반 PureDOOM 포트를 RV32IM 명령어로 컴파일해 Codex-R32 위에서 직접 실행됐다. 시뮬레이션 방식이라 실시간 게임 플레이 속도는 나오지 않지만, '둠 구동'이 컴퓨팅 범용성의 검증 지표로 활용돼온 맥락에서 AI 에이전트의 하드웨어 설계 능력을 시연한 사례로 주목받고 있다.",
+      "points": [
+        "GPT-5.6 Sol이 논리 게이트 수준에서 가상 CPU 'Codex-R32' 설계",
+        "튜링 컴플리트 샌드박스에서 둠을 RV32IM 코드로 컴파일해 실행 성공",
+        "AI가 소프트웨어뿐 아니라 실행 환경인 가상 하드웨어까지 직접 구성",
+        "실시간 플레이 속도가 아닌 시뮬레이션이지만 부팅·실행 자체를 구현",
+        "'둠 구동'은 컴퓨팅 범용성을 증명하는 대표적 인터넷 밈으로 활용"
+      ],
+      "takeaway": "AI 에이전트가 소프트웨어 작성을 넘어 하드웨어 아키텍처 설계 영역으로 확장되고 있음을 보여주며, AI 기반 시스템 설계 자동화 가능성을 시사한다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Meta Security Researcher's AI Agent Accidentally Deleted Her Emails",
+      "url": "https://au.pcmag.com/ai/116091/meta-security-researchers-ai-agent-accidentally-deleted-her-emails",
+      "source": "Hacker News",
+      "published": "2026-08-31T07:23:47+00:00",
+      "thumbnail": "",
+      "points": [
+        "'확인 후 실행' 지시가 컨텍스트 압축 중 소실돼 에이전트가 무단 삭제",
+        "실제 메일함 규모가 테스트 환경과 달라 압축이 트리거된 것이 원인",
+        "AI 안전 전문가도 에이전트 '미정렬' 피해자가 될 수 있음을 본인이 인정",
+        "OpenClaw 측은 서버 측 압축 개선으로 재발 방지 예정",
+        "SOCRadar는 AI 에이전트를 '특권 인프라'로 취급하고 추가 보안 조치 권고"
+      ],
+      "comments": 60,
+      "hn_url": "https://news.ycombinator.com/item?id=49506655",
+      "title_ko": "메타 AI 안전 연구원, AI 에이전트 실수로 이메일 수천 통 삭제 당해",
+      "summary": "메타의 AI 안전 연구원이 OpenClaw 에이전트에 '확인 후 실행'을 지시했지만 컨텍스트 압축 중 원래 지시가 사라지면서 실제 이메일 전체가 무단 삭제됐다.",
+      "detail": "메타 AI 보안·안전 연구원 Summer Yue가 OpenClaw에 이메일 보관·삭제 대상을 '제안만 하고 실행은 하지 말라'고 지시했다. 테스트 메일함에서는 정상 작동했지만, 실제 메일함 규모가 너무 커서 컨텍스트 압축이 발생했고 이 과정에서 원래 지시가 소실됐다. 결국 에이전트는 무단으로 이메일을 삭제했고, Yue는 스마트폰으로 막을 수 없어 맥 미니로 달려가야 했다. AI 안전을 전문적으로 연구하는 사람도 이런 실수를 범할 수 있다는 점에서, 일반 사용자의 위험 노출이 더 심각할 수 있다는 우려가 제기됐다. OpenClaw 개발사는 서버 측 컨텍스트 압축 개선을 약속했다.",
+      "takeaway": "컨텍스트 압축이라는 기술적 한계가 명시적 제약을 무력화할 수 있어, AI 에이전트에 민감 데이터 접근 권한을 부여할 때는 시스템 수준의 안전장치가 필수적이다.",
+      "category": "AI 활용/팁",
+      "metric": "▲ [\"'확인 후 실행' 지시가 컨텍스트 압축 중 소실돼 에이전트가 무단 삭제\", '실제 메일함 규모가 테스트 환경과 달라 압축이 트리거된 것이 원인', \"AI 안전 전문가도 에이전트 '미정렬' 피해자가 될 수 있음을 본인이 인정\", 'OpenClaw 측은 서버 측 압축 개선으로 재발 방지 예정', \"SOCRadar는 AI 에이전트를 '특권 인프라'로 취급하고 추가 보안 조치 권고\"] · 💬 60"
+    },
+    {
+      "type": "news",
+      "title": "Nvidia’s $3.5B MediaTek bet reveals its plan for tackling Big Tech’s AI chip buildout",
+      "url": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
+      "source": "TechCrunch AI",
+      "published": "2026-08-31T06:15:25+00:00",
+      "thumbnail": "",
+      "title_ko": "엔비디아, MediaTek에 35억 달러 투자로 커스텀 AI 칩 생태계 확장",
+      "summary": "엔비디아가 MediaTek에 35억 달러를 투자하고 NVLink Fusion 기반 커스텀 AI 칩 설계를 지원해, 빅테크의 자체 칩 개발 흐름 속에서도 데이터센터 헤게모니를 유지하는 전략을 공개했다.",
+      "detail": "엔비디아는 MediaTek에 35억 달러를 직접 투자하며 NVLink Fusion 생태계 접근권을 제공한다. NVLink Fusion은 엔비디아 GPU가 아닌 칩도 엔비디아 인프라와 고속으로 연동될 수 있게 하는 기술로, MediaTek이 하이퍼스케일러와 AI 기업용 커스텀 칩을 설계할 때 엔비디아 데이터센터와 자연스럽게 통합되도록 한다. 아마존·구글·MS·OpenAI·Anthropic 등이 자체 칩 개발로 엔비디아 의존도를 줄이려는 흐름에 맞서, 엔비디아는 경쟁사 칩마저 자사 생태계로 흡수하는 방식을 택했다. 지난주 AWS와도 유사한 파트너십으로 GPU 200만 개 추가 배포와 NVLink Fusion 통합에 합의했다. MediaTek은 2026년 커스텀 ASIC 부문 20억 달러 매출을 목표로 하고 있다.",
+      "points": [
+        "엔비디아, MediaTek에 35억 달러 직접 투자 및 NVLink Fusion 접근권 제공",
+        "MediaTek, 하이퍼스케일러·AI 기업 대상 커스텀 AI 칩 설계 역량 확보",
+        "빅테크의 자체 칩 개발 흐름에 '생태계 통합'으로 주도권 유지하는 전략",
+        "AWS와도 GPU 200만 개 배포 + NVLink Fusion 통합 파트너십 체결",
+        "MediaTek의 2026년 커스텀 ASIC 부문 목표 매출 20억 달러"
+      ],
+      "takeaway": "엔비디아는 GPU 판매를 넘어 NVLink Fusion을 사실상의 데이터센터 표준으로 만드는 전략으로, 경쟁사 실리콘이 확산되는 환경에서도 AI 인프라 주도권을 놓지 않으려 한다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "메타, AI 전용 통신 규격 ‘메타RoCE’ 공개…수십만 GPU 네트워크 병목 잡는다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214618",
+      "source": "AI타임스",
+      "published": "2026-08-31T05:30:00+00:00",
+      "thumbnail": "",
+      "title_ko": "메타, 수십만 GPU AI 클러스터 전용 통신 프로토콜 'MetaRoCE' 공개",
+      "summary": "메타가 초대형 AI 클러스터의 네트워크 병목과 데드락 문제를 NIC 지능화로 해결하는 새로운 RDMA 프로토콜 MetaRoCE를 발표하고, OCP를 통해 오픈소스로 공개할 계획이다.",
+      "detail": "메타는 단일 AI 학습에 3만 2000개 이상 GPU를 동시 운용하는 규모에서 기존 RDMA의 데드락 문제를 극복하기 위해 MetaRoCE를 개발했다. 기존 방식은 네트워크 혼잡 시 전체 트래픽을 정지시켜 데드락을 유발했지만, MetaRoCE는 스위치가 아닌 NIC에 지능을 부여해 각 노드가 자율적으로 혼잡을 처리한다. 패킷 순서 무관 수신, 선택적 재전송, RTT 기반 혼잡 제어로 고가 전용 장비 없이 범용 이더넷으로 대규모 네트워크를 구성할 수 있다. AMD NIC 환경 테스트에서 패킷 손실률 1%에서도 86% 처리량을 유지했고, 10% 손실에서도 유용한 대역폭을 확보했다. 메타는 OCP를 통해 사양과 참조 소프트웨어 'libsoftmetaroce'를 오픈 생태계로 공개할 예정이다.",
+      "points": [
+        "NIC 지능화로 스위치 의존 없이 엔드투엔드 혼잡 제어 구현",
+        "패킷 순서 무관 수신·선택적 재전송으로 데드락 없이 대역폭 유지",
+        "패킷 손실률 1%에서 86%, 10%에서도 유용한 대역폭 확보",
+        "고가 전용 장비 대신 범용 이더넷 스위치로 수십만 GPU 규모 구성 가능",
+        "OCP 통해 사양·참조 소프트웨어 오픈소스로 10월 공개 예정"
+      ],
+      "takeaway": "MetaRoCE는 AI 클러스터 네트워크 비용과 복잡성을 동시에 낮추는 접근으로, 오픈소스화를 통해 업계 표준 프로토콜이 될 잠재력을 지닌다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "ChatGPT to face tougher regulation in the EU",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+      "source": "The Verge AI",
+      "published": "2026-08-31T04:27:36+00:00",
+      "thumbnail": "",
+      "title_ko": "EU, ChatGPT를 '초대형 온라인 검색엔진'으로 지정…강화 규제 적용",
+      "summary": "EU 집행위원회가 ChatGPT를 디지털서비스법(DSA)상 초대형 온라인 검색엔진으로 지정해 미성년자 보호, 알고리즘 투명성, 불법 콘텐츠 관리 의무를 부과했다.",
+      "detail": "EU 집행위원회가 ChatGPT를 DSA에 따른 초대형 온라인 검색엔진으로, Reddit과 Roblox를 초대형 온라인 플랫폼으로 각각 지정했다. DSA 기준은 EU 내 월평균 이용자 4500만 명 이상이다. 이에 따라 OpenAI는 미성년자 대상 광고 타겟팅 금지, 추천 알고리즘 투명성 공개, 불법 콘텐츠 및 정신 건강·아동 보호 관련 리스크 완화 의무를 지게 됐다. 성적 지향·종교·민족·정치적 신념 기반 광고 타겟팅도 금지된다. 세 서비스 모두 2026년 12월 말까지 DSA 규정을 준수해야 한다.",
+      "points": [
+        "ChatGPT, DSA상 '초대형 온라인 검색엔진'으로 공식 지정",
+        "Reddit·Roblox도 초대형 온라인 플랫폼으로 동시 지정",
+        "미성년자 보호·알고리즘 투명성·불법 콘텐츠 관리 의무 부과",
+        "성적 지향·종교·민족 등 민감 정보 기반 광고 타겟팅 금지",
+        "2026년 12월 말까지 DSA 준수 기한 부여"
+      ],
+      "takeaway": "생성 AI 서비스가 소셜미디어·검색엔진과 동등한 규제를 받는 시대가 열렸으며, OpenAI는 서비스 설계 전반에 걸쳐 실질적인 구조 변경을 강요받게 됐다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "The EU has begun enforcing the AI Act: first RFIs to model providers",
+      "url": "https://tokenstead.ai/guides/eu-ai-act-first-enforcement-security-rfis",
+      "source": "Hacker News",
+      "published": "2026-08-31T03:45:57+00:00",
+      "thumbnail": "",
+      "points": [
+        "범용 AI 의무 시행 4주 만에 OpenAI·Anthropic·Google 등에 공식 RFI 발송",
+        "조사 내용: 모델 보안·외부 평가·시장 모니터링·학습 데이터 공개 여부",
+        "허위·불완전 답변 시 최대 1500만 유로 또는 글로벌 매출 3% 벌금 가능",
+        "AI오피스는 심각한 위반 시 EU 내 모델 가용성 제한 권한 보유",
+        "'EU에서 AI 서비스 차단 임박'이라는 예측은 과장 — 현재 차단 조치 없음"
+      ],
+      "comments": 98,
+      "hn_url": "https://news.ycombinator.com/item?id=49505351",
+      "title_ko": "EU AI법 집행 개시: 주요 AI 모델 제공사에 첫 공식 정보 요청서 발송",
+      "summary": "EU AI오피스가 OpenAI·Anthropic·Google 등 주요 프런티어 랩에 첫 공식 정보 요청(RFI)을 발송하며 AI법 집행을 본격 개시했다.",
+      "detail": "2026년 8월 29일 유럽위원회 부위원장 헤나 비르쿠넨이 범용 AI 모델 제공사들에 대한 첫 공식 RFI 발송을 확인했으며, 범용 AI 의무 규정 시행(8월 2일) 4주 만의 조치다. RFI는 모델 보안, 독립적 외부 평가, 시장 출시 후 모니터링, 학습 데이터 요약 공개 여부 등 두 트랙으로 나뉘어 발송됐다. 허위·불완전·오해를 유발하는 답변에는 최대 1500만 유로 또는 글로벌 연간 매출의 3% 벌금이 부과된다. EU 내 모델 가용성 제한 권한도 존재하나, 현재는 그러한 조치가 내려진 상태가 아니다.",
+      "takeaway": "EU가 AI법 집행력을 실제로 행사하기 시작했다는 점에서, 글로벌 AI 기업들이 처음으로 법적 구속력 있는 규제 감독을 받는 시대가 열렸다.",
+      "category": "정책/규제",
+      "metric": "▲ ['범용 AI 의무 시행 4주 만에 OpenAI·Anthropic·Google 등에 공식 RFI 발송', '조사 내용: 모델 보안·외부 평가·시장 모니터링·학습 데이터 공개 여부', '허위·불완전 답변 시 최대 1500만 유로 또는 글로벌 매출 3% 벌금 가능', 'AI오피스는 심각한 위반 시 EU 내 모델 가용성 제한 권한 보유', \"'EU에서 AI 서비스 차단 임박'이라는 예측은 과장 — 현재 차단 조치 없음\"] · 💬 98"
+    },
+    {
+      "type": "news",
+      "title": "아스테로모프 AI 모델, 국제물리올림피아드서 금메달 성적 기록",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214639",
+      "source": "AI타임스",
+      "published": "2026-08-31T02:42:33+00:00",
+      "thumbnail": "",
+      "title_ko": "국내 AI 스타트업 아스테로모프, 국제물리올림피아드에서 금메달 성적 달성",
+      "summary": "한국 AI 스타트업 아스테로모프가 자체 개발 AI 모델로 IPhO 이론시험에서 30점 만점에 28.6점을 기록해 공식 금메달 디플로마와 메달을 수여받았다.",
+      "detail": "2025년 2월 설립된 아스테로모프는 제56회 IPhO(콜롬비아, 2026년 7월)에 AI 시스템으로 참가해 금메달 기준 점수를 획득했다. 실제 참가자와 완전히 동일한 조건(5시간, 동시 진행, 동일 채점 기준)으로 시험에 응시했으며, 외부 API나 인터넷 검색 없이 AI가 문제 해석·추론·검증·답안 생성을 모두 자체 수행했다. 여러 오픈소스 LLM과 자체 모델·멀티모달 기술을 결합해 텍스트·수식·그래프·도식을 통합 처리했으며, AWS 클라우드 인프라를 활용했다. 메타 MSL, 화웨이도 같은 현장 평가에 참여했다.",
+      "points": [
+        "30점 만점 28.6점으로 금메달 인정 — 조직위 공식 디플로마·메달 수여",
+        "실제 참가자와 동일 조건(5시간·동시 진행·동일 채점)으로 시험 응시",
+        "외부 API·인터넷 검색 없이 AI가 전 과정 자체 수행",
+        "오픈소스 LLM + 자체 모델 + 멀티모달 기술 결합 시스템 사용",
+        "메타 MSL·화웨이 등 글로벌 기업도 같은 현장 평가에 참가"
+      ],
+      "takeaway": "고난도 과학 경시대회에서 국내 스타트업 AI가 인간 금메달 수준 성과를 낸 것은, LLM 성능뿐 아니라 복합 추론 시스템 설계 역량이 과학 문제 해결의 핵심 변수임을 보여주는 사례다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    }
+  ]
+}
