@@ -1,0 +1,504 @@
+{
+  "date": "2026-09-24",
+  "generated_at": "2026-09-24T08:10:50",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘은 AI가 생명과학 연구를 자율 수행한다는 구체적 성과가 처음으로 공식 발표되며 과학계에 충격을 줬고, 동시에 유엔 안보리 브리핑·중국의 AI 기업 수사·22개국 국제 감독기구 촉구가 겹치며 AI 거버넌스 긴장이 한꺼번에 고조됐다. 한편 알리바바의 10조 파라미터 모델 공개와 Meta Connect의 AI 에이전트 발표로 모델·하드웨어·에이전트 경쟁도 새 국면에 접어들었다.",
+    "highlights": [
+      {
+        "title": "Claude, 21시간 만에 신규 효소 시스템 자율 발견",
+        "line": "Anthropic 바이오 실험실이 Claude를 통해 CRISPR 유사 미지 효소를 스스로 발견했다고 발표—AI가 과학적 가설 생성을 넘어 실제 발견을 수행한 첫 공식 사례로, AI·생물학 연구 윤리 논쟁도 함께 촉발됐다."
+      },
+      {
+        "title": "유엔 안보리, 사상 첫 AI 안전 브리핑",
+        "line": "알트먼·아모데이·딥시크 CEO가 한 자리에 모여 국제 평화·안보에 미치는 AI 영향을 논의—AI가 외교 안보 의제의 최전선으로 격상됐음을 상징한다."
+      },
+      {
+        "title": "중국, 딥시크·문샷 AI 공식 수사 착수",
+        "line": "민감 데이터를 Anthropic 클로드 서버로 무단 전송한 혐의—미중 AI 데이터 주권 갈등이 법적 조치 단계로 전환됐다는 신호다."
+      },
+      {
+        "title": "알리바바, 10조 파라미터 Qwen 4 + 자체 AI 칩 공개",
+        "line": "모델·칩·클라우드를 통합한 풀스택 AI 전략으로, 중국 AI의 자체 인프라 독립 의지를 공개 선언한 것이어서 글로벌 AI 공급망에 파장이 예상된다."
+      },
+      {
+        "title": "Meta Connect 2026: AI 에이전트·스마트 글라스 중심",
+        "line": "이메일·쇼핑·예약을 자율 처리하는 AI 에이전트 '뮤즈'와 카메라 내장 글라스를 동시 공개해, 에이전트 시대의 하드웨어·소프트웨어 통합 경쟁이 본격화됐다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "hn",
+      "title": "Cloud Agents Are Inevitable AI Prisons",
+      "url": "https://normanponte.io/19df691f",
+      "source": "Hacker News",
+      "published": "2026-09-23T18:16:41+00:00",
+      "thumbnail": "",
+      "points": [
+        "클라우드 AI 에이전트는 플랫폼 종속 구조를 내포함",
+        "서비스 제공자가 데이터·모델·실행 환경을 독점 통제",
+        "탈출이 어려운 플랫폼 락인(lock-in) 문제 제기",
+        "원문 본문이 제공되지 않아 세부 논거 파악 불가"
+      ],
+      "comments": 108,
+      "hn_url": "https://news.ycombinator.com/item?id=49820267",
+      "title_ko": "클라우드 에이전트는 필연적인 AI 감옥이다",
+      "summary": "클라우드 기반 AI 에이전트가 사용자를 폐쇄 생태계에 가두는 구조적 문제를 비판하는 논의.",
+      "detail": "원문 본문이 제공되지 않아 제목만으로 내용을 유추해야 한다. '클라우드 에이전트가 필연적인 감옥'이라는 제목은 클라우드 기반 AI 에이전트가 사용자를 특정 플랫폼에 종속시키는 구조적 한계를 지적하는 글임을 시사한다. 서비스 제공자가 데이터·모델·실행 환경을 통제하면 사용자는 벗어나기 어려운 락인 상태에 놓인다는 논지로 보인다.",
+      "takeaway": "클라우드 의존 AI 에이전트의 생태계 종속성이 중요한 논쟁 주제로 부상하고 있으며, 오픈소스·로컬 대안에 대한 관심을 자극한다.",
+      "category": "LLM/언어모델",
+      "metric": "▲ ['클라우드 AI 에이전트는 플랫폼 종속 구조를 내포함', '서비스 제공자가 데이터·모델·실행 환경을 독점 통제', '탈출이 어려운 플랫폼 락인(lock-in) 문제 제기', '원문 본문이 제공되지 않아 세부 논거 파악 불가'] · 💬 108"
+    },
+    {
+      "type": "hn",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "source": "Hacker News",
+      "published": "2026-09-23T18:06:47+00:00",
+      "thumbnail": "",
+      "points": [
+        "950개 에이전트·2억1천만 토큰·21시간으로 신규 시스템 발견",
+        "박테리오파지 DNA에서 역전사효소 기반 신규 효소 시스템 확인",
+        "CRISPR처럼 DNA 절단·복사·붙여넣기 기능 가능성 보유",
+        "실험실 물리적 작업은 인간 과학자가 수행",
+        "스탠퍼드팀도 유사 시스템 연구 중—독립 검증 필요"
+      ],
+      "comments": 416,
+      "hn_url": "https://news.ycombinator.com/item?id=49820134",
+      "title_ko": "클로드, CRISPR 유사 반복 서열을 가진 신규 효소 시스템 자율 발견",
+      "summary": "Anthropic 생명과학 연구팀이 클로드를 활용해 21시간 만에 CRISPR와 유사한 특성을 가진 미지의 효소 시스템을 자율 발견했다고 발표했다.",
+      "detail": "Anthropic은 2026년 봄 설립한 생명과학 연구 그룹에서 클로드가 박테리오파지 DNA를 분석해 새로운 역전사효소 기반 시스템을 발견했다고 밝혔다. 약 950개 에이전트와 2억1천만 토큰을 사용해 21시간 만에 완료된 작업으로, 이 시스템은 비코딩 DNA 반복 배열과 미지 기능의 추가 단백질을 포함한다. CRISPR처럼 DNA를 자르고 복사하고 붙이는 작업을 수행하는 소수의 시스템에서만 발견되는 특징들이 함께 나타났다. 물리적 실험은 모두 인간 과학자가 담당했으며, 클로드는 데이터 탐색과 가설 생성을 맡았다.",
+      "takeaway": "AI가 생물학 기초 연구에서 가설 생성과 데이터 탐색을 인간보다 빠르게 수행할 수 있음을 처음으로 구체적으로 입증한 사례로, AI 기반 과학 발견의 새로운 가능성을 열었다.",
+      "category": "연구/논문",
+      "metric": "▲ ['950개 에이전트·2억1천만 토큰·21시간으로 신규 시스템 발견', '박테리오파지 DNA에서 역전사효소 기반 신규 효소 시스템 확인', 'CRISPR처럼 DNA 절단·복사·붙여넣기 기능 가능성 보유', '실험실 물리적 작업은 인간 과학자가 수행', '스탠퍼드팀도 유사 시스템 연구 중—독립 검증 필요'] · 💬 416"
+    },
+    {
+      "type": "news",
+      "title": "KAIST, 세계 최초 풀코스 마라톤 완주한 ‘로봇 설계 원리’ 발표",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215611",
+      "source": "AI타임스",
+      "published": "2026-09-23T15:00:00+00:00",
+      "thumbnail": "",
+      "title_ko": "KAIST, 세계 최초 풀코스 마라톤 완주한 '로봇 설계 원리' 발표",
+      "summary": "KAIST 사족보행로봇 라이보2의 마라톤 완주를 가능하게 한 기계·전기·제어 통합 설계 원리가 네이처에 게재됐다.",
+      "detail": "KAIST 황보제민 교수팀의 라이보2는 2024년 11월 배터리 교체 없이 42.195km를 4시간19분52초에 완주해 세계 최초 기록을 세웠다. 연구의 핵심은 기록 자체가 아니라 에너지 효율과 보행 성능을 동시에 확보하는 시스템 통합 설계 원리다. 기계 구조·전기 시스템·보행 제어를 긴밀히 연동해 전체 관점에서 에너지 손실을 최소화했으며, 마라톤 중 전압·전류·온도·배터리 상태를 GPS 데이터와 실시간 동기화해 실측 기반 설계 원리를 확립했다. 다음 단계는 KAIST 교원창업기업 라이온로보틱스를 통한 산업용 상용화다.",
+      "points": [
+        "라이보2, 배터리 교체 없이 42.195km 완주(4시간19분52초)—세계 최초",
+        "기계·전기·제어 시스템 통합 설계로 에너지 효율과 성능 동시 확보",
+        "마라톤 중 실시간 센서 데이터를 GPS 정보와 동기화해 설계 근거 확보",
+        "네이처 게재로 국제 검증",
+        "라이온로보틱스가 산업용 상용 로봇으로 제품화 추진"
+      ],
+      "takeaway": "로봇 장거리 자율 운용의 기술적 가능성을 학술적으로 입증했으며, 상용화 단계 진입이 가시화돼 산업용 사족보행로봇 시장의 실질적 전환점이 될 수 있다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Meta Connect 2026: The biggest news and announcements",
+      "url": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+      "source": "The Verge AI",
+      "published": "2026-09-23T13:45:00+00:00",
+      "thumbnail": "",
+      "title_ko": "Meta Connect 2026: 주요 발표 총정리",
+      "summary": "Meta Connect 2026에서 AI 에이전트와 스마트 글라스 신제품이 핵심 주제로 다뤄졌으며, 카메라 내장 글라스의 프라이버시 논란 대응책도 포함됐다.",
+      "detail": "저커버그의 기조연설은 AI와 스마트 글라스를 중심으로 '모두를 위한 미래 구축' 비전을 제시했다. 스마트 글라스 내장 카메라로 타인을 몰래 촬영하는 사례가 논란이 되며 '퍼버트 글라스'라는 오명이 붙자 Meta는 프라이버시 개선책과 카메라 없는 버전 출시를 검토 중이다. Muse AI 에이전트 업데이트와 혼합현실 헤드웨어 신제품도 기대를 모았다. 구체적 발표 내용은 원문이 일부만 제공돼 전체 파악이 어렵다.",
+      "points": [
+        "스마트 글라스 몰래 촬영 논란에 대응해 프라이버시 개선책 발표",
+        "카메라 없는 글라스 버전 출시 루머 주목",
+        "Muse AI 에이전트 관련 업데이트 예정",
+        "VR·혼합현실 신규 헤드웨어 공개 가능성",
+        "저커버그 'AI·스마트 글라스로 모두를 위한 미래' 비전 강조"
+      ],
+      "takeaway": "AI 에이전트와 웨어러블을 미래 핵심으로 내세운 Meta에게 스마트 글라스의 프라이버시 문제가 제품 전략의 최대 변수로 부상했다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Stripe's Knowledge AI Platform",
+      "url": "https://stripe.dev/blog/meet-stripes-knowledge-ai-platform",
+      "source": "Hacker News",
+      "published": "2026-09-23T13:38:00+00:00",
+      "thumbnail": "",
+      "points": [
+        "Stripe 내부 지식 관리에 AI 에이전트 플랫폼 구축 중",
+        "Agent Foundation 팀과 AI Platform 팀 협력 주도",
+        "기술 작가도 AI 플랫폼 개발팀에 포함—문서화와 AI 통합 결합",
+        "핀테크 대기업의 내부 에이전트 도입 사례"
+      ],
+      "comments": 101,
+      "hn_url": "https://news.ycombinator.com/item?id=49815982",
+      "title_ko": "Stripe의 지식 AI 플랫폼",
+      "summary": "Stripe 엔지니어링 조직이 Agent Foundation 팀과 AI Platform 팀을 중심으로 내부 지식 관리용 AI 플랫폼을 구축하고 있다.",
+      "detail": "본문이 저자 소개에 그쳐 세부 내용 파악이 제한적이다. Stripe 기술 작가, Agent Foundation 팀 엔지니어링 매니저, AI Platform 소프트웨어 엔지니어가 공동으로 참여한 프로젝트로, 핀테크 선도 기업이 에이전트 기반 AI를 엔지니어링 조직 전반의 지식 관리에 접목하고 있음을 시사한다.",
+      "takeaway": "대형 테크·핀테크 기업이 내부 지식 관리에 AI 에이전트를 본격 도입하는 흐름이 가속화되고 있음을 보여준다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['Stripe 내부 지식 관리에 AI 에이전트 플랫폼 구축 중', 'Agent Foundation 팀과 AI Platform 팀 협력 주도', '기술 작가도 AI 플랫폼 개발팀에 포함—문서화와 AI 통합 결합', '핀테크 대기업의 내부 에이전트 도입 사례'] · 💬 101"
+    },
+    {
+      "type": "news",
+      "title": "Anthropic says its biology lab has already found something big",
+      "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
+      "source": "TechCrunch AI",
+      "published": "2026-09-23T13:17:39+00:00",
+      "thumbnail": "",
+      "title_ko": "Anthropic 생물학 연구소, 설립 몇 달 만에 '중요한 발견' 성과",
+      "summary": "Anthropic의 바이오 실험실이 클로드를 활용해 CRISPR 유사 신규 효소 시스템을 발견했으나, AI의 생물학 연구 활용에 따른 윤리·안보 딜레마도 함께 부각됐다.",
+      "detail": "Anthropic은 베이에리어 실험실에서 클로드가 950개 에이전트와 2억1천만 토큰으로 21시간 만에 박테리오파지 DNA 속 신규 효소 시스템을 발견했다고 밝혔다. 물리적 실험은 인간 과학자가 담당했으며 BSL-1·2 수준만 다루고 인체 감염 병원체는 취급하지 않는다. 다리오 아모데이 CEO는 스탠퍼드팀이 유사 시스템을 별도 연구 중임을 인정하며 독립 검증의 필요성을 시사했다. 이 발표는 AI CEO들이 모델의 위험성을 인정하며 안전 절차 강화를 촉구한 직후 나와 '질병 치료 혁신 vs 바이오 테러 위협'이라는 이중성 논쟁을 재점화했다.",
+      "points": [
+        "클로드 21시간·950에이전트로 신규 효소 시스템 자율 발견",
+        "BSL-1·2 수준만 운영—인체 감염 병원체 미취급",
+        "스탠퍼드 유사 연구와 독립 검증 필요성 인정",
+        "아모데이 'AI가 5~10년 내 대부분 질병 치료' 주장",
+        "AI 바이오 안보 위협 우려와 의학 혁신 기대 공존"
+      ],
+      "takeaway": "AI 기반 생물학 연구 가속이 현실화되면서, 같은 기술이 의학 혁신과 바이오 안보 위협이라는 양날의 검임을 업계 전체가 직면하게 됐다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "OpenAI is enlisting an influencer army to make it look 'good for the world'",
+      "url": "https://www.businessinsider.com/inside-open-ai-influencer-marketing-strategy-chatgpt-ads-sponsorships-instagram-2026-9",
+      "source": "Hacker News",
+      "published": "2026-09-23T12:32:00+00:00",
+      "thumbnail": "",
+      "points": [
+        "인스타 ChatGPT 스폰서 게시물 6월 61건→8월 141건으로 두 달 만에 2배 이상 증가",
+        "육아·피트니스·마케팅 등 비테크 인플루언서까지 섭외 범위 확대",
+        "Anthropic·Higgsfield 등 AI 기업 간 인플루언서 유치 경쟁 과열",
+        "일부 크리에이터는 청중의 강한 반발과 비판에 직면",
+        "전략 목표는 엔터프라이즈 판매 확대 + 소비자 재방문율 제고 이중화"
+      ],
+      "comments": 204,
+      "hn_url": "https://news.ycombinator.com/item?id=49815127",
+      "title_ko": "OpenAI, '세상에 좋은 일' 이미지 만들기 위해 인플루언서 군단 동원",
+      "summary": "OpenAI가 ChatGPT의 긍정적 이미지 형성을 위해 인플루언서 스폰서십을 두 달 만에 두 배 이상 늘렸으나 일부 크리에이터는 청중의 역풍에 직면했다.",
+      "detail": "OpenAI의 인스타그램 ChatGPT 스폰서 게시물이 6월 61건에서 8월 141건으로 급증했다. 육아·피트니스·비즈니스 등 비테크 분야 인플루언서까지 폭넓게 섭외해 ChatGPT가 일상과 업무에 유용하다는 메시지를 확산시키는 전략이다. Anthropic, Higgsfield AI 등 다른 AI 기업들도 유사 경쟁에 뛰어들어 한 인플루언서 매니저는 하루에만 AI 기업 이메일을 15건 이상 받는다고 밝혔다. 그러나 OpenAI 브랜드 여행에 참가한 크리에이터들은 댓글에서 '도덕적 파산' '디스토피아적'이라는 강한 비판을 받았다.",
+      "takeaway": "AI 기업들이 기술 홍보를 넘어 대중 이미지 관리를 위해 인플루언서 마케팅을 핵심 수단으로 채택하고 있지만, AI에 대한 대중 불신이 역풍 위험을 키우고 있다.",
+      "category": "산업/투자",
+      "metric": "▲ ['인스타 ChatGPT 스폰서 게시물 6월 61건→8월 141건으로 두 달 만에 2배 이상 증가', '육아·피트니스·마케팅 등 비테크 인플루언서까지 섭외 범위 확대', 'Anthropic·Higgsfield 등 AI 기업 간 인플루언서 유치 경쟁 과열', '일부 크리에이터는 청중의 강한 반발과 비판에 직면', '전략 목표는 엔터프라이즈 판매 확대 + 소비자 재방문율 제고 이중화'] · 💬 204"
+    },
+    {
+      "type": "guide",
+      "title": "Qwen FN vs 27B --- Think I'm saturated.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1woi2ho/qwen_fn_vs_27b_think_im_saturated/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-09-23T11:58:59+00:00",
+      "thumbnail": "",
+      "title_ko": "Qwen FN vs 27B — 개인 용도는 이미 포화 상태인 것 같다",
+      "summary": "AMD Strix 하드웨어에서 Qwen FN을 실제 사용해본 결과 30~40 TPS의 빠른 속도를 기록했지만 27B 대비 체감 개선이 미미해 개인 용도 포화를 느꼈다는 경험담이다.",
+      "detail": "사용자는 AMD Strix 박스에 Halogen 팀 최적화 버전의 Qwen FN을 설치해 며칠간 실제 사용했다. 벤치마크가 아닌 실사용 기준으로 생성 속도 30~40 TPS, 프리필 속도 900~1000 TPS를 기록해 이 하드웨어에서 가장 적합한 조합으로 평가했다. 그러나 27B 모델과의 체감 차이가 뚜렷하지 않아 개인 사용 사례에서는 이미 포화 상태에 도달했다는 결론에 이르렀다. 본문 일부가 누락되어 전체 비교 분석은 확인되지 않는다.",
+      "points": [
+        "AMD Strix + Qwen FN이 현 하드웨어 최적 조합으로 평가",
+        "실사용 기준 생성 30~40 TPS, 프리필 900~1000 TPS 기록",
+        "Halogen 팀 최적화가 성능의 핵심 요인",
+        "27B 대비 체감 개선 미미—개인 용도 포화 체감",
+        "본문 일부 누락으로 전체 비교 결론 불확실"
+      ],
+      "takeaway": "로컬 LLM 크기 경쟁이 가속화되는 가운데 일반 개인 사용자 관점에서 27B급 모델이 이미 '충분한 성능' 임계점에 도달했을 수 있음을 시사한다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Lemonade fixes AMD APU model streaming, drops OpenMOSS ROCm as ~40x slower than Vulkan",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wogzdm/lemonade_fixes_amd_apu_model_streaming_drops/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-09-23T11:16:51+00:00",
+      "thumbnail": "",
+      "title_ko": "Lemonade, AMD APU 스트리밍 수정 및 OpenMOSS ROCm 제거 (Vulkan 대비 ~40배 느림)",
+      "summary": "로컬 LLM 앱 Lemonade가 AMD APU 모델 스트리밍 오류를 수정하고, 성능이 현저히 낮은 OpenMOSS ROCm 백엔드를 완전히 제거했다.",
+      "detail": "Lemonade는 AMD APU에서 발생하던 모델 스트리밍 버그를 패치했다. 동시에 OpenMOSS ROCm 백엔드가 Vulkan 대비 약 40배 느린 것으로 측정돼 해당 백엔드를 제거하는 결정을 내렸다. AMD GPU 사용자라면 ROCm 대신 Vulkan 백엔드를 활용하는 것이 현재로선 압도적으로 유리하다.",
+      "points": [
+        "AMD APU 모델 스트리밍 오류 수정",
+        "OpenMOSS ROCm 백엔드 공식 제거",
+        "ROCm이 Vulkan 대비 약 40배 느린 것으로 측정",
+        "AMD GPU 사용자는 Vulkan 백엔드 사용 권장"
+      ],
+      "takeaway": "AMD GPU에서 로컬 LLM을 구동할 때 ROCm보다 Vulkan이 압도적으로 빠르며, Lemonade는 이를 반영해 ROCm 지원을 과감히 제거했다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "NVFP4 - what does the quality usually equate to? (5090)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wogz1a/nvfp4_what_does_the_quality_usually_equate_to_5090/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-09-23T11:16:30+00:00",
+      "thumbnail": "",
+      "title_ko": "NVFP4 품질은 Q4 수준인가, Q8 수준인가? (RTX 5090 사용자 고민)",
+      "summary": "Blackwell/5090 카드에서 권장되는 NVFP4 양자화의 실제 품질이 어느 수준인지에 대한 커뮤니티 논쟁.",
+      "detail": "RTX 5090 등 Blackwell 계열 GPU 사용자들에게 NVFP4 양자화가 속도 이점 때문에 '당연한 선택'으로 추천되고 있다. 그러나 NVFP4의 실제 품질이 Q4 이하인지, 아니면 Q8에 근접하는지에 대한 정량적 비교 자료가 부족하다. 일부 사용자는 Q8과 유사하다고 주장하는 반면, 컨텍스트 길이에 따라 Q5~Q6을 선택하던 기존 사용자들은 품질 트레이드오프를 우려하고 있다.",
+      "points": [
+        "Blackwell/5090 사용자들 사이에서 NVFP4 강력 추천 분위기",
+        "속도 이점은 크나 품질 수준에 대한 정보 부족",
+        "Q4 수준이라는 우려 vs Q8에 근접한다는 주장 공존",
+        "정량적 비교 벤치마크 부재가 핵심 문제"
+      ],
+      "takeaway": "NVFP4는 Blackwell GPU의 네이티브 정밀도로 속도 이점이 크지만, 체계적인 품질 비교 데이터가 없어 도입 전 신중한 검토가 필요하다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "What finetune under 40B is good for mimicking writing style?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wogvcx/what_finetune_under_40b_is_good_for_mimicking/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-09-23T11:12:38+00:00",
+      "thumbnail": "",
+      "title_ko": "40B 이하 파인튜닝 모델 중 글쓰기 스타일 모방에 적합한 것은?",
+      "summary": "특정 책 문체나 롤플레이 스타일을 모방하려는 사용자가 40B 이하 범위에서 적합한 파인튜닝 모델을 찾고 있다.",
+      "detail": "소설 문체나 롤플레이 캐릭터의 글쓰기 스타일을 복제하는 데 최적화된 40B 미만 파인튜닝 모델에 대한 커뮤니티 질문이다. 스타일 모방은 일반 지식보다 문체·톤·어휘 패턴을 학습한 특화 파인튜닝 모델이 유리하다. 로컬 LLM 커뮤니티에서 창작·롤플레이 활용 수요가 꾸준히 높은 주제다.",
+      "points": [
+        "40B 이하 모델 범위 내에서 스타일 모방 특화 모델 탐색",
+        "소설 문체·롤플레이 캐릭터 복제가 주요 목적",
+        "일반 베이스 모델보다 스타일 파인튜닝 모델이 유리",
+        "로컬 LLM 커뮤니티의 활발한 창작 활용 사례"
+      ],
+      "takeaway": "스타일 모방에 특화된 파인튜닝 모델 수요가 증가하고 있으며, 40B 이하 로컬 모델로도 충분한 결과를 낼 수 있는 가이드라인 필요성이 높다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "The Download: why AI's latest breakthroughs and fears may be more hype than rea",
+      "url": "https://www.technologyreview.com/2026/09/22/1144910/the-download-dont-believe-ai-hype/",
+      "source": "Hacker News",
+      "published": "2026-09-23T11:01:50+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 기업의 과대 홍보에 대한 전문가 비판 증가",
+        "22개국 AI 국제 감독기구 설립 촉구, 미·중 불참",
+        "AMD, AI 칩 호황으로 주가 180% 상승, 1조 달러 기업 합류",
+        "Meta Muse, 앱스토어 1위 달성과 동시에 보안 취약점 발견",
+        "텍사스·캘리포니아, 데이터센터 전력·수자원 규제 강화"
+      ],
+      "comments": 120,
+      "hn_url": "https://news.ycombinator.com/item?id=49814211",
+      "title_ko": "AI 최신 돌파구와 우려, 실제보다 과장됐을 수 있다",
+      "summary": "전문가들이 올여름 AI 기업들의 과대 홍보를 경고하는 가운데, 22개국이 AI 국제 감독기구 설립을 촉구했다.",
+      "detail": "DAIR의 티므닛 게브루와 워싱턴대 에밀리 벤더는 AI 기업들의 해킹, 수학적 돌파구, 자기개선 초지능 주장이 상업적 과장이라고 비판했다. 전문가들이 실제 검토한 결과 기업 주장과 전혀 다른 내용이 드러나는 경우가 반복되고 있으며, 이는 정책 입안자를 혼란시키려는 의도적 전략일 수 있다. 22개국은 AI 사전 배포 테스트와 공통 안전 기준을 갖춘 국제 감독기구 설립을 요구했으나 미국과 중국은 불참했다. Meta의 AI 에이전트 뮤즈는 앱스토어 1위를 차지했지만 동시에 심각한 제로데이 취약점이 발견됐다.",
+      "takeaway": "AI 기업의 상업적 과장 홍보가 정책과 여론을 왜곡하는 문제가 커지고 있으며, 독립적인 국제 감독 체계 구축의 시급성이 부각되고 있다.",
+      "category": "정책/규제",
+      "metric": "▲ ['AI 기업의 과대 홍보에 대한 전문가 비판 증가', '22개국 AI 국제 감독기구 설립 촉구, 미·중 불참', 'AMD, AI 칩 호황으로 주가 180% 상승, 1조 달러 기업 합류', 'Meta Muse, 앱스토어 1위 달성과 동시에 보안 취약점 발견', '텍사스·캘리포니아, 데이터센터 전력·수자원 규제 강화'] · 💬 120"
+    },
+    {
+      "type": "youtube",
+      "title": "메타가 공개한 AI 에이전트 뮤즈, 사람 대신 어디까지 할까?",
+      "url": "https://www.youtube.com/watch?v=gPeJKLtwqIY",
+      "source": "안될과학 Unrealscience",
+      "published": "2026-09-23T11:00:29.318032+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/gPeJKLtwqIY/hqdefault.jpg",
+      "videoId": "gPeJKLtwqIY",
+      "views": 48916,
+      "title_ko": "메타가 공개한 AI 에이전트 뮤즈, 사람 대신 어디까지 할까?",
+      "summary": "Meta의 AI 에이전트 '뮤즈'가 이메일·쇼핑·예약 등 실제 작업을 자율적으로 수행하는 범위를 살펴본 영상.",
+      "detail": "Meta가 공개한 뮤즈는 단순 질의응답을 넘어 이메일 작성, 온라인 쇼핑, 예약 등 현실 세계 작업을 자율적으로 수행하도록 설계된 AI 에이전트다. 이 영상은 뮤즈가 사용자를 대신해 어떤 범위까지 행동할 수 있는지를 구체적으로 검토한다. 실제로 미국 앱스토어에서 ChatGPT를 제치고 1위를 기록하며 빠르게 확산 중이다.",
+      "points": [
+        "이메일·쇼핑·예약 등 실제 작업 자율 수행",
+        "단순 대화형 AI를 넘어 행동하는 에이전트로 설계",
+        "미국 앱스토어에서 ChatGPT를 제치고 1위 달성",
+        "Meta 주가를 13년 만에 최고 월간 상승률로 이끔"
+      ],
+      "takeaway": "행동하는 AI 에이전트 시대가 본격화되면서 챗봇과 에이전트의 경계가 빠르게 허물어지고 있으며, Meta가 이 전환의 선두에 서있다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 4.9만"
+    },
+    {
+      "type": "youtube",
+      "title": "264만 구독자 엔조이커플 회사에 맥미니 AI 직원 세팅해드렸습니다 (ft. 맥북가이버)",
+      "url": "https://www.youtube.com/watch?v=F9ppxTBO_mM",
+      "source": "조코딩 JoCoding",
+      "published": "2026-09-23T11:00:29.318032+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/F9ppxTBO_mM/hqdefault.jpg",
+      "videoId": "F9ppxTBO_mM",
+      "views": 31509,
+      "title_ko": "엔조이커플 회사에 맥미니 AI 직원 세팅해드렸습니다 (ft. 맥북가이버)",
+      "summary": "조코딩이 실제 기업에 맥미니와 Codex를 활용한 AI 업무 자동화 환경을 구축하는 과정을 공개한 실전 가이드.",
+      "detail": "조코딩이 264만 구독자 유튜버 엔조이커플의 회사에 맥미니를 'AI 직원'으로 세팅하는 전 과정을 공개했다. Codex를 활용한 업무 자동화 구성과 스마트폰과 맥미니 간 원격 연결 방법 등 실무에서 바로 적용 가능한 내용을 담고 있다. 실제 기업 환경에 적용한 사례를 통해 AI 자동화 도구의 실용성을 직접 확인할 수 있다.",
+      "points": [
+        "맥미니를 AI 업무 자동화 전용 머신으로 구축",
+        "Codex를 활용한 실무 자동화 설정 과정 공개",
+        "스마트폰과 맥미니 원격 연결 방법 포함",
+        "실제 기업 환경에 적용한 구체적 사례 제공"
+      ],
+      "takeaway": "맥미니와 Codex 조합으로 중소기업도 AI 업무 자동화를 즉시 도입할 수 있음을 보여주는 실전 사례로, 비개발자에게도 유용한 참고 자료다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 3.2만"
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.281",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
+      "source": "Claude Code 릴리스",
+      "published": "2026-09-23T10:19:15+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.281 릴리스 노트",
+      "summary": "Claude Code 최신 버전에서 Bedrock 게이트웨이 확장, MCP 개선, 세션 복구 안정성 강화 등 대규모 업데이트가 이루어졌다.",
+      "detail": "Claude apps 게이트웨이가 Bedrock IAM 역할 위임(STS assume_role), Amazon Bedrock 가드레일 적용, 텔레메트리 리소스 속성 설정을 새롭게 지원한다. MCP 측면에서는 URL 모드 elicitation 추가, `claude plugin validate` 검증 항목 확대, 서버 연결 해제 시 프롬프트 캐시 손실 버그 수정이 이루어졌다. 세션 안정성도 크게 개선되어 대규모 세션 복구 실패, 무한 재시도 루프, 이력 불일치로 인한 캐시 손실 등 여러 버그가 수정됐다. `settings.json`에 `'attribution': false`를 추가하면 커밋·PR 저작자 표시를 숨길 수 있다.",
+      "points": [
+        "Bedrock IAM 역할 위임(assume_role) 및 가드레일 적용 지원",
+        "MCP URL 모드 elicitation 추가 및 플러그인 검증 강화",
+        "세션 복구 시 이력 불일치·캐시 손실 버그 다수 수정",
+        "커밋·PR 저작자 표시 숨김 옵션(`attribution: false`) 추가",
+        "/insights에서 auto 모드 추천 기능 추가"
+      ],
+      "takeaway": "엔터프라이즈 배포와 세션 안정성에 집중한 대규모 패치로, 특히 Bedrock 통합 및 MCP 기반 워크플로를 운영하는 팀에게 중요한 업데이트다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "중국, 딥시크·문샷 수사 중...\"국방·민감 정보, 미국 서버로 넘어가\"",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215610",
+      "source": "AI타임스",
+      "published": "2026-09-23T05:41:16+00:00",
+      "thumbnail": "",
+      "title_ko": "중국, 딥시크·문샷 수사 중...\"국방·민감 정보, 미국 서버로 넘어가\"",
+      "summary": "중국 사이버공간관리국이 앤트로픽 클로드로 민감 데이터를 무단 전송한 혐의로 딥시크와 문샷 AI를 공식 수사 중이다.",
+      "detail": "중국 사이버공간관리국(CAC)이 딥시크와 문샷 AI를 대상으로 데이터 보안 공식 조사에 착수했다. 앤트로픽 보고서에 따르면 문샷 AI는 5~7월 사이 2300만 건 이상, 딥시크는 7월 2주간 1200만 건 이상의 대화를 클로드로 프록시 전송했다. 특히 문샷의 '키미' 사용자가 인민해방군 시설 주변 감시카메라 영상 분석을 요청한 정황이 있어 군사 관련 민감 정보가 미국 AI 서버로 넘어갔을 가능성이 제기됐다. 중국은 자국 민감 데이터의 해외 이전을 엄격히 규제하고 있어, 위반 시 단순 서비스 문제가 아닌 국가 안보 사안으로 확대될 수 있다.",
+      "points": [
+        "CAC, 딥시크·문샷 AI 공식 데이터 보안 조사 착수",
+        "문샷 2300만 건·딥시크 1200만 건 이상 클로드 프록시 전송 확인",
+        "군사 시설 주변 감시카메라 영상 등 민감 정보 해외 유출 우려",
+        "미국은 무단 증류 문제, 중국은 자국 데이터 안보로 각각 접근",
+        "앤트로픽 보고서에 알리바바·센스타임 등 7개 중국 기업 거론"
+      ],
+      "takeaway": "AI 모델 증류 경쟁이 미중 양국 모두에서 안보·규제 문제로 비화되면서, AI 공급망과 데이터 주권이 새로운 지정학적 갈등 축으로 부상하고 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "알트먼·아모데이·딥시크 총출동…유엔 안보리서 'AI 안전' 논의",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215613",
+      "source": "AI타임스",
+      "published": "2026-09-23T05:18:56+00:00",
+      "thumbnail": "",
+      "title_ko": "알트먼·아모데이·딥시크 총출동…유엔 안보리서 'AI 안전' 논의",
+      "summary": "OpenAI·Anthropic·딥시크 등 미·중 주요 AI 기업 수장들이 유엔 안보리 AI 안전 브리핑에 참석해 국제 평화와 안보에 미치는 AI의 영향을 논의한다.",
+      "detail": "샘 알트먼(OpenAI), 다리오 아모데이(Anthropic), 딥시크·문샷AI 관계자, 허깅페이스 CEO, 요슈아 벤지오 교수 등이 유엔 안보리 브리핑에 참석한다. 회의 주제는 AI가 국제 평화와 안보에 미치는 영향으로, 유엔총회 기간에 맞춰 열린다. 최근 OpenAI·Anthropic·Google에서 AI 보안 사고가 잇달아 보고되고 자율적 능력 개선·통제 회피 가능성에 대한 우려가 커지는 가운데, 국제 공조 필요성이 높아지는 시점이다. 미·중이 AI 안전 협의를 별도로 진행하면서도 양국 AI 기업이 함께 참여하는 다자 논의라는 점에서 이례적으로 주목받는다.",
+      "points": [
+        "샘 알트먼·다리오 아모데이·딥시크·문샷AI 등 미·중 AI 수장 참석",
+        "유엔 안보리가 AI의 국제 평화·안보 영향 공식 논의 (2023년에 이어 두 번째)",
+        "OpenAI·Anthropic·Google에서 AI 보안 사고 잇달아 보고",
+        "AI 자율 개선·통제 회피 가능성에 대한 국제 공조 요구 증가",
+        "미·중 AI 안전 양자 협의와 병행해 다자 논의 동시 진행"
+      ],
+      "takeaway": "AI 안전 문제가 개별 기업 차원을 넘어 유엔 안보리 수준의 국제 의제로 격상됐으며, 글로벌 AI 거버넌스 논의가 본격화되는 분기점으로 해석된다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "AI 지능 순위 근황",
+      "url": "https://www.youtube.com/watch?v=7FxEHUgQIE4",
+      "source": "테드TV",
+      "published": "2026-09-23T03:00:29.318032+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/7FxEHUgQIE4/hqdefault.jpg",
+      "videoId": "7FxEHUgQIE4",
+      "views": 163657,
+      "title_ko": "AI 지능 순위 근황",
+      "summary": "챗GPT·제미나이 등 주요 AI 모델의 최신 지능 순위를 짧게 소개하는 쇼츠 영상이다.",
+      "detail": "챗GPT, 제미나이 등 대표 AI 모델의 현재 성능 순위를 간략히 비교하는 짧은 영상으로, 구체적인 벤치마크 수치나 평가 기준에 대한 상세 정보는 확인되지 않는다. 쇼츠 형식 특성상 핵심 순위 결과만 요약해 전달하는 것으로 보인다.",
+      "points": [
+        "주요 AI 모델 지능 순위를 간략 비교·소개",
+        "챗GPT, 제미나이 등 대표 모델 언급",
+        "쇼츠 형식으로 핵심만 빠르게 전달"
+      ],
+      "takeaway": "AI 모델 간 성능 경쟁이 일반 대중의 일상적 관심사로 자리잡고 있음을 보여주는 콘텐츠다.",
+      "category": "LLM/언어모델",
+      "metric": "조회 16.4만"
+    },
+    {
+      "type": "news",
+      "title": "알리바바, 10조 매개변수 초대형 모델 내놓는다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215594",
+      "source": "AI타임스",
+      "published": "2026-09-23T02:12:50+00:00",
+      "thumbnail": "",
+      "title_ko": "알리바바, 10조 매개변수 초대형 모델 내놓는다",
+      "summary": "알리바바가 최대 10조 매개변수 규모의 Qwen 4 시리즈와 자체 AI 칩 '젠우 V900'을 공개하며 모델·칩·클라우드를 아우르는 풀스택 AI 전략을 본격화했다.",
+      "detail": "알리바바는 항저우 아스파라 컨퍼런스에서 현재 학습 중인 Qwen 4와 Qwen 4.5·Qwen 5로 이어지는 로드맵을 발표했다. 최종 목표 매개변수는 5조~10조 개로, 이전 Qwen 3.8 맥스(2조 4000억 개)의 최대 4배에 달한다. 자체 AI 칩 '젠우 V900'은 현재 중국 내 최고 성능 가속기로, 이전 M890 대비 연산 성능이 3배 향상됐으며 216GB 메모리와 초당 1.2TB 칩 간 대역폭을 지원한다. RSI(재귀적 자기개선) 기술 실증도 눈에 띄는데, 모델이 33회 자율 개선 사이클을 수행해 성능 지수를 높였고 칩 설계 실험에서는 칩 면적을 42% 줄이는 성과를 냈다.",
+      "points": [
+        "Qwen 4 학습 착수·Qwen 5까지 로드맵 공개 (최대 10조 매개변수 목표)",
+        "자체 AI 칩 젠우 V900 발표, 2027 Q1 양산 예정",
+        "RSI 기술로 33회 자율 개선 사이클 수행·칩 면적 42% 절감 성과",
+        "2032년까지 알리바바 클라우드 데이터센터 20GW 이상 확장 계획",
+        "소형~초대형 다양한 모델 라인업으로 기업용 AI·에이전트 수요 대응"
+      ],
+      "takeaway": "알리바바가 모델·칩·클라우드 전 계층을 자체적으로 구축하며 미국 빅테크와의 전면 경쟁을 선언한 것으로, 글로벌 AI 인프라 패권 경쟁이 새로운 국면에 접어들었음을 의미한다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "2026 클로드 올인원 무료강의｜이거 하나면 끝 Claude 업무자동화 3시간 총정리 (무료 자료 제공)",
+      "url": "https://www.youtube.com/watch?v=ZN37IV4sbQg",
+      "source": "해피AI | 이진규",
+      "published": "2026-09-22T23:00:29.318032+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/ZN37IV4sbQg/hqdefault.jpg",
+      "videoId": "ZN37IV4sbQg",
+      "views": 10152,
+      "title_ko": "2026 클로드 올인원 무료강의 | Claude 업무자동화 3시간 총정리",
+      "summary": "Claude 기본 사용법부터 Claude Code·MCP·AI Agent·Fable 5.1·토큰 절약법까지 3시간 분량으로 압축한 한국어 무료 강의 영상이다.",
+      "detail": "해피AI 채널이 Claude 관련 핵심 기능을 한 영상에 모은 3시간짜리 종합 무료 강의를 공개했다. Claude 기본 사용법과 업무 자동화, Claude Code를 활용한 코딩 자동화, MCP(Model Context Protocol) 연동, AI Agent 구성, Skills 활용, 최신 Fable 5.1 사용법, 토큰 절약 전략 등을 순서대로 다룬다. 무료 학습 자료도 함께 제공되며, 연휴 기간 집중 학습을 위한 몰아보기용으로 기획됐다.",
+      "points": [
+        "Claude 기본 사용·업무자동화부터 고급 기능까지 3시간 원스톱 정리",
+        "Claude Code·MCP·AI Agent·Skills 등 핵심 기능 전부 포함",
+        "최신 Fable 5.1 활용법 및 토큰 절약 전략 안내",
+        "무료 강의 + 학습 자료 동시 제공",
+        "연휴 기간 집중 학습용으로 기획"
+      ],
+      "takeaway": "Claude를 업무에 활용하려는 국내 사용자의 진입 장벽을 크게 낮추는 종합 콘텐츠로, 한국어 Claude 교육 생태계가 빠르게 성숙하고 있음을 보여준다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 1.0만"
+    },
+    {
+      "type": "youtube",
+      "title": "꽤나 현실성 있는 AI의 위험성, AI 거물들이 종말론을 언급하는 이유 [딥순우]",
+      "url": "https://www.youtube.com/watch?v=1g3JTMaL-Ck",
+      "source": "압권 Apkwon",
+      "published": "2026-09-22T23:00:29.318032+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/1g3JTMaL-Ck/hqdefault.jpg",
+      "videoId": "1g3JTMaL-Ck",
+      "views": 77934,
+      "title_ko": "꽤나 현실성 있는 AI의 위험성, AI 거물들이 종말론을 언급하는 이유",
+      "summary": "AI 업계 주요 인물들이 AI의 종말론적 위험을 공개적으로 언급하는 배경과 현실적 근거를 경제·시사 관점에서 쉽게 풀어 설명하는 영상이다.",
+      "detail": "경제·시사 해설 채널 '압권'에서 권순우 출연자와 함께 AI의 실질적 위험성을 다룬다. AI 거물들이 종말론적 시나리오를 공개적으로 언급하는 이유와 그 현실적 근거를 짚으며, 기술 전문 지식이 없는 일반 시청자도 이해할 수 있는 방식으로 설명한다. 2026년 9월 촬영분으로, 최근 유엔 안보리 AI 안전 논의 등 시기적으로 맞닿은 맥락에서 제작된 콘텐츠다.",
+      "points": [
+        "AI 거물들의 종말론적 발언 배경과 현실적 근거 분석",
+        "경제·시사 관점에서 일반 시청자 눈높이에 맞춰 해설",
+        "AI 안전·통제 불능 위험성을 대중 언어로 풀어 설명",
+        "2026년 9월 최신 AI 동향을 반영한 시의성 있는 콘텐츠"
+      ],
+      "takeaway": "AI 안전 논의가 기술 전문가 커뮤니티를 벗어나 대중 미디어로 빠르게 확산되고 있으며, 일반인의 AI 리스크 인식 수준도 높아지고 있다.",
+      "category": "기타",
+      "metric": "조회 7.8만"
+    },
+    {
+      "type": "hn",
+      "title": "LLM Ass Bench",
+      "url": "https://www.assbench.com/",
+      "source": "Hacker News",
+      "published": "2026-09-22T20:34:19+00:00",
+      "thumbnail": "",
+      "points": [
+        "LLM 성능 평가 관련 해커뉴스 화제글",
+        "원문 미제공으로 세부 내용 확인 불가",
+        "제목상 LLM 비교·평가 도구 또는 벤치마크 프로젝트로 추정"
+      ],
+      "comments": 45,
+      "hn_url": "https://news.ycombinator.com/item?id=49807688",
+      "title_ko": "LLM Ass Bench (LLM 익명 벤치마크)",
+      "summary": "해커뉴스에서 화제가 된 LLM 성능 평가 벤치마크 프로젝트로, 원문 내용이 제공되지 않아 상세 분석이 어렵다.",
+      "detail": "'LLM Ass Bench'라는 이름의 LLM 평가 벤치마크 관련 해커뉴스 화제글이다. 제목의 구성상 'Assessment Benchmark'의 축약형이거나 특정 기준으로 LLM을 평가하는 오픈소스 도구일 가능성이 높다. 원문 내용이 제공되지 않아 구체적인 평가 방법론이나 결과는 확인하기 어렵다.",
+      "takeaway": "LLM 성능 비교와 평가 방법론에 대한 개발자 커뮤니티의 관심이 지속적으로 높음을 시사한다.",
+      "category": "LLM/언어모델",
+      "metric": "▲ ['LLM 성능 평가 관련 해커뉴스 화제글', '원문 미제공으로 세부 내용 확인 불가', '제목상 LLM 비교·평가 도구 또는 벤치마크 프로젝트로 추정'] · 💬 45"
+    }
+  ]
+}
