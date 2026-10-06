@@ -1,0 +1,501 @@
+{
+  "date": "2026-10-07",
+  "generated_at": "2026-10-07T08:14:19",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘은 Mistral의 1조 파라미터 모델 공개를 필두로 오픈소스 진영이 다시 존재감을 드러낸 날이다. 동시에 AI가 의료 처방·법적 분쟁·광고 수익화 등 실세계 규제 영역으로 빠르게 진입하며 '연구'에서 '사회 시스템'으로의 전환이 가속되고 있다. 업계 내부에서는 MS·메타의 Claude 이탈, Google의 무료 모델 유료화 등 수익 구조 재편 신호가 동시다발로 나왔다.",
+    "highlights": [
+      {
+        "title": "Mistral Large 4 공개 — 유럽의 반격",
+        "line": "1조 파라미터(활성 49B) 멀티모달 모델로 이달 말 오픈 웨이트까지 예고해, 폐쇄형 미국·중국 모델과의 격차를 좁히려는 유럽 AI의 가장 큰 도전장이다."
+      },
+      {
+        "title": "유타주, AI 단독 의료 처방 허용",
+        "line": "AI가 의사 없이 환자를 진단하고 처방전을 발행하는 세계 최초 시범 프로그램으로, AI 규제의 실험적 최전선이 '의료'로 넘어왔음을 알린다."
+      },
+      {
+        "title": "Lambda, 40억 달러 조달·IPO 준비",
+        "line": "GPU 클라우드 스타트업이 기업가치 145억 달러로 대규모 투자를 추진, AI 인프라 수요가 시장 침체 없이 계속 자본을 빨아들이고 있음을 보여준다."
+      },
+      {
+        "title": "Google, 10월 9일부터 Gemini Flash·Pro 무료 종료",
+        "line": "Flash Lite만 남기고 상위 모델을 전면 유료화해, 주요 플랫폼들의 'AI 무료 시대' 마감이 본격화됐다."
+      },
+      {
+        "title": "MS·메타, Claude 사용량 대폭 축소",
+        "line": "두 빅테크가 자체 AI로 전환하며 Anthropic 매출 기반이 흔들릴 수 있다는 신호로, AI 공급사 의존도를 줄이려는 대기업 전략이 현실화되고 있다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "hn",
+      "title": "Sharing AI Progress in Mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "source": "Hacker News",
+      "published": "2026-10-06T22:17:21+00:00",
+      "thumbnail": "",
+      "points": [
+        "OpenAI 내부 모델이 생성한 수학 결과물을 GitHub에 최초 공개",
+        "IAS 수학·AI 자문그룹 권고에 따른 인용·수정 프로토콜 수립",
+        "Lean 언어로 증명 형식화해 컴퓨터 자동 검증 지원",
+        "결과당 평균 ChatGPT Pro 3시간 분량 컴퓨팅 사용",
+        "AI 생성 수학 성과 관련 워크숍·콘퍼런스 후원 예정"
+      ],
+      "comments": 69,
+      "hn_url": "https://news.ycombinator.com/item?id=49984923",
+      "title_ko": "AI의 수학 연구 성과 공개 방식 발표",
+      "summary": "OpenAI 내부 프런티어 모델이 도출한 수학 결과물을 GitHub에 공개하며, Lean 증명 형식화와 투명한 방법론까지 함께 제공한다.",
+      "detail": "OpenAI가 내부 최전선 모델이 생성한 수학 결과물을 GitHub 저장소에 공개했다. 고급연구소(IAS) 산하 수학·AI 독립 자문그룹의 권고를 반영해 논문 수정 및 인용 프로토콜을 마련했으며, 컴퓨터로 검증 가능한 Lean 언어로 증명을 형식화해 함께 제공한다. 결과 하나당 평균 ChatGPT Pro 약 3시간 분량의 컴퓨팅이 사용됐으며, 추론 과정 요약 10개와 시도 문제 통계도 공개한다. 향후 AI 생성 주요 성과를 주제로 한 워크숍·콘퍼런스를 후원하고, 해당 모델의 책임 있는 공개도 준비 중이다.",
+      "takeaway": "AI가 독자적으로 새로운 수학적 결과를 도출하는 수준에 이르렀으며, 학계와 투명하게 공유하는 표준 절차가 처음으로 정립되고 있다.",
+      "category": "연구/논문",
+      "metric": "▲ ['OpenAI 내부 모델이 생성한 수학 결과물을 GitHub에 최초 공개', 'IAS 수학·AI 자문그룹 권고에 따른 인용·수정 프로토콜 수립', 'Lean 언어로 증명 형식화해 컴퓨터 자동 검증 지원', '결과당 평균 ChatGPT Pro 3시간 분량 컴퓨팅 사용', 'AI 생성 수학 성과 관련 워크숍·콘퍼런스 후원 예정'] · 💬 69"
+    },
+    {
+      "type": "hn",
+      "title": "Utah to let AI examine patients and prescribe medication without human oversight",
+      "url": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
+      "source": "Hacker News",
+      "published": "2026-10-06T17:01:52+00:00",
+      "thumbnail": "",
+      "points": [
+        "미국 최초로 의사 없이 AI가 처방전을 발행하는 주(State) 탄생",
+        "월 4.99달러 앱, 경증~중등도 여드름에만 한정 적용",
+        "얼굴 스캔 → 중증도 점수 산출 → 8가지 국소 치료제 중 추천",
+        "단계적 의사 감독 축소: 사전 검토 → 소급 검토 → 월 10% 검토",
+        "내복약 제외, 국소 도포제로만 처방해 리스크 제한"
+      ],
+      "comments": 80,
+      "hn_url": "https://news.ycombinator.com/item?id=49981197",
+      "title_ko": "유타주, 의사 없이 AI가 환자 진료·처방하는 프로그램 허용",
+      "summary": "미국 유타주에서 AI가 단독으로 여드름 환자를 진단하고 처방전을 발행하는 세계 최초 시범 프로그램이 시작됐다.",
+      "detail": "헬스케어 스타트업 Nolla Health가 월 4.99달러 앱을 통해 AI 단독 피부 진단·처방 서비스를 출시했다. 앱이 얼굴을 스캔해 중증도 점수를 산출하고, 8가지 국소 치료제 중 하나를 추천하는 방식이며 대상은 경증~중등도 여드름으로 한정된다. 초기 100건은 의사가 사전 검토하고, 이후 400건은 약국 제출 후 주 1회 소급 검토, 최종 단계에서는 월 1회 10% 이상만 검토하는 단계적 자동화를 진행한다. 내복약이 아닌 국소 도포제만 처방해 부작용 리스크를 최소화했다.",
+      "takeaway": "경미한 질환에서 AI의 의료 의사결정 대체가 현실화됐으며, 이 프로그램의 단계적 감독 축소 모델이 향후 의료 AI 규제의 선례가 될 수 있다.",
+      "category": "산업/투자",
+      "metric": "▲ ['미국 최초로 의사 없이 AI가 처방전을 발행하는 주(State) 탄생', '월 4.99달러 앱, 경증~중등도 여드름에만 한정 적용', '얼굴 스캔 → 중증도 점수 산출 → 8가지 국소 치료제 중 추천', '단계적 의사 감독 축소: 사전 검토 → 소급 검토 → 월 10% 검토', '내복약 제외, 국소 도포제로만 처방해 리스크 제한'] · 💬 80"
+    },
+    {
+      "type": "hn",
+      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+      "url": "https://github.com/FeSens/openTPU",
+      "source": "Hacker News",
+      "published": "2026-10-06T16:23:25+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 에이전트가 설계에 참여한 최초 수준의 오픈소스 AI 가속기",
+        "Xilinx Kintex-7 FPGA에서 10개 이상 LLM 실제 구동 확인",
+        "시뮬레이터와 토큰 단위 완전 일치, 재현성 검증",
+        "HW~소프트웨어 전 스택을 단일 저장소에 공개해 학습 자료로 활용 가능",
+        "Build B에서 디코드 속도 8~10% 향상, DRAM 활용률 91~94%"
+      ],
+      "comments": 263,
+      "hn_url": "https://news.ycombinator.com/item?id=49980715",
+      "title_ko": "OpenTPU – AI가 직접 설계한 오픈소스 AI 가속기",
+      "summary": "AI 에이전트가 설계에 참여한 오픈소스 FPGA 기반 AI 가속기로, 실제 카드에서 10개 이상의 LLM을 구동하며 시뮬레이터와 비트 단위까지 일치하는 결과를 보인다.",
+      "detail": "OpenTPU는 AI 에이전트가 하드웨어 설계에 얼마나 깊이 기여할 수 있는지 실험한 오픈소스 프로젝트다. Xilinx Kintex-7 FPGA 실제 카드에서 LFM2-2.6B, Phi-4-mini, Qwen3.5, Gemma 4 등 10개 이상의 현대 LLM을 구동하며, 시뮬레이터와 토큰 단위로 완전히 일치하는 재현성을 달성했다. HW 설계(SystemVerilog)부터 명령어 셋, 비트 정확 시뮬레이터, 커널 언어·컴파일러, 호스트 소프트웨어까지 단일 저장소에 담겨 AI 가속기 학습용으로도 유용하다. 최신 Build B는 이전 버전 대비 디코드 속도 8~10% 향상, DRAM 활용률 91~94%를 달성했다.",
+      "takeaway": "AI가 자신의 추론을 실행할 하드웨어를 직접 설계하는 루프가 실험적으로 성립됐으며, 오픈소스로 AI 가속기 전체 스택을 학습할 수 있는 드문 자료가 등장했다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['AI 에이전트가 설계에 참여한 최초 수준의 오픈소스 AI 가속기', 'Xilinx Kintex-7 FPGA에서 10개 이상 LLM 실제 구동 확인', '시뮬레이터와 토큰 단위 완전 일치, 재현성 검증', 'HW~소프트웨어 전 스택을 단일 저장소에 공개해 학습 자료로 활용 가능', 'Build B에서 디코드 속도 8~10% 향상, DRAM 활용률 91~94%'] · 💬 263"
+    },
+    {
+      "type": "hn",
+      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "source": "Hacker News",
+      "published": "2026-10-06T16:03:49+00:00",
+      "thumbnail": "",
+      "points": [
+        "텍스트·코드·이미지·영상·오디오를 단일 임베딩 공간으로 통합",
+        "740M 파라미터, Apache 2.0 라이선스로 상업적 활용 가능",
+        "온디바이스 실행 최적화: 풀 모델 기준 567MB RAM",
+        "MRL로 벡터 차원 동적 축소, 저장 공간 최대 6배 절감",
+        "8K 토큰 컨텍스트, MTEB Code 9.92점 향상"
+      ],
+      "comments": 25,
+      "hn_url": "https://news.ycombinator.com/item?id=49980487",
+      "title_ko": "EmbeddingGemma 2: 경량 멀티모달 임베딩 모델 출시",
+      "summary": "Google이 텍스트·코드·이미지·영상·오디오를 단일 임베딩 공간으로 통합하는 7억4000만 파라미터 경량 멀티모달 임베딩 모델을 Apache 2.0 라이선스로 공개했다.",
+      "detail": "EmbeddingGemma 2는 Gemma 4 아키텍처 기반으로 5가지 모달리티를 하나의 공유 임베딩 공간에서 처리한다. 740M 파라미터 전체 멀티모달 버전과 텍스트 전용 270M 버전을 지원하며, Pixel 11 Pro 기준 텍스트 전용 191MB, 풀 멀티모달 567MB RAM으로 온디바이스 실행이 가능하다. Matryoshka 표현 학습(MRL)을 적용해 768차원 벡터를 128차원까지 동적으로 줄일 수 있어 로컬 벡터 DB 저장 공간을 최대 6배 절감한다. 8K 토큰 컨텍스트(전작의 4배)로 최대 5.5분 분량 오디오나 29장의 이미지를 처리하며, MTEB Code에서 전작 대비 9.92점 향상됐다.",
+      "takeaway": "온디바이스에서 멀티모달 의미 검색과 RAG를 단일 경량 모델로 구현할 수 있게 됐으며, 프라이버시 우선 애플리케이션 개발의 문턱이 크게 낮아졌다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['텍스트·코드·이미지·영상·오디오를 단일 임베딩 공간으로 통합', '740M 파라미터, Apache 2.0 라이선스로 상업적 활용 가능', '온디바이스 실행 최적화: 풀 모델 기준 567MB RAM', 'MRL로 벡터 차원 동적 축소, 저장 공간 최대 6배 절감', '8K 토큰 컨텍스트, MTEB Code 9.92점 향상'] · 💬 25"
+    },
+    {
+      "type": "guide",
+      "title": "Europe rejoins the fight with Chonky! Mistral Large 4 Released, Open weights end of month, who’s ready?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wzginu/europe_rejoins_the_fight_with_chonky_mistral/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-06T13:40:46+00:00",
+      "thumbnail": "",
+      "title_ko": "Mistral Large 4 'Le Chonk' 출시, 오픈 웨이트 월말 공개 예정",
+      "summary": "Mistral이 1조 파라미터(활성 49B) 규모의 대형 모델 'Le Chonk'를 출시하고 이달 말 오픈 웨이트 공개를 예고했다.",
+      "detail": "Mistral Large 4는 총 1조 파라미터로 구성되지만 실제 추론 시 활성화되는 파라미터는 490억 개인 MoE 구조다. '덩치 큰 녀석'이라는 의미의 'Le Chonk'라는 이름이 커뮤니티에서 큰 호응을 얻었다. 현재는 클로즈드 모델로 제공 중이나 오픈 웨이트 버전이 이달 말 공개될 예정으로, 로컬 구동이 가능해진다.",
+      "points": [
+        "1조 파라미터 규모, 활성 파라미터 49B MoE 구조",
+        "'Le Chonk'라는 유머러스한 이름으로 커뮤니티 화제",
+        "오픈 웨이트 버전 10월 말 공개 예정으로 로컬 실행 가능"
+      ],
+      "takeaway": "오픈 웨이트 1조 파라미터급 모델의 등장은 오픈소스 LLM 생태계에 새로운 기준점이 될 수 있다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "llm-mistral 0.16",
+      "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
+      "source": "Simon Willison",
+      "published": "2026-10-06T12:32:34+00:00",
+      "thumbnail": "",
+      "title_ko": "llm-mistral 0.16 업데이트 - 추론 모델 지원 추가",
+      "summary": "Simon Willison의 llm-mistral 플러그인 0.16 버전이 Mistral Large 4를 포함한 추론 모델 지원을 추가했다.",
+      "detail": "llm-mistral은 Simon Willison의 LLM CLI 도구에서 Mistral 모델을 사용할 수 있게 해주는 플러그인이다. 0.16 업데이트에서 Mistral Large 4 같은 추론(reasoning) 모델 지원이 새로 추가됐으며, 이를 통해 CLI 환경에서 Mistral의 최신 추론 모델을 곧바로 활용할 수 있다.",
+      "points": [
+        "llm-mistral 0.16, Mistral Large 4 등 추론 모델 지원 추가",
+        "Simon Willison LLM CLI 도구를 통해 명령줄에서 간편하게 접근 가능"
+      ],
+      "takeaway": "주요 CLI 도구가 빠르게 Mistral Large 4를 지원하며, 개발자 워크플로에 새 추론 모델을 즉시 통합할 수 있게 됐다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "(왕초보 가능)챗GPT-6 아스트라 AI 영상 자동화, \"이게 된다고요..?\"",
+      "url": "https://www.youtube.com/watch?v=U_2gQlrxyuw",
+      "source": "온라인 사업 전략, 온크트리",
+      "published": "2026-10-06T12:00:58.141888+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/U_2gQlrxyuw/hqdefault.jpg",
+      "videoId": "U_2gQlrxyuw",
+      "views": 4938,
+      "title_ko": "(왕초보 가능) ChatGPT-6 아스트라 AI 영상 자동화 방법",
+      "summary": "ChatGPT-6 아스트라 AI를 활용해 초보자도 영상을 자동화하고 온라인 수익을 창출하는 방법을 소개하는 유튜브 영상이다.",
+      "detail": "온라인 사업 전략 채널 '온크트리'에서 ChatGPT-6 아스트라 AI를 이용한 영상 자동화 기법을 소개하는 콘텐츠다. 초보자도 따라 할 수 있는 수준으로 구성된 온라인 수익화 교육 영상이며, 유료 멤버십 채널을 통해 추가 전략을 제공한다. 원문 본문이 매우 제한적으로 제공되어 구체적인 기술 내용 파악에는 한계가 있다.",
+      "points": [
+        "ChatGPT-6 아스트라 AI 기반 영상 자동화 기법 소개",
+        "초보자 대상, 온라인 수익화 교육 콘텐츠",
+        "월 1,000원 유료 멤버십 채널 운영"
+      ],
+      "takeaway": "최신 AI 도구를 활용한 콘텐츠 자동화가 일반 크리에이터 영역까지 빠르게 확산되고 있음을 보여준다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 4,938"
+    },
+    {
+      "type": "guide",
+      "title": "How abliterated models can get you pwned",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wzdywk/how_abliterated_models_can_get_you_pwned/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-06T11:52:55+00:00",
+      "thumbnail": "",
+      "title_ko": "검열 해제(abliterated) 모델 사용 시 보안 위험성",
+      "summary": "안전 장치를 제거한 abliterated 모델을 사용하면 악성 프롬프트 공격에 취약해져 보안 침해로 이어질 수 있다는 경고다.",
+      "detail": "Abliterated 모델은 LLM의 거절 메커니즘을 제거한 형태로, 제한 없는 응답이 가능하다는 장점이 있지만 동시에 악의적인 입력에 무방비 상태가 된다. 이러한 모델을 로컬 환경에서 에이전트나 파이프라인에 연결할 경우, 프롬프트 인젝션 등 공격을 통해 시스템이 침해될 수 있다. 원문 본문이 매우 제한적으로 제공되어 구체적인 공격 벡터 분석에는 한계가 있다.",
+      "points": [
+        "Abliterated 모델은 거절 메커니즘이 제거된 무검열 LLM",
+        "악성 프롬프트 삽입(prompt injection) 공격에 취약",
+        "로컬 LLM을 에이전트·파이프라인에 연결 시 보안 위험 증가",
+        "오픈소스 무검열 모델 사용 전 보안 환경 점검 필요"
+      ],
+      "takeaway": "오픈소스 검열 해제 모델의 편의성 이면에 실질적인 보안 위험이 존재하므로, 사용 환경과 입력 소스를 신중히 검토해야 한다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "영상 편집 스트레스 끝, AI가 알아서 다 해주는 시대 (Aside 활용법)",
+      "url": "https://www.youtube.com/watch?v=ATGo8MiY1Mk",
+      "source": "유튜브신쌤",
+      "published": "2026-10-06T11:00:58.141888+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/ATGo8MiY1Mk/hqdefault.jpg",
+      "videoId": "ATGo8MiY1Mk",
+      "views": 1772,
+      "title_ko": "영상 편집 스트레스 끝, AI가 알아서 다 해주는 시대 (Aside 활용법)",
+      "summary": "AI 브라우저 'Aside'에 파일을 넣고 '편집해줘' 한 마디만 하면 컷 편집부터 업로드까지 전 과정을 자동 처리해 준다.",
+      "detail": "영상 제작자가 촬영 파일을 폴더에 넣고 명령을 입력하면 Aside AI 브라우저가 컷 편집, 자막, 줌인 효과, 모션그래픽, 썸네일 제작, 최종 업로드까지 일괄 처리한다. 별도의 전문 편집 소프트웨어 숙련도 없이도 완성본을 만들 수 있다는 점이 핵심이다. 이 영상은 실제 작업 흐름을 직접 보여주며 Aside의 실용적인 활용법을 소개한다.",
+      "points": [
+        "AI 브라우저 Aside 하나로 영상 편집 전 과정 자동화 가능",
+        "컷 편집·자막·줌인·모션그래픽·썸네일·업로드를 AI가 순차 처리",
+        "사용자 개입은 파일 폴더 지정과 명령어 입력이 전부",
+        "편집 프로그램 전문 지식 없이도 완성 영상 제작 가능"
+      ],
+      "takeaway": "AI 편집 도구가 크리에이터의 후반 작업 시간을 획기적으로 줄여줄 수 있음을 실증적으로 보여주는 사례다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 1,772"
+    },
+    {
+      "type": "news",
+      "title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
+      "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
+      "source": "TechCrunch AI",
+      "published": "2026-10-06T11:00:30+00:00",
+      "thumbnail": "",
+      "title_ko": "AI 컴퓨팅 스타트업 Lambda, IPO 앞두고 4조 원 규모 자금 조달",
+      "summary": "GPU 클라우드 기업 Lambda가 기업가치 145억 달러로 40억 달러 투자 유치를 추진하며 2027년 IPO를 준비한다.",
+      "detail": "Coatue Management와 Blackstone이 주도하는 이번 라운드는 Lambda의 마지막 프라이빗 펀딩이 될 가능성이 높다. 수주 잔고가 6월 150억 달러에서 9월 500억 달러로 급증했지만, 증가분의 대부분인 350억 달러가 8월 말 Anthropic과 체결한 단일 계약에서 비롯된 것이라 특정 고객 의존도가 지나치게 높다는 우려가 있다. Lambda는 데이터센터 구축 비용을 충당하기 위해 지난주 별도로 10억 달러의 부채도 조달했다. CoreWeave, Nebius, Nscale 등 네오클라우드 기업들의 IPO 흐름에 합류할 전망이다.",
+      "points": [
+        "기업가치 145억 달러 기준으로 40억 달러 투자 유치 진행 중",
+        "수주 잔고 9월 기준 500억 달러 - 이 중 350억 달러가 Anthropic 단일 계약",
+        "2027년 IPO를 앞둔 마지막 프라이빗 라운드로 평가",
+        "데이터센터 구축 위해 별도로 10억 달러 부채 추가 조달",
+        "CoreWeave·Nebius 등 Nvidia 연계 네오클라우드 IPO 흐름에 합류 예정"
+      ],
+      "takeaway": "AI 인프라 수요는 폭발적이지만 Anthropic 단일 고객 의존도가 Lambda의 IPO 밸류에이션을 흔들 수 있는 핵심 리스크다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.292",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "source": "Claude Code 릴리스",
+      "published": "2026-10-06T09:59:30+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.292 업데이트",
+      "summary": "플러그인 마켓플레이스 직접 설치, Agent 툴 effort 파라미터 추가, 다수의 보안 취약점 수정이 포함된 업데이트다.",
+      "detail": "기능 측면에서는 `claude plugin install --marketplace` 명령으로 마켓플레이스 등록과 플러그인 설치를 한 번에 처리할 수 있게 됐고, Agent 툴에 `effort` 파라미터가 추가되어 서브에이전트의 추론 깊이를 직접 제어할 수 있다. 과부하(529) 재시도 지연 시간을 환경변수로 설정하는 기능과 모드의 자동완성 목록에 커스텀 항목을 추가하는 훅 이벤트도 생겼다. 보안 면에서는 UNC(네트워크) 경로 파일 읽기 권한 우회, macOS·Windows에서 링크 교체를 이용한 파일 유출, 서버 관리 설정 캐시 변조를 통한 정책 플러그인 비활성화 등 여러 취약점이 패치됐다.",
+      "points": [
+        "`--marketplace` 플래그로 마켓플레이스 추가와 플러그인 설치를 한 번에 처리",
+        "Agent 툴 `effort` 파라미터로 서브에이전트 추론 수준 제어 가능",
+        "529 과부하 재시도 기본 지연 시간을 환경변수로 커스텀 설정",
+        "UNC 경로 권한 우회·심볼릭 링크 파일 유출·정책 플러그인 비활성화 등 보안 취약점 수정",
+        "플랜 모드 재개 및 스케줄 작업 관련 버그 다수 수정"
+      ],
+      "takeaway": "보안 패치가 다수 포함된 만큼 빠른 업데이트가 권장되며, Agent `effort` 파라미터는 비용·품질 균형 조정에 즉시 활용 가능하다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "MS는 3분의 1·메타는 절반...'클로드' 사내 사용 대폭 축소",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215998",
+      "source": "AI타임스",
+      "published": "2026-10-06T09:06:29+00:00",
+      "thumbnail": "",
+      "title_ko": "MS는 3분의 1, 메타는 절반…'클로드' 사내 사용 대폭 축소",
+      "summary": "MS와 메타가 사내 Claude 사용량을 각각 3분의 1, 절반 수준으로 줄이고 자체 AI 도구로 전환하고 있다.",
+      "detail": "MS는 올해 초 Claude 사용 예산으로 연 10억 달러를 예상했으나, 직원당 AI 사용 한도를 월 10만 달러에서 1만 달러로 낮추고 Claude Code 대신 GitHub Copilot 사용을 유도하면서 지출을 3분의 1 이상 줄였다. 메타는 Claude Code 내부 사용자가 6만 명에서 3만 명으로 반토막 났으며, 자체 개발한 'Muse Code'(6000명)와 'MetaCode'(3만 명 이상)가 빠르게 자리를 대체하고 있다. 다만 MS의 경우 고객용 제품에 Claude를 공급하는 비용이 늘어 전체 지출 총액은 고점 수준을 유지 중이다.",
+      "points": [
+        "MS, 직원 AI 사용 한도 월 10만→1만 달러로 90% 삭감",
+        "MS, Claude Code 구독 축소하고 GitHub Copilot으로 전환 유도",
+        "메타 내부 Claude Code 사용자 6만→3만 명으로 감소",
+        "메타 자체 도구 'Muse Code'·'MetaCode' 사용자 빠르게 증가",
+        "Anthropic 전체 매출은 고객용 수요 증가로 고점 유지 중"
+      ],
+      "takeaway": "주요 고객이 동시에 경쟁자로 성장하는 구조는 Anthropic의 기업 매출 예측 가능성을 낮추는 구조적 리스크다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "오픈AI, 챗GPT에 '시각적 광고' 도입…이미지 생성 옆 노출",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215993",
+      "source": "AI타임스",
+      "published": "2026-10-06T08:56:02+00:00",
+      "thumbnail": "",
+      "title_ko": "오픈AI, 챗GPT에 '시각적 광고' 도입…이미지 생성 옆 노출",
+      "summary": "OpenAI가 ChatGPT 이미지 생성 화면에 시각적 광고를 표시하는 테스트를 이달 말 미국에서 시작한다.",
+      "detail": "ChatGPT 이미지 생성 결과 옆에 관련 제품·서비스 광고가 노출되며, 광고임을 명확히 표시해 생성 이미지와 구분한다. 주간 활성 사용자 2억 명 규모의 무료·저가형 플랜 사용자를 대상으로 수익화하고, 동시에 유료 구독 전환을 유도하는 전략으로 분석된다. 광고 효과 측정을 위해 Hypertune·Tealium·LiveRamp 등 애드테크 파트너와 연계하고, DoubleVerify·IAS와 브랜드 적합성 평가 프로그램도 개발 중이다.",
+      "points": [
+        "이미지 생성 결과 옆에 시각적 광고 노출, '광고' 표시 명시",
+        "이달 말 미국 일부 광고주 대상으로 테스트 시작",
+        "ChatGPT 주간 활성 사용자 2억 명이 광고 플랫폼 기반",
+        "광고가 ChatGPT 답변이나 대화 내용에 영향을 주지 않는다고 강조",
+        "민감한 대화 상황에서는 광고 미노출 가드레일 적용"
+      ],
+      "takeaway": "ChatGPT가 광고 플랫폼으로 전환되면서 AI 서비스의 수익 모델이 구독에서 광고 병행 구조로 본격 다변화되는 분기점이다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "엔비디아-그로크 27조 계약 파장…소외된 엔지니어들 \"거래 불공정\" 소송",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216009",
+      "source": "AI타임스",
+      "published": "2026-10-06T08:11:49+00:00",
+      "thumbnail": "",
+      "title_ko": "엔비디아-그로크 27조 계약 파장…소외된 엔지니어들 '거래 불공정' 소송",
+      "summary": "Groq 전직 엔지니어들이 Nvidia와의 200억 달러 라이선스 계약이 일반 주주를 소외시킨 실질적 인재 인수였다며 소송을 제기했다.",
+      "detail": "Groq 전직 엔지니어 두 명이 이사회가 핵심 기술과 인력을 Nvidia에 넘기면서 일반 주주 이익을 충분히 보호하지 않았다며 델라웨어 기업법원에 소장을 제출했다. Nvidia는 기술 라이선스 비용 170억 달러와 핵심 엔지니어 이적 보상 30억 달러를 포함해 총 200억 달러를 지급했다. 거래 후 Groq 엔지니어 거의 전원(최대 200명)이 Nvidia로 이동했으며, 원고들은 일반 주주는 낮은 가격에 주식을 처분한 반면 핵심 인력은 별도 보상을 받았다고 주장한다. 이 사건은 메타·MS·구글 등이 반독점 심사를 피하기 위해 직접 인수 대신 채택하는 '기술 라이선스+인재 영입' 방식 거래 전반에 법적 파장을 미칠 수 있다.",
+      "points": [
+        "Groq 전직 엔지니어 2명, 이사회 상대 델라웨어 기업법원 소송 제기",
+        "Nvidia, 기술 라이선스 170억 달러 + 엔지니어 보상 30억 달러 지급",
+        "거래 후 Groq 엔지니어 최대 200명 전원 Nvidia로 이동",
+        "일반 주주는 저가 주식 처분, 핵심 인력은 별도 보상 수령으로 형평성 논란",
+        "미 법무부·FTC, 유사 '인재 인수' 거래의 반독점 규제 우회 여부 조사 중"
+      ],
+      "takeaway": "'라이선스+인재 영입' 방식 빅테크 거래가 반독점 규제와 주주 권익 양면에서 동시에 법적 도전을 받기 시작한 중요한 선례다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "AI 모션그래픽 기초 완결판! 2시간 안에 꾹꾹 눌러 담았습니다.",
+      "url": "https://www.youtube.com/watch?v=R0TchbXU964",
+      "source": "JohnKOBA Design",
+      "published": "2026-10-06T08:00:58.141888+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/R0TchbXU964/hqdefault.jpg",
+      "videoId": "R0TchbXU964",
+      "views": 21394,
+      "title_ko": "AI 모션그래픽 기초 완결판! 2시간 안에 꾹꾹 눌러 담았습니다.",
+      "summary": "JohnKOBA Design 채널에서 AI를 활용한 모션그래픽 기초 과정을 2시간 분량으로 압축해 공개했다.",
+      "detail": "AI 도구를 활용한 모션그래픽 제작의 기초를 집약한 입문 영상으로, 패스트캠퍼스 유료 강의와 연계된 프로모션 콘텐츠다. 쿠폰코드 '존코바_AI'를 사용하면 4만 원 할인을 받을 수 있으며 적용 기한은 10월 31일까지다. 영상 본문 정보가 제한적으로 구체적인 커리큘럼 세부 내용은 확인이 어렵지만, AI 기반 모션그래픽에 처음 입문하는 디자이너나 크리에이터를 위한 내용으로 보인다.",
+      "points": [
+        "AI 모션그래픽 기초를 2시간에 압축한 입문 영상",
+        "패스트캠퍼스 유료 강의 연계 프로모션 콘텐츠",
+        "쿠폰코드 '존코바_AI'로 4만 원 할인(~2026년 10월 31일)"
+      ],
+      "takeaway": "AI 기반 모션그래픽에 입문하려는 크리에이터에게 빠른 시작점이 될 수 있는 콘텐츠다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 2.1만"
+    },
+    {
+      "type": "hn",
+      "title": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+      "source": "Hacker News",
+      "published": "2026-10-06T07:29:50+00:00",
+      "thumbnail": "",
+      "points": [
+        "월 200달러 Claude 플랜의 API 환산 가치가 OpenAI 동가격 대비 5배 이상",
+        "구독은 Anthropic 매출의 10%지만 추론 컴퓨팅의 40% 이상 차지",
+        "구독 한도는 실험실이 언제든 조용히 변경 가능해 실시간 추적이 중요",
+        "SemiAnalysis, 10개 이상 AI 서비스 구독 한도 일간 추적 대시보드 출시",
+        "AI 랩 재무 모델링에서 구독 한도 변화가 핵심 변수로 부상"
+      ],
+      "comments": 90,
+      "hn_url": "https://news.ycombinator.com/item?id=49975345",
+      "title_ko": "Anthropic 구독이 OpenAI보다 5배 이상 가치 있다",
+      "summary": "동일한 월 200달러 기준으로 Claude 구독 플랜이 OpenAI 플랜보다 API 환산 가치가 5배 이상 높다는 정량 분석이 나왔다.",
+      "detail": "AI 구독 플랜의 '가치'는 플랜·모델·워크로드 조합에 따라 크게 달라지므로 단순 가격 비교는 의미가 없다. Anthropic 입장에서 구독은 전체 매출의 10%에 불과하지만 추론 컴퓨팅의 40% 이상을 소비해 수익성에 큰 영향을 미친다. 구독 한도는 공개 프로모션 외에도 실험실이 언제든 조용히 변경할 수 있어, SemiAnalysis는 Anthropic·OpenAI·Meta·xAI·Cursor·Cognition 등 10개 이상 서비스의 구독 한도를 매일 추적하는 대시보드를 Tokenomics Model 구독자에게 제공한다.",
+      "takeaway": "구독 플랜은 단순 요금제가 아니라 AI 랩의 수익성과 고객 유치를 동시에 좌우하는 전략 도구이며, 한도 변화를 정기적으로 모니터링하는 것이 중요하다.",
+      "category": "산업/투자",
+      "metric": "▲ ['월 200달러 Claude 플랜의 API 환산 가치가 OpenAI 동가격 대비 5배 이상', '구독은 Anthropic 매출의 10%지만 추론 컴퓨팅의 40% 이상 차지', '구독 한도는 실험실이 언제든 조용히 변경 가능해 실시간 추적이 중요', 'SemiAnalysis, 10개 이상 AI 서비스 구독 한도 일간 추적 대시보드 출시', 'AI 랩 재무 모델링에서 구독 한도 변화가 핵심 변수로 부상'] · 💬 90"
+    },
+    {
+      "type": "news",
+      "title": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
+      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+      "source": "TechCrunch AI",
+      "published": "2026-10-06T05:33:16+00:00",
+      "thumbnail": "",
+      "title_ko": "Mistral, 1조 파라미터 신모델로 오픈·클로즈드 경쟁자 모두 추월 도전",
+      "summary": "프랑스 AI 스타트업 Mistral이 1조 파라미터 규모의 멀티모달 모델 'Mistral Large 4'를 공개하며 미국·중국 경쟁자에 도전장을 내밀었다.",
+      "detail": "Mistral AI가 'Le Chonk'이라는 별명의 Mistral Large 4(ML4)를 출시했다. 현재는 API 엔드포인트로만 접근 가능하며, 안전성 검사 완료 후 3주 내 오픈웨이트 공개 예정이다. 학습에 GPU 4,000개만 사용해 중국 경쟁사 대비 2~3배 효율적이다. 사이버보안·금융·반도체 설계에 특화되어 있으며, 주요 투자자인 ASML·삼성의 핵심 사업과 맞닿아 있다. Mistral은 이를 통해 '미국도 중국도 아닌 유럽식 제3의 길'을 내세우며 프론티어 랩 위상을 재확인하려 한다.",
+      "points": [
+        "1조 파라미터 규모 멀티모달 모델 ML4 출시",
+        "GPU 4,000개로 학습 — 중국 경쟁사의 절반 이하 자원 소모",
+        "3주 내 오픈웨이트 공개 예정 (안전 검사 완료 후)",
+        "사이버보안·금융·반도체 설계 분야에 특화",
+        "€21억 밸류에이션, ASML·삼성이 주요 투자자"
+      ],
+      "takeaway": "오픈소스와 클로즈드 AI 사이 '제3의 길'을 표방하는 Mistral의 전략이 1조 파라미터 모델로 구체화되어, 오픈웨이트 공개 시 생태계에 상당한 영향을 줄 수 있다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "“카메라도 배우도 필요 없습니다” 텍스트 한 줄로 넷플릭스급 영화 뽑고 월 500 버는 남자의 비밀부업",
+      "url": "https://www.youtube.com/watch?v=FRboN6axTr4",
+      "source": "머니종결자",
+      "published": "2026-10-06T05:00:58.141888+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/FRboN6axTr4/hqdefault.jpg",
+      "videoId": "FRboN6axTr4",
+      "views": 16055,
+      "title_ko": "텍스트 한 줄로 넷플릭스급 영화 만들고 월 500만 원 버는 AI 부업의 비밀",
+      "summary": "AI 영상 생성 도구를 활용해 배우나 카메라 없이 텍스트만으로 영상을 제작하고 수익을 올리는 부업을 소개하는 채널 영상이다.",
+      "detail": "이 영상은 AI 영상 생성 기술로 전통적인 제작 인프라 없이 콘텐츠를 만들어 수익을 창출하는 방법을 다룬다. 그러나 공개된 본문 내용은 대부분 유료 강의 홍보로 구성되어 있어 구체적인 방법론은 확인되지 않는다. AI 생성 영상을 활용한 개인 크리에이터 수익화가 관심을 끄는 트렌드를 반영한 콘텐츠로 보인다.",
+      "points": [
+        "텍스트 입력만으로 고품질 AI 영상 제작 가능성 소개",
+        "배우·카메라 등 기존 제작 비용 불필요하다고 주장",
+        "월 500만 원 수익 사례를 내세운 부업 소개",
+        "실질 방법론은 유료 강의 내에서만 공개하는 구조"
+      ],
+      "takeaway": "AI 영상 생성 도구의 대중화로 저비용 콘텐츠 제작이 가능해졌지만, 과장된 수익 주장이 동반되는 경우가 많아 비판적 시각이 필요하다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 1.6만"
+    },
+    {
+      "type": "news",
+      "title": "Google is about to remove free access to Gemini Flash and Pro",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
+      "source": "The Verge AI",
+      "published": "2026-10-06T04:19:01+00:00",
+      "thumbnail": "",
+      "title_ko": "구글, 10월 9일부터 Gemini Flash·Pro 무료 접근 종료",
+      "summary": "구글이 10월 9일부터 Gemini 무료 플랜을 Flash Lite 전용으로 제한하며, Flash 이상 모델은 유료 구독이 필요해진다.",
+      "detail": "10월 9일부터 Gemini 무료 사용자는 Flash Lite 모델만 이용 가능하다. Flash 모델을 쓰려면 월 4.99달러 AI Plus 구독이 필요하고, Pro 모델과 'Deep Think' 고급 추론 기능은 월 19.99달러(AI Pro) 또는 99.99달러(AI Ultra) 구독에서만 제공된다. 기존 AI Plus 구독자도 Pro 접근권을 잃게 되어 사실상 전면적인 가격 인상에 해당한다.",
+      "points": [
+        "무료 플랜은 Flash Lite 모델만 제공 (10/9 이후)",
+        "Flash 모델 이용: 월 4.99달러 AI Plus 필요",
+        "Pro 모델·Deep Think: 월 19.99달러 AI Pro 이상 한정",
+        "기존 AI Plus 구독자도 Pro 접근 권한 박탈",
+        "Ultra 구독은 월 99.99달러"
+      ],
+      "takeaway": "구글의 이번 모델 접근 제한은 AI 서비스 수익화 강화의 명확한 신호로, 주요 AI 업체들의 무료 티어 축소 흐름이 가속화되고 있음을 보여준다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "[지금뉴스] 뉴욕도 ‘AI 청문회’…연구원 “AI 통제 못 해 인류 멸종 결말” / KBS 2026.10.06.",
+      "url": "https://www.youtube.com/watch?v=lI8L3zepss4",
+      "source": "KBS News",
+      "published": "2026-10-06T04:00:58.141888+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/lI8L3zepss4/hqdefault.jpg",
+      "videoId": "lI8L3zepss4",
+      "views": 324094,
+      "title_ko": "뉴욕 AI 청문회 — 전 Anthropic 연구원 '인류 멸종' 가능성 경고",
+      "summary": "Anthropic을 떠난 AI 연구원이 뉴욕시의회 청문회에서 인류가 AI 통제권을 잃을 경우 멸종으로 이어질 수 있다고 증언했다.",
+      "detail": "AI 개발 경쟁의 위험성을 우려해 Anthropic을 퇴사한 연구원이 뉴욕시의회 청문회에 출석해 강도 높은 경고를 했다. 그는 인류가 AI에 대한 통제권을 잃는다면 최악의 경우 멸종이라는 결말에 이를 수 있다고 주장했다. 뉴욕이 AI 안전 문제를 의회 청문회 수준에서 다루기 시작한 것은 AI 거버넌스 논의가 연방을 넘어 지방 정치로 확산되는 흐름을 반영한다.",
+      "points": [
+        "전 Anthropic 연구원, 뉴욕시의회 AI 청문회 출석 증언",
+        "AI 통제권 상실 시 인류 멸종 시나리오 경고",
+        "뉴욕시 차원의 AI 규제 청문회 개최",
+        "내부 연구자의 공개 이탈·증언으로 규제 압력 고조"
+      ],
+      "takeaway": "AI 안전 우려가 연방 수준을 넘어 지방 의회로 확산되고 있으며, 전직 내부 연구자의 공개 증언은 규제 논의에 실질적 무게를 더하고 있다.",
+      "category": "정책/규제",
+      "metric": "조회 32.4만"
+    },
+    {
+      "type": "hn",
+      "title": "AI tutoring with Khanmigo in a two-year school experiment",
+      "url": "https://edworkingpapers.com/ai26-1551",
+      "source": "Hacker News",
+      "published": "2026-10-06T00:00:45+00:00",
+      "thumbnail": "",
+      "points": [
+        "학기당 수학 성취도 1.3 백분위 포인트 향상 확인",
+        "AI 없는 Khan Academy 단독 사용과 효과 차이 미미",
+        "학생 96% 사용 경험 — 그러나 실질 대화 참여는 17% 세션에 불과",
+        "메시지 대부분은 단순 답 입력·버튼 클릭 수준",
+        "핵심 과제는 '접근 제공'이 아닌 '실질 참여 유도'"
+      ],
+      "comments": 67,
+      "hn_url": "https://news.ycombinator.com/item?id=49972419",
+      "title_ko": "2년 학교 실험 결과 — AI 튜터 Khanmigo, 참여도 부족으로 효과 제한적",
+      "summary": "테네시주 18개 중학교 대규모 실험에서 AI 튜터 Khanmigo는 학습 효과가 있었지만, 학생 참여 저조로 AI 없는 Khan Academy와 차이가 거의 없었다.",
+      "detail": "2년간 18개 테네시 중학교에서 진행된 무작위 대조 실험에서 Khanmigo 사용 학생의 수학 성취도는 학기당 1.3 백분위 포인트(표준편차 약 0.07) 향상되었다. 그러나 이 효과는 AI 없이 Khan Academy만 사용한 경우와 유사한 수준이다. 학생 96%가 Khanmigo를 최소 한 번 사용했지만, 연습 날의 3분의 1에만 메시지를 보냈고 오류 발생 세션의 17%에서만 실질 대화를 나눴다. 대부분의 메시지는 단순 답변 입력이나 제안 버튼 클릭에 그쳤다. 연구진은 핵심 병목이 기술 접근성이 아닌 실질 참여도임을 결론으로 제시했다.",
+      "takeaway": "AI 튜터의 교육 혁신 잠재력은 기술 자체보다 학생이 실제로 활용하도록 유도하는 설계에 달려 있으며, 접근성만으로는 충분하지 않음을 대규모 실험이 입증했다.",
+      "category": "연구/논문",
+      "metric": "▲ ['학기당 수학 성취도 1.3 백분위 포인트 향상 확인', 'AI 없는 Khan Academy 단독 사용과 효과 차이 미미', '학생 96% 사용 경험 — 그러나 실질 대화 참여는 17% 세션에 불과', '메시지 대부분은 단순 답 입력·버튼 클릭 수준', \"핵심 과제는 '접근 제공'이 아닌 '실질 참여 유도'\"] · 💬 67"
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.291",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+      "source": "Claude Code 릴리스",
+      "published": "2026-10-05T18:55:19+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.291 — 세션 응답 유실 버그 2건 수정",
+      "summary": "Claude Code 2.1.291이 클라우드 세션 권한 응답 누락과 세션 종료 시 메시지 유실 문제를 해결한 핫픽스를 배포했다.",
+      "detail": "이번 패치는 직전 두 버전에서 유입된 회귀 버그를 수정한다. 2.1.290에서 발생한 클라우드 세션의 권한 프롬프트 응답 누락 문제와, 2.1.288에서 발생한 세션 종료 시 마지막 메시지가 유실되는 문제가 모두 해결되었다. 신규 기능 추가 없이 안정성에만 집중한 릴리스다.",
+      "points": [
+        "클라우드 세션 권한 프롬프트 응답 누락 수정 (2.1.290 회귀)",
+        "세션 종료 시 마지막 메시지 유실 수정 (2.1.288 회귀)",
+        "기능 추가 없는 안정성 중심 핫픽스"
+      ],
+      "takeaway": "연속 회귀 버그를 빠르게 수정한 패치로, 클라우드 세션을 사용하거나 장시간 작업하는 사용자라면 즉시 업데이트가 권장된다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    }
+  ]
+}
