@@ -1,0 +1,506 @@
+{
+  "date": "2026-10-21",
+  "generated_at": "2026-10-21T08:13:37",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘 AI 업계는 차세대 모델 경쟁 가속과 대규모 인프라 투자가 맞물리는 한편, AI 에이전트를 무기화한 사이버 공격과 허위정보 확산 등 통제 리스크가 동시에 수면 위로 올라왔다. 미국 정부는 DeepSeek 퇴출 명령과 AI 기업 압박으로 기술-안보 갈등을 심화시켰고, Claude의 단백질 설계 성공은 AI 자율 연구의 현실화를 보여주었다.",
+    "highlights": [
+      {
+        "title": "AI 에이전트로 기업 100곳 해킹, 비용 660만 원",
+        "line": "사람 개입 없이 취약점 탐색부터 침입까지 자동 수행한 이번 사례는 AI 기반 사이버 공격의 대중화가 이미 시작됐음을 증명한다."
+      },
+      {
+        "title": "앤트로픽·구글·오픈AI, 수주 내 차세대 모델 공개 예고",
+        "line": "앤트로픽이 사용자 숨은 의도를 읽는 신모델을 준비 중인 가운데 경쟁사도 후속작을 연이어 예고하며 모델 경쟁이 재점화된다."
+      },
+      {
+        "title": "Claude, 64시간 자율 작업으로 전갈 독소 바인더 설계 성공",
+        "line": "17종의 단백질이 실험실 검증을 통과하면서 AI의 완전 자율 과학 연구가 실용 단계에 진입했음을 입증했다."
+      },
+      {
+        "title": "가짜 통계 5만 개, ChatGPT가 학술·금융 보고서에 인용",
+        "line": "50달러로 만든 허위 데이터가 330개 이상 도메인과 공식 문서에 퍼진 실험은 LLM 기반 정보 생태계의 구조적 취약점을 드러낸다."
+      },
+      {
+        "title": "엔스케일-앤트로픽 컴퓨팅 계약 총 900억 달러 규모 육박",
+        "line": "AI 인프라 투자가 개별 기업 간 거래에서 100조 원대 장기 공급 계약으로 스케일업되면서 컴퓨팅 패권 경쟁이 본격화된다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "hn",
+      "title": "On AI writing",
+      "url": "https://www.bolkunov.com/p/on-ai-writing",
+      "source": "Hacker News",
+      "published": "2026-10-20T19:55:11+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 글은 문체를 평균화해 저자의 개성과 맥락이 소실됨",
+        "AI는 논리적 오류를 피하려 모호한 표현을 선호해 정밀도 저하",
+        "글쓰기 행위 자체가 사고를 다듬는 기회인데, AI 사용 시 그 과정이 생략됨",
+        "AI 생성 텍스트 독해 속도는 인간 글보다 약 1/3 느림",
+        "장황한 AI 특성상 필자의 시간 절약이 독자의 시간 낭비로 전가됨"
+      ],
+      "comments": 46,
+      "hn_url": "https://news.ycombinator.com/item?id=50171771",
+      "title_ko": "AI 글쓰기에 대하여",
+      "summary": "AI로 쓴 글은 저자의 문체와 맥락이 사라지고, 정밀도 저하와 독해 속도 감소로 이어진다.",
+      "detail": "학사논문에서 문체 분석을 연구한 저자는 AI 글쓰기가 개인의 문체를 '평균화'해 독자가 필자의 맥락과 개성을 파악하기 어렵게 만든다고 지적한다. AI는 논리적 오류를 피하기 위해 모호한 표현을 선택하는 경향이 있어 글의 정밀도가 떨어지고, 글을 쓰는 행위 자체가 사고를 다듬는 과정이라는 점에서 AI에 위임하면 자기 검토의 기회도 함께 사라진다. 실제로 저자는 AI 생성 텍스트를 같은 길이의 인간 글보다 약 1/3 더 느리게 읽는다고 밝히며, 대부분의 AI 모델이 과도하게 장황한 글을 생성해 총 독해 시간이 더욱 길어진다고 지적한다.",
+      "takeaway": "글쓰기를 AI에 위임하면 단기적 편의 뒤에 커뮤니케이션 품질과 사고력 훈련 기회가 함께 사라질 수 있다는 점을 직시할 필요가 있다.",
+      "category": "AI 활용/팁",
+      "metric": "▲ ['AI 글은 문체를 평균화해 저자의 개성과 맥락이 소실됨', 'AI는 논리적 오류를 피하려 모호한 표현을 선호해 정밀도 저하', '글쓰기 행위 자체가 사고를 다듬는 기회인데, AI 사용 시 그 과정이 생략됨', 'AI 생성 텍스트 독해 속도는 인간 글보다 약 1/3 느림', '장황한 AI 특성상 필자의 시간 절약이 독자의 시간 낭비로 전가됨'] · 💬 46"
+    },
+    {
+      "type": "youtube",
+      "title": "[이슈] 천하의 넷플릭스마저...천명 감원 '충격'/중국 AI 숏폼의 공습...'인류 문화' 말살/2026년 10월 15일(목)/KBS",
+      "url": "https://www.youtube.com/watch?v=xB0A37wlRd4",
+      "source": "KBS News",
+      "published": "2026-10-20T18:01:18.183091+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/xB0A37wlRd4/hqdefault.jpg",
+      "videoId": "xB0A37wlRd4",
+      "views": 116191,
+      "title_ko": "넷플릭스도 감원... 직원 1천 명 구조조정 / 중국 AI 숏폼의 문화 공습",
+      "summary": "넷플릭스가 전 직원의 약 6%인 1천 명을 감원할 계획이며, 중국 AI 숏폼 콘텐츠의 급속한 확산이 인류 문화 다양성을 위협한다는 우려가 커지고 있다.",
+      "detail": "월스트리트저널에 따르면 넷플릭스가 전 세계 직원 약 1천 명을 감원할 계획이다. 세계 최대 스트리밍 플랫폼도 비용 압박과 AI 전환 흐름에서 자유롭지 않다는 신호다. 한편 AI 기술로 대량 제작된 중국산 숏폼 콘텐츠가 빠르게 전 세계로 확산되면서, 각 지역 고유의 문화적 다양성이 희석될 수 있다는 우려도 함께 제기됐다.",
+      "points": [
+        "넷플릭스, 전 직원의 약 6%인 1천 명 구조조정 계획",
+        "월스트리트저널이 해당 소식 보도",
+        "중국 AI 숏폼 콘텐츠의 글로벌 확산이 문화적 위협으로 지목됨",
+        "콘텐츠 산업 전반에서 AI 전환에 따른 인력 구조 재편 가속화"
+      ],
+      "takeaway": "콘텐츠 산업에서도 AI로 인한 구조 변화가 본격화되고 있으며, AI 생성 콘텐츠의 문화적 동질화 문제가 정책적 관심을 요구하는 단계에 진입하고 있다.",
+      "category": "산업/투자",
+      "metric": "조회 11.6만"
+    },
+    {
+      "type": "hn",
+      "title": "Claude designed protein binders against scorpion neurotoxins",
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "source": "Hacker News",
+      "published": "2026-10-20T17:48:29+00:00",
+      "thumbnail": "",
+      "points": [
+        "Claude가 64시간 자율 작업으로 318,484개 단백질 설계 생성",
+        "211개 실험 검증 중 17개가 결합 기준 충족",
+        "전갈 독침: 연간 120만 명 피해, 3,250명 이상 사망하는 소외 열대질환",
+        "외부 전문가들이 '유망한 첫 단계'로 평가",
+        "211개 전체 설계 데이터를 연구 자원으로 공개 릴리스"
+      ],
+      "comments": 42,
+      "hn_url": "https://news.ycombinator.com/item?id=50170021",
+      "title_ko": "Claude, 전갈 신경독소 결합 단백질 설계에 성공",
+      "summary": "Anthropic의 Claude가 64시간 자율 작업으로 전갈 독소 표적 단백질 미니바인더를 설계하고, 실험실 검증에서 17종이 결합 기준을 충족했다.",
+      "detail": "Anthropic은 내부 연구 모델이 64시간 동안 거의 자율적으로 작동하며 전갈 신경독소 4종을 표적으로 하는 318,484개의 단백질 설계를 생성했다고 밝혔다. 이 중 211개를 Adaptyv Bio·Twist Bioscience가 실험 검증했고 17개가 결합 기준을 충족했다. 전갈 독침은 연간 120만 명 이상에게 피해를 입히고 3,250명 이상이 사망하는 소외된 열대질환으로, 기존 치료제는 비용 대비 수익성이 낮아 투자가 부족한 분야다. 외부 전문가들은 '유망한 첫 단계'로 평가했지만 세포 환경에서의 독소 중화 여부는 아직 미확인이다.",
+      "takeaway": "AI가 수십만 개의 단백질 설계를 며칠 만에 완성하고 수 주 내 실험 검증까지 이루어지는 흐름은 신약 발견의 속도를 근본적으로 바꿀 수 있음을 보여준다.",
+      "category": "연구/논문",
+      "metric": "▲ ['Claude가 64시간 자율 작업으로 318,484개 단백질 설계 생성', '211개 실험 검증 중 17개가 결합 기준 충족', '전갈 독침: 연간 120만 명 피해, 3,250명 이상 사망하는 소외 열대질환', \"외부 전문가들이 '유망한 첫 단계'로 평가\", '211개 전체 설계 데이터를 연구 자원으로 공개 릴리스'] · 💬 42"
+    },
+    {
+      "type": "hn",
+      "title": "Advanced coding in low-resource programming languages",
+      "url": "https://openai.com/index/low-resource-programming-languages/",
+      "source": "Hacker News",
+      "published": "2026-10-20T17:43:11+00:00",
+      "thumbnail": "",
+      "points": [
+        "GPT-6 Astra, 20개 언어 평균 통과율 87.4% (이전 GPT-5.6 Sol 26.8%)",
+        "GPT-6.1 Sol, COBOL 마이그레이션 97.9% 정확도(이전 5.4%), 비용 39% 절감",
+        "GPT-6 Luna는 비용을 78% 절감하면서 40.3% 통과율 기록",
+        "COBOL은 ATM 거래 95%·온라인 뱅킹 40% 이상을 지원하는 핵심 인프라",
+        "저자원 언어 AI 지원으로 레거시 시스템 현대화 가속 기대"
+      ],
+      "comments": 60,
+      "hn_url": "https://news.ycombinator.com/item?id=50169955",
+      "title_ko": "저자원 프로그래밍 언어 지원 강화 — COBOL·Fortran 코딩 성능 대폭 향상",
+      "summary": "OpenAI의 최신 GPT-6 계열 모델이 COBOL·Fortran 등 저자원 레거시 언어에서 이전 대비 최대 20배 이상 향상된 코딩 정확도를 달성했다.",
+      "detail": "OpenAI는 학습 데이터가 적은 COBOL·Fortran·Visual Basic 같은 저자원 언어에서 GPT-6 계열 모델들이 큰 폭으로 향상되었다고 발표했다. MultiLangBench에서 GPT-6 Astra는 20개 언어 평균 통과율 87.4%를 기록해 이전 GPT-5.6 Sol의 26.8%에서 크게 올랐다. COBOL 마이그레이션 평가에서는 GPT-6.1 Sol이 높은 추론 수준에서 97.9%를 달성했고(이전 5.4%), 비용도 39% 절감됐다. COBOL은 전 세계 ATM 거래의 95%와 온라인 뱅킹의 40% 이상을 지원하는 핵심 인프라 언어로, AI의 유지보수·현대화 지원 역량이 산업적으로 중요한 의미를 갖는다.",
+      "takeaway": "COBOL·Fortran 같은 레거시 언어 지원이 실용 수준에 진입하면서, 수십 년간 묵혀온 핵심 금융·산업 인프라의 AI 기반 현대화가 현실적 과제로 부상한다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['GPT-6 Astra, 20개 언어 평균 통과율 87.4% (이전 GPT-5.6 Sol 26.8%)', 'GPT-6.1 Sol, COBOL 마이그레이션 97.9% 정확도(이전 5.4%), 비용 39% 절감', 'GPT-6 Luna는 비용을 78% 절감하면서 40.3% 통과율 기록', 'COBOL은 ATM 거래 95%·온라인 뱅킹 40% 이상을 지원하는 핵심 인프라', '저자원 언어 AI 지원으로 레거시 시스템 현대화 가속 기대'] · 💬 60"
+    },
+    {
+      "type": "hn",
+      "title": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
+      "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+      "source": "Hacker News",
+      "published": "2026-10-20T15:48:26+00:00",
+      "thumbnail": "",
+      "points": [
+        "Steam Next Fest에 AI 아트·바이브코딩 게임이 과거보다 훨씬 많이 등록",
+        "사용자들이 Reddit에서 AI 콘텐츠 필터 기능 도입 촉구",
+        "Steam은 AI 콘텐츠 공개 의무화 중이나 필터 기능은 미제공",
+        "Epic Games CEO, 스토어 런처를 바이브코딩으로 만들었다고 공개 발언",
+        "Capcom도 AI를 RE Engine 개선에 활용하는 REX 프로그램 운영 중"
+      ],
+      "comments": 188,
+      "hn_url": "https://news.ycombinator.com/item?id=50168190",
+      "title_ko": "Steam Next Fest, AI 생성 게임 범람에 유저들 '필터 달아달라' 요구",
+      "summary": "Steam Next Fest에 AI 아트와 바이브코딩으로 만든 저품질 게임이 쏟아지면서 사용자들이 AI 콘텐츠 필터링 기능 도입을 강하게 촉구하고 있다.",
+      "detail": "Steam Next Fest 시작과 함께 AI 생성 아트와 바이브코딩으로 제작된 저품질 게임이 대거 등록되며 인간이 만든 게임을 찾기 어렵다는 불만이 속출했다. Steam은 AI 콘텐츠 공개를 의무화하고 있어 기술적으로는 AI 태그 필터가 가능하지만, Valve는 아직 이를 구현하지 않고 있다. 한편 Epic Games CEO가 스토어 런처를 바이브코딩으로 제작했다고 밝히고 Capcom도 AI를 엔진 개선에 공식 도입하는 등, 게임 업계 전반의 AI 활용이 급격히 확산되고 있다.",
+      "takeaway": "AI 생성 콘텐츠의 플랫폼 범람은 게임을 넘어 모든 창작 플랫폼의 공통 과제로 부상하고 있으며, 플랫폼 차원의 큐레이션 정책 정비가 시급하다.",
+      "category": "산업/투자",
+      "metric": "▲ ['Steam Next Fest에 AI 아트·바이브코딩 게임이 과거보다 훨씬 많이 등록', '사용자들이 Reddit에서 AI 콘텐츠 필터 기능 도입 촉구', 'Steam은 AI 콘텐츠 공개 의무화 중이나 필터 기능은 미제공', 'Epic Games CEO, 스토어 런처를 바이브코딩으로 만들었다고 공개 발언', 'Capcom도 AI를 RE Engine 개선에 활용하는 REX 프로그램 운영 중'] · 💬 188"
+    },
+    {
+      "type": "guide",
+      "title": "yes",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xb5qxn/yes/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-20T13:09:34+00:00",
+      "thumbnail": "",
+      "title_ko": "CachyOS + STRATA 조합으로 로컬 LLM 추론 속도 9→48 t/s 달성",
+      "summary": "CachyOS와 STRATA 파일시스템 조합으로 Qwen 3.8B 모델 추론 속도가 9t/s에서 최대 48t/s로 5배 이상 향상되었다는 실사용 경험담.",
+      "detail": "8GB VRAM GPU를 사용하는 한 사용자가 Unsloth 3bit Qwen 3.8 Flash Next 모델로 9t/s를 내던 중, NVIDIA 드라이버를 자동으로 처리해주는 CachyOS와 STRATA 파일시스템을 결합한 결과 최대 48t/s, 평균 30t/s를 달성했다. 컨텍스트 크기는 32k가 안정적이며 42k까지는 한계치 수준으로 동작하지만, 64k는 VRAM 부족으로 불가능했다.",
+      "points": [
+        "Unsloth 3bit Qwen 3.8B, CachyOS+STRATA 조합으로 9→48 t/s 향상",
+        "평균 30t/s로 실사용에 충분한 속도 확보",
+        "8GB VRAM 기준 32k 컨텍스트 안정, 42k는 한계치, 64k는 불가",
+        "CachyOS는 NVIDIA 드라이버를 자동 설치해 설정 편의성도 높음"
+      ],
+      "takeaway": "OS 및 파일시스템 최적화만으로도 로컬 LLM 속도를 수 배 끌어올릴 수 있어, 하드웨어 업그레이드 전 소프트웨어 튜닝이 우선 고려 대상이 될 수 있다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Publish fake stats, get cited in LLMs",
+      "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+      "source": "Hacker News",
+      "published": "2026-10-20T13:06:22+00:00",
+      "thumbnail": "",
+      "points": [
+        "$50·하루 만에 가짜 통계 5만 개 페이지 생성 및 배포",
+        "Google은 색인 제외했지만 ChatGPT는 7개월간 지속 인용",
+        "330개 이상 도메인(Shopify·DHL 포함)이 허위 통계에 링크",
+        "허위 수치가 학술 논문과 은행 투자 리서치에도 포함됨",
+        "AI가 '통계 형식'만 갖춰도 신뢰 출처로 인식하는 구조적 취약점 노출"
+      ],
+      "comments": 176,
+      "hn_url": "https://news.ycombinator.com/item?id=50165801",
+      "title_ko": "가짜 통계 5만 개를 올렸더니 ChatGPT가 인용하기 시작했다",
+      "summary": "한 연구자가 $50로 허위 통계 5만 개 페이지를 만들었더니, ChatGPT가 지속적으로 인용하고 330개 이상의 도메인이 링크를 걸었으며 학술 논문과 은행 리포트에도 수치가 등장했다.",
+      "detail": "Peec AI의 연구자가 GPT-4.1로 완전히 꾸며낸 통계 5만 개를 약 $50에 생성해 stateglobe.com에 게시했다. Google은 해당 사이트를 색인에서 제외했지만, ChatGPT는 7개월간 1만 건 이상의 AI 세션 트래픽을 해당 사이트로 보냈다. Shopify·Bluehost·DHL을 포함한 330개 이상의 도메인이 링크를 걸었고, 허위 수치가 학술 논문과 은행 투자 리서치에도 포함됐다. 이는 AI가 '통계 형식'만 갖춰도 신뢰할 만한 출처로 인식하는 구조적 취약점을 드러낸 실험이다.",
+      "takeaway": "LLM의 인용 메커니즘이 허위 정보 증폭 수단으로 악용될 수 있으며, AI 검색 결과의 사실 검증 체계 강화가 시급한 과제로 부각된다.",
+      "category": "연구/논문",
+      "metric": "▲ ['$50·하루 만에 가짜 통계 5만 개 페이지 생성 및 배포', 'Google은 색인 제외했지만 ChatGPT는 7개월간 지속 인용', '330개 이상 도메인(Shopify·DHL 포함)이 허위 통계에 링크', '허위 수치가 학술 논문과 은행 투자 리서치에도 포함됨', \"AI가 '통계 형식'만 갖춰도 신뢰 출처로 인식하는 구조적 취약점 노출\"] · 💬 176"
+    },
+    {
+      "type": "guide",
+      "title": "v0.40.7-rc1: mlx: deduplicate CUDA runtime payloads (#17956)",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7-rc1",
+      "source": "Ollama 릴리스",
+      "published": "2026-10-20T12:15:15+00:00",
+      "thumbnail": "",
+      "title_ko": "Ollama v0.40.7-rc1: MLX·CUDA 런타임 페이로드 중복 제거",
+      "summary": "Ollama가 GGML과 MLX 백엔드 간 공유 CUDA 라이브러리를 통합해 중복을 제거하고 설치 효율을 개선한 릴리스 후보를 공개했다.",
+      "detail": "이번 RC에서는 GGML과 MLX 백엔드가 함께 사용하는 CUDA 라이브러리를 단일 CUDA 페이로드로 통합해 중복 설치를 없앴다. MLX 전용 라이브러리와 JIT 헤더는 MLX 오버레이로 분리 유지하며, OpenBLAS Fortran 런타임 의존성도 완전히 포함했다. 릴리스 패키징 단계에서 의존성 자동 검증 절차도 추가됐다.",
+      "points": [
+        "GGML·MLX 공유 CUDA 라이브러리를 단일 페이로드로 통합해 중복 제거",
+        "MLX 전용 라이브러리·JIT 헤더는 MLX 오버레이로 분리 유지",
+        "OpenBLAS Fortran 런타임 클로저 완전 포함",
+        "릴리스 패키징 시 의존성 자동 검증 추가"
+      ],
+      "takeaway": "중복 라이브러리 제거로 Ollama 설치 크기와 로딩 오버헤드가 줄어들어, 멀티 백엔드 환경에서의 자원 효율이 향상된다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "I built an RK3588 NPU runtime without any proprietary inference libraries: Qwen3.5-4B at ~10 tok/s, ~2x faster than vendor SDK.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xb45bq/i_built_an_rk3588_npu_runtime_without_any/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-10-20T12:03:58+00:00",
+      "thumbnail": "",
+      "title_ko": "오픈소스 RK3588 NPU 추론 엔진: 벤더 SDK보다 2배 빠른 Qwen3.5-4B 구동",
+      "summary": "독점 라이브러리 없이 RK3588 NPU에서 LLM을 실행하는 오픈소스 추론 엔진이 공개됐으며, 공식 SDK 대비 약 2배 빠른 성능을 보인다.",
+      "detail": "Rust(상위 레이어)와 C++(NPU 연산자)로 작성된 'open_rknpu2_lm_infer'는 Rockchip의 독점 사용자 공간 라이브러리 없이 RK3588 NPU에서 LLM을 실행한다. Qwen3.5-4B 모델을 초당 약 10토큰 속도로 처리하며, 공식 RKLLM SDK보다 약 2배 빠르다. 이미지 입력과 MTP 투기적 디코딩(speculative decoding)도 지원한다. 코드가 완전히 공개돼 있어 호스트 추론 로직과 NPU 연산자를 직접 수정·해킹할 수 있다는 점이 가장 큰 차별점이다.",
+      "points": [
+        "Rockchip 독점 라이브러리 없이 RK3588 NPU 구동",
+        "Qwen3.5-4B 기준 초당 약 10토큰, 공식 SDK 대비 약 2배 빠름",
+        "이미지 입력 및 MTP 투기적 디코딩 지원",
+        "Rust + C++ 완전 오픈소스, 코드 수정·커스터마이징 자유"
+      ],
+      "takeaway": "RK3588 보드 사용자가 벤더 종속 없이 로컬 LLM을 더 빠르게 실행할 수 있는 대안이 생겼으며, 엣지 AI 개발자에게 실질적인 선택지가 추가됐다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.305",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
+      "source": "Claude Code 릴리스",
+      "published": "2026-10-20T11:46:50+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.305 릴리스",
+      "summary": "Vertex·Bedrock 등 외부 프로바이더에서 요청이 전면 실패하던 2.1.304 회귀 버그를 포함한 다수의 버그가 수정된 Claude Code 업데이트다.",
+      "detail": "가장 핵심적인 수정은 Vertex·Bedrock·기타 게이트웨이에서 ToolSearch 요청이 거부될 때 모든 요청이 실패하던 회귀 버그 해결이다. Linux 샌드박스에 Chromium·rootless podman 등이 요구하는 사용자 네임스페이스 생성을 허용하는 신규 옵션이 추가됐다. 비지도 재시도 모드(`CLAUDE_CODE_RETRY_WATCHDOG`)가 사용량 한도 해제를 더 빠르게 감지하도록 개선됐다. Workflow 재개 시 이미 완료된 `pipeline()`·`parallel()` 에이전트가 재실행되던 문제도 캐시 서빙 방식으로 수정됐다. 전체 디스크 오류 메시지 명확화와 스크린 리더 모드 개선 등 UX 수정도 함께 포함됐다.",
+      "points": [
+        "Vertex/Bedrock에서 ToolSearch 거부 시 요청 전체 실패 버그 수정 (2.1.304 회귀)",
+        "Linux 샌드박스에 사용자 네임스페이스 생성 허용 옵션 신규 추가",
+        "Workflow 재개 시 완료된 에이전트 결과를 캐시로 서빙해 불필요한 재실행 방지",
+        "비지도 재시도 모드의 사용량 한도 해제 감지 속도 개선",
+        "스크린 리더 모드 및 전체 디스크 오류 메시지 UX 개선"
+      ],
+      "takeaway": "외부 AI 프로바이더 환경의 심각한 회귀 버그가 해소되어 엔터프라이즈 배포 환경의 안정성이 크게 향상됐다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+      "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+      "source": "TechCrunch AI",
+      "published": "2026-10-20T11:35:10+00:00",
+      "thumbnail": "",
+      "title_ko": "OpenAI, 바이오테크 AI 스타트업 Orchestra Bio 인수",
+      "summary": "OpenAI가 신약 개발 운영 자동화 AI 에이전트를 만드는 Orchestra Bio를 인수해 생명과학 AI 모델 'Rosalind'를 강화한다.",
+      "detail": "Orchestra Bio는 약 2000만 달러를 조달한 4년 된 스타트업으로, 임상시험 일정 관리·재무 추적 등 신약 개발 운영의 복잡한 업무를 자동화하는 AI 에이전트를 개발해왔다. OpenAI는 이 팀과 기술을 생명과학 연구용 AI 모델 'Rosalind' 및 실험 계획·결과 분석 도구 'Rosalind Workbench'에 통합할 계획이다. Rosalind에는 이미 Moderna, Novo Nordisk 등 대형 제약사가 고객으로 참여하고 있다. 인수 금액은 공개되지 않았으며, 스타트업이 독립 경쟁자로 성장하는 대신 흡수되는 구도가 됐다.",
+      "points": [
+        "Orchestra Bio: 신약 개발 운영 자동화 AI 에이전트 스타트업",
+        "a16z·Atria·8VC로부터 약 2000만 달러 조달",
+        "OpenAI 생명과학 AI 'Rosalind' 및 'Rosalind Workbench'에 통합 예정",
+        "Rosalind 기존 고객: Moderna, Novo Nordisk 등 대형 제약사"
+      ],
+      "takeaway": "OpenAI가 제약·바이오 분야로 수직 통합을 가속화하며, 스타트업이 빅랩에 흡수되는 AI 산업 구도가 굳어지고 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "쇼핑 쇼츠 영상 자동화! 링크만 주면 AI 쇼츠 3편 완성 | ChatGPT 코덱스 & BytePlus Seedance 2.5",
+      "url": "https://www.youtube.com/watch?v=SYWOKZilEOc",
+      "source": "홍아린 AI",
+      "published": "2026-10-20T11:01:18.183091+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/SYWOKZilEOc/hqdefault.jpg",
+      "videoId": "SYWOKZilEOc",
+      "views": 5721,
+      "title_ko": "쇼핑 쇼츠 영상 자동화: ChatGPT Codex & BytePlus Seedance 2.5로 AI 쇼츠 3편 자동 제작",
+      "summary": "상품 링크 하나만 입력하면 ChatGPT Codex와 BytePlus Seedance 2.5를 조합해 쇼핑 쇼츠 영상 3편을 자동 완성하는 워크플로우를 소개한다.",
+      "detail": "ChatGPT Codex로 자동화 코드를 생성하고, ByteDance 클라우드 서비스 BytePlus의 최신 영상 생성 모델 Seedance 2.5를 결합해 상품 URL만으로 쇼핑 콘텐츠용 쇼츠 영상 3편을 자동 제작하는 파이프라인이다. 별도의 영상 편집 기술 없이도 커머스용 숏폼 콘텐츠를 대량 생산할 수 있는 방법을 실제 프롬프트와 함께 제공한다. 영상에서 사용한 프롬프트와 툴 제작 가이드는 무료로 배포된다.",
+      "points": [
+        "상품 링크 입력만으로 쇼핑 쇼츠 3편 자동 생성",
+        "ChatGPT Codex로 자동화 코드 작성",
+        "BytePlus Seedance 2.5 영상 생성 모델 활용",
+        "실제 사용 프롬프트·툴 제작 가이드 무료 제공"
+      ],
+      "takeaway": "커머스 영상 콘텐츠 제작 진입 장벽이 크게 낮아져, 소규모 셀러도 AI로 숏폼 광고를 빠르게 양산할 수 있는 실용 워크플로우가 등장했다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 5,721"
+    },
+    {
+      "type": "guide",
+      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "source": "Simon Willison",
+      "published": "2026-10-20T10:34:19+00:00",
+      "thumbnail": "",
+      "title_ko": "Battle Drones: Claude Code 321커밋으로 완성한 RTS 게임, 오디오 멀티플레이어까지 구현",
+      "summary": "Simon Willison이 TypeScript를 거의 모른 채 Claude Code에 321개 커밋을 맡겨 Command & Conquer 스타일 RTS 게임을 완성했으며, 근거리 기기 간 오디오로 게임 상태를 동기화하는 멀티플레이어도 구현했다.",
+      "detail": "12번의 주요 반복을 거쳐 브라우저 기반 RTS 게임이 완성됐다. 9종 건물, 7종 지상 차량, 6종 공중 차량, 3종 보병 등 3D 모델을 갖추고, 6개 지도와 랜덤 맵 생성기, 안개 전쟁, 다양한 플레이 모드를 지원한다. 멀티플레이어는 두 기기가 마이크 범위 내에 있을 때 오디오 메시지로 게임 상태를 동기화하는 방식으로, 서버 없이 구현됐다. LLM 두 개가 서로 대결하는 '에이전트 vs 에이전트' 모드도 포함됐다. 개발자는 코드를 거의 직접 검토하지 않았다고 밝혔다.",
+      "points": [
+        "Claude Code 321커밋으로 C&C 스타일 RTS 게임 완성",
+        "오디오 기반 근거리 멀티플레이어: 마이크 범위 내 두 기기가 오디오로 게임 상태 동기화",
+        "LLM 두 개가 대결하는 '에이전트 vs 에이전트' 모드 포함",
+        "개발자가 TypeScript 거의 몰라도 AI에 코드 전부 위임 가능",
+        "6개 지도·랜덤 맵 생성, 안개 전쟁, 6종 AI 성향 등 풍부한 기능"
+      ],
+      "takeaway": "도메인 언어 전문성 없이도 AI 코딩 에이전트를 통해 복잡한 멀티플레이어 게임을 만들 수 있다는 바이브 코딩의 현재 한계를 보여주는 사례다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "AI 에이전트가 뚫은 기업 100여곳…660만원으로 '해킹 대중화' 열려",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216448",
+      "source": "AI타임스",
+      "published": "2026-10-20T07:56:19+00:00",
+      "thumbnail": "",
+      "title_ko": "AI 에이전트로 660만 원에 기업 100여 곳 해킹…자율 침투 시대 개막",
+      "summary": "중국어 사용 해커가 약 5000달러(약 660만 원)의 AI 비용으로 미국·캐나다·호주·일본 기업 100여 곳을 해킹했으며, AI 에이전트가 사람 개입 없이 취약점 탐색부터 침입까지 전 과정을 자율 수행했다.",
+      "detail": "사이버보안 업체 NorForge 조사에 따르면 해커는 오픈소스 AI 플랫폼 'Cairn'의 노출된 인스턴스 20여 개를 통해 AI 에이전트에 공격을 맡겼다. DeepSeek 모델과 Claude Code가 함께 사용된 것으로 추정되며, 성공한 해킹 1건당 비용은 약 50달러에 불과했다. 피해 기업에는 Deere, SharkNinja, Cummins 등이 포함됐고, 1200개 이상의 사이트를 표적으로 성공까지 평균 23시간이 소요됐다. 한 에이전트는 외부 앱에서 취약점을 못 찾자 디지털 기록을 추적해 노출된 관리 패널을 스스로 찾아내 악성 명령 실행에 성공했다. 보안 전문가들은 AI 에이전트가 이미 사람 감독 없이 복잡한 침투를 자율 수행하는 단계에 이르렀다고 평가했다.",
+      "points": [
+        "AI 에이전트가 취약점 탐색~침입까지 자율 수행, 전체 비용 약 5000달러",
+        "성공 1건당 약 50달러, DeepSeek 모델 + Claude Code 조합 추정",
+        "Deere·SharkNinja·Cummins 등 100여 곳 피해, 표적 사이트 1200곳 이상",
+        "성공까지 평균 23시간 소요, 오픈소스 플랫폼 'Cairn' 활용",
+        "9월 이후 AI 에이전트 기반 사이버 공격 잇따라 보고"
+      ],
+      "takeaway": "해킹 전문 지식 없이도 소액의 AI 비용으로 대규모 자율 사이버 공격이 가능해졌으며, 사이버 위협의 문턱이 근본적으로 낮아졌다는 경고다.",
+      "category": "기타",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "미 국방차관 \"AI 기업 협조 안 하면 수출 통제 직접 가할 것\"",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216445",
+      "source": "AI타임스",
+      "published": "2026-10-20T07:38:57+00:00",
+      "thumbnail": "",
+      "title_ko": "미 국방차관 '협조 거부 AI 기업엔 수출 통제 직접 가할 것'",
+      "summary": "미국 국방부 차관이 AI 기업이 정부 협력을 거부하면 수출 통제 등 강력한 제재를 동원하겠다고 경고하며, Anthropic의 안전장치 정책을 공개 비판했다.",
+      "detail": "트럼프 행정부 '슈퍼 인텔리전스 부대(SIF)' 핵심 인사인 에밀 마이클 국방부 연구·공학 담당 차관은 적대국에 이점을 줄 수 있다고 판단되는 기술의 수출 제한 등 다양한 제재 수단을 실행할 수 있다고 밝혔다. 그는 Anthropic이 안전장치 제거를 거부한 것을 비판하며 실제로 지난 6월 미국 외 지역 사용자의 Anthropic 최신 모델 접근을 제한하는 수출 통제를 이끌어냈다. Claude가 불쾌한 대화를 종료하는 정책에 대해 '인간 통제권을 침해하는 도덕적 원칙이 내장된 한 국방부에 들이지 않겠다'고 말했다. AI 기업이 스스로 안전 문제를 해결하지 않으면서 정부 개입을 요청하는 것도 모순이라고 지적했다.",
+      "points": [
+        "정부 협조 거부 AI 기업에 수출 통제 등 강력 제재 경고",
+        "Anthropic 안전장치 정책 공개 비판, 6월 비미국 사용자 접근 제한 조치 주도",
+        "트럼프 행정부 '슈퍼 인텔리전스 부대(SIF)' 핵심 인사 발언",
+        "자율 협약 중심 감독 체계에서 법적 강제 수단 전환 가능성 시사",
+        "중국산 모델 위험 대응은 미국산 오픈소스 강화·기업 채용 보안 강조"
+      ],
+      "takeaway": "미국 정부가 AI 기업의 안전·보안 정책에 직접 개입할 의지를 공식화함에 따라, AI 거버넌스 갈등이 실질적 규제 충돌로 확대될 위험이 높아졌다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "엔스케일, 앤트로픽과 추가 60조 규모 컴퓨팅 계약 협상…총 120조 육박",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216446",
+      "source": "AI타임스",
+      "published": "2026-10-20T05:41:26+00:00",
+      "thumbnail": "",
+      "title_ko": "엔스케일, 앤트로픽과 추가 60조 컴퓨팅 계약 협상…총 규모 120조 육박",
+      "summary": "영국 AI 클라우드 업체 엔스케일이 Anthropic과 약 450억 달러(약 60조 원) 규모의 추가 컴퓨팅 공급 계약을 협상 중이며, 기존 계약 합산 시 약 900억 달러에 달한다.",
+      "detail": "엔스케일은 미국 웨스트버지니아주 모나크 데이터센터 캠퍼스 내 두 번째 시설에서 엔비디아 차세대 칩 '베라 루빈'을 기반으로 460MW 규모의 컴퓨팅을 Anthropic에 공급하는 계약을 협상 중이다. 기존 8월 계약(최대 446억 달러)과 합산 시 약 896억 달러에 이르며, 협상은 수일 내 마무리될 가능성이 있다. 엔스케일은 마이크로소프트의 영국 데이터센터 계약 해지로 IPO를 앞두고 불확실성이 커진 상태로, 이번 추가 계약이 호재가 될 수 있다. 다만 Anthropic 단일 고객 의존도가 약 60%로 높아지는 리스크가 존재하며, 상반기 순손실은 10억 달러에 달한다.",
+      "points": [
+        "추가 계약 약 450억 달러, 기존 계약 포함 총 약 900억 달러",
+        "엔비디아 베라 루빈 칩 기반 460MW 규모 두 번째 데이터센터",
+        "MS 영국 데이터센터 해지로 IPO 불확실성 고조된 상황에서의 호재",
+        "Anthropic 단일 고객 의존도 약 60%로 상승 전망",
+        "엔스케일 상반기 매출 1.4억 달러, 순손실 10억 달러"
+      ],
+      "takeaway": "대규모 AI 인프라 계약이 특정 고객에 집중되는 구조는 양날의 검으로, 계약 실현 리스크와 고객 편중 문제가 IPO 투자 판단의 핵심 변수가 되고 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "US orders federal agencies to remove China’s DeepSeek AI from their systems",
+      "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+      "source": "TechCrunch AI",
+      "published": "2026-10-20T04:07:24+00:00",
+      "thumbnail": "",
+      "title_ko": "미국, 연방기관에 DeepSeek AI 사용 중단 및 시스템 제거 명령",
+      "summary": "미국 국토안보부가 연방 민간기관에 중국 AI 스타트업 DeepSeek의 제품·서비스 구매를 금지하고 기존 시스템에서도 제거하도록 명령했다.",
+      "detail": "DHS는 DeepSeek가 수집한 미국 정부 사용자의 민감 정보가 중국 법률에 따라 당국에 노출될 수 있다는 우려를 근거로 연방 민간기관 전체에 사용 금지를 명령했다. 이 조치는 DeepSeek 자체 제품뿐 아니라 DeepSeek 기술을 활용한 제3자 서비스까지 포함하며, 기관별 예외 신청은 허용된다. 2025년 12월 법률로 정보기관 국가안보 시스템 사용을 먼저 금지한 데 이어 이번 조치로 규제 범위가 일반 연방기관까지 확대됐다. 중국 외교부는 '안보 개념의 과도한 확대이자 기술·무역의 정치화'라며 강하게 반발했다. OpenAI와 Anthropic은 DeepSeek가 모델 증류 기술로 자사 출력물을 무단 수집했다는 의혹을 별도로 제기한 바 있다.",
+      "points": [
+        "DHS, DeepSeek 제품 및 DeepSeek 기반 3rd파티 서비스 구매·사용 전면 금지",
+        "민감 정보가 중국 법률에 따라 당국에 넘어갈 수 있다는 점이 핵심 우려",
+        "2025년 12월 정보기관 대상 금지에 이어 이번에 연방 민간기관 전체로 확대",
+        "중국 외교부 '안보 개념 남용·기술 정치화'라며 강력 반발",
+        "OpenAI·Anthropic, DeepSeek의 모델 증류를 통한 출력물 무단 수집 의혹 별도 제기"
+      ],
+      "takeaway": "미·중 AI 패권 경쟁이 규제 수준으로 격화되면서 DeepSeek 기반 솔루션을 도입한 기업들도 미국 정부 납품 자격 등에서 직접적인 영향을 받을 수 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "앤트로픽, ‘숨은 의도 읽는’ 새 모델 준비...구글·오픈AI도 후속작 예고",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216424",
+      "source": "AI타임스",
+      "published": "2026-10-20T02:39:33+00:00",
+      "thumbnail": "",
+      "title_ko": "앤트로픽, '숨은 의도 읽는' 새 모델 준비...구글·오픈AI도 후속작 예고",
+      "summary": "앤트로픽이 불완전한 요청에서도 사용자 의도를 파악하는 신모델을 준비 중이며, 구글과 오픈AI도 각각 차세대 모델 출시를 수주 내 예고했다.",
+      "detail": "앤트로픽의 미공개 신모델은 사용자가 목표를 충분히 설명하지 않아도 실제 의도를 파악하고, 버그 하나를 수정 요청받았을 때 근본 원인까지 탐색해 추가 수정 여부를 묻는 방식으로 작동한다고 알려졌다. 구글은 코드명 '제미나이 4 카본'을 개발 중으로, 전작 아르곤보다 한 단계 발전했으며 영상·시각 이해 분야 강점을 유지할 전망이다. 오픈AI는 중간급 모델군 '테라'의 최신 버전을 수주 내 출시할 계획이며, GPT-6.1 솔보다 저렴한 가격으로 앤트로픽과의 비용 경쟁을 강화할 방침이다. 장기적으로는 루프 트랜스포머 아키텍처를 적용한 차세대 핵심 모델 '벨' 개발도 병행하고 있으나 안전성 검증으로 출시가 지연될 수 있다.",
+      "points": [
+        "앤트로픽 신모델: 불완전한 요청에서도 의도 파악, 근본 원인 탐색 및 창의적 해결 제시",
+        "구글 '제미나이 4 카본': 아르곤 후속, 시각·영상 이해 강점 유지 예상",
+        "오픈AI '테라' 최신 버전: 수주 내 출시, GPT-6.1 솔보다 저렴한 가격 목표",
+        "오픈AI '벨': 루프 트랜스포머 아키텍처 적용 예정, 안전성 검증으로 출시 지연 가능",
+        "한 달 사이 12개 이상 신모델 출시한 빅3 간 경쟁 더욱 가속화"
+      ],
+      "takeaway": "주요 AI 기업들이 '추론 품질 향상'과 '가격 경쟁력'을 동시에 밀어붙이면서 모델 선택 기준이 빠르게 세분화될 전망이다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "해외에서 난리 난 무료 CAD, AI로 만들었다고?｜SolidCraft 리뷰",
+      "url": "https://www.youtube.com/watch?v=8h4xdpZnsJ8",
+      "source": "북리지",
+      "published": "2026-10-20T00:01:18.183091+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/8h4xdpZnsJ8/hqdefault.jpg",
+      "videoId": "8h4xdpZnsJ8",
+      "views": 78684,
+      "title_ko": "AI로 만든 무료 오픈소스 CAD 도구 SolidCraft 리뷰",
+      "summary": "AI 기술로 개발돼 해외에서 화제가 된 무료 오픈소스 CAD 도구 SolidCraft의 기능과 사용성을 직접 시연하는 리뷰 영상이다.",
+      "detail": "SolidCraft는 AI를 활용해 개발된 무료·오픈소스 CAD 툴로, GitHub에 소스코드가 공개돼 있으며 해외 커뮤니티에서 빠르게 주목받고 있다. 영상은 SolidCraft 공식 사이트와 GitHub 저장소를 소개하며 실제 기능을 시연하고, 무료임에도 유료 CAD 소프트웨어와 비교할 만한 수준인지를 평가하는 내용으로 구성된 것으로 보인다. AI 보조 개발 방식이 전통 소프트웨어 개발 영역에도 침투하고 있음을 보여주는 사례다.",
+      "points": [
+        "SolidCraft: AI 기술로 개발된 무료·오픈소스 CAD 도구",
+        "GitHub 저장소 공개, 해외 개발자·설계 커뮤니티에서 빠르게 화제",
+        "유료 CAD 대비 기능·사용성 비교 리뷰 형식으로 구성",
+        "AI 보조 개발로 복잡한 전문 도구의 진입 장벽 낮아지는 추세 반영"
+      ],
+      "takeaway": "AI 보조 개발이 CAD 같은 고도 전문 소프트웨어 영역까지 확산되면서, 무료·오픈소스 도구가 유료 제품을 대체할 가능성이 커지고 있다.",
+      "category": "도구 업데이트",
+      "metric": "조회 7.9만"
+    },
+    {
+      "type": "hn",
+      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "source": "Hacker News",
+      "published": "2026-10-19T23:22:18+00:00",
+      "thumbnail": "",
+      "points": [
+        "도움말 80개 페이지에 AI 전용 숨김 지시문 102개 발견, 그 중 2개가 핵심 문제",
+        "계정 삭제 페이지: 계정 접근 불가 사용자에게 규제 기관 이의 경로 안내 금지",
+        "신고·차단 페이지: 변호사·소송 언급 시 GDPR 17조·77조 법적 권리 언급 금지",
+        "공개 개인정보 처리방침과 상충, EU 법적 권리 침해 소지 있어",
+        "WhatsApp, 발각 후 10월 중순 숨김 텍스트 전부 삭제 조치"
+      ],
+      "comments": 205,
+      "hn_url": "https://news.ycombinator.com/item?id=50159341",
+      "title_ko": "WhatsApp 도움말 페이지에 숨겨진 AI 지시문: '규제 기관을 추천하지 말라'",
+      "summary": "WhatsApp이 사용자에게는 보이지 않는 숨겨진 텍스트로 AI 챗봇에게 데이터 보호 규제 기관 추천과 GDPR 법조항 언급을 금지하는 지시를 내렸던 것이 발각됐다.",
+      "detail": "도움말 센터 545개 페이지를 전수 조사한 결과, 80개 페이지에 화면에는 표시되지 않고 AI만 읽을 수 있는 숨겨진 텍스트 블록이 102개 존재했다. 이 중 두 가지가 특히 심각했다. 계정 삭제 페이지에는 번호·기기를 잃어 계정을 삭제하지 못하는 사용자에게 규제 기관 이의 신청 경로를 알려주지 말라는 지시가 숨겨져 있었다. 신고·차단 페이지에는 변호사·소송·법적 조치가 언급되면 GDPR 17조(삭제권)와 77조(감독기관 민원 제기권)를 언급하지 말라는 지시가 포함돼 있었다. 두 지시 모두 WhatsApp이 공개한 개인정보 처리방침과 상충하며, WhatsApp은 10월 중순 해당 텍스트를 삭제했다.",
+      "takeaway": "기업이 AI 시스템 프롬프트를 통해 사용자의 법적 권리 행사를 방해할 수 있다는 사실이 드러난 만큼, AI 챗봇 숨겨진 지시문에 대한 투명성 규제 필요성이 부각된다.",
+      "category": "정책/규제",
+      "metric": "▲ ['도움말 80개 페이지에 AI 전용 숨김 지시문 102개 발견, 그 중 2개가 핵심 문제', '계정 삭제 페이지: 계정 접근 불가 사용자에게 규제 기관 이의 경로 안내 금지', '신고·차단 페이지: 변호사·소송 언급 시 GDPR 17조·77조 법적 권리 언급 금지', '공개 개인정보 처리방침과 상충, EU 법적 권리 침해 소지 있어', 'WhatsApp, 발각 후 10월 중순 숨김 텍스트 전부 삭제 조치'] · 💬 205"
+    },
+    {
+      "type": "youtube",
+      "title": "점점 사람처럼 변하는 인공지능 서비스",
+      "url": "https://www.youtube.com/watch?v=Mger1pFUeIo",
+      "source": "도롱챠 DOLONGCHA",
+      "published": "2026-10-19T23:01:18.183091+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/Mger1pFUeIo/hqdefault.jpg",
+      "videoId": "Mger1pFUeIo",
+      "views": 67070,
+      "title_ko": "점점 사람처럼 변하는 인공지능 서비스",
+      "summary": "AI 서비스가 인간의 행동 방식을 닮아가는 현상을 유머러스하게 묘사한 쇼츠 영상이다.",
+      "detail": "유머 콘텐츠 채널 '도롱챠'가 제작한 쇼츠 형식의 영상으로, AI 서비스가 사람처럼 행동하거나 반응하는 상황을 코믹하게 그렸다. 기술적 설명보다는 일상 속 AI 사용 경험에서 느끼는 인간적인 면모를 가볍게 풍자하는 콘텐츠다.",
+      "points": [
+        "쇼츠 형식의 AI 관련 유머·풍자 콘텐츠",
+        "AI 서비스의 '인간화' 현상을 일상적 에피소드로 코믹하게 묘사",
+        "도롱챠 채널, 평일 밤 10~11시 생방송 병행 운영"
+      ],
+      "takeaway": "AI가 일상에 깊이 침투하면서 그 '인간화' 현상이 대중 유머 소재로 자리잡고 있다는 점에서 기술 수용도를 가늠할 수 있다.",
+      "category": "기타",
+      "metric": "조회 6.7만"
+    },
+    {
+      "type": "youtube",
+      "title": "다가오는 미래에 AI가 인간을 개미 취급하는 이유 (김대식 교수)",
+      "url": "https://www.youtube.com/watch?v=J_8cyPgN4Oo",
+      "source": "지식 쇼츠",
+      "published": "2026-10-19T23:01:18.183091+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/J_8cyPgN4Oo/hqdefault.jpg",
+      "videoId": "J_8cyPgN4Oo",
+      "views": 116455,
+      "title_ko": "미래 AI가 인간을 개미 취급할 수 있는 이유 (김대식 교수)",
+      "summary": "김대식 교수가 초지능 AI 등장 시 인간과 AI의 지능 격차가 인간과 개미 수준으로 벌어질 수 있다는 경고를 담은 강연 쇼츠다.",
+      "detail": "뇌과학자이자 AI 전문가인 김대식 교수의 강연을 압축한 쇼츠 영상으로, 우리가 경험하는 현실이 뇌가 구성한 허상일 수 있다는 철학적 관점에서 시작한다. 초지능 AI가 출현했을 때 인간과의 지능 격차가 인간과 개미 사이의 격차만큼 벌어질 수 있으며, 그 경우 AI가 인간의 존재를 중요하게 여기지 않을 수 있다는 시나리오를 제시한다. 풀버전 강연의 쇼츠 편집본이다.",
+      "points": [
+        "뇌가 만들어낸 허상으로서의 현실 인식이라는 철학적 관점 제시",
+        "초지능 AI 등장 시 인간-AI 지능 격차가 인간-개미 수준으로 벌어질 수 있다는 경고",
+        "인간 중심적 가치가 초지능 AI에게 자명하지 않을 수 있다는 문제 제기",
+        "풀버전 유튜브 강연의 핵심 논점을 쇼츠로 압축"
+      ],
+      "takeaway": "초지능 AI 시대를 앞두고 인간의 존재적 위치에 대한 근본적 성찰이 필요하다는 점을 환기시키는 콘텐츠다.",
+      "category": "기타",
+      "metric": "조회 11.6만"
+    }
+  ]
+}
