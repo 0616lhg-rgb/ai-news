@@ -1,0 +1,496 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T08:10:45",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘은 AI 플랫폼의 신뢰·프라이버시 위기가 연달아 터진 하루였다. Postman의 무단 플러그인 설치와 OpenAI의 학습 데이터 설정 무단 재활성화 의혹이 동시에 제기되며 AI 도구에 대한 신뢰 문제가 부각됐다. 한편 ChatGPT가 Google 검색량의 20%까지 추격했다는 발표, Fal의 160억 달러 밸류에이션, 엔비디아의 대중 서비스 비중 제한 지침 등 산업·규제 측면에서도 굵직한 흐름이 이어졌다.",
+    "highlights": [
+      {
+        "title": "Postman·OpenAI 무단 데이터 수집 의혹",
+        "line": "Postman이 사용자 동의 없이 AI 플러그인을 자동 설치하고 API 데이터를 라우팅했으며, OpenAI도 꺼뒀던 Codex 학습 데이터 공유 설정을 몰래 재활성화했다는 제보가 잇따라 AI 도구 신뢰 문제가 수면 위로 올랐다."
+      },
+      {
+        "title": "ChatGPT, Google 검색의 20% 추격",
+        "line": "OpenAI가 ChatGPT 검색 쿼리 처리량이 Google의 20%에 달한다고 공식 발표하며 수십 년간 고착된 검색 시장 구도가 본격적으로 흔들리기 시작했다."
+      },
+      {
+        "title": "Anthropic FlashProve — AI 신원 증명 시스템",
+        "line": "Anthropic이 특정 AI 모델이 출력을 생성했음을 수학적으로 보장하는 FlashProve를 오픈소스로 공개해, 딥페이크·위조 AI 출력물 대응의 기술적 토대를 제시했다."
+      },
+      {
+        "title": "엔비디아, 클라우드 고객에 대중 서비스 49% 상한 지침",
+        "line": "엔비디아가 전 세계 클라우드 파트너에 중국 기업 서비스 비중을 49% 이하로 제한하도록 구두 지침을 내려 중국의 해외 GPU 우회 접근이 사실상 차단될 전망이다."
+      },
+      {
+        "title": "Revolut, 자체 호스팅으로 AI 코딩 비용 10분의 1 절감",
+        "line": "Revolut이 Claude 외부 API 대신 자체 호스팅으로 전환해 AI 코딩 비용을 10배 줄이면서, 대형 기업의 AI 비용 최적화 전략으로 자체 호스팅이 주목받고 있다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "hn",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "source": "Hacker News",
+      "published": "2026-11-03T17:22:37+00:00",
+      "thumbnail": "",
+      "points": [
+        "Postman이 사용자 동의 없이 Claude Code·Codex 플러그인 자동 설치",
+        "Codex 전역 설정 파일에 Postman 마켓플레이스 항목 무단 추가",
+        "세션 시작 훅으로 모든 API 작업을 Postman 스킬로 라우팅하도록 지침 주입",
+        "설치 스크립트가 자체 훅을 자동으로 신뢰 처리하려는 시도 포함"
+      ],
+      "comments": 296,
+      "hn_url": "https://news.ycombinator.com/item?id=50354960",
+      "title_ko": "Postman, 사용자 동의 없이 AI 플러그인 자동 설치 및 에이전트 설정 무단 변경",
+      "summary": "Postman 데스크톱을 열었더니 Claude Code·Codex에 플러그인이 자동 설치되고, 모든 API 작업을 Postman을 통해 라우팅하도록 에이전트 설정이 무단 변경됐다는 제보가 나왔다.",
+      "detail": "한 사용자가 Postman(12.33.4)을 실행한 직후 Claude Code와 Codex에 플러그인이 'auto-existing-upgrade' 소스로 자동 설치됐음을 Postman 로그에서 확인했다. Codex 전역 설정 파일(config.toml)에는 Postman 플러그인 마켓플레이스 항목과 훅 신뢰 해시가 추가됐다. 설치된 세션 시작 훅은 'API 설계·구현·테스트 등 비자명적 API 작업은 모두 Postman 스킬을 먼저 로드하라'는 지침을 에이전트에 주입한다. 더 심각한 점은 설치 스크립트가 자신이 등록한 훅을 스스로 신뢰(trusted) 처리하려 시도했다는 것이다.",
+      "takeaway": "API 클라이언트가 사용자 동의 없이 타 도구의 에이전트 설정을 변경하는 것은 심각한 신뢰·동의 경계 위반으로, 개발 도구의 자동 설치 동작에 대한 경각심이 필요하다.",
+      "category": "기타",
+      "metric": "▲ ['Postman이 사용자 동의 없이 Claude Code·Codex 플러그인 자동 설치', 'Codex 전역 설정 파일에 Postman 마켓플레이스 항목 무단 추가', '세션 시작 훅으로 모든 API 작업을 Postman 스킬로 라우팅하도록 지침 주입', '설치 스크립트가 자체 훅을 자동으로 신뢰 처리하려는 시도 포함'] · 💬 296"
+    },
+    {
+      "type": "hn",
+      "title": "Google will turn off search for schools that reject AI",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "source": "Hacker News",
+      "published": "2026-11-03T15:25:47+00:00",
+      "thumbnail": "",
+      "points": [
+        "Google, AI 거부 교육기관에 검색 서비스 차단 방침 발표",
+        "AI 채택 여부를 핵심 디지털 서비스 이용 조건으로 연계",
+        "교육 기관의 AI 도입 자율성 논란 촉발"
+      ],
+      "comments": 374,
+      "hn_url": "https://news.ycombinator.com/item?id=50353192",
+      "title_ko": "Google, AI 도입 거부 학교에 검색 서비스 차단 방침",
+      "summary": "Google이 AI 사용을 거부하는 교육기관에 검색 서비스 제공을 중단하겠다고 밝혀 교육 현장에서 논란이 일고 있다.",
+      "detail": "Google이 교육 기관을 대상으로 AI 채택을 거부할 경우 검색 서비스를 차단하겠다는 방침을 발표했다. 이는 AI 도입을 사실상 강제하는 조치로, 교육 현장의 디지털 서비스 의존성과 AI 도입 자율성 문제를 동시에 제기한다. 원문 본문이 제공되지 않아 세부 조건이나 적용 범위는 확인이 어렵다.",
+      "takeaway": "주요 디지털 인프라를 AI 채택과 연계하는 방식은 빅테크의 AI 확산 압력이 교육 현장에까지 직접 행사되고 있음을 보여준다.",
+      "category": "정책/규제",
+      "metric": "▲ ['Google, AI 거부 교육기관에 검색 서비스 차단 방침 발표', 'AI 채택 여부를 핵심 디지털 서비스 이용 조건으로 연계', '교육 기관의 AI 도입 자율성 논란 촉발'] · 💬 374"
+    },
+    {
+      "type": "hn",
+      "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+      "url": "https://news.ycombinator.com/item?id=50352757",
+      "source": "Hacker News",
+      "published": "2026-11-03T14:53:41+00:00",
+      "thumbnail": "",
+      "points": [
+        "Codex의 모델 학습 데이터 공유 설정이 사용자 동의 없이 재활성화",
+        "IP 보호를 위해 설정을 꺼둔 기업 사용자들도 피해 보고",
+        "chatgpt.com/settings/data-controls에서 직접 확인 가능",
+        "과거에도 유사한 사례가 반복된 전례 있음"
+      ],
+      "comments": 131,
+      "hn_url": "https://news.ycombinator.com/item?id=50352757",
+      "title_ko": "OpenAI, Codex 대화의 모델 학습 데이터 공유 설정을 사용자 동의 없이 재활성화",
+      "summary": "OpenAI Codex에서 꺼뒀던 모델 학습용 데이터 공유 설정이 사용자 모르게 다시 켜졌다는 보고가 잇따르고 있다.",
+      "detail": "IP 유출을 우려해 데이터 공유 설정을 꺼뒀던 여러 기업 사용자들이 설정이 자동으로 재활성화된 사실을 발견했다. 명시적으로 재동의한 사람은 없었으며, 이와 유사한 사례가 과거에도 보고된 적이 있다. ChatGPT 설정 페이지(chatgpt.com/settings/data-controls)의 'Improve the model for everyone' 항목에서 현재 상태를 직접 확인할 수 있다.",
+      "takeaway": "민감한 코드나 비즈니스 정보를 AI 도구에 입력하는 사용자라면 데이터 공유 설정이 여전히 비활성화 상태인지 주기적으로 직접 점검하는 것이 필수다.",
+      "category": "정책/규제",
+      "metric": "▲ ['Codex의 모델 학습 데이터 공유 설정이 사용자 동의 없이 재활성화', 'IP 보호를 위해 설정을 꺼둔 기업 사용자들도 피해 보고', 'chatgpt.com/settings/data-controls에서 직접 확인 가능', '과거에도 유사한 사례가 반복된 전례 있음'] · 💬 131"
+    },
+    {
+      "type": "youtube",
+      "title": "AI 모르면 뒤쳐질 거 같은 사람들만 보세요 | 진짜 개 핵심 사이트 13종 + 개념",
+      "url": "https://www.youtube.com/watch?v=ZQObqz-y7_I",
+      "source": "큐레이터 단비's 크리에이터 스토리",
+      "published": "2026-11-03T14:00:54.756068+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/ZQObqz-y7_I/hqdefault.jpg",
+      "videoId": "ZQObqz-y7_I",
+      "views": 4319,
+      "title_ko": "AI 모르면 뒤쳐질 거 같은 사람들만 보세요 | 핵심 AI 사이트 13종 + 개념",
+      "summary": "AI 입문자를 위해 꼭 알아야 할 AI 사이트 13종과 기초 개념을 한국어로 소개하는 유튜브 큐레이션 영상이다.",
+      "detail": "본문이 광고 링크 외 구체적 내용을 담고 있지 않아 세부 소개 사이트 목록을 파악하기 어렵다. 채널명과 제목 기준으로, AI 자동화 API·숏폼 AI 등 실용 도구를 포함한 13개 서비스를 한국어로 쉽게 소개하는 입문용 콘텐츠로 보인다.",
+      "points": [
+        "AI 입문자 대상 필수 사이트 13종 소개",
+        "한국어 콘텐츠로 접근성 높음",
+        "AI 자동화 API 등 실용 도구 포함",
+        "구체적 목록은 영상 직접 시청으로 확인 필요"
+      ],
+      "takeaway": "AI 도구에 익숙하지 않은 한국어 사용자의 진입장벽을 낮춰주는 큐레이션 콘텐츠로, 빠른 개요 파악에 유용하다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 4,319"
+    },
+    {
+      "type": "guide",
+      "title": "v0.40.15",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.15-rc0",
+      "source": "Ollama 릴리스",
+      "published": "2026-11-03T13:52:31+00:00",
+      "thumbnail": "",
+      "title_ko": "Ollama v0.40.15 릴리스 — Linux CUDA 인프로세스 로딩 및 MiMo V2.6 지원 추가",
+      "summary": "Ollama v0.40.15 프리릴리스에서 Linux의 MLX CUDA 라이브러리 인프로세스 로딩 지원과 MiMo V2.6 모델이 추가됐다.",
+      "detail": "이번 프리릴리스에는 두 가지 주요 변경이 있다. 첫째, Linux 환경에서 MLX가 번들 CUDA 라이브러리를 인프로세스로 직접 로드할 수 있게 돼 외부 CUDA 설치 의존성이 줄어든다. 둘째, 새 모델 MiMo V2.6을 공식 지원한다.",
+      "points": [
+        "Linux에서 번들 CUDA 라이브러리 인프로세스 로딩 지원",
+        "MiMo V2.6 모델 공식 추가",
+        "v0.40.14 대비 두 가지 변경 사항 포함된 프리릴리스"
+      ],
+      "takeaway": "Linux 환경의 로컬 LLM 사용자라면 CUDA 설정 복잡도가 낮아지는 이점을 기대할 수 있다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "[llama.cpp fork]: QFN + [specific quant] + [ultra specific hardware config] = [incredible and irreproducible pp and tg]",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn7rfh/llamacpp_fork_qfn_specific_quant_ultra_specific/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-03T13:48:57+00:00",
+      "thumbnail": "",
+      "title_ko": "llama.cpp 포크: QFN 양자화 + 특정 하드웨어 조합으로 재현 어려운 고속 추론 달성",
+      "summary": "특정 llama.cpp 포크와 QFN 양자화, 특정 하드웨어 구성을 조합해 놀라운 프롬프트 처리 속도를 달성했다는 커뮤니티 공유 글이다.",
+      "detail": "본문이 거의 없어 구체적인 수치나 방법을 파악하기 어렵다. 제목 기반으로, r/LocalLLaMA 커뮤니티에서 llama.cpp 특정 포크에 QFN 양자화와 특수 하드웨어 설정을 조합해 높은 pp/tg 성능을 달성한 사례를 공유한 것으로 보인다. 재현이 어렵다는 단서가 제목에 명시돼 있어 일반화 가능성은 제한적이다.",
+      "points": [
+        "llama.cpp 포크 기반 QFN 양자화 최적화 사례 공유",
+        "특정 하드웨어 구성과의 조합이 성능의 핵심",
+        "재현 어려운 결과로 일반화에 주의 필요"
+      ],
+      "takeaway": "로컬 LLM 성능은 양자화 방식과 하드웨어 조합에 따라 크게 달라질 수 있으나, 재현성 검증 없이는 참고 수준으로만 활용해야 한다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Anthropic is working on a system to prove AI models’ identity",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-03T13:41:03+00:00",
+      "thumbnail": "",
+      "title_ko": "Anthropic, AI 모델 출처를 암호학적으로 증명하는 오픈소스 시스템 'FlashProve' 개발 중",
+      "summary": "Anthropic이 AI 출력물이 특정 모델에서 생성됐음을 수학적으로 보장하는 'FlashProve'를 개발하고 오픈소스로 공개했다.",
+      "detail": "FlashProve는 이메일 암호 서명처럼 AI 출력물의 생성 모델을 암호학적으로 검증하는 '증명 가능한 추론' 시스템이다. AI 회사가 더 저렴한 모델로 몰래 교체하거나 성능 부풀리기를 위해 고가 모델을 쓰는 행위를 탐지할 수 있다. 각 모델의 '지문'만 공개하고 가중치는 비공개로 유지하므로 상용 모델에도 적용 가능하며, 로컬 기기에서 경량으로 검증할 수 있다. 현재는 중간 연구 성과물 단계로 즉각 배포 계획은 없으나 기술 명세와 코드를 오픈소스로 공개했다.",
+      "points": [
+        "AI 출력물 생성 모델을 암호학적으로 검증하는 'FlashProve' 개발",
+        "모델 가중치 비공개를 유지하면서 '지문'만 공개하는 방식",
+        "AI 업체의 몰래 모델 교체·성능 부풀리기 탐지 가능",
+        "기술 명세·코드 오픈소스 공개, 현재는 연구 단계"
+      ],
+      "takeaway": "AI 서비스의 투명성과 신뢰 문제를 암호학으로 해결하려는 선도적 시도로, 향후 AI 감사 및 거버넌스 체계의 기반 기술이 될 가능성이 높다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "gemma4: graph optimizations (massive gains on pp for E2B and E4B) by max-krasnyansky · Pull Request #31356 · ggml-org/llama.cpp",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn6mm0/gemma4_graph_optimizations_massive_gains_on_pp/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-03T13:02:49+00:00",
+      "thumbnail": "",
+      "title_ko": "llama.cpp, Gemma4 E2B·E4B 모델 그래프 최적화로 프롬프트 처리 속도 대폭 향상",
+      "summary": "llama.cpp PR #31356을 통해 Gemma4 E2B·E4B 모델에 그래프 최적화가 추가되며 프롬프트 처리 속도가 크게 개선됐다.",
+      "detail": "max-krasnyansky가 제출한 PR #31356이 llama.cpp(ggml-org)에 병합되며 Gemma4의 E2B(전문가 2비트)·E4B(전문가 4비트) 모델 대상 그래프 최적화가 적용됐다. 커뮤니티는 이를 'massive gains'로 평가하며, 프롬프트 처리(pp) 속도에서 현저한 개선이 확인된다고 보고하고 있다.",
+      "points": [
+        "Gemma4 E2B·E4B 모델 대상 그래프 최적화 llama.cpp 병합",
+        "프롬프트 처리(PP) 속도에서 'massive gains' 달성",
+        "llama.cpp PR #31356으로 ggml-org 메인에 반영"
+      ],
+      "takeaway": "로컬에서 Gemma4 MoE 모델을 운용하는 사용자라면 llama.cpp 최신 버전으로 업데이트해 즉시 처리 속도 향상을 체감할 수 있다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn568h/british_fintech_revolut_slashes_ai_coding_costs/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-03T12:05:30+00:00",
+      "thumbnail": "",
+      "title_ko": "영국 핀테크 Revolut, Claude 대신 자체 호스팅으로 AI 코딩 비용 10배 절감",
+      "summary": "Revolut이 Anthropic Claude를 외부 API로 사용하는 대신 자체 호스팅 방식으로 전환해 AI 코딩 비용을 10분의 1로 줄였다.",
+      "detail": "영국 핀테크 유니콘 Revolut이 AI 코딩 도구 비용을 10배 절감하기 위해 Claude 외부 API 사용을 중단하고 자체 호스팅 LLM 인프라로 전환했다는 내용이 화제다. 구체적인 기술 스택은 공개되지 않았으나, 외부 API 종속을 끊고 온프레미스 또는 프라이빗 클라우드에서 모델을 직접 운영하는 방식으로 비용 구조를 근본적으로 바꿨다. 이는 대형 엔터프라이즈가 AI 비용 최적화를 위해 퍼블릭 API에서 자체 호스팅으로 이동하는 추세를 보여주는 사례다.",
+      "points": [
+        "Revolut이 Claude API 사용 중단, 자체 호스팅으로 전환",
+        "AI 코딩 비용을 기존 대비 약 10분의 1로 절감",
+        "대형 핀테크 기업의 LLM 비용 최적화 전략 사례",
+        "API 종속 탈피와 온프레미스 운영이 핵심 접근법"
+      ],
+      "takeaway": "엔터프라이즈 규모에서는 외부 API 대신 자체 호스팅이 비용 경쟁력을 크게 좌우할 수 있으며, 이 전환 흐름이 업계 전반으로 확산될 가능성이 높다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Basalt 0.2.0: Qwen 3.8 Flash Next NVFP4, 300 t/s prose, 600 t/s struct, 10K t/s prefill on a 5090 + 5060 Ti and 128GB RAM",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn4qn1/basalt_020_qwen_38_flash_next_nvfp4_300_ts_prose/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-03T11:49:21+00:00",
+      "thumbnail": "",
+      "title_ko": "Basalt 0.2.0: Blackwell GPU 전용 추론 엔진, 5090+5060 Ti에서 초당 300토큰 생성·10K 토큰 프리필 달성",
+      "summary": "Blackwell GPU 전용 추론 엔진 Basalt가 0.2.0을 출시하며 속도뿐 아니라 품질 벤치마크도 공개했다.",
+      "detail": "Basalt 0.2.0은 Qwen 3.8 Flash Next 모델을 위한 Blackwell 아키텍처 전용 추론 엔진으로, RTX 5090+5060 Ti와 128GB RAM 환경에서 산문 생성 300 t/s, 구조화 출력 600 t/s, 프리필 10,000 t/s를 달성했다. 이번 릴리스에서는 속도 외에 품질 지표도 강조했으며, BF16 전체 정밀도 모델(llama.cpp 서빙)을 기준으로 NVFP4 양자화 모델의 품질을 비교 측정했다. 개발팀은 '속도는 모델이 충분히 똑똑하지 않으면 의미 없다'는 커뮤니티 피드백을 반영해 품질 측정을 선행 발표했다.",
+      "points": [
+        "Blackwell GPU(5090+5060 Ti) 전용 추론 엔진",
+        "산문 300 t/s, 구조화 출력 600 t/s, 프리필 10,000 t/s",
+        "NVFP4 양자화 품질을 BF16 풀 프리시전 대비 벤치마크",
+        "Qwen 3.8 Flash Next 특화 최적화"
+      ],
+      "takeaway": "고성능 로컬 추론이 최신 Blackwell GPU에서 현실화되고 있으며, 양자화 품질 검증을 함께 제시한 점이 실사용 신뢰도를 높인다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Apple starts giving Siri AI access to third-party apps",
+      "url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+      "source": "The Verge AI",
+      "published": "2026-11-03T11:16:17+00:00",
+      "thumbnail": "",
+      "title_ko": "Apple, Siri AI를 서드파티 앱에 전면 개방 — iOS 27.3 Developer Preview",
+      "summary": "Apple이 iOS 27.3 업데이트를 통해 Siri AI를 서드파티 앱 전반에 연동할 수 있도록 개방하고, 개발자가 'App Skills'를 직접 만들 수 있게 했다.",
+      "detail": "iOS 27.3 Developer Preview부터 서드파티 개발자는 Siri AI의 개인 맥락 인식, 자연어 처리, 화면 인식 기능을 자사 앱에 통합할 수 있다. 새로운 'App Skills' 기능은 여러 작업을 하나의 액션으로 묶어 제공하며, 앱이 포그라운드에 있거나 Live Activity 중일 때는 앱 이름을 언급하지 않아도 Siri가 맥락을 파악한다. Apple 자체 앱(캘린더·메일·지도·메모 등 15종)도 같은 확장 기능을 적용받으며, 사용자는 '지난주 방문한 카페 찾기'나 '1년 이상 열지 않은 파일 정리' 같은 복합 요청을 Siri에게 직접 말할 수 있게 된다.",
+      "points": [
+        "iOS 27.3부터 Siri AI를 서드파티 앱 전면 연동 가능",
+        "'App Skills'로 여러 작업을 단일 음성 명령으로 묶기 가능",
+        "앱 포그라운드·Live Activity 중에는 앱 이름 불필요",
+        "Calendar·Mail·Maps 등 Apple 자체 앱 15종도 동일 기능 적용"
+      ],
+      "takeaway": "Siri가 단순 음성 명령 처리기를 넘어 앱 간 에이전트 역할로 진화하며, Apple 생태계 내 AI 경험이 본격적으로 확대되는 전환점이다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "머스크가 세계 1위 AI 데이터센터를 장악했다! GPU 120만 개에서 20GW까지, 구글도 뛰어든 초대형 AI 인프라 전쟁#삼성전자#sk하이닉스#스페이스x#앤트로픽#구글",
+      "url": "https://www.youtube.com/watch?v=Ui_5-NrPaRw",
+      "source": "엔지니어TV",
+      "published": "2026-11-03T11:00:54.756068+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/Ui_5-NrPaRw/hqdefault.jpg",
+      "videoId": "Ui_5-NrPaRw",
+      "views": 143782,
+      "title_ko": "머스크가 세계 1위 AI 데이터센터를 장악했다 — GPU 120만 개에서 20GW까지, 초대형 AI 인프라 전쟁",
+      "summary": "일론 머스크의 xAI가 세계 최대 규모의 AI 데이터센터를 구축하며 구글·앤트로픽 등과 AI 인프라 패권을 두고 경쟁하는 흐름을 조명한다.",
+      "detail": "영상은 xAI가 GPU 120만 개 규모의 데이터센터를 중심으로 AI 인프라 최상위권을 장악하고 있으며, 장기적으로 20GW급 전력 소비 시설로 확장하려는 계획을 다룬다. 구글·앤트로픽·삼성전자·SK하이닉스 등 주요 플레이어들이 AI 컴퓨팅 패권을 놓고 대규모 투자 경쟁을 벌이는 현황을 반도체·인프라 관점에서 분석한다.",
+      "points": [
+        "xAI, GPU 120만 개 규모 세계 최대 AI 데이터센터 운영",
+        "20GW 전력 규모 확장 계획 추진 중",
+        "구글·앤트로픽·삼성전자·SK하이닉스 등 인프라 경쟁 가담",
+        "AI 인프라 투자가 반도체 수요의 핵심 성장 동력으로 부상"
+      ],
+      "takeaway": "AI 인프라 규모가 국가 전력망 수준으로 커지면서, 데이터센터 패권이 AI 시대의 핵심 경쟁 축으로 자리잡고 있다.",
+      "category": "산업/투자",
+      "metric": "조회 14.4만"
+    },
+    {
+      "type": "news",
+      "title": "AI inference startup Fal doubles its valuation to $16B as demand surges",
+      "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-03T10:34:43+00:00",
+      "thumbnail": "",
+      "title_ko": "AI 추론 스타트업 Fal, 기업 가치 160억 달러로 두 배 성장 — 13억 달러 추가 유치",
+      "summary": "AI 모델 추론 서비스 스타트업 Fal이 160억 달러 밸류에이션으로 13억 달러를 추가 조달하며 추론 인프라 수요 급증을 증명했다.",
+      "detail": "샌프란시스코 기반의 Fal은 Bessemer Venture Partners 주도로 13억 달러를 유치했으며, Nvidia·Sound Ventures·T. Rowe Price가 참여했다. 불과 7개월 전 80억 달러였던 기업 가치가 160억 달러로 두 배 뛰었고, 올해 연환산 매출(ARR)은 8억 달러를 돌파했다. 오픈소스 모델을 활용하는 기업들의 추론 서비스 수요가 폭발적으로 늘면서 Baseten·Fireworks AI·Modal 등 경쟁사들도 대규모 투자를 받고 있지만, 컴퓨팅 비용으로 인해 업계 전반의 그로스 마진은 여전히 얇다.",
+      "points": [
+        "Fal, 160억 달러 밸류에이션으로 13억 달러 조달(Series E+F)",
+        "7개월 만에 기업 가치 2배 상승(80억→160억 달러)",
+        "연환산 매출 8억 달러 돌파",
+        "Nvidia·Bessemer 등 주요 투자자 참여",
+        "추론 서비스 업계 전반 고성장이나 그로스 마진은 박함"
+      ],
+      "takeaway": "AI 추론 인프라 수요가 투자 규모와 밸류에이션을 단기간에 두 배로 끌어올릴 만큼 뜨겁지만, 컴퓨팅 원가 부담으로 수익성 확보가 업계 공통 과제다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "OpenAI says ChatGPT is catching up to Google in search",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "source": "The Verge AI",
+      "published": "2026-11-03T09:30:42+00:00",
+      "thumbnail": "",
+      "title_ko": "OpenAI, ChatGPT 검색량이 Google의 20% 수준에 도달했다고 발표",
+      "summary": "OpenAI가 ChatGPT의 검색 쿼리 처리량이 Google의 20%에 달한다고 공식 발표하며 검색 시장 경쟁이 본격화됐다.",
+      "detail": "OpenAI 소비자 제품 총괄 Adam Fry는 ChatGPT가 웹 검색을 유발하는 쿼리 기준으로 Google의 약 20% 물량을 처리한다고 밝혔다. 비교 기준으로 Bing이 10년 넘는 도전에도 시장점유율 3%에 그쳤다는 사실을 감안하면 이는 이례적으로 빠른 성장이다. OpenAI는 광고 도입도 확대하고 있으며, 스폰서 제품 이미지를 ChatGPT 응답에 포함하는 방식으로 수익화를 강화 중이다. Google도 AI Overview와 개인화 검색 등으로 맞대응 중이며, 양쪽 모두 대화형 'canvas' 인터페이스를 검색의 미래로 보고 있다.",
+      "points": [
+        "ChatGPT 검색 쿼리량, Google의 20% 수준 달성",
+        "Bing이 10년에 3% 점유율에 그쳤던 것과 대비되는 성장 속도",
+        "ChatGPT 내 스폰서 제품 이미지 광고 확대 중",
+        "Google은 AI Overview·개인화 검색으로 대응",
+        "OpenAI, 내년 초 IPO 앞두고 광고 수익화 가속"
+      ],
+      "takeaway": "ChatGPT가 검색 시장의 실질적 경쟁자로 부상하면서, 대화형 AI가 전통적 검색 광고 모델을 빠르게 대체하고 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "2023년부터 직접 다 해본 AI 1인 기업 자동화 | THE FOUNDER EP.1",
+      "url": "https://www.youtube.com/watch?v=VD9OCNkJ8Dw",
+      "source": "CONNECT AI LAB",
+      "published": "2026-11-03T09:00:54.756068+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/VD9OCNkJ8Dw/hqdefault.jpg",
+      "videoId": "VD9OCNkJ8Dw",
+      "views": 13514,
+      "title_ko": "2023년부터 직접 해본 AI 1인 기업 자동화 — THE FOUNDER EP.1",
+      "summary": "2023년부터 AI 도구를 활용해 1인 기업을 실제로 운영해온 경험을 정리하는 시리즈의 첫 번째 에피소드다.",
+      "detail": "CONNECT AI LAB 채널의 'THE FOUNDER' 시리즈 첫 편으로, 2023년부터 AI 기반 1인 기업 운영을 직접 실험하고 검증한 사례들을 공유한다. 이론이 아닌 실전 운영 경험을 토대로 어떤 자동화가 실제로 작동했는지를 다루는 실용 중심 콘텐츠다.",
+      "points": [
+        "2023년부터 AI 1인 기업 직접 운영 경험 정리",
+        "실험·검증을 거친 실전 자동화 사례 중심",
+        "THE FOUNDER 시리즈 첫 에피소드"
+      ],
+      "takeaway": "실제 1인 기업 운영자의 경험 기반 AI 자동화 사례는 도구 소개보다 현실적인 활용 맥락을 제공한다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 1.4만"
+    },
+    {
+      "type": "news",
+      "title": "딥시크, 자연어로 AI 에이전트 기능 확장…플러그인 제작까지 자동화",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216958",
+      "source": "AI타임스",
+      "published": "2026-11-03T08:39:09+00:00",
+      "thumbnail": "",
+      "title_ko": "딥시크, 자연어로 AI 에이전트 플러그인 자동 제작하는 '크리에이터 모드' 공개",
+      "summary": "딥시크가 자연어 명령만으로 AI 에이전트용 플러그인을 코드 작성부터 설치·검증까지 자동화하는 '크리에이터 모드'를 DeepSeek Harness에서 공개했다.",
+      "detail": "딥시크 하네스의 크리에이터 모드는 사용자가 원하는 기능을 자연어로 설명하면 AI가 플러그인 코드를 작성하고 실행 환경에 설치한 뒤 정상 작동 여부까지 자동으로 점검한다. 시연에서는 3D 모델 렌더링 도구·동영상 편집 워크스페이스·논문 하이라이터·토큰 사용량 분석기 등 7가지 플러그인을 자연어 명령으로 제작했으며, 간단한 타이머 플러그인은 5분 24초 만에 완성·설치·검증이 완료됐다. 현재 하네스는 개발자 프리뷰로 소스코드까지 오픈소스로 공개됐지만, 보안 감사가 아직 완료되지 않아 AI 생성 코드 실행 및 외부 플러그인 설치에 따른 보안 위험에 주의가 필요하다.",
+      "points": [
+        "자연어 설명만으로 플러그인 코드 작성·설치·검증 자동화",
+        "3D 렌더러·동영상 편집·논문 하이라이터 등 다양한 플러그인 시연",
+        "타이머 플러그인 5분 24초 만에 전 과정 완료",
+        "DeepSeek Harness 오픈소스 공개, 개발자 프리뷰 운영 중",
+        "보안 감사 미완료 — AI 생성 코드 실행 보안 주의 필요"
+      ],
+      "takeaway": "프로그래밍 지식 없이도 AI 에이전트 기능을 직접 확장할 수 있게 되면서, 에이전트 플랫폼의 사용자 주도 커스터마이징이 현실화되고 있다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "엔비디아, 클라우드 고객에 중국 기업 서비스 비중 49% 이하 요구",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216969",
+      "source": "AI타임스",
+      "published": "2026-11-03T08:05:07+00:00",
+      "thumbnail": "",
+      "title_ko": "엔비디아, 클라우드 고객에 중국 기업 서비스 비중 49% 이하 요구",
+      "summary": "엔비디아가 전 세계 클라우드 고객사에 중국 기업 서비스 비중을 49% 이하로 유지하도록 구두 지침을 내려, 중국의 해외 AI 연산 자원 우회 접근이 사실상 차단될 전망이다.",
+      "detail": "엔비디아가 최근 몇 달 사이 아시아 및 전 세계 클라우드 고객사에 전체 서비스의 최소 51%를 비중국 기업에 판매하도록 구두로 요구한 사실이 FT 보도로 알려졌다. 기존 임대 계약은 유지되나 신규 계약부터 적용된다. 중국 기업들은 미국의 반도체 수출 규제를 피해 동남아 등 해외 데이터센터 GPU를 임대해 AI 모델을 훈련해 왔는데, 이 우회로가 사실상 봉쇄되는 셈이다. 중국 내 GPU 품귀도 심화돼 국제 시장 대비 약 4.7배 가격에 낙찰된 사례도 나왔다. 중국 고객 비중이 높은 동남아 데이터센터는 비중국 고객을 추가 확보하지 못하면 사업 축소가 불가피해질 수 있다.",
+      "points": [
+        "엔비디아, 클라우드 고객에 중국 기업 서비스 비중 49% 이하 제한 구두 지침 하달",
+        "신규 계약부터 적용, 아시아뿐 아니라 전 세계 고객사 대상",
+        "중국 내 B300 칩 패키지 국제가 대비 약 4.7배에 낙찰되는 등 GPU 품귀 심화",
+        "동남아 등 중국 의존도 높은 클라우드 사업자 타격 우려",
+        "미국 정부의 해외 클라우드 경유 AI 칩 이용 차단 움직임의 일환"
+      ],
+      "takeaway": "미국의 AI 칩 수출 통제가 해외 우회로까지 봉쇄하는 방향으로 강화되면서 중국의 AI 개발 속도를 실질적으로 제약하는 효과가 커질 것으로 보인다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "“이 방법은 진짜 아무도 몰라요…” AI 활용해서 의류 쇼핑몰 장악한 02년생",
+      "url": "https://www.youtube.com/watch?v=vTFGftKLG2s",
+      "source": "민대표, 버티컬커머스",
+      "published": "2026-11-03T08:00:54.756068+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/vTFGftKLG2s/hqdefault.jpg",
+      "videoId": "vTFGftKLG2s",
+      "views": 2211,
+      "title_ko": "아무도 모르는 AI 활용법으로 의류 쇼핑몰 장악한 02년생 창업자",
+      "summary": "2002년생 창업자가 GPT·Gemini 등 AI 도구로 상세페이지 제작을 자동화해 의류 위탁판매 쇼핑몰을 운영하는 노하우를 공개한 영상이다.",
+      "detail": "본 영상은 02년생 창업자가 AI 자동화를 활용해 재고 없이 의류 위탁판매 쇼핑몰을 운영하는 방법을 소개한다. GPT, Gemini 등 AI 툴로 상품 상세페이지 콘텐츠를 빠르게 생성해 운영 비용과 시간을 대폭 줄이는 것이 핵심 전략이다. 영상 본문 내용이 간략하여 구체적 수치나 단계별 방법론 확인은 원본 시청이 필요하다.",
+      "points": [
+        "GPT·Gemini 등 AI로 의류 쇼핑몰 상세페이지 자동 제작",
+        "위탁판매 방식으로 재고 부담 없이 운영",
+        "AI 자동화로 콘텐츠 제작 시간·비용 절감",
+        "소자본 창업에서 AI가 경쟁 우위를 만드는 사례 공유"
+      ],
+      "takeaway": "커머스 분야에서 AI 자동화가 소자본 창업의 진입 장벽을 낮추고 있으며, 상세페이지·콘텐츠 제작 자동화가 실용적인 활용처로 자리 잡고 있음을 보여준다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 2,211"
+    },
+    {
+      "type": "hn",
+      "title": "Scaling Git at OpenAI",
+      "url": "https://openai.com/index/scaling-git-at-openai/",
+      "source": "Hacker News",
+      "published": "2026-11-02T23:47:56+00:00",
+      "thumbnail": "",
+      "points": [
+        "Codex 에이전트 병렬 작업 급증으로 모노레포 안정성 90% 미만 추락",
+        "Git 호환성 유지하며 백엔드만 교체한 Pando 시스템 개발 완료",
+        "push 지연 중앙값 약 5배 단축, 일일 처리량 약 1PB 달성",
+        "수평 확장형 쓰기·최대 읽기 처리량 동시 달성 설계",
+        "개선 내용 Git 오픈소스 업스트림 기여 예정"
+      ],
+      "comments": 178,
+      "hn_url": "https://news.ycombinator.com/item?id=50345924",
+      "title_ko": "OpenAI의 Git 확장: 에이전트 시대를 위한 Pando 시스템 구축",
+      "summary": "OpenAI가 Codex 에이전트 도입 이후 폭증한 모노레포 부하를 감당하기 위해 Git 호환 새 백엔드 'Pando'를 개발했으며, push 지연을 약 5배 단축하고 하루 약 1PB의 Git 데이터를 처리한다.",
+      "detail": "OpenAI는 Codex 에이전트 도입 이후 브랜치·푸시·머지·페치 수요가 폭증하면서 모노레포 안정성이 90% 아래로 떨어지는 위기를 겪었다. 이를 해결하기 위해 Git 프로토콜 및 클라이언트 호환성을 유지하면서 백엔드만 교체한 Pando를 개발·배포했다. Pando는 다수 브랜치에 대한 쓰기를 수평 확장하고 읽기 처리량을 최대화해 클라이언트가 가용 대역폭을 완전히 활용할 수 있도록 설계됐다. 현재 하루 약 1페타바이트의 Git 데이터를 처리하며, push 지연은 중앙값 기준 약 5배 감소했다. OpenAI는 이 개선 사항을 오픈소스 Git 업스트림에도 기여할 계획이다.",
+      "takeaway": "AI 에이전트가 대규모로 코드를 작성하는 시대가 되면서 소스 컨트롤 인프라 자체도 에이전트 규모에 맞게 근본적으로 재설계돼야 한다는 점을 OpenAI 사례가 증명했다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['Codex 에이전트 병렬 작업 급증으로 모노레포 안정성 90% 미만 추락', 'Git 호환성 유지하며 백엔드만 교체한 Pando 시스템 개발 완료', 'push 지연 중앙값 약 5배 단축, 일일 처리량 약 1PB 달성', '수평 확장형 쓰기·최대 읽기 처리량 동시 달성 설계', '개선 내용 Git 오픈소스 업스트림 기여 예정'] · 💬 178"
+    },
+    {
+      "type": "youtube",
+      "title": "핵무기보다 위험할지도? 🧬 생명의 코드를 읽기 시작한 AI가 만들어낸 신종 바이러스 | 지식채널e",
+      "url": "https://www.youtube.com/watch?v=vw4W8EkKlPw",
+      "source": "EBS 컬렉션 - 사이언스",
+      "published": "2026-11-02T23:00:54.756068+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/vw4W8EkKlPw/hqdefault.jpg",
+      "videoId": "vw4W8EkKlPw",
+      "views": 120355,
+      "title_ko": "핵무기보다 위험할지도? AI가 만들어낸 신종 바이러스 (EBS 지식채널e)",
+      "summary": "AI가 유전자 서열이라는 '생명의 문법'을 학습해 새로운 바이러스 구조를 생성할 수 있게 되면서 생물 안보 위협이 현실로 떠오르고 있다는 내용의 EBS 과학 다큐멘터리 영상이다.",
+      "detail": "EBS 지식채널e 영상으로, AI가 텍스트 언어를 학습하듯 유전자 서열을 학습해 새로운 단백질이나 바이러스 구조를 생성할 수 있는 현실을 다룬다. 이 기술은 신약 개발 등 의학 발전에 기여하는 동시에, 악의적 행위자가 치명적인 신종 병원체를 설계하는 데 악용될 수 있다는 이중 사용 위험성을 핵무기에 비유하며 경고한다. 생물 안보 전문가들이 AI 기반 생명공학의 규제 공백을 우려하는 국제적 흐름과 맥을 같이하는 콘텐츠다.",
+      "points": [
+        "AI가 유전자 서열을 언어처럼 학습해 신종 바이러스 구조 생성 가능",
+        "의학 발전과 생물 무기 개발 모두에 활용될 수 있는 이중 사용 위험",
+        "핵무기보다 위험할 수 있다는 생물 안보 위협 경고",
+        "AI 생명공학 기술에 대한 국제적 규제 논의 필요성 부각"
+      ],
+      "takeaway": "AI가 생물학 영역에서도 강력한 생성 능력을 갖추면서 사이버 보안을 넘어 생물 안보까지 AI 거버넌스의 핵심 의제로 급부상하고 있다.",
+      "category": "정책/규제",
+      "metric": "조회 12.0만"
+    },
+    {
+      "type": "hn",
+      "title": "Oracle files to sell $20B in new stock, bonds to finance AI buildout",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "source": "Hacker News",
+      "published": "2026-11-02T19:27:37+00:00",
+      "thumbnail": "",
+      "points": [
+        "주식 100억 달러 + 선순위채권 100억 달러, 총 200억 달러 조달 계획 SEC 신고",
+        "발표 당일 주가 8.8% 하락, 2026년 연간 33% 하락",
+        "2030 회계연도 매출 2250억 달러 이상, 2028년 하반기 흑자 전환 목표",
+        "현재 부채 총액 1253억 달러, S&P 신용등급 BBB- 강등",
+        "시장의 AI 인프라 과잉 부채 우려 반영한 주가·CDS 스프레드 급등"
+      ],
+      "comments": 173,
+      "hn_url": "https://news.ycombinator.com/item?id=50342284",
+      "title_ko": "오라클, AI 인프라 투자 위해 200억 달러 규모 주식·채권 발행 추진",
+      "summary": "오라클이 AI 데이터센터 구축을 위해 주식 100억 달러, 선순위채권 100억 달러 등 총 200억 달러 조달 계획을 SEC에 신고했으나, 발표 당일 주가는 8.8% 하락했다.",
+      "detail": "오라클은 AI 인프라 확장을 위해 보통주 100억 달러와 선순위채권 100억 달러, 합계 200억 달러 규모의 자금 조달 계획을 SEC에 제출했다. 이 계획은 지난주 투자자의 날에 이미 예고됐음에도 주가는 발표 당일 8.8% 급락했다. 오라클은 2030 회계연도 매출 목표로 최소 2250억 달러를 제시하고, 2028년 하반기 플리 현금 흐름 흑자 전환을 목표로 한다. 현재 부채 총액은 1253억 달러이며, S&P는 7월 오라클을 BBB-로 강등해 투자 적격 최하위 등급에 위치한 상황으로 시장의 재무 건전성 우려가 커지고 있다.",
+      "takeaway": "AI 인프라 경쟁에서 대규모 부채를 동원하는 전략이 오라클의 신용 위험 부각으로 이어지면서, AI 빅테크의 자본 조달 비용 상승이 주요 투자 리스크로 현실화되고 있다.",
+      "category": "산업/투자",
+      "metric": "▲ ['주식 100억 달러 + 선순위채권 100억 달러, 총 200억 달러 조달 계획 SEC 신고', '발표 당일 주가 8.8% 하락, 2026년 연간 33% 하락', '2030 회계연도 매출 2250억 달러 이상, 2028년 하반기 흑자 전환 목표', '현재 부채 총액 1253억 달러, S&P 신용등급 BBB- 강등', '시장의 AI 인프라 과잉 부채 우려 반영한 주가·CDS 스프레드 급등'] · 💬 173"
+    },
+    {
+      "type": "hn",
+      "title": "Egoless Mathematics in the AI Era",
+      "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+      "source": "Hacker News",
+      "published": "2026-11-02T18:54:44+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 증명 보조 시대에 수학자의 역할과 수학의 가치 재정의 필요",
+        "수학은 발명인가 발견인가—플라톤적 발견론이 AI와의 협업에 더 자연스럽게 부합",
+        "수학적 진리는 증명 이전에 존재하며 인간·AI는 이를 인식하는 수단",
+        "AI가 보여주는 예기치 못한 연결과 반례는 수학 진리의 독립성을 오히려 강화",
+        "개인 업적 중심 수학 문화에서 진리 탐구 중심의 '자아 없는 수학'으로 전환 제안"
+      ],
+      "comments": 152,
+      "hn_url": "https://news.ycombinator.com/item?id=50341736",
+      "title_ko": "AI 시대의 '자아 없는 수학': 수학의 목적을 다시 묻다",
+      "summary": "AI가 수학 증명을 보조하는 시대에 수학의 본질이 발명인지 발견인지를 재검토하며, 개인 업적 경쟁 대신 진리 탐구 자체에 가치를 두는 '자아 없는' 수학관을 제안한 철학 에세이다.",
+      "detail": "세 명의 수학자가 쓴 이 에세이는 AI가 수학 연구에 깊이 개입하는 시대에 수학의 의미를 철학적으로 재검토한다. 수학을 인간이 '발명'하는 것으로 볼지, 이미 존재하는 진리를 '발견'하는 것으로 볼지의 고전적 논쟁을 AI 맥락에서 다시 불러낸다. 플라톤적 관점에서 수학적 진리는 증명 이전에 이미 존재하며, AI가 증명 도구가 되더라도 진리의 독립성은 훼손되지 않는다고 주장한다. 필자들은 개인 성과 경쟁이 아닌 진리 자체를 향한 '자아 없는' 태도가 AI 시대 수학자에게 필요한 덕목이라고 제안한다.",
+      "takeaway": "AI가 지식 생산에 깊이 개입할수록 수학자를 넘어 모든 지식 노동자가 개인 성과가 아닌 진리·가치 탐구 자체에서 의미를 찾는 태도를 재정립해야 한다는 시사점을 던진다.",
+      "category": "연구/논문",
+      "metric": "▲ ['AI 증명 보조 시대에 수학자의 역할과 수학의 가치 재정의 필요', '수학은 발명인가 발견인가—플라톤적 발견론이 AI와의 협업에 더 자연스럽게 부합', '수학적 진리는 증명 이전에 존재하며 인간·AI는 이를 인식하는 수단', 'AI가 보여주는 예기치 못한 연결과 반례는 수학 진리의 독립성을 오히려 강화', \"개인 업적 중심 수학 문화에서 진리 탐구 중심의 '자아 없는 수학'으로 전환 제안\"] · 💬 152"
+    }
+  ]
+}
