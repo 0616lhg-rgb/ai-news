@@ -1,0 +1,452 @@
+{
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T08:10:51",
+  "count": 20,
+  "briefing": {
+    "overview": "오늘은 대형 AI 기업들의 자금·전략 행보가 뉴스를 주도했다. OpenAI의 110억 달러 추가 조달과 Apple의 공격적 AI 전환 압박이 AI 패권 경쟁의 열기를 보여줬고, 엔비디아 CEO 젠슨 황의 스캔들은 AI 반도체 패권 기업의 거버넌스 리스크를 부각시켰다. 국내에서는 챗GPT 1876만 사용자·클로드 15배 성장이 한국 AI 시장의 급팽창을 수치로 확인시켜 줬다.",
+    "highlights": [
+      {
+        "title": "OpenAI 110억 달러 추가 조달",
+        "line": "1조 2500억 달러 기업가치로 대규모 자금을 확보했지만 당초 목표치를 밑돌며 AI 투자 기대 조정의 첫 신호탄이 됐다."
+      },
+      {
+        "title": "젠슨 황 불륜·첩보 의혹 이중 스캔들",
+        "line": "엔비디아 이사회가 독립 조사에 착수하면서 AI 반도체 최강자의 CEO 리스크가 전면에 부상했다."
+      },
+      {
+        "title": "Apple, Siri 에이전트화 전면 가속",
+        "line": "팀 쿡이 소프트웨어 수장에게 압박을 가하는 한편 iOS 27.3부터 단계적 앱 제어 확대로 OpenAI·Meta급 자율 에이전트 도약을 목표한다."
+      },
+      {
+        "title": "한국 AI 사용자 폭발적 증가",
+        "line": "챗GPT 국내 MAU가 1876만으로 사상 최대를 기록한 가운데 클로드는 1년 새 15배 성장으로 2위에 올라 국내 AI 시장 경쟁 구도가 재편됐다."
+      },
+      {
+        "title": "LLM 코딩 도구 비판 논쟁 점화",
+        "line": "10년 경력 ML 엔지니어의 LLM 코딩 거부 선언이 인지적 부작용과 출력 품질 과대평가 논쟁을 커뮤니티에서 촉발했다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "youtube",
+      "title": "[비즈&트렌드] 눈 앞의 AI‥'스마트 안경' 선점 경쟁 (2026.11.09/뉴스투데이/MBC)",
+      "url": "https://www.youtube.com/watch?v=cuuEyZs2MD8",
+      "source": "MBCNEWS",
+      "published": "2026-11-08T22:35:51.844465+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/cuuEyZs2MD8/hqdefault.jpg",
+      "videoId": "cuuEyZs2MD8",
+      "views": 887,
+      "title_ko": "[비즈&트렌드] 눈 앞의 AI‥'스마트 안경' 선점 경쟁",
+      "summary": "스마트 안경이 차세대 AI 기기로 부상하며 현실 위에 디지털 정보를 표시하는 AR 기술로 글로벌 선점 경쟁이 본격화되고 있다.",
+      "detail": "안경을 착용하면 현실 공간에 원하는 디지털 화면을 오버레이하고 간단한 손짓으로 조작할 수 있는 시대가 열리고 있다. 스마트폰 이후 차세대 개인 AI 기기로 주목받는 스마트 안경을 두고 빅테크 기업들이 시장 주도권을 잡기 위한 경쟁에 뛰어들고 있다. 하드웨어 폼팩터가 안경으로 이동하면서 AI 서비스를 일상에 자연스럽게 녹이는 접점이 바뀌고 있다는 점이 핵심이다.",
+      "points": [
+        "스마트 안경으로 현실 공간에 디지털 화면 오버레이 가능",
+        "손짓 등 직관적 제스처로 기기 조작",
+        "스마트폰 이후 차세대 개인 AI 기기로 주목",
+        "빅테크 기업들의 시장 선점 경쟁 가열"
+      ],
+      "takeaway": "스마트 안경은 AI를 일상에 통합하는 핵심 하드웨어로 부상 중이며, 차세대 플랫폼 주도권 경쟁의 새로운 전장이 되고 있다.",
+      "category": "도구 업데이트",
+      "metric": "조회 887"
+    },
+    {
+      "type": "news",
+      "title": "젠슨 황 \"아내에게 충실하지 못했다\" 사과…엔비디아 \"CEO직 유지\"",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217150",
+      "source": "AI타임스",
+      "published": "2026-11-08T21:42:12+00:00",
+      "thumbnail": "",
+      "title_ko": "젠슨 황 '아내에게 충실하지 못했다' 사과…엔비디아 'CEO직 유지'",
+      "summary": "엔비디아 CEO 젠슨 황이 불륜을 공개 인정하고 사과한 가운데, 이사회는 외국 정보기관 연계 의혹에 대한 독립 조사에 착수하면서도 CEO직은 유지하기로 했다.",
+      "detail": "파이낸셜타임스는 황 CEO가 중국 정보기관 연계 의혹을 받는 싱가포르 데이터센터 기업 임원 출신 앨리스 황과 연인 관계였다고 보도했으며, 황 CEO는 엔비디아 공식 홈페이지에 올린 메시지를 통해 불륜을 인정하고 가족·직원·주주에게 공개 사과했다. 엔비디아 이사회는 사외이사 주도로 외부 법률 전문가가 참여하는 독립 조사를 개시했으나, 현재까지 국가안보나 기업 비밀 침해를 뒷받침하는 근거는 없다고 밝혔다. 황 CEO는 'CEO직은 평생의 특권'이라며 직무를 계속 수행하겠다는 의지를 밝혔고, 엔비디아는 기존 경영 체제를 유지하겠다고 확인했다. 중국 정부도 관련 첩보 활동 의혹을 부인하고 있어 사실 관계는 여전히 불확실한 상태다.",
+      "points": [
+        "젠슨 황, 불륜 사실 공개 인정 및 가족·직원에게 사과",
+        "불륜 상대 앨리스 황은 중국 정보기관 연계 의혹 받는 인물",
+        "이사회, 사외이사·외부 법률 전문가 주도 독립 조사 착수",
+        "현재까지 국가안보·기업 비밀 침해 근거 없음",
+        "황 CEO, 중단 없이 CEO직 유지 확인"
+      ],
+      "takeaway": "개인 스캔들이 국가안보 의혹과 얽히면서 엔비디아의 대외 신뢰도와 미국 정부와의 관계에 불확실성이 더해졌으며, 독립 조사 결과가 향후 분수령이 될 것이다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "How I Fight AI Brain Fry",
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "source": "Hacker News",
+      "published": "2026-11-08T19:37:42+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 협업 중 맥락 과부하(AI Brain Fry) 문제를 구체적으로 제기",
+        "모든 작업 티켓을 git 저장소 마크다운 파일로 영속 관리",
+        "에이전트가 연구·빌드·테스트·검증 사이클을 자동 수행",
+        "사람 판단이 필요한 항목만 오너 인박스에 집중",
+        "작업 완료 후 맥락을 명시적으로 닫아 집중력 유지"
+      ],
+      "comments": 101,
+      "hn_url": "https://news.ycombinator.com/item?id=50416363",
+      "title_ko": "AI 협업 과부하 탈출법: git 기반 우선순위 큐로 맥락 관리하기",
+      "summary": "Claude Code 등 AI 에이전트와 동시에 여러 작업을 진행하다 발생하는 '뇌 과부하' 문제를 git 티켓 큐 시스템으로 해결한 실전 사례를 공유한다.",
+      "detail": "필자는 AI 도구로 여러 작업을 병렬 처리하다 맥락이 뒤섞여 집중력이 무너지는 'AI Brain Fry' 현상을 경험했다. 해결책으로 모든 작업 티켓을 마크다운 파일로 git 저장소에 보관하고, 에이전트가 사이클마다 연구·빌드·테스트·검증을 자동 수행하는 우선순위 큐 구조를 설계했다. 사람의 판단이 필요한 항목만 '오너 인박스'로 모아 한꺼번에 처리하고, 결과는 Claude 아티팩트 페이지로 시각화해 터미널을 뒤지는 수고를 없앴다. 가장 중요한 원칙은 작업 하나를 완료하면 맥락을 머릿속에서 명시적으로 닫고, 다음 아이템을 완전히 집중해서 처리한다는 것이다.",
+      "takeaway": "AI 에이전트를 효율적으로 활용하려면 도구 사용법보다 맥락을 체계적으로 열고 닫는 워크플로우 설계가 핵심임을 보여주는 실전 사례다.",
+      "category": "AI 활용/팁",
+      "metric": "▲ ['AI 협업 중 맥락 과부하(AI Brain Fry) 문제를 구체적으로 제기', '모든 작업 티켓을 git 저장소 마크다운 파일로 영속 관리', '에이전트가 연구·빌드·테스트·검증 사이클을 자동 수행', '사람 판단이 필요한 항목만 오너 인박스에 집중', '작업 완료 후 맥락을 명시적으로 닫아 집중력 유지'] · 💬 101"
+    },
+    {
+      "type": "hn",
+      "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+      "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+      "source": "Hacker News",
+      "published": "2026-11-08T18:43:07+00:00",
+      "thumbnail": "",
+      "points": [
+        "테크 기업, AI 기반 신약 개발 혁명 낙관론 주도",
+        "제약사 CEO들, AI 가능성 인정하면서도 과장된 기대에 회의적",
+        "임상 규제·생물학적 복잡성이 현실적 장벽으로 작용",
+        "기술 공급자와 실사용자 간 기대치 격차 뚜렷"
+      ],
+      "comments": 97,
+      "hn_url": "https://news.ycombinator.com/item?id=50415817",
+      "title_ko": "실리콘밸리는 'AI가 질병을 치료할 것'이라 약속하지만, 제약사 CEO들은 회의적",
+      "summary": "AI 신약 개발 혁명을 외치는 실리콘밸리와 달리, 임상 현장을 아는 제약사 경영진들은 AI의 실제 기여에 여전히 신중한 입장이다.",
+      "detail": "테크 기업들이 AI가 신약 개발 기간을 획기적으로 단축하고 질병을 정복할 것이라는 낙관론을 주도하고 있지만, 실제 임상 개발 경험을 가진 제약사 CEO들은 규제 허들·임상시험 복잡성·생물학적 불확실성을 근거로 과도한 기대에 경계심을 나타내고 있다. 기대와 현실 사이의 간극은 AI 헬스케어 투자 거품 가능성을 시사한다.",
+      "takeaway": "AI 신약 개발 담론에서 기술 공급자와 실제 사용자 사이의 기대 격차는 투자자와 정책 입안자 모두가 주목해야 할 경고 신호다.",
+      "category": "산업/투자",
+      "metric": "▲ ['테크 기업, AI 기반 신약 개발 혁명 낙관론 주도', '제약사 CEO들, AI 가능성 인정하면서도 과장된 기대에 회의적', '임상 규제·생물학적 복잡성이 현실적 장벽으로 작용', '기술 공급자와 실사용자 간 기대치 격차 뚜렷'] · 💬 97"
+    },
+    {
+      "type": "hn",
+      "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
+      "source": "Hacker News",
+      "published": "2026-11-08T15:19:51+00:00",
+      "thumbnail": "",
+      "points": [
+        "팀 쿡, 소프트웨어 책임자에게 AI 전략 가속화 직접 압박",
+        "애플 인텔리전스의 초기 성과가 내부 기대에 미달",
+        "오픈AI·구글과의 AI 경쟁에서 뒤처진다는 위기감 고조",
+        "더 과감한 AI 투자 및 기능 확대 요구"
+      ],
+      "comments": 56,
+      "hn_url": "https://news.ycombinator.com/item?id=50414021",
+      "title_ko": "애플 CEO, 소프트웨어 책임자에게 더 과감한 AI 전략 추진 압박",
+      "summary": "팀 쿡 애플 CEO가 소프트웨어 부문 수장에게 경쟁사 대비 뒤처진 AI 전략을 더욱 공격적으로 추진하라고 압박한 것으로 알려졌다.",
+      "detail": "팀 쿡 CEO가 크레이그 페더리기 소프트웨어 엔지니어링 수석 부사장에게 보다 야심찬 AI 전략을 요구했다는 보도가 나왔다. 애플 인텔리전스의 초기 반응이 기대에 못 미치면서 내부 압박이 커지고 있으며, 오픈AI·구글의 빠른 AI 발전 속도에 대응해야 한다는 위기감이 작용한 것으로 풀이된다. 하드웨어 중심의 점진적 접근에서 벗어나 더 공격적인 AI 소프트웨어 혁신이 필요하다는 내부 인식이 커지고 있다.",
+      "takeaway": "애플의 AI 경쟁력 부재에 대한 내부 경고음은 하드웨어 중심 전략의 한계를 드러내며, 향후 소프트웨어 AI 전략의 대폭 수정이 불가피함을 시사한다.",
+      "category": "산업/투자",
+      "metric": "▲ ['팀 쿡, 소프트웨어 책임자에게 AI 전략 가속화 직접 압박', '애플 인텔리전스의 초기 성과가 내부 기대에 미달', '오픈AI·구글과의 AI 경쟁에서 뒤처진다는 위기감 고조', '더 과감한 AI 투자 및 기능 확대 요구'] · 💬 56"
+    },
+    {
+      "type": "hn",
+      "title": "Drones built to look like birds evaded detection at Air Force tech exercise",
+      "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test/",
+      "source": "Hacker News",
+      "published": "2026-11-08T15:00:42+00:00",
+      "thumbnail": "",
+      "points": [
+        "O1 드론, 프로펠러 대신 날갯짓으로 비행하는 오르니솝터 방식",
+        "공군 훈련에서 타사 모든 탐지 장비에 새로 오인돼 목표 달성",
+        "무게 450g, 비행 거리 10km·1시간 이상 체공 가능",
+        "색상·날개폭 커스터마이징으로 현지 조류 위장",
+        "중국 PLA도 유사한 조류형 드론 운용 확인"
+      ],
+      "comments": 41,
+      "hn_url": "https://news.ycombinator.com/item?id=50413885",
+      "title_ko": "새처럼 생긴 드론, 미 공군 감지 시스템 완벽 회피",
+      "summary": "새의 날갯짓을 모방한 Ornadyne의 O1 드론이 미 공군 훈련에서 모든 드론 탐지 장비에 새로 오인되는 데 성공했다.",
+      "detail": "Ornadyne의 O1 오르니솝터 드론은 프로펠러 대신 날갯짓으로 비행하며, 모하비 사막 에드워즈 공군기지에서 열린 'Game of Drones' 훈련에서 타 기업의 모든 탐지 장비를 속이는 데 성공했다. 무게 약 450g에 비행 거리 10km, 체공 1시간 이상이며 소형 카메라 등 페이로드 탑재가 가능하다. 색상·날개폭·실루엣을 현지 조류 종에 맞게 커스터마이징할 수 있어 위장 완성도를 높인다. 중국 PLA도 유사한 조류형 드론을 훈련에 활용하는 것이 확인됐으며, 기존 드론 탐지 체계의 한계가 새롭게 부각됐다.",
+      "takeaway": "주파수·신호 기반의 기존 드론 탐지 체계가 형태 위장 드론에는 무력화될 수 있음이 실증됐으며, 시각적 식별 기반의 새로운 대드론 기술 개발이 시급해졌다.",
+      "category": "기타",
+      "metric": "▲ ['O1 드론, 프로펠러 대신 날갯짓으로 비행하는 오르니솝터 방식', '공군 훈련에서 타사 모든 탐지 장비에 새로 오인돼 목표 달성', '무게 450g, 비행 거리 10km·1시간 이상 체공 가능', '색상·날개폭 커스터마이징으로 현지 조류 위장', '중국 PLA도 유사한 조류형 드론 운용 확인'] · 💬 41"
+    },
+    {
+      "type": "hn",
+      "title": "OpenAI raises $11B at a $1.25T valuation",
+      "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+      "source": "Hacker News",
+      "published": "2026-11-08T14:49:23+00:00",
+      "thumbnail": "",
+      "points": [
+        "1차 조달 110억 달러, 기업가치 1조 2500억 달러로 목표 대비 하향 마감",
+        "3분기 전분기 대비 70% 매출 성장, 주간 사용자 12억 명",
+        "SoftBank·아부다비 MGX 참여, 최대 200억 달러까지 확대 가능",
+        "Microsoft는 OpenAI 지분 평가 이익 감소로 GAAP 실적 영향",
+        "Anthropic는 11월 중순 나스닥 상장 추진, 기업가치 약 1조 5000억 달러"
+      ],
+      "comments": 197,
+      "hn_url": "https://news.ycombinator.com/item?id=50413822",
+      "title_ko": "OpenAI, 1조 2500억 달러 기업가치로 110억 달러 추가 투자 유치",
+      "summary": "OpenAI가 당초 목표보다 낮은 1조 2500억 달러 기업가치에 110억 달러를 조달하며 AI 투자 시장의 기대 조정 흐름을 보여줬다.",
+      "detail": "OpenAI는 2026년 11월 6일까지 SoftBank·아부다비 MGX 등을 통해 110억 달러의 1차 투자금을 확보했으며, 기업가치는 1조 2500억 달러로 책정됐다. 애초 최대 300억 달러, 1조 4000~5000억 달러 기업가치를 목표로 했으나 AI 주가 조정 등으로 하향 마감했다. CFO 사라 프라이어는 3분기 전분기 대비 70% 매출 성장, ChatGPT 주간 사용자 12억 명, 광고 연간 환산 수익 10억 달러를 공개했다. 추가 조달로 최대 200억 달러까지 확대 가능하며, 경쟁사 Anthropic는 11월 중순 나스닥 상장을 추진 중이다.",
+      "takeaway": "AI 기업 기업가치 거품 조정이 시작되고 있음을 보여주는 신호이며, OpenAI 조달 규모는 엔비디아 칩 구매와 MS 실적에 직접 연동돼 있어 업계 전반에 파급 효과가 크다.",
+      "category": "산업/투자",
+      "metric": "▲ ['1차 조달 110억 달러, 기업가치 1조 2500억 달러로 목표 대비 하향 마감', '3분기 전분기 대비 70% 매출 성장, 주간 사용자 12억 명', 'SoftBank·아부다비 MGX 참여, 최대 200억 달러까지 확대 가능', 'Microsoft는 OpenAI 지분 평가 이익 감소로 GAAP 실적 영향', 'Anthropic는 11월 중순 나스닥 상장 추진, 기업가치 약 1조 5000억 달러'] · 💬 197"
+    },
+    {
+      "type": "guide",
+      "title": "How do you locally benchmark and compare local LLMs?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrbhdf/how_do_you_locally_benchmark_and_compare_local/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-08T13:49:16+00:00",
+      "thumbnail": "",
+      "title_ko": "로컬 LLM 직접 벤치마크·비교하는 방법",
+      "summary": "여러 오픈소스 LLM을 로컬에서 속도·추론·코딩 등 다차원으로 직접 평가하는 전략과 도구를 묻는 커뮤니티 토론이다.",
+      "detail": "llama.cpp, Ollama 등 다양한 로컬 엔진으로 여러 모델을 비교할 때 단순 토큰/초 속도 외에 추론 능력·코딩·도구 사용 등 태스크별 품질 지표가 함께 필요하다. 대표적인 로컬 평가 도구로는 lm-evaluation-harness, llm-bench, Open LLM Leaderboard의 로컬 재현 방식이 사용된다. 느리지만 고성능 모델과 빠르지만 경량 모델 중 무엇이 실제 용도에 맞는지 판단하려면 사용 사례 중심의 맞춤형 프롬프트 테스트가 핵심이다. 신규 커스텀 엔진의 성능 차이도 비교 대상으로 고려해야 한다.",
+      "points": [
+        "속도·추론·코딩·도구 사용 등 다차원 로컬 평가 필요",
+        "lm-evaluation-harness·llm-bench가 대표적 오픈소스 평가 도구",
+        "토큰/초 속도보다 태스크별 품질이 실용적 선택 기준",
+        "llama.cpp 외 신규 커스텀 런타임 성능도 비교 대상",
+        "클라우드 의존 없이 로컬에서 모델 적합성 직접 판단 가능"
+      ],
+      "takeaway": "로컬 LLM 선택은 단순 속도 비교가 아닌 실제 사용 사례에 맞춘 맞춤형 벤치마크가 핵심이며, 엔진 선택도 모델 선택만큼 중요하다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "parse_number() as a SQLite extension: C vs Rust",
+      "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+      "source": "Simon Willison",
+      "published": "2026-11-08T13:26:00+00:00",
+      "thumbnail": "",
+      "title_ko": "SQLite 확장 개발: C vs Rust 성능 비교 실험",
+      "summary": "Simon Willison이 Claude를 활용해 문자열에서 숫자를 파싱하는 SQLite 확장을 C와 Rust로 각각 구현하고 성능·코드 크기를 직접 비교했다.",
+      "detail": "개발자 Simon Willison은 '$1,234.56'나 '12.5%' 같은 문자열을 숫자로 변환하는 parse_number() SQLite 확장을 C와 Rust로 구현해 비교했다. Rust 확장은 298~321KB, C 확장은 14KB로 크기 차이가 약 20배였으나 성능은 오히려 Rust가 앞섰는데, Rust의 소수점 파싱 함수가 C의 strtod보다 약 2배 빠르기 때문이다. 이후 Claude(Opus 5.5)에게 Rust 성능을 따라잡는 커스텀 C 파싱 함수를 작성하도록 요청해 결국 C로도 동등한 성능을 달성했다. 마지막으로 Claude에게 연구 보고서 형식으로 결과를 정리하고 GitHub 저장소용 폴더로 묶어달라고 지시해 전 과정을 문서화했다.",
+      "points": [
+        "Rust 확장(298~321KB) vs C 확장(14KB): 파일 크기는 C가 약 20배 작음",
+        "성능은 Rust가 우세 — Rust의 소수점 파싱 함수가 C의 strtod보다 약 2배 빠름",
+        "Claude에게 커스텀 C 파싱 함수 작성을 요청해 Rust 수준의 성능 달성",
+        "Claude가 연구 보고서 형식으로 최종 결과를 정리해 GitHub 저장소용 보고서 생성"
+      ],
+      "takeaway": "AI를 활용하면 C·Rust 간 성능 트레이드오프를 빠르게 탐색할 수 있으며, 파일 크기보다 런타임 성능이 중요한 사례에서 Rust가 의외로 유리할 수 있다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "How much code do AI models and harnesses add? I made an open-source benchmark to measure code complexity.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrathc/how_much_code_do_ai_models_and_harnesses_add_i/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-08T13:19:15+00:00",
+      "thumbnail": "",
+      "title_ko": "AI 모델과 하네스는 코드를 얼마나 더 많이 쓰나? 코드 복잡도 오픈소스 벤치마크",
+      "summary": "해결률·비용만 측정하던 기존 벤치마크의 맹점을 보완해 AI 패치와 사람 패치의 코드 복잡도를 비교하는 Parsimony 벤치마크가 공개됐다.",
+      "detail": "기존 AI 코딩 벤치마크는 문제 해결률과 토큰 비용만 측정할 뿐, 과잉 엔지니어링을 불이익으로 처리하지 않아 장기적인 기술 부채를 간과한다. Parsimony는 AI 패치와 사람 패치를 비교해 구문 단위(문, 호출, 이름) 수를 측정하며 줄 수·주석·테스트는 카운트하지 않는다. 분석 결과, 중간값 기준 모델은 SWE-bench Verified에서 사람 수정의 1.9배 코드를 작성하지만 DeepSWE에서는 약 1배에 근접했다. 흥미롭게도 더 성능 좋은 모델이 오히려 코드를 약간 더 많이 작성하는 역설적 경향이 나타났다.",
+      "points": [
+        "Parsimony: AI 패치와 사람 패치의 코드 복잡도를 구문 단위로 비교하는 오픈소스 벤치마크",
+        "중간값 모델은 SWE-bench Verified에서 사람 수정의 약 1.9배 코드 생성",
+        "DeepSWE 기준에서는 사람과 거의 동일한 1× 수준",
+        "더 성능 좋은 모델이 오히려 코드를 약간 더 많이 작성하는 역설적 경향 발견"
+      ],
+      "takeaway": "해결률만으로 AI 코딩 성능을 판단하면 기술 부채를 간과할 수 있으며, 코드 간결성을 함께 측정하는 벤치마크가 실질적인 비교에 필요하다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Nous Research Arete-27B GGUF quants",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrarta/nous_research_arete27b_gguf_quants/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-08T13:17:10+00:00",
+      "thumbnail": "",
+      "title_ko": "Nous Research Arete-27B GGUF 양자화 모델 공개",
+      "summary": "Nous Research의 Arete-27B 모델의 GGUF 양자화 버전이 로컬 실행용으로 배포됐다.",
+      "detail": "Nous Research의 Arete-27B 모델 GGUF 양자화 버전이 공개돼 로컬 LLM 환경에서 실행 가능하게 됐다. 원문에 성능 지표나 활용 방법 등 상세 내용이 없어 추가 확인이 필요하다.",
+      "points": [
+        "Nous Research Arete-27B 모델의 GGUF 양자화 버전 배포",
+        "로컬 LLM 실행 환경(llama.cpp 등)에서 활용 가능한 형식으로 제공"
+      ],
+      "takeaway": "로컬에서 대형 모델을 실행하려는 사용자에게 선택지가 추가됐으나 상세 성능 정보는 별도 확인이 필요하다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Really cool 3d video on how the microduck ai robot works",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrai3x/really_cool_3d_video_on_how_the_microduck_ai/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-08T13:05:32+00:00",
+      "thumbnail": "",
+      "title_ko": "마이크로덕 AI 로봇 작동 원리 3D 영상 소개",
+      "summary": "오픈소스 로컬 AI를 활용하는 마이크로덕 AI 로봇의 내부 작동 원리를 3D로 시각화한 영상이 커뮤니티에서 공유됐다.",
+      "detail": "로컬 AI 기반 오픈소스 로봇 '마이크로덕'의 내부 구조와 작동 원리를 3D 영상으로 설명한 콘텐츠가 주목받고 있다. 클라우드 의존 없이 온디바이스 AI를 활용하는 소형 로봇으로 소개되며, 오픈소스 특성상 직접 제작·개조가 가능하다.",
+      "points": [
+        "마이크로덕: 로컬 AI를 탑재한 오픈소스 소형 AI 로봇",
+        "내부 작동 원리를 3D 영상으로 시각화해 공개"
+      ],
+      "takeaway": "로컬 AI를 엣지 디바이스·로봇공학에 접목하는 오픈소스 프로젝트가 커뮤니티 주목을 받으며 DIY AI 로봇 관심이 높아지고 있다.",
+      "category": "기타",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Why I will not be using LLMs in my coding",
+      "url": "https://www.polso.info/why-i-will-not-be-using-llms-coding",
+      "source": "Hacker News",
+      "published": "2026-11-08T12:14:10+00:00",
+      "thumbnail": "",
+      "points": [
+        "마이크로소프트 등 연구에서 LLM 사용 후 인지 능력·자신감 저하 보고",
+        "LLM 출력은 주석·테스트 덕에 겉보기엔 훌륭하지만 실제 오류 포함 사례 많음",
+        "LLM은 '도구'가 아닌 외부 기업에 종속된 '서비스'라는 근본적 차이 지적",
+        "저자는 10년 경력 ML 엔지니어로 기술 자체보다 현재의 맹목적 도입 방식을 비판"
+      ],
+      "comments": 215,
+      "hn_url": "https://news.ycombinator.com/item?id=50412591",
+      "title_ko": "나는 왜 LLM을 코딩에 쓰지 않기로 했나",
+      "summary": "10년 경력 ML 엔지니어가 인지적 부작용, 출력 품질 과대평가, 외부 서비스 종속성을 이유로 LLM 코딩 도구 전면 거부를 선언했다.",
+      "detail": "개발자 Kristian Polso는 여러 연구와 개인 경험을 근거로 LLM 기반 코딩 도구를 전문 업무에서 쓰지 않기로 결정했다. 첫째, LLM 사용 후 느끼는 '뇌안개(brainfog)' 등 인지적 피로를 마이크로소프트 연구 등 복수의 논문이 뒷받침한다. 둘째, 방대한 주석과 테스트로 인상적으로 보이는 LLM 출력이 실제로는 오류를 포함하는 경우가 많다고 지적한다. 셋째, LLM은 단순 도구가 아니라 미국 기업에 의존하는 외부 서비스라는 본질적 차이를 강조한다.",
+      "takeaway": "AI 도구 도입 열풍 속에서도 인지적 부작용과 출력 품질 검증의 중요성을 재상기시키는 반론이 개발자 커뮤니티의 공감을 얻고 있다.",
+      "category": "AI 활용/팁",
+      "metric": "▲ ['마이크로소프트 등 연구에서 LLM 사용 후 인지 능력·자신감 저하 보고', 'LLM 출력은 주석·테스트 덕에 겉보기엔 훌륭하지만 실제 오류 포함 사례 많음', \"LLM은 '도구'가 아닌 외부 기업에 종속된 '서비스'라는 근본적 차이 지적\", '저자는 10년 경력 ML 엔지니어로 기술 자체보다 현재의 맹목적 도입 방식을 비판'] · 💬 215"
+    },
+    {
+      "type": "youtube",
+      "title": "AI 에이전트 처음이라면 이렇게 시작하세요｜요즘 핫한 AI 비서 6종(피클·닷츠 등) 직접 써 보고 정리",
+      "url": "https://www.youtube.com/watch?v=BC8XGfC7D4U",
+      "source": "유튜브신쌤",
+      "published": "2026-11-08T12:00:51.844465+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/BC8XGfC7D4U/hqdefault.jpg",
+      "videoId": "BC8XGfC7D4U",
+      "views": 3829,
+      "title_ko": "AI 에이전트 처음이라면 이렇게 시작하세요 | 피클·닷츠 등 AI 비서 6종 직접 비교",
+      "summary": "40~50대 초보자를 위한 AI 에이전트 입문 영상으로, 피클·닷츠 등 주목받는 AI 비서 서비스 6종을 직접 체험하고 정리했다.",
+      "detail": "유튜브신쌤 채널이 AI 에이전트를 처음 접하는 초보자를 위한 안내 영상을 공개했다. 피클, 닷츠(Dots) 등 최근 화제가 된 AI 비서 서비스 6종을 직접 사용해보고 특징과 활용법을 비교 정리한 내용이다. 40~50대 비전문가를 주요 대상으로 하며 실용적인 AI 활용에 초점을 맞춘다.",
+      "points": [
+        "피클, 닷츠 등 최신 AI 에이전트·비서 서비스 6종 직접 체험 및 비교",
+        "40~50대 초보자를 위한 AI 에이전트 입문 가이드 형식",
+        "Aside 등 관련 서비스 링크 함께 제공"
+      ],
+      "takeaway": "AI 에이전트 서비스들이 대중화되면서 비전문가를 위한 비교·안내 콘텐츠의 수요가 빠르게 늘고 있다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 3,829"
+    },
+    {
+      "type": "news",
+      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-08T12:00:11+00:00",
+      "thumbnail": "",
+      "title_ko": "엔비디아, 젠슨 황 CEO와 중국 스파이 의혹 여성의 관계 독립 조사 착수",
+      "summary": "엔비디아 이사회가 CEO 젠슨 황과 중국 국가안전부 협력 의혹을 받는 싱가포르 여성 임원의 불륜을 계기로 독립 조사를 개시했다.",
+      "detail": "엔비디아 이사회는 CEO 젠슨 황이 싱가포르 반도체 기업 Megaspeed 전 임원 앨리스 황을 통한 중국 스파이 작전의 타깃이 됐다는 보고를 받고 외부 법률 자문을 통한 독립 조사를 개시했다. 젠슨 황은 사내 메모를 통해 해당 여성과의 불륜 사실을 인정하며 가족과 임직원에게 공개 사과했다. 미국 정책 입안자들에게 유통된 메모에 따르면 앨리스 황은 중국 국가안전부에 의해 채용된 것으로 알려졌다. 이사회는 현재로선 국가안보나 기업 기밀이 침해됐다는 근거가 없다는 입장을 밝혔다.",
+      "points": [
+        "이사회, 외부 법률 자문과 함께 독립 조사 착수 — 황 CEO는 협조 의사 표명",
+        "젠슨 황, 앨리스 황(Megaspeed 전 임원)과의 불륜 인정·임직원에게 공개 사과",
+        "앨리스 황이 중국 국가안전부에 의해 채용됐다는 메모가 미국 정책 입안자들 사이에 유통",
+        "이사회 '국가안보·기업 기밀 침해 근거 없다' 입장이지만 조사는 계속"
+      ],
+      "takeaway": "미·중 AI 패권 경쟁이 고조되는 가운데 반도체 핵심 기업 수장을 겨냥한 정보전 의혹이 현실화되면서 기업 거버넌스와 보안 리스크 관리의 중요성이 다시 부각된다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Apple is racing to make Siri more agentic",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "source": "The Verge AI",
+      "published": "2026-11-08T10:18:19+00:00",
+      "thumbnail": "",
+      "title_ko": "Apple, Siri의 에이전트 기능 대폭 강화 추진",
+      "summary": "Apple이 iOS 27.3부터 Siri의 1차·3차 앱 제어를 단계적으로 확대해 OpenAI 닷츠·Meta 뮤즈 수준의 자율형 AI 에이전트로 도약하는 계획을 가속화하고 있다.",
+      "detail": "Bloomberg 마크 거먼에 따르면 Apple CEO 존 터너스가 AI 책임자 크레이그 페더리기에게 Siri 로드맵 가속화를 강하게 압박하고 있다. 가장 빠른 업데이트인 iOS 27.3에서는 사진 회전·자르기, Safari 탭 정리 등 Apple 1차 앱에 대한 세밀한 제어가 추가된다. 이후 봄 업데이트에서는 Grubhub 주문, OpenTable 예약 등 서드파티 앱 통합이 이뤄질 예정이다. 궁극적으로 Apple은 사용자의 매 단계 지시 없이도 목표를 추적하고 자율로 행동을 이어가는 에이전트형 Siri를 목표로 한다.",
+      "points": [
+        "iOS 27.3: 사진 편집·Safari 탭 정리 등 Apple 1차 앱 세밀 제어 Siri 기능 예정",
+        "봄 업데이트: Grubhub·OpenTable 등 서드파티 앱 통합으로 실질적인 외부 서비스 작업 수행",
+        "장기 목표: 목표를 스스로 추적·실행하는 자율 에이전트형 Siri",
+        "닷츠(OpenAI)·뮤즈(Meta)·Grok(xAI)과의 경쟁 압박이 Apple의 속도 조절 배경"
+      ],
+      "takeaway": "주요 AI 비서들이 에이전트 경쟁에 돌입한 가운데 Apple도 단순 명령 실행을 넘어 자율 목표 추구형 에이전트로 전환을 서두르면서 모바일 AI 생태계 판도가 바뀔 전망이다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "업무자동화 이렇게 쉬웠다니 | 코딩 몰라도 클로드한테 말로 시키면 끝",
+      "url": "https://www.youtube.com/watch?v=01_5lTw96Tw",
+      "source": "AI 비밀무기 | 직장인 AI 실전 공략",
+      "published": "2026-11-08T10:00:51.844465+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/01_5lTw96Tw/hqdefault.jpg",
+      "videoId": "01_5lTw96Tw",
+      "views": 3876,
+      "title_ko": "업무자동화 이렇게 쉬웠다니 | 코딩 몰라도 클로드한테 말로 시키면 끝",
+      "summary": "코딩이나 터미널 없이 Claude에게 자연어로 지시하는 것만으로 반복 업무를 자동화하는 방법을 소개하는 영상.",
+      "detail": "이 영상은 복잡한 개발 지식 없이도 Claude를 활용해 업무 자동화를 실현할 수 있다는 것을 보여준다. 까만 터미널 화면이나 어려운 용어 없이, 말로 작업을 지시하는 것만으로 충분하다는 메시지를 전달한다. 직장인 대상의 실전 AI 활용 콘텐츠로, 비개발자의 AI 도입 진입장벽을 낮추는 데 초점을 맞췄다.",
+      "points": [
+        "Claude에게 자연어로 지시하는 것만으로 업무 자동화 구현 가능",
+        "코딩·터미널 지식 불필요, 직장인 누구나 활용 가능",
+        "말로 시키는 것이 핵심 접근법으로 제시됨"
+      ],
+      "takeaway": "비개발자도 AI를 통해 반복 업무를 자동화할 수 있다는 접근성을 직접 보여주는 콘텐츠로, 직장 내 AI 활용 저변 확대에 기여하는 실용적 가이드다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 3,876"
+    },
+    {
+      "type": "news",
+      "title": "[ZD브리핑] 삼성·SK·LG 엔비디아 'AI 데이' 총출동 ..KT·네이버·게임 빅3 실적 발표",
+      "url": "https://zdnet.co.kr/view/?no=20261108125202",
+      "source": "ZDNet Korea",
+      "published": "2026-11-07T19:33:53+00:00",
+      "thumbnail": "",
+      "title_ko": "[ZD브리핑] 삼성·SK·LG 엔비디아 'AI 데이' 총출동…KT·네이버·게임 빅3 실적 발표",
+      "summary": "엔비디아 AI 데이 서울에 삼성·SK하이닉스·LG가 대거 참여하고, 네이버·KT·게임사 3분기 실적이 이번 주 집중 공개된다.",
+      "detail": "서울 코엑스에서 열리는 '엔비디아 AI 데이 서울 2026'에 삼성전자·SK하이닉스·LG전자가 각각 AI 설계 자동화, 반도체 공정 시뮬레이션, 로봇 공장 검증 사례를 발표한다. 매디슨 황 수석이사의 방한이 취소됐지만 행사는 예정대로 진행된다. 한편 네이버는 12일 역대 최대 분기 매출(컨센서스 3조5143억원)을 공개할 예정이나, AI 인프라 투자 비용 증가로 영업이익은 12.8% 감소가 전망된다. KT·넥슨·크래프톤·엔씨소프트 등도 같은 주 3분기 성적을 발표한다.",
+      "points": [
+        "엔비디아 AI 데이 서울 2026, 9~10일 코엑스 개최·삼성·SK하이닉스·LG전자 사례 발표",
+        "네이버 3분기 매출 역대 최대(3.5조원) 전망, 영업이익은 AI 투자로 12.8% 감소 예상",
+        "KT·넥슨·크래프톤·엔씨 3분기 실적 이번 주 순차 공개",
+        "과기부 주최 '2027 AI·ICT 기술전망 컨퍼런스' 11일 대한상공회의소 개막",
+        "SK하이닉스 용인 트리니티팹 프레스 투어 10일 진행"
+      ],
+      "takeaway": "엔비디아와 국내 대기업 간 AI·로봇 협력 현황과 주요 IT 기업 실적이 한꺼번에 공개되는 주로, 한국 AI 산업 생태계의 현주소를 가늠할 수 있는 분기점이 될 전망이다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "챗GPT, 한국서 1800만명 넘게 쓴다…이용시간도 2배 급증",
+      "url": "https://zdnet.co.kr/view/?no=20261108123102",
+      "source": "ZDNet Korea",
+      "published": "2026-11-07T18:38:31+00:00",
+      "thumbnail": "",
+      "title_ko": "챗GPT, 한국서 1800만명 넘게 쓴다…이용시간도 2배 급증",
+      "summary": "국내 챗GPT 월간 이용자가 1876만 명으로 사상 최대를 기록한 가운데, 클로드는 1년 새 MAU 15배 성장으로 2위로 급부상했다.",
+      "detail": "2026년 10월 기준 챗GPT 국내 모바일 MAU는 1876만 명으로 전년 대비 43.8% 증가했으며, 총 사용시간은 113.9% 급증해 사용 깊이도 함께 커졌다. AI 앱 이용자의 91%가 챗GPT를 쓰는 것으로 나타나 사실상 독주 체제를 굳혔다. 클로드는 같은 기간 MAU가 14만 명에서 210만 명으로 15배 급증, 순위도 7위에서 2위로 뛰어올랐고 총 사용시간은 22배 늘었다. 반면 SK텔레콤 에이닷(-42.5%)과 퍼플렉시티(-30.9%)는 이용자가 감소했다.",
+      "points": [
+        "챗GPT 국내 MAU 1876만 명, 전년비 43.8% 증가·첫 1800만 돌파",
+        "챗GPT 총 사용시간 113.9% 급증, 1인당 월평균 163분으로 증가",
+        "클로드 MAU 15배 성장(14만→210만 명), 순위 7위→2위로 급상승",
+        "에이닷·퍼플렉시티는 각각 42.5%, 30.9% 이용자 감소",
+        "AI 앱 이용자 10명 중 9명 이상이 챗GPT 사용"
+      ],
+      "takeaway": "한국 AI 앱 시장은 챗GPT 독주 속에 클로드가 빠르게 치고 올라오는 양강 구도로 재편되고 있으며, 토종·검색형 AI 서비스는 점유율 방어에 어려움을 겪는 모습이다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "매디슨 황 방한 취소…'엔비디아 AI 데이'는 예정대로",
+      "url": "https://zdnet.co.kr/view/?no=20261108115633",
+      "source": "ZDNet Korea",
+      "published": "2026-11-07T18:31:38+00:00",
+      "thumbnail": "",
+      "title_ko": "매디슨 황 방한 취소…'엔비디아 AI 데이'는 예정대로",
+      "summary": "젠슨 황 CEO의 장녀 매디슨 황이 개인 사정으로 방한을 돌연 취소했지만, 엔비디아 AI 데이 서울 2026은 차질 없이 진행된다.",
+      "detail": "엔비디아 옴니버스·로보틱스 마케팅 수석이사인 매디슨 황이 가족 관련 개인 사유로 방한을 전격 취소했다. 이로 인해 배경훈 과기정통부 장관과의 면담과 국내 대기업 비즈니스 협력 일정도 불발됐다. 일각에서는 최근 젠슨 황 CEO와 연인 관계였던 여성 기업인의 중국 스파이 의혹을 다룬 외신 보도가 영향을 미쳤을 가능성도 거론된다. 행사 자체는 레이몬드 테 아태지역 수석부사장 등이 참석해 정상 개최되며, 삼성·SK하이닉스·LG전자의 발표 세션도 예정대로 열린다.",
+      "points": [
+        "매디슨 황, 개인(가족) 사유로 방한 돌연 취소",
+        "과기부 장관 면담 및 국내 기업 협력 일정 함께 불발",
+        "취소 배경에 외신 스파이 의혹 보도 영향 가능성 거론",
+        "행사는 레이몬드 테 아태 수석부사장 등 대체 참석으로 정상 진행",
+        "삼성·SK하이닉스·LG전자 발표 세션은 계획대로 유지"
+      ],
+      "takeaway": "핵심 인사의 갑작스러운 불참에도 행사와 국내 기업 협력 세션이 유지되면서 엔비디아와 한국 산업계 간 협력 기조에는 실질적 영향이 없을 전망이다.",
+      "category": "산업/투자",
+      "metric": ""
+    }
+  ]
+}
