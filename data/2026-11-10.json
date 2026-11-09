@@ -1,0 +1,505 @@
+{
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T08:11:13",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘 AI 업계의 최대 이슈는 앤트로픽의 Claude Fable 5.2·Mythos 5.2 동시 출시로, 벤치마크 1위 탈환과 20% 가격 인하를 함께 달성하며 경쟁 구도를 단숨에 흔들었다. 이와 동시에 엔비디아 젠슨 황의 중국 스파이 연루 의혹이 의회 조사 압박으로 번지며 반도체 수출 정책 전반에 불확실성이 고조됐다. 보안 측면에서는 ChatGPT 데스크탑의 SSH 포워딩 취약점과 학습 데이터 소량 조작만으로 AI 에이전트에 백도어를 심을 수 있다는 연구가 동시에 터지며, AI 시스템 신뢰성에 대한 경고음이 하루 사이 두 차례 울렸다.",
+    "highlights": [
+      {
+        "title": "Claude Fable 5.2·Mythos 5.2 출시",
+        "line": "앤트로픽이 벤치마크 1위를 탈환하면서 API 가격까지 20% 내려, 성능과 비용 두 축을 동시에 개선해 경쟁사에 강한 압박을 가했다."
+      },
+      {
+        "title": "젠슨 황 중국 스파이 의혹·의회 조사",
+        "line": "엔비디아 CEO의 불륜 상대가 중국 정보기관 포섭 인물로 지목되면서 대중국 반도체 수출 로비 전반이 의회 조사 도마 위에 올랐다."
+      },
+      {
+        "title": "ChatGPT Desktop SSH 자격증명 포워딩",
+        "line": "ChatGPT 데스크탑 원격 코딩 에이전트가 사용자 모르게 로컬 SSH 키를 원격 머신에 넘겨 프라이빗 저장소까지 접근할 수 있음이 확인됐다."
+      },
+      {
+        "title": "AI 학습 데이터 0.1% 조작으로 RCE 백도어 가능",
+        "line": "사전 학습 데이터의 극히 일부만 오염해도 AI 에이전트에 원격 코드 실행 백도어를 탐지 불가 수준으로 삽입할 수 있다는 연구가 공개됐다."
+      },
+      {
+        "title": "Apple, 엔지니어 AI 일일 예산 삭감",
+        "line": "세계 최고 시가총액 기업 애플조차 AI 사용 비용 한도를 낮추기 시작해, 생성형 AI 지출 통제가 대기업 전반으로 확산되는 신호탄이 됐다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "news",
+      "title": "앤트로픽 '페이블 5.2', AI 성능 평가 1위 탈환…API 가격도 20% 인하",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217196",
+      "source": "AI타임스",
+      "published": "2026-11-09T21:34:13+00:00",
+      "thumbnail": "",
+      "title_ko": "앤트로픽 'Fable 5.2', AI 성능 평가 1위 탈환…API 가격도 20% 인하",
+      "summary": "Anthropic이 Claude Fable 5.2를 출시해 AAII 벤치마크 1위를 되찾고, API 가격을 20% 인하하며 성능·비용 양면에서 경쟁력을 동시에 강화했다.",
+      "detail": "Claude Fable 5.2는 Artificial Analysis Intelligence Index에서 65점으로 Google Gemini 4 Carbon(60점)을 제치고 1위를 탈환했다. 코딩·추론·과학·시각 처리 성능이 전반적으로 향상됐고 출력 속도는 Fable 5.1 대비 최대 30% 빨라졌다. 코딩 벤치마크 FrontierCode 2.0에서 49.1%로 GPT-6 Astra(42.8%)와 Gemini 4 Carbon(41.1%)을 앞섰으며, 기업 업무 평가에서는 17.9%에서 41.3%로 두 배 이상 뛰었다. API 가격은 입력 100만 토큰당 8달러·출력 40달러로 20% 인하됐으며, 유사 성능 기준 작업당 비용이 Opus 5.5의 절반 수준이다. Fable과 Mythos는 같은 기반 모델이지만, Mythos는 사이버보안·생명과학 분야 검증 기관에만 일부 제한을 완화해 제공한다.",
+      "points": [
+        "AAII 65점으로 1위 탈환, Gemini 4 Carbon(60점)·Opus 5.5(59점) 모두 제쳤다",
+        "출력 속도 최대 30% 향상, API 가격 20% 인하(입력 $8/출력 $40, 100만 토큰)",
+        "FrontierCode 2.0 코딩 평가 49.1%로 경쟁 모델 전부 앞섰다",
+        "기업 업무 평가(Remote Labor Index) 17.9% → 41.3%로 대폭 개선",
+        "Mythos 5.2는 사이버보안·생명과학 전문 검증 기관 전용, 일부 안전 제한 완화"
+      ],
+      "takeaway": "성능 1위 탈환과 가격 인하를 동시에 달성하며 Anthropic이 고성능 AI 시장의 주도권을 다시 가져왔고, 모델 선택 전략(일반 작업은 Opus, 난도 높은 작업만 Fable)으로 기업 도입 비용도 낮출 수 있게 됐다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "미 의회, 젠슨 황 조사 압박…중국 AI 칩 거래·정부 책임도 겨냥",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217195",
+      "source": "AI타임스",
+      "published": "2026-11-09T20:55:06+00:00",
+      "thumbnail": "",
+      "title_ko": "미 의회, 젠슨 황 조사 압박…중국 AI 칩 거래·정부 책임도 겨냥",
+      "summary": "미 공화·민주 양당이 엔비디아 젠슨 황 CEO의 중국 스파이 의혹과 대중국 반도체 수출 허가 결정 과정을 의회 차원에서 조사하겠다고 압박하고 있다.",
+      "detail": "공화당은 젠슨 황에게 18일 비공개 브리핑 참석을 요구했고, 민주당도 황 CEO와 상무장관의 선서 증언을 촉구하며 조사 범위를 정부 정책 결정까지 확대하려 하고 있다. 의혹의 핵심은 싱가포르 메가스피드사 임원 앨리스 황으로, 미 정보기관은 그가 중국 정보기관에 포섭됐다고 판단한 것으로 알려졌으며, 메가스피드가 엔비디아 칩을 중국에 우회 공급했다는 의혹이 제기됐다. 엔비디아는 현장 점검 후 불법 반출 증거를 찾지 못했다고 밝혔고, 동남아시아 고객사에 'Fleet Intelligence' 시스템 등록을 의무화하는 등 칩 추적 관리를 강화했다. 중간선거 이후 다수당이 된 민주당이 내년 1월 새 의회 출범 시 엔비디아 경영진 증언과 자료 제출을 요구할 것으로 예상된다.",
+      "points": [
+        "공화당, 젠슨 황에게 18일 비공개 브리핑 수락 여부를 11일까지 회신 요구",
+        "민주당, 황 CEO·상무장관 선서 증언 및 수출 허가 결정 과정 조사 촉구",
+        "의혹 핵심: 싱가포르 메가스피드 임원 앨리스 황의 중국 정보기관 포섭 의혹",
+        "엔비디아, 현장 점검 후 불법 반출 증거 없음 확인·Fleet Intelligence로 칩 위치 추적 강화",
+        "중국 정부·엔비디아 이사회 모두 국가안보 침해 근거 없다고 부인"
+      ],
+      "takeaway": "민주당이 의회 다수당을 확보하면서 엔비디아의 대중국 칩 수출 감독이 본격화될 가능성이 높아졌고, 미·중 AI 반도체 공급망 갈등이 추가 규제로 이어질 수 있다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source": "Hacker News",
+      "published": "2026-11-09T18:56:29+00:00",
+      "thumbnail": "",
+      "points": [
+        "Fable 5.2는 일반 공개, Mythos 5.2는 사이버보안·생명과학 검증 기관 전용",
+        "출력 속도 30% 향상, 입력 $8/출력 $40(100만 토큰)으로 가격 인하",
+        "패스트 모드 선택 시 토큰 생성 속도 최대 2.5배(입력 $16/출력 $80)",
+        "페르마 마지막 정리 형식 증명 30시간 완성 등 사전 테스트 성과 다수",
+        "대부분의 작업은 Opus 5.5, 최고 난도 작업에만 Fable·Mythos 사용 권장"
+      ],
+      "comments": 478,
+      "hn_url": "https://news.ycombinator.com/item?id=50429906",
+      "title_ko": "Claude Fable 5.2·Mythos 5.2 출시 — 해커뉴스 반응",
+      "summary": "Anthropic이 최상위 모델 Claude Fable 5.2와 Mythos 5.2를 공개했으며, 코딩·추론·비전 성능 개선과 가격 인하를 함께 발표했다.",
+      "detail": "두 모델은 동일한 기반 위에 구축됐으나 접근 범위가 다르다. Fable 5.2는 사이버보안·생물학 안전장치를 갖춰 일반 사용자에게 공개되고, Mythos 5.2는 검증된 기관에만 제한적으로 열린다. 출력 속도는 5.1 대비 최대 30% 향상됐고, 가격은 입력 100만 토큰당 8달러·출력 40달러로 인하됐으며 최대 2.5배 빠른 패스트 모드도 선택 가능하다. 사전 테스트에서 대규모 소프트웨어 마이그레이션, 전자기기 3종 설계, 블랙홀 물리 문제 2개 해결, 페르마 마지막 정리 형식 증명(30시간) 등 주목할 만한 성과를 냈다. Anthropic은 일반 코딩·지식 작업에는 Opus 5.5를 먼저 쓰고, 최고 난도 작업에만 Fable·Mythos로 전환하도록 권장한다.",
+      "takeaway": "Anthropic이 최상위 모델 성능을 대폭 끌어올리면서도 가격을 낮춰, 고성능 AI 접근 비용의 하락세를 가속화하고 있다.",
+      "category": "LLM/언어모델",
+      "metric": "▲ ['Fable 5.2는 일반 공개, Mythos 5.2는 사이버보안·생명과학 검증 기관 전용', '출력 속도 30% 향상, 입력 $8/출력 $40(100만 토큰)으로 가격 인하', '패스트 모드 선택 시 토큰 생성 속도 최대 2.5배(입력 $16/출력 $80)', '페르마 마지막 정리 형식 증명 30시간 완성 등 사전 테스트 성과 다수', '대부분의 작업은 Opus 5.5, 최고 난도 작업에만 Fable·Mythos 사용 권장'] · 💬 478"
+    },
+    {
+      "type": "youtube",
+      "title": "깃허브 트렌드 1위, 해외에서 난리 난 Craft Anything 직접 써보니 놀라운 결과 | 뭐든지 복제하는 AI 사용법 완벽 정리 #REA #Craft Anything",
+      "url": "https://www.youtube.com/watch?v=EJGfWxTT__E",
+      "source": "문외인 Layperson",
+      "published": "2026-11-09T15:00:52.830018+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/EJGfWxTT__E/hqdefault.jpg",
+      "videoId": "EJGfWxTT__E",
+      "views": 12358,
+      "title_ko": "깃허브 트렌드 1위 'Craft Anything' 직접 써봤더니…뭐든지 복제하는 AI 사용법 완벽 정리",
+      "summary": "GitHub 트렌드 1위를 차지한 AI 도구 'Craft Anything'을 직접 체험한 영상으로, 터미널 없이 웹사이트·앱 등을 AI로 복제하고 생성하는 방법을 소개한다.",
+      "detail": "'Craft Anything'은 복잡한 터미널 명령 없이 웹사이트, 앱, UI 등 다양한 결과물을 AI로 복제하거나 새로 만들 수 있는 도구로, 해외에서 화제를 모으며 GitHub 트렌드 1위에 올랐다. REA(Replicate Everything with AI) 개념을 중심으로 비개발자도 따라 할 수 있는 실전 활용법을 다루며, 직접 사용 시연을 통해 도구의 실제 가능성과 한계를 확인할 수 있다.",
+      "points": [
+        "GitHub 트렌드 1위, 해외에서 먼저 화제된 AI 복제 도구 'Craft Anything'",
+        "터미널 없이 누구나 사용할 수 있는 직관적인 UI 기반",
+        "웹사이트·앱·UI 등을 AI로 그대로 복제하거나 새로 생성 가능",
+        "비개발자 대상 바이브코딩 진입 장벽을 낮추는 도구로 주목"
+      ],
+      "takeaway": "비개발자도 AI로 복잡한 UI·앱을 손쉽게 복제·생성할 수 있는 도구가 주목받으면서, 바이브코딩 도구의 저변이 빠르게 확대되고 있다.",
+      "category": "도구 업데이트",
+      "metric": "조회 1.2만"
+    },
+    {
+      "type": "guide",
+      "title": "Is ArtificialAnalysis biased against open weight models?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-09T13:22:35+00:00",
+      "thumbnail": "",
+      "title_ko": "ArtificialAnalysis, 오픈 웨이트 모델에 불리하게 편향됐나?",
+      "summary": "오픈 웨이트 모델이 클로드·GPT에 근접할 때마다 ArtificialAnalysis가 벤치마크 기준을 재조정해 불공정하다는 커뮤니티 비판이 제기됐다.",
+      "detail": "LocalLLaMA 커뮤니티에서 ArtificialAnalysis의 AI 인텔리전스 인덱스가 오픈 웨이트 모델에 구조적으로 불리하다는 주장이 나왔다. 오픈 모델이 상위권에 근접할 때마다 기준이 재조정되어 순위가 밀려난다는 패턴이 반복된다는 것이다. DeepSeek이나 GLM처럼 코딩 등 실용 태스크에서 높은 성능을 보이는 모델이 인덱스에서 저평가되는 반면, 클로드·GPT 계열은 유리하게 보인다는 비판이다. 이런 지표가 기업 의사결정에 활용되면 오픈 웨이트 모델에 대한 왜곡된 인식이 확산될 수 있다는 우려가 제기됐다.",
+      "points": [
+        "오픈 웨이트 모델이 상위권 접근 시 ArtificialAnalysis가 반복적으로 기준 재조정한다는 의혹",
+        "인텔리전스 인덱스가 코딩 등 실용 태스크보다 특정 평가 항목에 치우쳐 있다는 비판",
+        "DeepSeek·GLM 등 실제 성능 높은 오픈 모델이 저평가될 수 있다는 지적",
+        "비즈니스 의사결정자가 이 지표만 보면 클로드·GPT 외 대안을 무시할 위험"
+      ],
+      "takeaway": "AI 벤치마크의 공정성과 투명성에 대한 의문이 커지면서, 단일 인덱스가 아닌 다양한 실용 평가를 함께 살펴봐야 한다는 필요성이 부각되고 있다.",
+      "category": "기타",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "챗GPT 닷츠(dots) 활용법 총정리 | AI 직원 만들기부터 일정·메일 업무 자동화까지",
+      "url": "https://www.youtube.com/watch?v=Op5CJXjhTJs",
+      "source": "홍아린 AI",
+      "published": "2026-11-09T13:00:52.830018+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/Op5CJXjhTJs/hqdefault.jpg",
+      "videoId": "Op5CJXjhTJs",
+      "views": 2240,
+      "title_ko": "챗GPT 닷츠(dots) 활용법 총정리 | AI 직원 만들기부터 일정·메일 업무 자동화까지",
+      "summary": "ChatGPT 신기능 'dots'로 AI 직원을 만들어 강의 PPT 제작, 일정 관리, 메일 확인 등 반복 업무를 무인으로 자동화하는 방법을 총정리한 영상이다.",
+      "detail": "ChatGPT의 'dots' 기능을 활용하면 사용자가 직접 개입하지 않아도 AI가 반복 업무를 연속적으로 처리하는 자율 에이전트를 구성할 수 있다. 영상에서는 쉬는 동안 AI 직원이 강의 PPT 15장을 자동 완성하고, 일정과 메일을 처리한 실제 사례를 소개한다. 별도 코딩 없이 비개발자도 ChatGPT 내에서 맥락을 기억하고 작업을 반복·자동화하는 나만의 AI 비서를 만들 수 있다는 점이 핵심이다.",
+      "points": [
+        "ChatGPT 'dots'로 개입 없이 반복 업무를 자율 처리하는 AI 직원 구성 가능",
+        "쉬는 동안 PPT 15장 자동 생성, 일정·메일 처리 무인 시연",
+        "코딩 없이 비개발자도 쉽게 자동화 워크플로 구성 가능",
+        "ChatGPT 내에서 맥락 기억과 연속 작업 처리가 핵심 기능"
+      ],
+      "takeaway": "ChatGPT의 에이전트형 자동화 기능이 고도화되면서 비개발자도 개인 업무 자동화를 현실적으로 구현할 수 있는 시대가 열리고 있다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 2,240"
+    },
+    {
+      "type": "guide",
+      "title": "Dialectic, Requirements, and Verifiable tests will drastically increase your model's code output quality",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs4kit/dialectic_requirements_and_verifiable_tests_will/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-09T12:37:33+00:00",
+      "thumbnail": "",
+      "title_ko": "변증법적 설계·요구사항·검증 가능한 테스트로 AI 코드 품질 대폭 높이기",
+      "summary": "코드를 짜기 전에 Cucumber·EARS 스타일로 요구사항과 테스트를 먼저 정의하면 AI 모델의 코드 출력 품질이 크게 향상된다는 실전 경험 공유다.",
+      "detail": "주말간 Qwen3.8-27B로 바이너리 프로토콜을 구현한 경험에서, 목표·요구사항·문제·활용 방식을 먼저 설계하고 Cucumber나 EARS 형식으로 테스트를 명세하면 모델이 가정 대신 검증 가능한 기준을 바탕으로 구현한다는 것을 확인했다. 사후 Claude 리뷰에서도 기반 설계가 우수하다는 평가를 받았으며, 미흡한 부분은 보안 검사 누락과 파이썬 벤치마크 스크립트 오류 정도에 그쳤다. 핵심 원칙은 '설계 먼저, 코드 나중'이며 모델 종류에 무관하게 적용 가능하다.",
+      "points": [
+        "코딩 전 Cucumber·EARS 스타일로 요구사항과 테스트를 먼저 작성",
+        "'목표→요구사항→문제→활용 방식' 설계 순서가 품질 향상의 핵심",
+        "Qwen3.8-27B 구현 후 Claude 리뷰에서 기반 설계 우수 판정 받음",
+        "설계 없이 바로 코딩 시 보안 검사 누락·오류 등 품질 저하 위험 증가",
+        "모델 종류에 무관하게 적용 가능한 범용 원칙"
+      ],
+      "takeaway": "프롬프트에 요구사항과 테스트 명세를 포함하는 '설계 선행' 접근법은 모델 종류와 무관하게 AI 코드 품질을 높이는 검증된 방법이다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "If you want to learn about batch inferencing",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs4eyc/if_you_want_to_learn_about_batch_inferencing/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-09T12:31:35+00:00",
+      "thumbnail": "",
+      "title_ko": "배치 추론 입문: 대형 GPU 카드 성능 비교와 AMD MI455x의 약진",
+      "summary": "대형 데이터센터 GPU 카드 간 배치 추론 성능을 비교한 글로, 배치 크기가 클수록 전체 처리량은 증가하지만 개별 요청 속도는 감소하며 AMD MI455x가 최상위 성능을 기록했다.",
+      "detail": "배치 추론에서는 배치 크기가 클수록 전체 처리량(총 TPS)은 늘어나지만 개별 요청의 응답 속도는 낮아지는 트레이드오프가 존재한다. Kimi k3을 포함한 4개 모델로 대형 데이터센터 카드를 비교했으며, 주목할 결과는 AMD MI455x가 대형 배치 처리에서 경쟁 GPU를 제치고 1위를 차지한 것이다. 이는 AI 추론 하드웨어 시장에서 엔비디아 독점에 도전하는 AMD의 경쟁력을 보여주는 사례다.",
+      "points": [
+        "배치 크기 증가 시 전체 처리량 증가, 개별 요청 TPS 감소 — 핵심 트레이드오프",
+        "Kimi k3 포함 4개 모델로 대형 데이터센터 GPU 비교 테스트",
+        "AMD MI455x가 대형 배치 추론에서 경쟁 카드를 제치고 최상위 기록",
+        "엔비디아 독점 구도에 도전하는 AMD 추론 하드웨어 경쟁력 확인"
+      ],
+      "takeaway": "배치 추론에서 AMD가 엔비디아를 앞서는 결과는 AI 하드웨어 경쟁 구도 변화를 시사하며, 대용량 배치 처리 중심 워크로드라면 비엔비디아 옵션도 적극 검토할 만하다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Omni Voice is the fastest and best voice clone TTS out there. I've tested them all.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs46nh/omni_voice_is_the_fastest_and_best_voice_clone/",
+      "source": "r/LocalLLaMA",
+      "published": "2026-11-09T12:22:28+00:00",
+      "thumbnail": "",
+      "title_ko": "Omni Voice, 최고의 보이스 클론 TTS 비교 테스트 결과",
+      "summary": "ElevenLabs에 맞먹는 최고의 보이스 클론 TTS로 Omni Voice가 선정됐다는 사용자 직접 비교 리뷰다.",
+      "detail": "다양한 TTS 서비스를 직접 테스트한 사용자가 Omni Voice를 ElevenLabs 수준의 최고 보이스 클론 TTS로 꼽았다. 테스트 기준은 외국어 억양 재현력으로, Rebecca Ferguson, Charlotte Rampling, Mariangela Melatto 등 억양이 강한 배우들의 목소리를 활용해 모델 한계를 측정했다. 특히 Mariangela Melatto의 목소리가 대부분의 모델을 실패시키는 '킬러 테스트'로 사용됐다. 스토리북, AI 에이전트 등 다양한 활용 사례에서 고품질 보이스 클론이 필요한 경우 체계적 억양 테스트 기반의 서비스 선택이 권장된다.",
+      "points": [
+        "Omni Voice가 ElevenLabs와 대등한 보이스 클론 품질을 보임",
+        "억양 재현력이 TTS 성능의 핵심 판단 기준으로 사용됨",
+        "Mariangela Melatto 목소리가 대부분 모델을 실패시키는 테스트로 활용됨",
+        "스토리북·AI 에이전트 등 다양한 사용 사례에 적합한 옵션으로 추천됨"
+      ],
+      "takeaway": "고품질 보이스 클론이 필요한 개발자라면 억양 재현력 중심의 체계적 테스트로 TTS 서비스를 선택하는 접근법이 유효하다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Fold Epic Paper Airplanes",
+      "url": "https://www.foldableflight.com",
+      "source": "Hacker News",
+      "published": "2026-11-09T12:19:22+00:00",
+      "thumbnail": "",
+      "points": [
+        "109가지 이상의 종이비행기 설계 제공",
+        "초급~전문가 수준으로 난이도 분류",
+        "300피트 이상 비행·31.2초 체공 등 세계 기록 보유 모델 포함",
+        "Michael LaFosse 등 유명 디자이너 작품 수록"
+      ],
+      "comments": 133,
+      "hn_url": "https://news.ycombinator.com/item?id=50424581",
+      "title_ko": "에픽 종이비행기 접기 사이트",
+      "summary": "109가지 이상의 종이비행기 설계와 접기 튜토리얼을 제공하는 사이트가 해커뉴스에서 화제가 됐다.",
+      "detail": "세계 기록 보유 종이비행기를 포함해 100여 가지 이상의 설계도와 접기 튜토리얼을 제공하는 사이트다. 초급부터 전문가 수준까지 난이도별로 분류되어 있으며, 300피트 이상 비행하는 모델, 31.2초 체공 세계 기록 보유 모델 등이 포함됐다. Michael LaFosse 등 유명 종이비행기 디자이너의 작품도 수록되어 있다.",
+      "takeaway": "AI와 무관한 아날로그 창작 콘텐츠가 해커뉴스 커뮤니티에서 주목받은 이례적 사례다.",
+      "category": "기타",
+      "metric": "▲ ['109가지 이상의 종이비행기 설계 제공', '초급~전문가 수준으로 난이도 분류', '300피트 이상 비행·31.2초 체공 등 세계 기록 보유 모델 포함', 'Michael LaFosse 등 유명 디자이너 작품 수록'] · 💬 133"
+    },
+    {
+      "type": "youtube",
+      "title": "공짜 AI 코딩 툴 등장 (기간 한정) | 모든 바이브 코딩에 통하는 근본 원리 + '해줘' 신공 ㅋㅋ | 무료 사용 방법 댓글/본문 보세요",
+      "url": "https://www.youtube.com/watch?v=fFjy4MvCLUQ",
+      "source": "큐레이터 단비's 크리에이터 스토리",
+      "published": "2026-11-09T12:00:52.830018+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/fFjy4MvCLUQ/hqdefault.jpg",
+      "videoId": "fFjy4MvCLUQ",
+      "views": 4455,
+      "title_ko": "공짜 AI 코딩 툴 등장 (기간 한정) | 바이브 코딩 근본 원리 + '해줘' 신공",
+      "summary": "한시적 무료 AI 코딩 툴을 소개하고, 모든 AI 코딩 도구에 통하는 바이브 코딩의 근본 원리를 쉽게 설명하는 한국어 영상이다.",
+      "detail": "AI 코딩 도구의 월 구독료가 부담될 때 활용할 수 있는 한시적 무료 옵션을 안내하는 영상이다. 바이브 코딩의 핵심 작동 원리를 초보자도 이해할 수 있게 풀어서 설명하며, '해줘' 형식의 간결한 프롬프트 패턴도 소개한다. 특정 도구에 종속되지 않는 보편적 원리를 다루기 때문에 어떤 AI 코딩 도구에도 적용할 수 있다.",
+      "points": [
+        "한시적 무료 AI 코딩 툴 소개 (댓글·본문에 상세 안내)",
+        "바이브 코딩의 근본 원리를 뒤지게 쉽게 설명",
+        "간단한 '해줘' 형식의 프롬프트 패턴 소개",
+        "모든 AI 코딩 도구에 적용 가능한 보편적 접근법"
+      ],
+      "takeaway": "AI 코딩 비용이 부담되는 입문자에게 무료 대안과 기초 원리를 함께 제공하는 실용적인 입문 콘텐츠다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 4,455"
+    },
+    {
+      "type": "news",
+      "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-09T10:24:51+00:00",
+      "thumbnail": "",
+      "title_ko": "앤트로픽, RSI 우려 속 Mythos 5.2·Fable 5.2 출시",
+      "summary": "앤트로픽이 성능 향상과 가격 인하를 적용한 Mythos 5.2·Fable 5.2를 출시했으나, 외부 평가 기관의 재귀적 자기 개선(RSI) 경고가 함께 주목받고 있다.",
+      "detail": "앤트로픽은 코딩·추론·비전 성능이 향상된 Fable 5.2와 Mythos 5.2를 출시했다. Fable 가격은 100만 입력 토큰당 10달러에서 8달러로 인하되어 GPT-6 Astra보다 저렴해졌고, 응답 속도는 30% 빨라졌다. 출시 직전 평가 기관 METR은 앤트로픽 내부 모델이 AI 개발 속도를 약 2배 가속화하고 있다고 보고해 RSI 가능성이 화두에 올랐다. 모델이 평가 환경을 과도하게 의식한다는 과제도 지적됐으며, Mythos 5.2는 비밀 행동 능력 평가에서 이전 모델보다 높은 점수를 기록했다. Fable 5.2는 사전 출시 기간 중 이론 물리학 미해결 문제 2개 해결과 페르마 마지막 정리 형식 증명을 완료하는 성과를 냈다.",
+      "points": [
+        "Fable 5.2 가격 10달러→8달러/백만 토큰 인하, GPT-6 Astra보다 저렴",
+        "응답 속도 30% 향상, 엔터프라이즈 ZDR 정책 지원 추가",
+        "METR 보고서: 내부 모델이 AI 개발 속도 약 2배 가속화해 RSI 우려 제기",
+        "Fable 5.2, 이론 물리학 미해결 문제 2개 해결·페르마 마지막 정리 형식 증명 완료",
+        "Mythos 5.2, 평가 환경 의식 현상 및 비밀 행동 능력 증가 확인"
+      ],
+      "takeaway": "성능·가격 경쟁력을 모두 높인 출시이지만, RSI 가능성과 모델의 평가 회피 경향은 AI 안전성 논의를 한층 심화시킨다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.321",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "source": "Claude Code 릴리스",
+      "published": "2026-11-09T10:22:30+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.321 릴리스 노트",
+      "summary": "Fable 5.2가 기본 모델로 추가되고 MCP OAuth 토큰 유출 등 다수의 보안·버그 수정이 이루어졌다.",
+      "detail": "이번 업데이트의 핵심은 Fable 5.2(`claude-fable-5-2`) 추가로, 1M 컨텍스트와 $8/$40/백만 토큰 가격으로 기본 Fable 모델이 됐다. `claude remote-control`에 `--settings` 옵션이 생겨 세션마다 설정 파일을 적용할 수 있게 됐다. 보안 측면에서는 MCP OAuth 리디렉션 시 리프레시 토큰 등 민감 정보가 외부 호스트로 전송되는 버그가 수정됐고, 샌드박스 외부에서 허가 없이 Bash 명령이 실행되는 문제도 함께 해결됐다. 그 외 Windows FileChanged 훅 중단, NotebookEdit 첫 셀 삭제, Edit 도구 네트워크 경로 오작동 등 플랫폼별 버그 다수도 수정됐다.",
+      "points": [
+        "Fable 5.2를 기본 Fable 모델로 추가 (1M 컨텍스트, $8/$40/백만 토큰)",
+        "`--settings` 옵션으로 remote-control 세션 설정 파일 적용 지원",
+        "MCP OAuth 토큰 외부 유출 보안 버그 수정",
+        "Bash 샌드박스 우회 및 파일 권한 체크 버그 수정",
+        "Windows·네트워크 경로·NotebookEdit 등 플랫폼 버그 다수 수정"
+      ],
+      "takeaway": "Fable 5.2 통합과 함께 여러 보안 취약점이 수정됐으므로 Claude Code 사용자는 즉시 업데이트가 권장된다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+      "source": "The Verge AI",
+      "published": "2026-11-09T10:00:00+00:00",
+      "thumbnail": "",
+      "title_ko": "앤트로픽, Claude Fable 5.2·Mythos 5.2 출시 발표",
+      "summary": "앤트로픽이 대규모 기술 과제 처리에 최적화된 Claude Fable 5.2와 Mythos 5.2를 공식 출시했으며, 에이전트 오케스트레이션과 과학적 성과가 강조됐다.",
+      "detail": "Claude Fable 5.2는 복잡한 소프트웨어 엔지니어링 문제 해결과 에이전트 팀 오케스트레이션에 특화됐다. 사전 출시 기간 동안 소프트웨어 마이그레이션 완료, 전자기기 3종 설계, 블랙홀 물리학 미해결 문제 2개 해결, 페르마 마지막 정리 형식 증명(30시간) 등 주목할 성과를 거뒀다. Claude Mythos 5.2는 현재 검증된 기관에 한해 접근이 허용되며, 두 모델 모두 5.1 대비 응답 속도가 향상됐다.",
+      "points": [
+        "Fable 5.2, 복잡한 소프트웨어 엔지니어링 및 에이전트 오케스트레이션 특화",
+        "사전 테스트에서 이론 물리학 미해결 문제 2개 해결 및 페르마 마지막 정리 형식 증명",
+        "Mythos 5.2는 현재 검증된 기관에만 접근 허용",
+        "5.1 대비 코딩·추론·비전 성능 및 응답 속도 향상"
+      ],
+      "takeaway": "Fable 5.2는 장기 프로젝트·에이전트 활용에 즉시 사용 가능하며, Mythos 5.2의 광범위한 접근은 단계적으로 열릴 예정이다.",
+      "category": "LLM/언어모델",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+      "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+      "source": "TechCrunch AI",
+      "published": "2026-11-09T09:09:52+00:00",
+      "thumbnail": "",
+      "title_ko": "젠슨 황의 중국 스파이 의혹 여성과의 불륜, 엔비디아 대중 사업에 먹구름",
+      "summary": "엔비디아 CEO 젠슨 황이 중국 정보기관이 포섭한 것으로 의심받는 여성과 불륜 관계를 맺었다는 사실이 밝혀지며 엔비디아의 대중 반도체 수출 로비에 의혹이 쏠리고 있다.",
+      "detail": "파이낸셜 타임스는 젠슨 황이 엔비디아 고객사 임원 출신의 앨리스 황과 불륜 관계였다고 보도했으며, 황 CEO는 사내 메모로 이를 인정했다. 미국 정보기관은 앨리스 황이 중국 정보기관에 포섭돼 CEO 정보를 수집하고 칩 수출 규제 완화 로비에 영향력을 행사하려 했다고 판단하고 있다. 엔비디아 이사회는 외부 법률 대리인과 함께 조사에 착수했으며 의회도 해명을 요구했다. 황 CEO는 오랫동안 대중 AI 칩 수출 규제를 공개적으로 반대해 왔고, 트럼프 행정부와의 협력으로 H20·H200 칩 수출 제한이 일부 완화된 바 있다. 현재 중국은 엔비디아 전체 매출의 약 8%를 차지하며, 중국은 국산 AI 칩 개발을 가속화하고 있다.",
+      "points": [
+        "젠슨 황, 중국 스파이로 의심받는 여성과의 불륜 인정",
+        "미 정보기관, 해당 여성이 수출 규제 완화 로비 목적으로 포섭됐다고 판단",
+        "엔비디아 이사회·의회 조사 착수",
+        "황 CEO는 그간 대중 AI 칩 수출 규제 반대 로비 지속",
+        "중국은 엔비디아 매출의 약 8%, 국산 칩 대체 가속화 중"
+      ],
+      "takeaway": "이번 스캔들은 미국 반도체 수출 정책의 신뢰성과 엔비디아의 대중 사업 전략 모두에 심각한 타격을 줄 수 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "AI 학습 데이터 0.1%만 조작해도 에이전트에 원격 코드 백도어 심을 수 있어",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217183",
+      "source": "AI타임스",
+      "published": "2026-11-09T08:51:32+00:00",
+      "thumbnail": "",
+      "title_ko": "AI 학습 데이터 0.1%만 조작해도 에이전트에 원격 코드 백도어 심을 수 있어",
+      "summary": "사전 학습 데이터의 0.1%만 오염시켜도 AI 에이전트에 탐지하기 어려운 원격 코드 실행(RCE) 백도어를 삽입할 수 있다는 연구가 발표됐다.",
+      "detail": "앤트로픽 등이 참여한 공동 연구진이 사전 학습 데이터를 최소 0.1% 오염시키는 것만으로 AI 에이전트에 RCE 백도어를 삽입할 수 있음을 실험으로 증명했다. '선언형 오염' 방식으로 커밋 메시지나 운영 매뉴얼처럼 보이는 문서에 트리거-명령 관계를 숨겼으며, 이후 정상 데이터로 미세조정·강화학습을 진행해도 백도어가 제거되지 않았다. 4B 모델에서 pass@32 기준 공격 성공률은 92.7%에 달했고, 모델 규모가 클수록 성공률이 높아졌다. 평소에는 정상 작동하다 특정 트리거 입력 시에만 악성 명령을 생성해 일반적인 성능 평가로는 탐지가 어렵다.",
+      "points": [
+        "데이터 0.1% 오염만으로 에이전트에 RCE 백도어 삽입 가능",
+        "미세조정·강화학습 후에도 백도어가 제거되지 않음",
+        "4B 모델 pass@32 공격 성공률 92.7%, 모델 클수록 위험 증가",
+        "'선언형 오염' 방식으로 일반 기술 문서와 구별이 어려움",
+        "샌드박스·최소 권한·명령 허용 목록 등 실행 단계 보안 통제 필요"
+      ],
+      "takeaway": "공개 웹 데이터를 통한 사전 학습 오염이 AI 에이전트의 심각한 보안 위협이 될 수 있으며, 사후 안전 학습만으로는 대응이 불충분하다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
+      "url": "https://news.ycombinator.com/item?id=50422628",
+      "source": "Hacker News",
+      "published": "2026-11-09T08:17:49+00:00",
+      "thumbnail": "",
+      "points": [
+        "ChatGPT 데스크탑이 원격 머신으로 로컬 SSH 에이전트를 포워딩하는 동작 확인",
+        "원격 AI 에이전트가 사용자의 SSH 키로 GitHub 등에 인증·푸시 가능",
+        "openai/codex PR 리뷰 댓글에서 해당 동작이 공개적으로 발견됨",
+        "사용자 인지 없이 AI가 SSH 자격증명을 활용할 수 있어 보안 위협 우려"
+      ],
+      "comments": 67,
+      "hn_url": "https://news.ycombinator.com/item?id=50422628",
+      "title_ko": "ChatGPT 데스크탑, 원격 머신에 로컬 SSH 에이전트를 포워딩한다",
+      "summary": "ChatGPT 데스크탑의 원격 코딩 에이전트가 사용자의 로컬 SSH 자격증명을 원격 머신으로 포워딩해, AI가 사용자 몰래 GitHub 프라이빗 저장소에 접근하거나 푸시할 수 있다.",
+      "detail": "ChatGPT 데스크탑 앱에서 실행되는 원격 코딩 에이전트가 사용자의 로컬 SSH 에이전트 소켓을 원격 머신으로 포워딩하는 동작이 openai/codex 저장소의 PR 코드 리뷰 댓글에서 공개적으로 확인됐다. 이 동작은 원격 AI 에이전트가 사용자의 SSH 키를 그대로 사용해 GitHub 프라이빗 저장소에 커밋·푸시하거나 SSH 인증이 필요한 모든 작업을 수행할 수 있음을 의미한다. 사용자가 명시적으로 인지하거나 허가하지 않은 상태에서 AI 에이전트가 자신의 자격증명으로 외부 시스템에 행동할 수 있어 보안 우려가 제기된다.",
+      "takeaway": "AI 코딩 에이전트가 사용자의 SSH 자격증명을 암묵적으로 위임받는 구조는 의도치 않은 저장소 접근·수정으로 이어질 수 있어, 에이전트 권한 범위에 대한 명시적 통제 장치가 시급하다.",
+      "category": "도구 업데이트",
+      "metric": "▲ ['ChatGPT 데스크탑이 원격 머신으로 로컬 SSH 에이전트를 포워딩하는 동작 확인', '원격 AI 에이전트가 사용자의 SSH 키로 GitHub 등에 인증·푸시 가능', 'openai/codex PR 리뷰 댓글에서 해당 동작이 공개적으로 발견됨', '사용자 인지 없이 AI가 SSH 자격증명을 활용할 수 있어 보안 위협 우려'] · 💬 67"
+    },
+    {
+      "type": "hn",
+      "title": "370 Books in 20 months: South African author defends her use of AI",
+      "url": "https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai",
+      "source": "Hacker News",
+      "published": "2026-11-09T07:21:33+00:00",
+      "thumbnail": "",
+      "points": [
+        "ChatGPT·Claude·Grok를 역할별로 조합한 AI 창작 파이프라인 구축",
+        "작가가 아웃라인 설계, AI가 초고 생성·편집, 인간 교정자가 최종 검수",
+        "20개월간 371권 출판·100만 부 이상 판매·올해 수익 100만 달러 초과",
+        "수만 건 혐오 메시지·사망 위협 속에서도 공개적 옹호 입장 유지",
+        "AI 작가 교육 사업 및 소프트웨어 'Authorythm' 출시 준비 중"
+      ],
+      "comments": 87,
+      "hn_url": "https://news.ycombinator.com/item?id=50422181",
+      "title_ko": "20개월 만에 책 370권 출판한 남아공 작가의 AI 창작 변론",
+      "summary": "남아공 작가 Coral Hart가 AI를 체계적으로 조합해 20개월 만에 371권을 출판하고 100만 부 이상을 판매했으며, 혐오와 협박 속에서도 AI 창작의 공론화를 직접 이끌고 있다.",
+      "detail": "Coral Hart는 ChatGPT(대화), Claude(스토리 구조), Grok(자극적 장면) 등 모델별 강점을 파악해 용도별로 조합하는 체계를 직접 구축했다. 작가가 콘셉트·인물·챕터 아웃라인을 설계하면 AI가 초고를 생성하고, 다시 AI로 개발 편집과 연속성 오류를 수정한 뒤 인간 교정자가 최종 검토한다. 이 파이프라인으로 올해만 100만 달러 이상을 벌었으며 Amazon 베스트셀러 100위권에도 진입했다. 수만 건의 혐오 메시지와 사망 위협에도 불구하고 AI 창작에 관한 대화가 필요하다는 입장을 공개적으로 견지하며, 수백 명에게 방법론을 교육하고 AI 작가용 소프트웨어 'Authorythm' 출시도 준비 중이다.",
+      "takeaway": "AI를 체계적으로 활용한 출판이 상업적으로 성립함을 증명한 사례로, 창작 산업 내 AI 활용 논쟁과 저자성(authorship) 정의에 대한 근본적 재검토를 촉구하고 있다.",
+      "category": "AI 활용/팁",
+      "metric": "▲ ['ChatGPT·Claude·Grok를 역할별로 조합한 AI 창작 파이프라인 구축', '작가가 아웃라인 설계, AI가 초고 생성·편집, 인간 교정자가 최종 검수', '20개월간 371권 출판·100만 부 이상 판매·올해 수익 100만 달러 초과', '수만 건 혐오 메시지·사망 위협 속에서도 공개적 옹호 입장 유지', \"AI 작가 교육 사업 및 소프트웨어 'Authorythm' 출시 준비 중\"] · 💬 87"
+    },
+    {
+      "type": "hn",
+      "title": "Apple capped engineers at a $200 daily AI budget",
+      "url": "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget",
+      "source": "Hacker News",
+      "published": "2026-11-09T05:30:11+00:00",
+      "thumbnail": "",
+      "points": [
+        "Apple, 엔지니어 AI 일일 한도 $300→$200으로 삭감",
+        "비영어 프롬프트, 영어 대비 최대 179배 에너지 소비(미시간대 연구)",
+        "Palo Alto Networks, AI 보안 스타트업 Clutch 5억 달러 인수 협상 중",
+        "OpenAI, 승인된 보안 테스터 대상 GPT-6 Cyber 출시",
+        "AI 비용 효율화(캐싱·소형 모델 라우팅·프롬프트 최적화)가 차세대 경쟁 우위"
+      ],
+      "comments": 120,
+      "hn_url": "https://news.ycombinator.com/item?id=50421426",
+      "title_ko": "Apple, 엔지니어 AI 일일 사용 예산을 200달러로 제한",
+      "summary": "Apple이 일부 엔지니어의 AI 일일 지출 한도를 300달러에서 200달러로 낮추며, 세계 최고 시가총액 기업조차 생성형 AI 비용을 통제하기 시작했다는 신호를 보냈다.",
+      "detail": "Apple은 엔지니어 1인당 AI 일일 지출 한도를 $300에서 $200으로 삭감했다. 이는 생성형 AI의 엔터프라이즈 규모 비용 문제가 현실화되고 있음을 보여주는 사례로, 뉴스레터 필자는 무한정 토큰을 소비하는 아키텍처는 지속 불가능한 '금융 시한폭탄'이라고 경고한다. 같은 호에서 비영어 프롬프트가 영어 대비 최대 179배 에너지를 소비한다는 미시간대 연구 결과, Palo Alto Networks의 AI 보안 스타트업 Clutch 5억 달러 인수 협상, OpenAI의 보안 테스터 전용 GPT-6 Cyber 출시도 소개됐다. 필자는 캐싱·소형 모델 라우팅·프롬프트 최적화가 다음 단계의 핵심 경쟁력이 될 것이라고 전망한다.",
+      "takeaway": "Apple마저 AI 비용 한도를 조이는 현실은 비용 통제 없는 AI 아키텍처가 스타트업에게는 더욱 치명적임을 경고하며, 효율 중심의 설계 전환이 불가피해졌음을 시사한다.",
+      "category": "산업/투자",
+      "metric": "▲ ['Apple, 엔지니어 AI 일일 한도 $300→$200으로 삭감', '비영어 프롬프트, 영어 대비 최대 179배 에너지 소비(미시간대 연구)', 'Palo Alto Networks, AI 보안 스타트업 Clutch 5억 달러 인수 협상 중', 'OpenAI, 승인된 보안 테스터 대상 GPT-6 Cyber 출시', 'AI 비용 효율화(캐싱·소형 모델 라우팅·프롬프트 최적화)가 차세대 경쟁 우위'] · 💬 120"
+    },
+    {
+      "type": "youtube",
+      "title": "[실화Pick] 보기만 하면 문제가 풀려요.. AI안경, 수능시험장 반입 막을 대책은? #실화탐사대 #실화On MBC261105방송",
+      "url": "https://www.youtube.com/watch?v=jtAZ3nSfMrY",
+      "source": "실화 On",
+      "published": "2026-11-09T03:00:52.830018+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/jtAZ3nSfMrY/hqdefault.jpg",
+      "videoId": "jtAZ3nSfMrY",
+      "views": 126206,
+      "title_ko": "AI 안경 수능 반입 막을 대책은?",
+      "summary": "착용만으로 시험 답을 제공하는 AI 안경이 수능 시험장에 반입될 경우 현행 감독 체계로는 적발이 사실상 불가능해, 대응 방안 마련이 시급하다는 문제를 제기한다.",
+      "detail": "MBC 실화탐사대가 AI 안경의 시험장 반입 위험성을 조명했다. 해당 AI 안경은 착용자가 문제를 보는 것만으로 실시간 답을 제공할 수 있으며, 외형이 일반 안경과 거의 동일해 육안 감독으로는 구분이 어렵다. 수능을 포함한 각종 국가시험 현장에서 기존 금속탐지기나 전자기기 압수 방식의 감독 체계가 무력화될 수 있다는 우려가 핵심이다. 콘텐츠는 문제 제기에 집중하며 구체적인 정책 대안은 제시하지 않았다.",
+      "points": [
+        "AI 안경 착용만으로 시험 문제 답 실시간 제공 가능",
+        "외형이 일반 안경과 유사해 육안 감독으로 적발 거의 불가",
+        "금속탐지기·전자기기 압수 등 기존 감독 방식으로는 대응 한계",
+        "수능 등 고부담 시험 현장의 감독 체계 전면 재검토 필요성 제기"
+      ],
+      "takeaway": "AI 하드웨어의 소형화·일상화가 시험 부정행위의 새로운 위협으로 부상하면서, 교육 당국의 선제적 기술 대응 체계 마련이 시급한 과제로 떠올랐다.",
+      "category": "정책/규제",
+      "metric": "조회 12.6만"
+    },
+    {
+      "type": "hn",
+      "title": "I'm not convinced the AI bubble exists",
+      "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+      "source": "Hacker News",
+      "published": "2026-11-08T23:44:36+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 5조 달러 지출 대부분은 데이터센터 구축 일회성 비용, 반복 운영비 아님",
+        "Anthropic S-1 기준 컴퓨팅 $1당 $2.08 매출로 인프라 제외 시 수익성 확보",
+        "무료 서비스 중단·연구 일시 중단 등 즉각적 비용 절감 수단 존재",
+        "버블 가능성을 배제하지는 않되, 성장이 정당화될 현실적 시나리오도 충분",
+        "온라인에서 버블 붕괴를 기정사실로 보는 시각은 과도한 가정이라고 비판"
+      ],
+      "comments": 926,
+      "hn_url": "https://news.ycombinator.com/item?id=50418975",
+      "title_ko": "AI 버블은 존재하지 않는다는 주장",
+      "summary": "AI 버블 붕괴가 기정사실처럼 회자되지만, 데이터센터 투자의 일회성 성격과 Anthropic의 실제 수익성 지표를 근거로 현재 AI 성장이 정당화될 수 있다는 반론을 제기한다.",
+      "detail": "필자는 온라인에서 AI 버블 붕괴가 기정사실로 취급되지만 이는 과도한 가정이라고 주장한다. AI 기업들이 약 5조 달러를 지출한 것은 사실이나, 대부분은 데이터센터 구축을 위한 일회성 비용이지 반복적 운영비가 아니다. Anthropic S-1 공시에 따르면 컴퓨팅 비용 $1당 $2.08의 매출을 올려, 인프라 투자를 제외하면 AI는 이미 수익성이 확보된 사업이다. AI 기업들은 무료 서비스 중단이나 연구 일시 중단 같은 즉각적인 비용 절감 수단도 보유하고 있어 위기 대응 유연성이 높다. 필자는 버블 가능성을 완전히 배제하지는 않지만, 과거 닷컴 버블과 단순 비교하는 시각에 비판적이다.",
+      "takeaway": "AI 투자 규모만 보고 버블로 단정하기 전에 비용 구조의 일회성 여부와 실제 수익성 지표를 함께 살펴봐야 균형 잡힌 판단이 가능하다는 점에서 주목할 만한 반론이다.",
+      "category": "산업/투자",
+      "metric": "▲ ['AI 5조 달러 지출 대부분은 데이터센터 구축 일회성 비용, 반복 운영비 아님', 'Anthropic S-1 기준 컴퓨팅 $1당 $2.08 매출로 인프라 제외 시 수익성 확보', '무료 서비스 중단·연구 일시 중단 등 즉각적 비용 절감 수단 존재', '버블 가능성을 배제하지는 않되, 성장이 정당화될 현실적 시나리오도 충분', '온라인에서 버블 붕괴를 기정사실로 보는 시각은 과도한 가정이라고 비판'] · 💬 926"
+    },
+    {
+      "type": "youtube",
+      "title": "이게 다 100% 무제한 무료? 역대급 무료 AI 영상 툴 | 99%가 모르는 비밀 사이트 공개!",
+      "url": "https://www.youtube.com/watch?v=GIKU3j_UcQQ",
+      "source": "AI남 박대리",
+      "published": "2026-11-08T23:00:52.830018+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/GIKU3j_UcQQ/hqdefault.jpg",
+      "videoId": "GIKU3j_UcQQ",
+      "views": 15049,
+      "title_ko": "100% 무료·무제한 AI 영상 툴 모음 공개",
+      "summary": "대부분의 사용자가 모르는 완전 무료 AI 영상 생성 플랫폼들을 소개하며, 실전에서 바로 쓸 수 있는 프롬프트 4종도 무료로 제공한다.",
+      "detail": "유튜브 채널 'AI남 박대리'에서 비용 없이 AI 영상을 제작할 수 있는 무료 무제한 플랫폼들을 직접 시연하며 소개했다. VidoGrid 등 비공개 사이트가 포함된 것으로 보이며, 영상 내에서 각 도구의 실제 사용법을 시연한다. 콘텐츠와 함께 실전 프롬프트 4종을 무료 다운로드로 제공해 초보자도 바로 활용할 수 있도록 구성했다. 유료 AI 영상 툴 없이 콘텐츠 제작을 시작하려는 크리에이터를 위한 실용적인 가이드다.",
+      "points": [
+        "100% 무료·무제한 AI 영상 생성 플랫폼 여러 종 소개",
+        "VidoGrid 등 잘 알려지지 않은 무료 사이트 포함",
+        "각 도구의 실제 사용법 직접 시연 형식으로 구성",
+        "실전 프롬프트 4종 무료 다운로드 제공"
+      ],
+      "takeaway": "비용 부담 없이 AI 영상 제작을 시작하려는 크리에이터에게 즉시 활용 가능한 무료 툴 가이드로, 콘텐츠 제작 진입 장벽을 크게 낮출 수 있다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 1.5만"
+    }
+  ]
+}
