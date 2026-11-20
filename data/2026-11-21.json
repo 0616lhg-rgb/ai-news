@@ -1,0 +1,507 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T08:12:05",
+  "count": 22,
+  "briefing": {
+    "overview": "오늘 AI 뉴스의 최대 화두는 Anthropic 수학자와 Claude가 협력해 리만 가설 증명을 완성했다는 주장으로, 스탠포드 수학자들의 긍정 검토와 함께 학계가 술렁이고 있다. 동시에 Anthropic이 역대 최대 AI 기업 IPO를 기록했음에도 주가가 급락하고 미국의 중국군 연계 기업 AI 칩 수출 허가 논란이 불거지는 등 산업·규제 리스크도 동반 고조됐다. AI가 CPU 자율 설계, 게임 엔진 전면 개편, Mac 앱 직접 조작 등 실질적 인프라 영역까지 침투를 가속화하는 흐름도 뚜렷하다.",
+    "highlights": [
+      {
+        "title": "리만 가설, Claude와 함께 풀었다?",
+        "line": "Anthropic 소속 수학자 Levent Alpöge가 Claude의 도움으로 수학계 최대 난제 리만 가설·GRH 증명을 완성했다고 주장했으며, 스탠포드 수학자들이 수개월간 검토한 결과 긍정적인 평가를 내리고 있어 사실이라면 역사적 사건이다."
+      },
+      {
+        "title": "AI가 설계한 CPU 'Frostbite' 등장",
+        "line": "AI 시스템이 명령어 집합 설계부터 RTL·GDS까지 전 과정을 자율 수행한 신형 CPU가 발표됐으며, 기존 슈퍼스칼라 대비 전력 대비 성능 4.59배를 달성해 AI 주도 하드웨어 설계 시대의 가능성을 열었다."
+      },
+      {
+        "title": "Anthropic 역대 최대 IPO, 그러나 주가 급락",
+        "line": "813억 달러 규모의 AI 기업 사상 최대 IPO를 기록했음에도 상장 이틀째 주가가 9% 하락하며 나스닥 연초 상승분이 전부 반납됐고 글로벌 증시도 동반 급락해 AI 버블 우려가 현실화됐다."
+      },
+      {
+        "title": "미 상무부, 중국군 연계 기업에 AI 칩 수출 허가",
+        "line": "엔비디아·AMD 칩 약 88만 개 수출 허가 중 30% 이상이 미 국방부 지정 중국군 연계 기업에 배정된 사실이 하원 자료 공개로 드러나, 미국의 AI 수출 통제 정책의 실효성에 의문이 제기됐다."
+      },
+      {
+        "title": "Epic Games, Claude Code로 Unreal Engine 개편 착수",
+        "line": "Claude Code가 4시간 만에 AWS 의존 게임을 P2P 구조로 전환하는 성과를 보이면서, Epic Games가 LLM 친화적 코드 아키텍처를 중심으로 Unreal Engine을 전면 재설계하기 시작했다."
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "hn",
+      "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+      "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+      "source": "Hacker News",
+      "published": "2026-11-20T16:59:27+00:00",
+      "thumbnail": "",
+      "points": [
+        "구글, Gemini AI 거부 학교에 검색 접근 차단 예고",
+        "전국 6개 도시에서 반대 시위 동시 발생",
+        "뉴욕·LA·시카고 3대 학군 대체 검색엔진 논의 착수",
+        "Alphabet 노동조합 직원 1,000여 명 서명으로 CEO에 철회 청원",
+        "직원들 '강제 도입은 구글 전체 이탈을 부를 것' 경고"
+      ],
+      "comments": 166,
+      "hn_url": "https://news.ycombinator.com/item?id=50577901",
+      "title_ko": "구글 직원들, AI 거부 학교 제재 정책 철회 촉구",
+      "summary": "구글이 Gemini AI 도구를 끄는 학교의 검색 접근을 차단하겠다고 발표하자, 직원들이 내부에서 정책 철회 청원을 제출했다.",
+      "detail": "구글은 2주 전 Gemini AI 교육 도구를 비활성화하는 학교에 대해 내년부터 구글 검색 접근을 차단할 수 있다고 발표했다. 이에 뉴욕·LA·시카고 등 전국 6개 도시에서 학부모·학생 반대 시위가 열렸고, 미국 3대 학군은 대체 검색엔진을 검토 중이다. Alphabet 노동조합은 1,000명 이상의 직원을 대표해 Sundar Pichai에게 정책 철회를 요구하는 청원서를 제출했다. 직원들은 'AI 도구를 강요하면 사용자가 구글 제품 전체를 거부하는 결과로 이어질 것'이라고 경고했으며, 경영진은 청원을 접수했지만 구체적 요구에는 아직 답하지 않고 있다.",
+      "takeaway": "AI 도구의 교육 현장 강제 도입은 사용자의 선택권을 침해해 역효과를 낳을 수 있으며, 내부에서도 사용자 신뢰 우선이라는 목소리가 나오고 있다는 점이 주목할 만하다.",
+      "category": "정책/규제",
+      "metric": "▲ ['구글, Gemini AI 거부 학교에 검색 접근 차단 예고', '전국 6개 도시에서 반대 시위 동시 발생', '뉴욕·LA·시카고 3대 학군 대체 검색엔진 논의 착수', 'Alphabet 노동조합 직원 1,000여 명 서명으로 CEO에 철회 청원', \"직원들 '강제 도입은 구글 전체 이탈을 부를 것' 경고\"] · 💬 166"
+    },
+    {
+      "type": "youtube",
+      "title": "AI Video Editing Tool (PixVerse V6 Tutorial)",
+      "url": "https://www.youtube.com/watch?v=_L_tsdVBnic",
+      "source": "Biz Check",
+      "published": "2026-11-20T14:00:57.410175+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/_L_tsdVBnic/hqdefault.jpg",
+      "videoId": "_L_tsdVBnic",
+      "views": 2198,
+      "title_ko": "AI 영상 편집 도구 PixVerse V6 튜토리얼",
+      "summary": "PixVerse V6를 이용해 카메라 트래킹 샷 등 시네마틱 영상 클립을 생성하는 방법을 안내하는 튜토리얼이다.",
+      "detail": "PixVerse V6는 AI 기반 영상 생성·편집 도구로, 카메라 트래킹 샷을 포함한 고품질 시네마틱 클립을 손쉽게 만들 수 있다. 이 튜토리얼은 PixVerse V6의 주요 기능과 활용법을 단계별로 안내하며, 별도의 전문 편집 경험이 없어도 따라 할 수 있도록 구성됐다.",
+      "points": [
+        "PixVerse V6로 AI 기반 시네마틱 영상 생성 가능",
+        "카메라 트래킹 샷 등 고급 촬영 효과 지원",
+        "영상 편집 초보자도 활용 가능한 워크플로 안내"
+      ],
+      "takeaway": "PixVerse V6는 AI를 활용해 콘텐츠 크리에이터가 고품질 영상을 빠르게 제작할 수 있는 실용적인 도구로 주목받고 있다.",
+      "category": "이미지/비디오",
+      "metric": "조회 2,198"
+    },
+    {
+      "type": "guide",
+      "title": "v2.1.330",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "source": "Claude Code 릴리스",
+      "published": "2026-11-20T13:32:56+00:00",
+      "thumbnail": "",
+      "title_ko": "Claude Code v2.1.330 업데이트",
+      "summary": "조직 관리 로그인, 내장 차트 도구 'easel' 추가 등 신기능과 함께 세션 동결·속도 저하 등 주요 버그들이 수정됐다.",
+      "detail": "Claude Code v2.1.330은 Anthropic Enterprise Admin Console 연동 조직 로그인을 추가해 조직 설정과 클라우드 공급자를 자동 적용할 수 있게 됐다. 새 내장 모듈 'easel'은 Pro·Max 플랜에서 차트 요청 시 자동으로 그래프를 그려주며 '/config'에서 비활성화할 수 있다. 셀프 호스티드 러너에는 '--start-dir' 옵션이 추가되어 특정 폴더에서 작업을 시작할 수 있다. 주요 버그 수정으로는 긴 대화 압축 직후 세션 동결, WebFetch 동결, 여러 프로세스의 동시 설정 저장 시 변경 사항 손실, MCP 도구 JSON 스키마 오류로 인한 세션 파일 급증 문제 등이 해결됐다.",
+      "points": [
+        "Enterprise Admin Console 연동 조직 로그인 추가",
+        "Pro·Max 대상 내장 차트 도구 'easel' 추가",
+        "셀프 호스티드 러너 '--start-dir' 옵션 추가",
+        "대화 압축 후 세션 동결 및 WebFetch 동결 버그 수정",
+        "다수 MCP 도구 스키마 오류로 세션 파일 급증 문제 수정"
+      ],
+      "takeaway": "엔터프라이즈 사용성 강화와 세션 안정성 개선이 핵심으로, 실무 환경에서의 Claude Code 신뢰성이 한층 높아졌다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Global stock markets slump as Anthropic's record IPO fails to stem AI sell-off",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "source": "Hacker News",
+      "published": "2026-11-20T13:29:59+00:00",
+      "thumbnail": "",
+      "points": [
+        "Anthropic IPO 이틀 차 주가 9% 하락, $88.30 기록",
+        "나스닥 2026년 연초 이후 상승분 전부 소멸, 5% 하락",
+        "AI 관련 시총 약 4조 달러 한 주 만에 증발",
+        "엔비디아 14%, SoftBank 14.5% 급락",
+        "아시아 증시 2020년 이후 최악의 한 주 기록"
+      ],
+      "comments": 223,
+      "hn_url": "https://news.ycombinator.com/item?id=50574383",
+      "title_ko": "Anthropic 역대 최대 IPO에도 AI 주식 매도세 멈추지 않아, 글로벌 증시 급락",
+      "summary": "Anthropic이 역사적 IPO를 기록했음에도 상장 이틀째 주가가 9% 하락하며 나스닥 연초 상승분 전부가 반납되고 전 세계 증시가 동반 급락했다.",
+      "detail": "Anthropic은 역대 최대 IPO로 첫날 최대 40%까지 급등했지만, 이튿날 9% 하락해 $88.30까지 떨어지며 공모가 $83에 근접했다. 나스닥은 2026년 연초 이후 상승분을 전부 반납하고 5% 하락했으며, 이번 주 AI 관련 기업들의 시가총액 약 4조 달러가 증발했다. 엔비디아는 14% 급락했고, SoftBank도 14.5% 하락하며 2년여 만에 최악의 하루를 기록했다. 아시아 증시도 2020년 이후 최악의 한 주를 기록했으며, 대만 TSMC는 약 6% 하락했다. 전문가들은 Anthropic IPO 자금 마련을 위한 타 기술주 매도가 유동성을 흡수하면서 하락을 가속시켰다고 분석했다.",
+      "takeaway": "역대 최대 IPO도 AI 거품 우려에서 비롯된 대규모 매도세를 막지 못했으며, 글로벌 AI 투자 심리가 급격히 냉각되고 있음을 보여준다.",
+      "category": "산업/투자",
+      "metric": "▲ ['Anthropic IPO 이틀 차 주가 9% 하락, $88.30 기록', '나스닥 2026년 연초 이후 상승분 전부 소멸, 5% 하락', 'AI 관련 시총 약 4조 달러 한 주 만에 증발', '엔비디아 14%, SoftBank 14.5% 급락', '아시아 증시 2020년 이후 최악의 한 주 기록'] · 💬 223"
+    },
+    {
+      "type": "guide",
+      "title": "v0.40.17",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc3",
+      "source": "Ollama 릴리스",
+      "published": "2026-11-20T12:53:21+00:00",
+      "thumbnail": "",
+      "title_ko": "Ollama v0.40.17 업데이트 — Inkling 2 Mini 모델 추가",
+      "summary": "26B 파라미터 경량 멀티모달 모델 Inkling 2 Mini가 추가되고, Apple Silicon 동시 요청 처리 등 다수의 개선이 이루어졌다.",
+      "detail": "이번 릴리스의 핵심은 Thinking Machines의 Inkling 2 Mini로, 26B 파라미터에 5.4B만 활성화하는 MoE 구조를 사용해 Mac에서 약 20GB로 실행 가능하다. 텍스트·이미지 처리, 툴 호출, 추론 기능을 모두 지원하며 SWE-Bench Verified에서 79.2%를 기록했다. Apple Silicon에서 이제 여러 요청을 동시에 처리할 수 있게 됐고, 'ollama launch claude'는 Claude Code의 지연 도구 로딩을 지원한다. Windows iGPU에서 KV 캐시 할당 실패 문제와 Vulkan 메모리 할당 오류도 수정됐다.",
+      "points": [
+        "Inkling 2 Mini(26B MoE, 활성 5.4B) 추가 — Mac에서 약 20GB로 실행",
+        "SWE-Bench Verified 79.2% 성능 달성",
+        "Apple Silicon에서 다중 요청 동시 처리 지원",
+        "'ollama launch claude'로 Claude Code 지연 도구 로딩 연동",
+        "Windows iGPU KV 캐시 할당 버그 및 Vulkan 메모리 오류 수정"
+      ],
+      "takeaway": "로컬에서 실행 가능한 고성능 경량 모델 선택지가 확대되고 Ollama와 Claude Code 간 연동이 강화되면서, 로컬 AI 개발 환경이 한층 성숙해지고 있다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+      "url": "https://latent.space/p/formal-verification/",
+      "source": "Latent Space",
+      "published": "2026-11-20T12:18:41+00:00",
+      "thumbnail": "",
+      "title_ko": "AI '슬롭' 대응 무기로 떠오르는 형식 검증(Formal Verification)",
+      "summary": "AI 생성 코드의 저품질 문제를 수학적 증명으로 해결하는 형식 검증 기술이 주목받고 있으며, 이를 전문으로 하는 스타트업들이 속속 등장하고 있다.",
+      "detail": "2026년 AI 업계의 화두는 LLM 저품질 출력물을 뜻하는 '슬롭'이다. 테스트·패치·스캐닝 방식은 많은 오류를 찾아내지만 '모든 문제를 찾았는지' 보장하지 못하는 반면, 형식 검증은 수학적 증명으로 완전성을 보장한다. Harmonic·Theorem·Axiom Math·&Truth 등 스타트업이 AI와 형식 검증을 결합한 솔루션을 출시하고 있다. &Truth는 오픈소스 증명 보조 언어 Lean을 기반으로 'verification machine'을 구축하고 있으며, Anthropic도 이미 Lean으로 페르마의 마지막 정리를 형식화한 1,300만 줄 프로젝트를 완료했다. Amazon은 SMT 솔버 cvc5를 하루 수십억 번 프로덕션 파이프라인에서 사용 중이다.",
+      "points": [
+        "AI 생성 코드 오류 보장책으로 형식 검증 부상",
+        "Harmonic·Theorem·Axiom Math·&Truth 등 전문 스타트업 등장",
+        "형식 검증은 테스트와 달리 '모든 오류 탐지' 완전성 보장",
+        "Lean 언어가 형식 검증의 핵심 인프라로 활용",
+        "Amazon은 cvc5 솔버를 하루 수십억 번 프로덕션에서 사용"
+      ],
+      "takeaway": "AI 코딩이 확산될수록 코드 정확성 보증에 대한 수요가 높아지면서, 수십 년 된 형식 검증 기술이 AI 시대의 핵심 품질 보증 도구로 재조명받고 있다.",
+      "category": "AI 활용/팁",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Epic Games Turns to AI Coding for the Unreal Engine",
+      "url": "https://spectrum.ieee.org/epic-games-unreal-engine-ai",
+      "source": "Hacker News",
+      "published": "2026-11-20T12:16:36+00:00",
+      "thumbnail": "",
+      "points": [
+        "Claude Code, 4시간 만에 AWS 의존 게임을 P2P로 전환",
+        "Fable 5.2, 커스텀 엔진으로 3D 게임 직접 생성 가능",
+        "Epic Games, UE6에서 Blueprints 제거 — LLM이 코드 처리를 선호하기 때문",
+        "LLM-게임 엔진 연동에 MCP 서버 활용",
+        "Epic COO '고정 기능은 복제될 수 있어, 속도·혁신에 집중'"
+      ],
+      "comments": 59,
+      "hn_url": "https://news.ycombinator.com/item?id=50573681",
+      "title_ko": "에픽게임즈, Unreal Engine에 AI 코딩 본격 도입 — Blueprints는 UE6에서 제거",
+      "summary": "Claude Code가 4시간 만에 AWS 의존 게임을 P2P로 전환하는 성과를 보이며, Epic Games는 LLM 친화적 코드 중심으로 Unreal Engine을 전면 개편하고 있다.",
+      "detail": "자금이 바닥난 스튜디오의 개발자가 Claude Code를 사용해 AWS 서버 의존 게임을 4시간 만에 P2P 플레이 가능하도록 전환했으며, 추가로 세이브 상태 기능까지 자동 구현됐다. Fable 5.2 모델은 커스텀 엔진으로 Call of Duty 스타일의 3D 게임을 직접 생성할 수 있어 기존 게임 엔진의 가치에 의문을 제기하고 있다. 이에 Epic Games는 Unreal Engine 6에서 그래픽 스크립팅 시스템인 Blueprints를 제거하기로 했다 — LLM이 Blueprints보다 코드를 훨씬 잘 다루기 때문이다. 현재 LLM은 MCP(Model Context Protocol) 서버를 통해 Unreal Engine과 상호작용하며, Epic의 COO는 '고정된 기능은 결국 복제될 수 있다'며 속도와 혁신에 집중하겠다고 밝혔다.",
+      "takeaway": "LLM의 코딩 능력이 게임 개발 패러다임 자체를 바꾸고 있으며, AI 친화적 아키텍처로 빠르게 전환하지 않는 게임 엔진은 경쟁력을 잃을 수 있다.",
+      "category": "AI 활용/팁",
+      "metric": "▲ ['Claude Code, 4시간 만에 AWS 의존 게임을 P2P로 전환', 'Fable 5.2, 커스텀 엔진으로 3D 게임 직접 생성 가능', 'Epic Games, UE6에서 Blueprints 제거 — LLM이 코드 처리를 선호하기 때문', 'LLM-게임 엔진 연동에 MCP 서버 활용', \"Epic COO '고정 기능은 복제될 수 있어, 속도·혁신에 집중'\"] · 💬 59"
+    },
+    {
+      "type": "guide",
+      "title": "Quoting Ravi Vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+      "source": "Simon Willison",
+      "published": "2026-11-20T10:21:49+00:00",
+      "thumbnail": "",
+      "title_ko": "Alessandro Masullo, AI 없이 일반화된 리만 가설(GRH) 증명 초안 공개",
+      "summary": "수학자 Alessandro Masullo가 수백 년 된 미해결 난제 GRH의 증명 초안을 공개했으며, 스탠포드 수학자들이 수개월간 검토한 결과 긍정적인 평가를 내리고 있다.",
+      "detail": "일반화된 리만 가설(GRH)에 대한 Alessandro Masullo의 증명 초안이 급히 공개됐다. 이 연구는 AI를 전혀 사용하지 않은 순수 인간의 작업이며, 스탠포드 수학자 Brian Conrad가 수개월간 꼼꼼히 검토해 광범위한 피드백을 제공하고 있다. 원래는 Masullo를 스탠포드에 초청해 1년간 논문을 다듬은 후 발표할 계획이었으나, 초안이 충분히 견고하다고 판단해 선공개를 결정했다. Ravi Vakil 교수가 직접 발표를 알렸으며, 이는 Anthropic이 Lean으로 페르마 정리를 형식화하고 Claude가 리만 가설을 증명했다는 별도 보고들과 맞물려 더욱 주목받고 있다.",
+      "points": [
+        "Alessandro Masullo의 GRH 증명 초안 긴급 공개",
+        "AI 없는 순수 인간 연구, Brian Conrad 수개월간 검토 중",
+        "긍정적 평가 후 스탠포드 체류 대신 조기 공개 결정",
+        "Ravi Vakil 교수가 직접 발표 알림",
+        "AI 수학 증명 화제 속 인간 주도 연구로 대비되는 주목"
+      ],
+      "takeaway": "AI의 수학 증명 성과가 연달아 보고되는 가운데, AI 없이 인간이 세기의 난제를 해결했을 가능성이 열렸다는 점에서 수학계와 AI 업계 모두의 이목을 끌고 있다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "source": "Hacker News",
+      "published": "2026-11-20T10:01:41+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI가 ISA·컴파일러·RTL·GDS 전 과정을 자율 설계",
+        "인터랙션 넷 기반으로 의존성 명시, 공유 상태 제거",
+        "현대 슈퍼스칼라 대비 성능/전력 4.59배 달성",
+        "인간이 발견하기 어려웠을 신규 아키텍처 프리미티브 발견",
+        "데이터센터 CPU·AI 가속기 등 모든 칩 종류의 근본적 재설계 가능성 시사"
+      ],
+      "comments": 316,
+      "hn_url": "https://news.ycombinator.com/item?id=50572503",
+      "title_ko": "AI가 처음부터 설계·검증한 새로운 CPU 아키텍처 'Frostbite'",
+      "summary": "AI 시스템이 명령어 집합부터 RTL·GDS까지 전 과정을 자율 설계한 신형 CPU로, 기존 슈퍼스칼라 대비 전력 대비 성능 4.59배를 달성했다.",
+      "detail": "Frostbite는 AI가 컴파일러, ISA, 마이크로아키텍처, RTL, 검증까지 전 단계를 자율 반복하며 만들어낸 범용 CPU다. 핵심 아이디어는 '인터랙션 넷(interaction nets)'으로, 모든 연산이 그래프 노드 쌍을 국소적으로 재작성하는 방식이라 의존성이 명시적이고 공유 가변 상태가 없다. 25개 워크로드(15개 홀드아웃 포함) 평가에서 현대 슈퍼스칼라 CPU 대비 성능/전력 4.59배를 기록했다. 발견된 아키텍처 프리미티브 중에는 사람이 설계하기 어려웠을 신규 하드웨어 구현과 런타임 기능이 포함돼 있었다.",
+      "takeaway": "AI가 단순 구현을 넘어 인간이 수십 년간 개척하지 못했던 하드웨어 설계 공간을 스스로 열 수 있음을 보여준 사례로, 칩 설계 패러다임의 근본적 변화를 예고한다.",
+      "category": "연구/논문",
+      "metric": "▲ ['AI가 ISA·컴파일러·RTL·GDS 전 과정을 자율 설계', '인터랙션 넷 기반으로 의존성 명시, 공유 상태 제거', '현대 슈퍼스칼라 대비 성능/전력 4.59배 달성', '인간이 발견하기 어려웠을 신규 아키텍처 프리미티브 발견', '데이터센터 CPU·AI 가속기 등 모든 칩 종류의 근본적 재설계 가능성 시사'] · 💬 316"
+    },
+    {
+      "type": "youtube",
+      "title": "모든 클로드 사용법 종결편, 이 지도 한 장으로 끝내드립니다(최신판)",
+      "url": "https://www.youtube.com/watch?v=FXmf7Du3564",
+      "source": "혼잡스",
+      "published": "2026-11-20T10:00:57.410175+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/FXmf7Du3564/hqdefault.jpg",
+      "videoId": "FXmf7Du3564",
+      "views": 19445,
+      "title_ko": "모든 클로드 사용법 종결편, 이 지도 한 장으로 끝내드립니다(최신판)",
+      "summary": "클로드를 매일 사용하며 익힌 전체 활용법을 한 장의 지도로 체계화한 종합 가이드 영상이다.",
+      "detail": "클로드 활용의 전 범위를 하나의 '지도' 형태로 정리한 영상으로, 단순 대화창 사용에서 시작해 콘텐츠 창작, 작업 자동화, 로컬 에이전트 실행까지 단계별로 다룬다. 매일 쓰면서 얻은 실전 팁을 압축해 초보자부터 고급 사용자까지 클로드를 더 효과적으로 활용하는 방법을 안내한다.",
+      "points": [
+        "대화창 기초부터 로컬 에이전트 실행까지 단계별 로드맵 제공",
+        "창작·자동화·위임 등 다양한 활용 영역 망라",
+        "실전 경험 기반의 최신판 가이드"
+      ],
+      "takeaway": "클로드를 처음 접하거나 활용도를 높이고 싶은 사용자에게 체계적인 출발점을 제공하는 실용 콘텐츠다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 1.9만"
+    },
+    {
+      "type": "youtube",
+      "title": "[자막뉴스] 시험지에 몰래 숨겨둔 'AI 함정'…문제 풀게 했더니 '뜻밖의 결과' / KBS 2026.11.20.",
+      "url": "https://www.youtube.com/watch?v=eXpbljSLjoE",
+      "source": "KBS News",
+      "published": "2026-11-20T09:00:57.410175+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/eXpbljSLjoE/hqdefault.jpg",
+      "videoId": "eXpbljSLjoE",
+      "views": 720547,
+      "title_ko": "시험지에 몰래 숨겨둔 'AI 함정'…AI에게 풀게 했더니 뜻밖의 결과",
+      "summary": "수능 모의고사에 'AI 사용은 부정행위'라는 문구를 삽입하고 AI에게 풀게 한 실험에서 예상 밖의 결과가 나타났다.",
+      "detail": "두 장의 수능 모의고사 중 한 장에만 'AI의 도움을 받는 것은 부정행위'라는 문구를 숨겨 넣고 AI에게 풀게 하는 실험을 진행했다. 문구가 없는 시험지와 비교했을 때 AI의 행동이나 답변에 차이가 있었는지를 살펴봤고, 결과는 예상과 달리 AI의 지시 추종 방식과 판단 메커니즘에 대한 흥미로운 시사점을 남겼다.",
+      "points": [
+        "모의고사 시험지에 'AI 사용 금지' 문구를 숨겨 삽입",
+        "문구 유무에 따른 AI 반응 차이 비교 실험",
+        "AI의 텍스트 내 지시 준수 행동 패턴 관찰",
+        "시험·평가 환경에서의 AI 통제 방식 논의 촉발"
+      ],
+      "takeaway": "AI가 맥락 속 지시문에 얼마나 민감하게 반응하는지를 직접 보여주는 실험으로, 평가 환경에서의 AI 활용 및 통제 설계에 중요한 함의를 갖는다.",
+      "category": "연구/논문",
+      "metric": "조회 72.1만"
+    },
+    {
+      "type": "news",
+      "title": "캘리포니아주, 엔비디아에 소환장...중국 기밀 유출·투자자 기만 조사",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217637",
+      "source": "AI타임스",
+      "published": "2026-11-20T08:07:06+00:00",
+      "thumbnail": "",
+      "title_ko": "캘리포니아주, 엔비디아에 소환장 발부…중국 기밀 유출·투자자 기만 조사",
+      "summary": "캘리포니아주 법무부가 엔비디아와 전 CEO 젠슨 황의 중국 연루 의혹을 수사하기 위해 공식 소환장을 발부했다.",
+      "detail": "캘리포니아주 법무부는 엔비디아가 중국에 첨단 AI 칩이나 기밀 정보를 전달했는지, 관련 위험을 투자자에게 제대로 공개했는지를 조사한다. 발단은 젠슨 황 전 CEO와 중국 정보기관 연계 의혹을 받는 메가스피드 전 임원 앨리스 황의 관계가 드러난 것이다. 미 SEC도 황 전 CEO 사임 이후 엔비디아의 투자자 공시 문제를 별도로 조사 중이며, 주주 소송까지 더해져 법적 압박이 다각도로 가중되고 있다.",
+      "points": [
+        "캘리포니아주 법무부, 공식 소환장 발부",
+        "중국 첨단 칩·기밀 유출 여부 및 투자자 공시 적정성 조사",
+        "젠슨 황 전 CEO와 중국 정보기관 연계 인물 관계가 발단",
+        "SEC도 별도 투자자 공시 문제 조사 진행 중",
+        "연방·주정부·주주 세 방향에서 동시 법적 압박"
+      ],
+      "takeaway": "미·중 AI 기술 갈등이 심화되는 가운데 엔비디아가 복수의 법적 조사에 동시에 직면하면서 사업 불확실성이 크게 높아졌다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "AI 모두쓰기 프로젝트 | AI, “진짜 온 세상 모두가” 쓰기",
+      "url": "https://www.youtube.com/watch?v=tNUiNu5CMN4",
+      "source": "SK telecom",
+      "published": "2026-11-20T08:00:57.410175+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/tNUiNu5CMN4/hqdefault.jpg",
+      "videoId": "tNUiNu5CMN4",
+      "views": 2382769,
+      "title_ko": "SK텔레콤 'AI 모두쓰기 프로젝트'…온 세상이 AI를 쓰려면",
+      "summary": "SK텔레콤이 AI를 모든 사람이 사용하는 시대를 위한 대규모 인프라 확장 비전을 담은 캠페인 영상을 공개했다.",
+      "detail": "SK텔레콤의 'AI 모두쓰기 프로젝트' 캠페인 영상으로, AI가 전 국민·전 세계 누구나 쉽게 쓰는 시대를 위해 그에 걸맞은 대규모 AI 생산 기반 시설이 필요하다는 메시지를 전달한다. AI 사용자가 늘수록 지능을 생산하는 인프라도 함께 성장해야 한다는 점을 강조하며 통신사의 AI 인프라 투자 방향성을 제시한다.",
+      "points": [
+        "전 국민·전 세계 AI 접근성 확대 비전 제시",
+        "AI 대중화에 비례하는 생산 인프라 확장 필요성 강조",
+        "SK텔레콤의 AI 사업 방향성을 담은 브랜드 캠페인"
+      ],
+      "takeaway": "AI 대중화를 위한 인프라 투자의 중요성을 환기시키며, 국내 통신사가 AI 인프라 플레이어로 포지셔닝하는 흐름을 보여준다.",
+      "category": "산업/투자",
+      "metric": "조회 238.3만"
+    },
+    {
+      "type": "news",
+      "title": "미 상무부, 중국군 연계 기업에 AI 칩 수출 허가...하원 자료 공개로 파장",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217634",
+      "source": "AI타임스",
+      "published": "2026-11-20T07:57:21+00:00",
+      "thumbnail": "",
+      "title_ko": "미 상무부, 중국군 연계 기업에 AI 칩 수출 허가…하원 자료 공개로 파장",
+      "summary": "미 상무부가 엔비디아·AMD AI 칩 약 88만 개를 중국 기업에 수출 허가했으며, 이 중 30% 이상이 미 국방부 지정 중국군 연계 기업에 배정돼 논란이 커지고 있다.",
+      "detail": "미 하원 외교위원회 공개 자료에 따르면, 트럼프 행정부는 2025년 12월~2026년 5월 사이 엔비디아·AMD AI 칩 약 87만9000개를 중국 기업에 수출 승인했다. 텐센트 15만 개, 알리바바 7만5000개, 바이두 4만3000개, BYD 4000개 등 국방부 지정 중국군 연계 기업들이 전체 승인량의 30% 이상을 차지했다. 다만 알리바바·바이두·BYD는 수출 허가 시점에는 공식 명단에 없었고, 엔비디아는 허가 이후 H200 중국 출하를 중단했다고 밝혔다. 의회는 BIS 차관을 12월 청문회에 소환하고 젠슨 황 전 CEO의 비공개 브리핑을 요청했다.",
+      "points": [
+        "중국 기업에 AI 칩 약 88만 개 수출 허가 사실 공개",
+        "텐센트·알리바바·바이두·BYD 등 중국군 연계 기업에 30% 이상 배정",
+        "주로 엔비디아 H200·AMD MI325X 등 이전 세대 칩 대상",
+        "엔비디아, 허가 이후 H200 중국 출하 중단 발표",
+        "하원, BIS 차관 청문회 소환 및 젠슨 황 비공개 브리핑 요청"
+      ],
+      "takeaway": "AI 칩 수출 통제의 허점이 의회 차원에서 공식 확인되면서 미국 내 수출통제 체계 전반에 대한 재검토 압력이 거세질 전망이다.",
+      "category": "정책/규제",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "구글, 제미나이에 '컴퓨터 유즈' 기능 도입...맥 앱 직접 제어",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217606",
+      "source": "AI타임스",
+      "published": "2026-11-20T07:38:01+00:00",
+      "thumbnail": "",
+      "title_ko": "구글, 맥용 제미나이 앱에 'Computer Use' 기능 도입…API 없이 모든 앱 직접 제어",
+      "summary": "구글이 맥용 제미나이 앱에 화면을 보며 직접 클릭·타이핑하는 'Computer Use' 기능을 추가해, 별도 API 연동 없이 모든 맥 앱을 AI로 조작할 수 있게 됐다.",
+      "detail": "사용자가 '@Computer use'를 입력하고 작업을 설명하면 제미나이가 가상 화면에서 앱 실행, 마우스 클릭, 키보드 입력, 양식 작성 등을 직접 수행한다. 가상 화면 방식이라 사용자는 본인의 화면과 커서를 그대로 사용하면서 AI에게 작업을 맡길 수 있다. 앤트로픽은 2024년 10월, 오픈AI는 2025년 1월에 유사 기능을 출시했으며 구글의 일반 사용자 도입은 경쟁사보다 늦다. 현재 미국 영어, 애플 실리콘 맥, macOS 세쿼이아 15 이상, 유료 AI 플러스·프로·울트라 구독자 한정 제공이다.",
+      "points": [
+        "'@Computer use' 프롬프트로 맥 앱 직접 조작 가능",
+        "API 연동 없는 모든 맥 프로그램 제어 지원",
+        "가상 화면 방식으로 사용자 화면 간섭 없음",
+        "앤트로픽·오픈AI보다 늦은 일반 사용자 출시",
+        "유료 구독자·애플 실리콘 맥·미국 영어 한정 제공"
+      ],
+      "takeaway": "구글이 개발자용 API에 머물렀던 Computer Use를 일반 소비자에게 확대하면서 AI 에이전트 경쟁이 B2C 시장으로 본격화되는 흐름을 보여준다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "source": "The Verge AI",
+      "published": "2026-11-20T07:34:13+00:00",
+      "thumbnail": "",
+      "title_ko": "Anthropic 수학자, 클로드와 함께 리만 가설 증명 주장",
+      "summary": "Anthropic 소속 수학자 레벤트 알푀게가 클로드의 도움으로 수학 역사상 가장 난제 중 하나인 리만 가설을 증명했다고 주장했다.",
+      "detail": "알푀게는 클로드와 협력해 리만 가설뿐 아니라 일반화 리만 가설(GRH)의 증명을 발견했다고 밝히며 Lean으로 형식화한 증명을 개인 웹사이트에 공개했다. Anthropic은 올해 8월 클로드로 리만 가설 연구를 진행 중이라 밝혔지만 당시에는 증명에 이르기 어려울 것이라 했었다. 클레이 수학연구소의 공식 인정을 받으려면 발표 후 최소 2년간 수학계의 검토를 거쳐야 하며, 현재 독립적 검증은 완료되지 않았다. Anthropic도 아직 공식 입장을 내놓지 않았다.",
+      "points": [
+        "클로드와 협력해 리만 가설·일반화 리만 가설 증명 주장",
+        "Lean으로 형식화해 개인 웹사이트 공개(공식 미검증)",
+        "클레이 수학연구소 공인 위해 2년 이상 수학계 검토 필요",
+        "Anthropic 공식 성명 없음, 독립 검증 미완료",
+        "증명 사실로 확인될 경우 밀레니엄 상금 100만 달러 대상"
+      ],
+      "takeaway": "독립 검증이 완료되지 않았지만, AI가 수학의 최전선 난제에 실질적으로 기여할 수 있다는 가능성을 다시 한번 환기시키며 수학계와 AI 연구 모두에 큰 파장을 일으킬 수 있다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "guide",
+      "title": "Quoting Levent Alpöge",
+      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+      "source": "Simon Willison",
+      "published": "2026-11-20T07:30:48+00:00",
+      "thumbnail": "",
+      "title_ko": "클로드와 함께 리만 가설을 증명했다 — Levent Alpöge의 선언",
+      "summary": "MIT 수학자 Levent Alpöge가 Claude와 협력해 리만 가설 및 일반화 리만 가설(GRH)의 증명을 완성했다고 주장했다.",
+      "detail": "수학자 Levent Alpöge는 자신의 사이트에 게재한 글에서 Claude와 수개월간 공동 작업 끝에 리만 가설의 증명을 발견했다고 밝혔다. 같은 방법으로 일반화 리만 가설도 해결됐으며, 시간이 더 주어지면 확장 리만 가설(ERH)까지 증명할 수 있을 것으로 기대한다고 했다. 두 주체가 함께 가정 없는 완전한 형식화도 마쳤다고 주장한다. 특히 그는 결승선 근처에서 Claude가 자신을 훨씬 앞질렀다며 '날고, 춤추고, 빛났다'는 감탄을 남겼다. 이 증명이 수학을 넘어 과학 전반에 새로운 여명이 될 것이라고 덧붙였다.",
+      "points": [
+        "MIT 수학자 Levent Alpöge, Claude와 협력해 리만 가설 증명 주장",
+        "GRH(일반화 리만 가설)도 같은 방법으로 해결됐다고 발표",
+        "가정 없는 완전한 형식화까지 완료했다고 밝힘",
+        "마지막 단계에서 Claude가 인간 수학자를 압도적으로 앞질렀다고 묘사",
+        "수학을 넘어 과학 전체에 의미 있는 전환점으로 평가"
+      ],
+      "takeaway": "수학 역사상 가장 유명한 미해결 난제 중 하나가 AI와의 협력으로 증명됐다는 주장으로, AI가 순수 수학 연구 최전선에서 인간을 초월할 수 있음을 보여주는 충격적인 사례다.",
+      "category": "연구/논문",
+      "metric": ""
+    },
+    {
+      "type": "news",
+      "title": "애플, 시리 넘어서는 범용 AI 에이전트 개발...앱 조작·코딩까지",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217602",
+      "source": "AI타임스",
+      "published": "2026-11-20T07:15:29+00:00",
+      "thumbnail": "",
+      "title_ko": "애플, 시리 넘어서는 범용 AI 에이전트 개발 — 앱 조작·코딩까지",
+      "summary": "애플이 웹 탐색·앱 조작·코드 작성까지 자율 수행하는 범용 AI 에이전트 개발에 본격 착수했다.",
+      "detail": "애플은 최근 채용 공고를 통해 기존 시리보다 훨씬 높은 자율성을 가진 '능동형 에이전트 AI' 개발 계획을 공개했다. 새 에이전트는 웹·앱·명령줄·코드·API를 오가며 복잡한 작업을 스스로 계획하고 실행하며, 전문화된 하위 에이전트까지 조율하는 방식으로 설계된다. 기존 시리가 앱 기능을 호출하는 수준이라면, 새 에이전트는 여러 단계 작업을 사용자 개입 없이 처리하는 것이 목표다. 시리 통합 여부와 출시 일정은 미공개이며, 메타 뮤즈·오픈AI 닷츠 등 경쟁사 에이전트에 대응하는 움직임으로 해석된다.",
+      "points": [
+        "채용 공고로 범용 AI 에이전트 개발 계획 공식 확인",
+        "웹 탐색·앱 조작·코드 작성·디버깅 등 복잡한 작업 자율 수행 목표",
+        "전문화된 하위 에이전트 조율 기능 포함",
+        "시리 통합 여부 및 출시 일정은 미공개",
+        "메타 뮤즈·오픈AI 닷츠 등 경쟁 에이전트에 정면 대응"
+      ],
+      "takeaway": "애플이 AI 전략을 음성 비서에서 자율 에이전트로 본격 전환하면서, 빅테크 간 AI 에이전트 패권 경쟁이 한층 가열되고 있다.",
+      "category": "도구 업데이트",
+      "metric": ""
+    },
+    {
+      "type": "youtube",
+      "title": "AI한테 내 의도를 완벽하게 전하는 기술 (프롬프트 포함)",
+      "url": "https://www.youtube.com/watch?v=NDVAXNHUlio",
+      "source": "허드의 AI딸깍",
+      "published": "2026-11-20T02:00:57.410175+00:00",
+      "thumbnail": "https://i.ytimg.com/vi/NDVAXNHUlio/hqdefault.jpg",
+      "videoId": "NDVAXNHUlio",
+      "views": 30879,
+      "title_ko": "AI한테 내 의도를 완벽하게 전하는 기술 (프롬프트 포함)",
+      "summary": "AI에게 사용자의 의도를 정확히 전달하는 프롬프트 기법과 바로 사용 가능한 원샷 세팅 프롬프트를 소개하는 영상이다.",
+      "detail": "허드의 AI딸깍 채널에서 AI와 소통할 때 의도 전달력을 높이는 실용적 기법을 다룬다. 영상에서는 Addy Osmani의 agent-skills 저장소에 있는 /interview-me 스킬을 추천 도구로 소개한다. 복붙 가능한 원샷 세팅 프롬프트는 고정 댓글에 별도로 제공된다. 본문 정보가 제한적이어서 세부 기법의 전체 내용은 영상 시청을 통해 확인해야 한다.",
+      "points": [
+        "/interview-me 에이전트 스킬 등 구체적 도구 추천",
+        "복붙 가능한 원샷 세팅 프롬프트를 고정 댓글에 공개",
+        "Addy Osmani의 agent-skills GitHub 저장소 참조",
+        "AI와의 소통 품질을 프롬프트 설계로 높이는 접근법 제시"
+      ],
+      "takeaway": "프롬프트 한 장으로 AI와의 소통 효율을 크게 높일 수 있는 실용적 팁으로, AI 도구를 일상적으로 활용하는 사용자에게 즉시 적용 가능한 콘텐츠다.",
+      "category": "AI 활용/팁",
+      "metric": "조회 3.1만"
+    },
+    {
+      "type": "news",
+      "title": "아모데이 \"AI 개발 속도 조절…사업·정치적 압력에 굴복 안 해\"",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217596",
+      "source": "AI타임스",
+      "published": "2026-11-19T22:00:23+00:00",
+      "thumbnail": "",
+      "title_ko": "아모데이 'AI 개발 속도 조절…사업·정치적 압력에 굴복 안 해'",
+      "summary": "앤트로픽이 역대 최대 규모 AI 기업 IPO로 813억 달러를 조달한 직후, CEO 다리오 아모데이가 AI 안전 우선 원칙을 재확인했다.",
+      "detail": "앤트로픽은 나스닥 상장으로 813억 달러를 조달했으며, 아모데이 CEO는 상장 기념 행사에서 외부 압력과 무관하게 AI 안전을 위해 개발 속도를 조절하겠다고 밝혔다. 그는 강력한 AI가 100년치 과학·의학 발전을 10년으로 단축할 잠재력이 있다면서도, 악의적 오용·경제 혼란·인간 통제력 상실 위험도 함께 경고했다. 창업자 7명이 의결권 50.1%를 보유하는 이중 주식 구조로 외부 주주 영향을 차단해 창업 원칙을 유지하기로 했다. 아모데이는 안전한 AI 개발과 사업적 성공이 양립 가능함을 증명해 업계 전반의 방향을 바꾸겠다고 강조했다.",
+      "points": [
+        "나스닥 상장으로 813억 달러 조달 — 역대 최대 AI 기업 IPO",
+        "상장 후에도 사업·정치 압력 무관하게 개발 속도 조절 원칙 고수",
+        "창업자 의결권 50.1% 보유 구조로 외부 압력 차단",
+        "AI로 100년치 과학·의학 발전을 10년으로 단축 가능하다고 전망",
+        "안전한 AI 개발과 사업 성공의 양립 가능성 업계에 증명 의지"
+      ],
+      "takeaway": "역사상 최대 규모의 AI 기업 IPO에서도 안전 우선 원칙을 고수하겠다는 선언은, 상업적 압력이 거세질수록 업계 기준 설정에 결정적인 영향을 미칠 수 있다.",
+      "category": "산업/투자",
+      "metric": ""
+    },
+    {
+      "type": "hn",
+      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+      "source": "Hacker News",
+      "published": "2026-11-19T18:47:16+00:00",
+      "thumbnail": "",
+      "points": [
+        "정부의 프런티어 AI 개발 속도 규제 필요성을 주제로 한 영상 토론",
+        "Jacob Coxon과 Robin Hanson이 대립하는 입장 제시",
+        "해커뉴스 커뮤니티에서 주요 화제로 등장",
+        "AI 거버넌스 논의가 학계·기술계 모두에서 활발히 진행 중"
+      ],
+      "comments": 239,
+      "hn_url": "https://news.ycombinator.com/item?id=50564366",
+      "title_ko": "정부가 프런티어 AI 개발을 늦춰야 하는가? — Jacob Coxon vs Robin Hanson 토론",
+      "summary": "정부의 프런티어 AI 개발 속도 규제 개입 필요성을 두고 두 전문가가 논쟁하는 영상 토론이 해커뉴스에서 화제를 모았다.",
+      "detail": "해커뉴스에서 주목받은 이 토론은 Jacob Coxon과 Robin Hanson이 정부의 프런티어 AI 규제 개입 여부를 주제로 대립하는 내용이다. 원문 콘텐츠가 충분히 추출되지 않아 각자의 세부 논거를 파악하기 어렵다. 다만 AI 안전·거버넌스 논의가 기술 커뮤니티에서 핵심 화두로 자리 잡고 있음을 보여주며, 개발 속도 조절 필요성에 대한 의견이 첨예하게 갈리고 있다.",
+      "takeaway": "AI 규제 논쟁이 단순한 정책 이슈를 넘어 기술 커뮤니티 내부에서도 첨예한 의견 대립을 낳고 있으며, 프런티어 AI 거버넌스는 당분간 핵심 화두로 남을 전망이다.",
+      "category": "정책/규제",
+      "metric": "▲ ['정부의 프런티어 AI 개발 속도 규제 필요성을 주제로 한 영상 토론', 'Jacob Coxon과 Robin Hanson이 대립하는 입장 제시', '해커뉴스 커뮤니티에서 주요 화제로 등장', 'AI 거버넌스 논의가 학계·기술계 모두에서 활발히 진행 중'] · 💬 239"
+    },
+    {
+      "type": "hn",
+      "title": "AI came for the coders. Understanding why tells us who's next",
+      "url": "https://www.robertpeake.com/archives/104254-ai-came-for-the-coders-understanding-why-tells-us-whos-next.html",
+      "source": "Hacker News",
+      "published": "2026-11-19T17:43:38+00:00",
+      "thumbnail": "",
+      "points": [
+        "AI 코딩 자동화를 19세기 목공 기계화와 역사적으로 비교",
+        "$5·몇 시간 만에 완성한 목소리 클론을 전문 음악가도 구분 못 함",
+        "Tesler의 법칙: '지능 = 기계가 아직 못 하는 것'은 현재도 유효",
+        "'인간적인 것은 안전하다'는 가정은 근거 없는 위안이라고 주장",
+        "지식 노동 전반으로 AI 자동화 공포가 확산되는 이유 분석"
+      ],
+      "comments": 80,
+      "hn_url": "https://news.ycombinator.com/item?id=50563328",
+      "title_ko": "AI가 코더를 덮쳤다 — 이유를 이해하면 다음 차례가 보인다",
+      "summary": "25년 경력 소프트웨어 엔지니어가 AI 코딩 자동화를 역사적 맥락에서 분석하며, 어떤 인간 역량이 살아남을지를 묻는다.",
+      "detail": "저자는 AI의 코딩 자동화를 19세기 목공 기계화에 빗댄다. 수공예 장인이 기계 조작자로 대체됐듯, 손으로 코드를 쓰는 장인 정신은 쇠퇴하고 자동화 도구를 다루는 능력이 중요해졌다. 저자는 $5와 몇 시간 만에 자신의 목소리 클론을 만들어 전문 음악가인 아내도 구분 못했다는 사례로 AI 자동화의 충격적인 범위를 직접 보여준다. '인간적인 것은 안전하다'는 위안은 틀렸으며, 1950년대부터 이어진 Tesler의 법칙—'지능이란 기계가 아직 못 하는 것'—이 여전히 유효하다고 주장한다. 무엇이 자동화되는지를 이해하는 원리는 수십 년째 변하지 않았으며, 이를 이해해야 다음 취약 직군을 예측할 수 있다고 본다.",
+      "takeaway": "코딩 자동화는 단순 기술직이 아닌 지식 노동 전반의 취약성을 드러낸 경고로, 어떤 역량이 살아남을지를 감정이 아닌 자동화의 원리로 냉정하게 분석해야 할 시점이다.",
+      "category": "기타",
+      "metric": "▲ ['AI 코딩 자동화를 19세기 목공 기계화와 역사적으로 비교', '$5·몇 시간 만에 완성한 목소리 클론을 전문 음악가도 구분 못 함', \"Tesler의 법칙: '지능 = 기계가 아직 못 하는 것'은 현재도 유효\", \"'인간적인 것은 안전하다'는 가정은 근거 없는 위안이라고 주장\", '지식 노동 전반으로 AI 자동화 공포가 확산되는 이유 분석'] · 💬 80"
+    }
+  ]
+}
