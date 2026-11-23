@@ -4,7 +4,7 @@ AI 뉴스 데일리 - 수집 스크립트 (Phase 1 MVP)
 
 - 뉴스: 각 매체 RSS
 - 영상: 유튜브 채널 RSS (API 키 불필요)
-- 요약/분류: Claude Code(`claude -p`) 호출 (구독으로 처리, 추가 과금 없음)
+- 요약/분류: Gemini CLI(`gemini -p`) 호출 (Google 계정 로그인으로 처리)
 - 결과: data/YYYY-MM-DD.json 저장 + data/manifest.json 갱신
 
 실행:  python collect.py
@@ -144,40 +144,38 @@ def in_window(dt, start, end):
 
 
 # ──────────────────────────────────────────────────────────────────────────
-# Claude 실행 파일 찾기
+# Gemini CLI 실행 파일 찾기
 # ──────────────────────────────────────────────────────────────────────────
 
-def find_claude():
-    home = os.path.expanduser("~")
-    # 1) 독립 설치본 우선 (IDE 자동 업데이트와 분리돼 안정적)
-    standalone = os.path.join(home, ".local", "bin", "claude.exe")
-    if os.path.exists(standalone):
-        return standalone
-    # 2) PATH
-    found = shutil.which("claude")
+def find_gemini():
+    # 1) PATH (Windows에서는 .cmd/.exe 자동 탐색)
+    found = shutil.which("gemini")
     if found:
         return found
-    # 3) Antigravity IDE 번들 바이너리 (폴백, 버전 무관 glob)
-    pattern = os.path.join(
-        home, ".antigravity-ide", "extensions",
-        "anthropic.claude-code-*", "resources", "native-binary", "claude.exe",
-    )
-    hits = sorted(glob.glob(pattern))
-    return hits[-1] if hits else None
+    # 2) npm 전역 설치 기본 경로 (작업 스케줄러 등 PATH 누락 대비)
+    appdata = os.environ.get("APPDATA") or os.path.join(os.path.expanduser("~"), "AppData", "Roaming")
+    for name in ("gemini.cmd", "gemini.exe", "gemini"):
+        cand = os.path.join(appdata, "npm", name)
+        if os.path.exists(cand):
+            return cand
+    return None
 
 
-CLAUDE = find_claude()
+GEMINI = find_gemini()
+CLAUDE = GEMINI  # 하위 호환 별칭
 
 
-def _run_claude(instruction, stdin_text, timeout=300, retries=3, delay=20):
-    """claude -p 호출. 빈 응답/크래시(일시적) 시 잠시 후 자동 재시도.
+def _run_gemini(instruction, stdin_text, timeout=300, retries=3, delay=20):
+    """gemini -p 호출. 빈 응답/크래시(일시적) 시 잠시 후 자동 재시도.
     성공 시 stdout(문자열), 끝까지 실패하면 ''."""
+    if not GEMINI:
+        return ""
     for attempt in range(1, retries + 1):
         try:
             proc = subprocess.run(
-                [CLAUDE, "-p", instruction, "--output-format", "text"],
+                [GEMINI, "-p", instruction, "-o", "text"],
                 input=stdin_text, capture_output=True, text=True,
-                encoding="utf-8", timeout=timeout,
+                encoding="utf-8", errors="replace", timeout=timeout,
             )
             out = (proc.stdout or "").strip()
             if out:
@@ -185,9 +183,12 @@ def _run_claude(instruction, stdin_text, timeout=300, retries=3, delay=20):
         except Exception:
             pass
         if attempt < retries:
-            print(f"    (claude 빈 응답 — {delay}초 후 재시도 {attempt + 1}/{retries})", flush=True)
+            print(f"    (gemini 빈 응답 — {delay}초 후 재시도 {attempt + 1}/{retries})", flush=True)
             time.sleep(delay)
     return ""
+
+
+_run_claude = _run_gemini  # 하위 호환 별칭
 
 
 # ──────────────────────────────────────────────────────────────────────────
@@ -710,8 +711,8 @@ def _apply_digest(it, r):
 
 
 def summarize(items):
-    if not CLAUDE:
-        print("! claude 실행 파일을 못 찾았습니다 — 다이제스트 없이 진행합니다.")
+    if not GEMINI:
+        print("! gemini 실행 파일을 못 찾았습니다 — 다이제스트 없이 진행합니다.")
         return _fallback(items)
 
     chunks = [items[i:i + CHUNK_SIZE] for i in range(0, len(items), CHUNK_SIZE)]
@@ -830,7 +831,7 @@ def make_briefing(items):
         "출력은 오직 JSON 객체만. 마크다운 금지.\n"
         '형식: {"overview":"...","highlights":[{"title":"...","line":"..."}]}'
     )
-    print("[브리핑] claude 호출... ", end="", flush=True)
+    print("[브리핑] gemini 호출... ", end="", flush=True)
     try:
         out = _run_claude(instruction, json.dumps(payload, ensure_ascii=False), timeout=180)
         s, e = out.find("{"), out.rfind("}")
@@ -925,9 +926,43 @@ def save(items, briefing=None, date=None):
     print(f"[저장] manifest.json ({len(dates)}일치)")
 
 
+PENDING_FILE = os.path.join(DATA_DIR, "_pending.json")
+
+
 def main():
+    args = sys.argv[1:]
+    if "--apply-digest" in args:
+        idx = args.index("--apply-digest")
+        digest_path = args[idx + 1]
+        with open(PENDING_FILE, encoding="utf-8") as f:
+            pending = json.load(f)
+        with open(digest_path, encoding="utf-8") as f:
+            digest = json.load(f)
+        items = pending.get("items", [])
+        by_id = {o["id"]: o for o in digest.get("items", []) if isinstance(o, dict) and "id" in o}
+        for i, it in enumerate(items):
+            _apply_digest(it, by_id.get(i))
+        briefing = digest.get("briefing") or {"overview": "", "highlights": []}
+        save(items, briefing)
+        end_utc = pending.get("end_utc")
+        write_last_run(datetime.fromisoformat(end_utc) if end_utc else datetime.now(timezone.utc))
+        for p in (PENDING_FILE, digest_path):
+            try:
+                if os.path.exists(p):
+                    os.remove(p)
+            except Exception:
+                pass
+        print("=== 다이제스트 적용 및 저장 완료 ===")
+        return
+
+    collect_only = "--collect-only" in args
+    if collect_only:
+        global GEMINI, CLAUDE
+        GEMINI = CLAUDE = None
+
     print(f"=== AI 뉴스 수집 시작 ({datetime.now():%Y-%m-%d %H:%M}) ===")
-    print(f"claude: {CLAUDE or '미발견'}")
+    if not collect_only:
+        print(f"gemini: {GEMINI or '미발견'}")
     start, end = get_window()
     print(f"수집 구간(UTC): {start:%Y-%m-%d %H:%M} ~ {end:%Y-%m-%d %H:%M}")
     pool = collect(start, end)
@@ -945,6 +980,12 @@ def main():
     items = select(pool)
     items = fetch_fulltext(items)
     items = enrich_claude_code(items)   # Claude Code 릴리스에 CHANGELOG 상세 첨부
+    if collect_only:
+        os.makedirs(DATA_DIR, exist_ok=True)
+        with open(PENDING_FILE, "w", encoding="utf-8") as f:
+            json.dump({"end_utc": end.isoformat(), "items": items}, f, ensure_ascii=False, indent=2)
+        print(f"[대기 저장] {PENDING_FILE} ({len(items)}건)")
+        return
     items = summarize(items)
     items = ensure_korean(items)   # 영어로 남은 항목 한국어 보정
     briefing = make_briefing(items)

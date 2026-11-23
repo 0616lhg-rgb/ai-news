@@ -3,11 +3,8 @@
 import json
 import glob
 import os
-import subprocess
-
 import collect
 
-CLAUDE = collect.CLAUDE
 DATA = collect.DATA_DIR
 
 
@@ -32,12 +29,8 @@ def translate(batch):
     payload = [{"id": i, "title": it.get("title", ""), "summary": it.get("summary", ""),
                 "detail": it.get("detail", ""), "points": it.get("points", []),
                 "takeaway": it.get("takeaway", "")} for i, it in enumerate(batch)]
-    proc = subprocess.run(
-        [CLAUDE, "-p", INSTR, "--output-format", "text"],
-        input=json.dumps(payload, ensure_ascii=False),
-        capture_output=True, text=True, encoding="utf-8", timeout=300,
-    )
-    objs = collect._parse_obj_array(proc.stdout or "")
+    out = collect._run_gemini(INSTR, json.dumps(payload, ensure_ascii=False), timeout=300)
+    objs = collect._parse_obj_array(out)
     return {o["id"]: o for o in objs if isinstance(o, dict) and "id" in o}
 
 

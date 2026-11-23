@@ -3,11 +3,8 @@
 import json
 import glob
 import os
-import subprocess
+import collect  # _run_gemini, _parse_obj_array, DATA_DIR 재사용
 
-import collect  # CLAUDE, _parse_obj_array, DATA_DIR 재사용
-
-CLAUDE = collect.CLAUDE
 DATA = collect.DATA_DIR
 
 
@@ -18,12 +15,8 @@ def translate(titles):
         "한국어면 그대로 두고, 영어 등 외국어면 의미가 통하게 번역하라(고유명사·제품명은 그대로 둬도 됨). "
         "출력은 오직 JSON 배열만: [{\"id\":0,\"title_ko\":\"...\"}]"
     )
-    proc = subprocess.run(
-        [CLAUDE, "-p", instruction, "--output-format", "text"],
-        input=json.dumps(payload, ensure_ascii=False),
-        capture_output=True, text=True, encoding="utf-8", timeout=180,
-    )
-    objs = collect._parse_obj_array(proc.stdout or "")
+    out = collect._run_gemini(instruction, json.dumps(payload, ensure_ascii=False), timeout=180)
+    objs = collect._parse_obj_array(out)
     return {o["id"]: o.get("title_ko") for o in objs if isinstance(o, dict) and "id" in o}
 
 
